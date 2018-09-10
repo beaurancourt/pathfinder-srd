@@ -20,4 +20,4 @@ app.get('/creatures/:creatureName', (req, res) => {
   res.render('creature', creature)
 });
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
