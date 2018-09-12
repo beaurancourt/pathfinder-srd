@@ -3,6 +3,7 @@
     "name": "Animated Broom",
     "actions": [
       {
+        "cost": 1,
         "label": "Melee",
         "description": "bristles +7,"
       },
@@ -17,16 +18,12 @@
     ],
     "traits": [
       {
-        "label": "Fort",
-        "description": "+4,"
+        "label": "Hardness",
+        "description": 3
       },
       {
-        "label": "Ref",
-        "description": "+1,"
-      },
-      {
-        "label": "Will",
-        "description": "–1 effects, enervated, enfeebled, healing, mental, necromancy, nonlethal attacks, paralysis, poison, stun"
+        "label": "Immunities",
+        "description": "asleep, bleed, disease, death effects, enervated, enfeebled, healing, mental, necromancy, nonlethal attacks, paralysis, poison, stun"
       },
       {
         "label": "Construct Armor",
@@ -43,7 +40,10 @@
     },
     "defenses": {
       "AC": "14 (12 when broken),",
-      "TAC": "10 (9 when broken); construct armor;"
+      "TAC": "10 (9 when broken); construct armor;",
+      "Fort": "+4,",
+      "Ref": "+1,",
+      "Will": "-1"
     },
     "category": "Animated Object",
     "tags": [
@@ -64,13 +64,15 @@
     "actions": [
       {
         "label": "Melee",
-        "description": "drawer +7,"
+        "description": "drawer +7,",
+        "cost": 1
       },
       {
         "label": "Damage",
         "description": "2d4 +1 bludgeoning"
       },
       {
+        "cost": 1,
         "label": "Ranged",
         "description": "drawer +5 (range increment 20 feet),"
       },
@@ -131,6 +133,7 @@
     "name": "Animated Armor",
     "actions": [
       {
+        "cost": 1,
         "label": "Melee",
         "description": "glaive +8 (deadly 1d8, forceful, reach 10 feet),"
       },
@@ -139,6 +142,7 @@
         "description": "1d8+3 slashing"
       },
       {
+        "cost": 1,
         "label": "Melee",
         "description": "gauntlet +8 (agile, free hand),"
       },
@@ -195,6 +199,7 @@
     "name": "Animated Statue",
     "actions": [
       {
+        "cost": 1,
         "label": "Melee",
         "description": "stone fist +8,"
       },
@@ -252,6 +257,7 @@
     "name": "Giant Animated Statue",
     "actions": [
       {
+        "cost": 1,
         "label": "Melee",
         "description": "stone fist +17,"
       },
@@ -260,6 +266,7 @@
         "description": "2d12+7 bludgeoning plus Grab"
       },
       {
+        "cost": 1,
         "label": "Ranged",
         "description": "flaming coal +15 (range increment 80 feet),"
       },
@@ -268,6 +275,7 @@
         "description": "2d8 bludgeoning and 2d8 fire"
       },
       {
+        "cost": 1,
         "label": "Burn Alive",
         "description": "(fire) The statue grinds a creature it has grabbed into the red-hot coals of its brazier. The target takes 3d8 fire damage and 1d8 persistent fire damage."
       },
@@ -325,6 +333,7 @@
     "name": "Ankhrav",
     "actions": [
       {
+        "cost": 1,
         "label": "Melee",
         "description": "mandibles +9,"
       },
@@ -333,6 +342,7 @@
         "description": "1d6+4 piercing plus 1d6 acid"
       },
       {
+        "cost": 1,
         "label": "Ranged",
         "description": "acid spit +6 touch (range 30 feet),"
       },
@@ -341,10 +351,12 @@
         "description": "2d6 acid"
       },
       {
+        "cost": 2,
         "label": "Armor-Rending Bite",
         "description": "The ankhrav makes a mandibles Strike; if the Strike hits, the target’s armor is dented."
       },
       {
+        "cost": 2,
         "label": "Spray Acid",
         "description": "(acid)"
       },
@@ -390,6 +402,7 @@
     "name": "Banshee",
     "actions": [
       {
+        "cost": 1,
         "label": "Melee",
         "description": "hand +24 touch,"
       },
@@ -398,6 +411,7 @@
         "description": "3d8+7 negative plus terrifying touch"
       },
       {
+        "cost": "R",
         "label": "Persistence of Fear",
         "description": "(abjuration, divine)"
       },
@@ -422,6 +436,7 @@
         "description": "(divine, emotion, enchantment, fear) A creature damaged by the banshee’s touch that isn’t already frightened must attempt a DC 30 Will save (DC 35 if the attack was a critical hit). If the creature fails its save, it’s frightened 2; on a critical failure, the creature also cowers with fear, making it stunned and flat-footed for 1d4 rounds."
       },
       {
+        "cost": 2,
         "label": "Wail",
         "description": "(auditory, concentrate, death, divine, necromancy) The banshee spends 2 Verbal Casting actions to unleash a soul- chilling (DC 30). This wail overcomes and similar effects of 3rd level or lower. The banshee can add a third Verbal Casting action when casting to overcome such effects of up to 6th level. The wail resonates from the banshee for 1 round, and any creature that comes within the area during that time must attempt a save against the effect. A creature can’t be affected more than once by the same wail. Once she wails, a banshee can’t wail again for 2d6 rounds."
       }
@@ -471,6 +486,7 @@
     "name": "Barghest",
     "actions": [
       {
+        "cost": 1,
         "label": "Melee",
         "description": "jaws +11,"
       },
@@ -479,6 +495,7 @@
         "description": "2d6+5 piercing"
       },
       {
+        "cost": 1,
         "label": "Melee",
         "description": "claw +11 (agile),"
       },
@@ -488,10 +505,11 @@
       },
       {
         "label": "Arcane Innate Spells",
-        "description": "DC 18;"
+        "description": " DC 18; 4th confusion; At Will blink, levitate"
       },
       {
-        "label": "4th At Will Change Shape",
+        "cost": 1,
+        "label": "Change Shape",
         "description": "(arcane, concentrate, polymorph, transmutation) The barghest takes on the shape of a goblin or a wolf, or it transforms back into its true form. When the barghest is a goblin, it loses its jaws and claw Strikes, it becomes Small, and its Speed changes to 20 feet. When the barghest is a wolf, its Speed changes to 40 feet and its jaws gain Knockdown. Each individual barghest has only one goblin form and one wolf form."
       },
       {
@@ -539,6 +557,7 @@
     "name": "Greater Barghest",
     "actions": [
       {
+        "cost": 1,
         "label": "Melee",
         "description": "jaws +17,"
       },
@@ -547,6 +566,7 @@
         "description": "2d8+6 piercing"
       },
       {
+        "cost": 1,
         "label": "Melee",
         "description": "claw +11 (agile),"
       },
@@ -556,10 +576,11 @@
       },
       {
         "label": "Arcane Innate Spells",
-        "description": "DC 21;"
+        "description": "DC 21; 4th confusion, dimension door, enlarge; At Will blink, invisibility, levitate"
       },
       {
-        "label": "4th At Will Change Shape",
+        "cost": 1,
+        "label": "Change Shape",
         "description": "(arcane, concentrate, polymorph, transmutation) The barghest takes on the shape of a goblin or a wolf, or it transforms back into its true form. When the barghest is a goblin, it loses its jaws and claw Strikes, it becomes Small, and its Speed changes to 20 feet. When the barghest is a wolf, its Speed changes to 40 feet and its jaws gain Knockdown. Each individual barghest has only one goblin form and one wolf form."
       },
       {
@@ -612,18 +633,27 @@
     "name": "Bat Swarm",
     "actions": [
       {
+        "cost": 1,
         "label": "Swarming Bites",
         "description": "Each enemy in the swarm’s space takes 1d4 piercing damage plus 1 persistent bleed damage (Reflex DC 15 half, no damage on a critical success, double damage on a critical failure)."
       }
     ],
     "traits": [
       {
-        "label": "Echolocation",
-        "description": "A bat swarm can use its hearing as a precise sense at the listed range. bludgeoning 5, piercing 5, slashing 2;"
+        "label": "Immunities",
+        "description": "precision, targeted effects"
+      },
+      {
+        "label": "Resistances",
+        "description": "bludgeoning 5, piercing 5, slashing 2"
       },
       {
         "label": "Weaknesses",
         "description": "area damage 4, splash damage 4"
+      },
+      {
+        "label": "Echolocation",
+        "description": "A bat swarm can use its hearing as a precise sense at the listed range."
       }
     ],
     "stats": {
@@ -659,6 +689,7 @@
     "name": "Giant Bat",
     "actions": [
       {
+        "cost": 1,
         "label": "Melee",
         "description": "fangs +8,"
       },
@@ -667,6 +698,7 @@
         "description": "1d10+3 piercing"
       },
       {
+        "cost": 1,
         "label": "Melee",
         "description": "wing +8 (agile),"
       },
@@ -681,7 +713,8 @@
         "description": "A bat can use its hearing as a precise sense at the listed range."
       },
       {
-        "label": "Wing Thrash Trigger",
+        "cost": "T",
+        "label": "Wing Thrash",
         "description": "An adjacent enemy damages the giant bat."
       },
       {
@@ -721,6 +754,7 @@
     "name": "Grizzly Bear",
     "actions": [
       {
+        "cost": 1,
         "label": "Melee",
         "description": "jaws +8,"
       },
@@ -729,6 +763,7 @@
         "description": "2d6+4 piercing"
       },
       {
+        "cost": 1,
         "label": "Melee",
         "description": "claw +8 (agile),"
       },
@@ -737,6 +772,7 @@
         "description": "1d10+4 slashing plus Grab"
       },
       {
+        "cost": 2,
         "label": "Rush",
         "description": "The bear Strides and makes a Strike at the end of that movement. During the Stride, the bear is accelerated 10."
       },
@@ -778,6 +814,7 @@
     "name": "Cave Bear",
     "actions": [
       {
+        "cost": 1,
         "label": "Melee",
         "description": "jaws +15,"
       },
@@ -786,6 +823,7 @@
         "description": "2d10+6 piercing"
       },
       {
+        "cost": 1,
         "label": "Melee",
         "description": "claw +15 (agile),"
       },
@@ -794,6 +832,7 @@
         "description": "2d8+6 slashing plus Grab"
       },
       {
+        "cost": 2,
         "label": "Rush",
         "description": "The bear Strides and makes a Strike at the end of that movement. During the Stride, the bear is accelerated 10."
       },
@@ -835,6 +874,7 @@
     "name": "Fire Beetle",
     "actions": [
       {
+        "cost": 1,
         "label": "Melee",
         "description": "mandibles +6,"
       },
@@ -843,6 +883,7 @@
         "description": "1d4 piercing"
       },
       {
+        "cost": 1,
         "label": "Light Flash",
         "description": "(concentrate, light) The beetle creates a flash of light. All creatures in its luminescent aura must succeed at a DC 13 Fortitude save or be dazzled for 1d4 rounds. The beetle’s glands then go dark, disabling its aura for 24 hours."
       }
@@ -885,6 +926,7 @@
     "name": "Black Pudding",
     "actions": [
       {
+        "cost": 1,
         "label": "Melee",
         "description": "pseudopod +16 (reach 10 feet),"
       },
@@ -893,6 +935,7 @@
         "description": "2d8+3 bludgeoning plus 2d6 acid, corrosive touch, and Grab"
       },
       {
+        "cost": 1,
         "label": "Constrict",
         "description": "6 bludgeoning plus 3 acid"
       },
@@ -948,6 +991,7 @@
     "name": "Bloodseeker",
     "actions": [
       {
+        "cost": 1,
         "label": "Melee",
         "description": "barbed legs +6 touch,"
       },
@@ -956,6 +1000,7 @@
         "description": "attach"
       },
       {
+        "cost": 1,
         "label": "Blood Drain Requirements",
         "description": "The bloodseeker is attached to a creature."
       },
@@ -1001,6 +1046,7 @@
     "name": "Boar",
     "actions": [
       {
+        "cost": 1,
         "label": "Melee",
         "description": "tusk +8,"
       },
@@ -1009,12 +1055,14 @@
         "description": "1d8+4 piercing"
       },
       {
+        "cost": 2,
         "label": "Boar Charge",
         "description": "The boar Strides up to double its Speed in a straight line and then makes a tusk Strike. If the boar moved at least 20 feet, it gains a +2 circumstance bonus to its attack roll."
       }
     ],
     "traits": [
       {
+        "cost": "R",
         "label": "Ferocity Trigger",
         "description": "The boar is reduced to 0 HP."
       },
@@ -1055,6 +1103,7 @@
     "name": "Pig",
     "actions": [
       {
+        "cost": 1,
         "label": "Melee",
         "description": "tusk +6,"
       },
@@ -1096,6 +1145,7 @@
     "name": "Boggard Scout",
     "actions": [
       {
+        "cost": 1,
         "label": "Melee",
         "description": "morningstar +7 (versatile P),"
       },
@@ -1104,6 +1154,7 @@
         "description": "1d6+2 bludgeoning"
       },
       {
+        "cost": 1,
         "label": "Melee",
         "description": "tongue +7 touch (reach 10 feet);"
       },
@@ -1112,6 +1163,7 @@
         "description": "tongue grab"
       },
       {
+        "cost": 1,
         "label": "Ranged",
         "description": "sling +5,"
       },
@@ -1120,6 +1172,7 @@
         "description": "1d6+1 bludgeoning"
       },
       {
+        "cost": 1,
         "label": "Terrifying Croak",
         "description": "(auditory, emotion, fear, mental) The boggard unleashes a terrifying croak. Any non-boggard within 30 feet becomes frightened 1 (Will DC 15 negates)."
       },
@@ -1170,6 +1223,7 @@
     "name": "Brain Collector",
     "actions": [
       {
+        "cost": 1,
         "label": "Melee",
         "description": "jaws +18,"
       },
@@ -1178,6 +1232,7 @@
         "description": "2d12+6 plus brain collector venom"
       },
       {
+        "cost": 1,
         "label": "Melee",
         "description": "claw +18 (agile),"
       },
@@ -1187,23 +1242,7 @@
       },
       {
         "label": "Occult Spontaneous Spells",
-        "description": "DC 22, attack +18;"
-      },
-      {
-        "label": "4th",
-        "description": "(2 slots)"
-      },
-      {
-        "label": "3rd",
-        "description": "(3 slots)"
-      },
-      {
-        "label": "2nd",
-        "description": "(4 slots)"
-      },
-      {
-        "label": "1st",
-        "description": "(4 slots)"
+        "description": "DC 22, attack +18; 4th (2 slots) confusion, phantasmal killer; 3rd (3 slots) dispel magic, haste, paralyze; 2nd (4 slots) humanoid form, invisibility, mirror image, paranoia; 1st (4 slots) mindlink, ray of enfeeblement, true strike, unseen servant; Cantrips dancing lights, detect magic, mage hand, prestidigitation"
       },
       {
         "label": "Cantrips Brain Collector Venom",
@@ -1230,6 +1269,7 @@
         "description": "2d6 poison, enfeebled 2, and slowed 1 (1 round)"
       },
       {
+        "cost": 1,
         "label": "Collect Brain",
         "description": "(manipulate) The brain collector collects a brain of a creature that has been dead for up to 1 minute. It can then use an Interact action to secure the brain in one of its brain blisters."
       }
@@ -1278,6 +1318,7 @@
     "name": "Bugbear Thug",
     "actions": [
       {
+        "cost": 1,
         "label": "Melee",
         "description": "bastard sword +8 (two-hand d12),"
       },
@@ -1286,6 +1327,7 @@
         "description": "1d8+3 piercing"
       },
       {
+        "cost": 1,
         "label": "Melee",
         "description": "fist +8 (agile, nonlethal),"
       },
@@ -1294,6 +1336,7 @@
         "description": "1d4+3 bludgeoning"
       },
       {
+        "cost": 1,
         "label": "Ranged",
         "description": "javelin +6,"
       },
@@ -1302,6 +1345,7 @@
         "description": "1d6+3 piercing"
       },
       {
+        "cost": 1,
         "label": "Bushwhack",
         "description": "The bugbear Strides up to 10 feet and attempts to Grapple a creature it’s unseen by. If it succeeds, it also deals fist damage to that creature."
       },
@@ -1350,6 +1394,7 @@
     "name": "Bugbear Fighter",
     "actions": [
       {
+        "cost": 1,
         "label": "Melee",
         "description": "flail +10 (disarm, trip, sweep),"
       },
@@ -1358,6 +1403,7 @@
         "description": "1d6+6 bludgeoning"
       },
       {
+        "cost": 1,
         "label": "Ranged",
         "description": "javelin +8,"
       },
@@ -1366,6 +1412,7 @@
         "description": "1d6+6 piercing"
       },
       {
+        "cost": 1,
         "label": "Bushwhacking Flail",
         "description": "The bugbear Strides up to 10 feet and attempts to Trip a creature it’s unseen by with its flail. If it succeeds, it also deals flail damage to that creature."
       }
@@ -1373,18 +1420,13 @@
     "traits": [
       {
         "label": "Items",
-        "description": "flail, heavy wooden shield (Hardness 3), 4 javelins, scale mail +7,"
+        "description": "flail, heavy wooden shield (Hardness 3), 4 javelins, scale mail"
       },
       {
-        "label": "Ref",
-        "description": "+5,"
+        "label": "Attack Of Opportunity"
       },
       {
-        "label": "Will",
-        "description": "+4"
-      },
-      {
-        "label": "Attack of Opportunity Shield Block"
+        "label": "Shield Block"
       }
     ],
     "stats": {
@@ -1397,7 +1439,10 @@
     },
     "defenses": {
       "AC": "18 (20 with shield raised),",
-      "TAC": "16 (18 with shield raised);"
+      "TAC": "16 (18 with shield raised);",
+      "Fort": "+7,",
+      "Ref": "+5,",
+      "Will": "+4"
     },
     "category": "Bugbear",
     "tags": [
@@ -1418,6 +1463,7 @@
     "name": "Bulette",
     "actions": [
       {
+        "cost": 1,
         "label": "Melee",
         "description": "jaws +18,"
       },
@@ -1426,6 +1472,7 @@
         "description": "2d12+7 piercing"
       },
       {
+        "cost": 1,
         "label": "Melee",
         "description": "claw +18 (agile),"
       },
@@ -1438,14 +1485,16 @@
         "description": "A bulette gains a +1 circumstance bonus to attack and damage rolls with its jaws against a specific type of creature designated as its favorite food. Unless otherwise stated, a bulette prefers halflings."
       },
       {
-        "label": "Fin Slash Requirement",
-        "description": "The bulette must be burrowing 5 feet under the surface of the ground."
+        "cost": 2,
+        "label": "Fin Slash",
+        "description": "Requirement: The bulette must be burrowing 5 feet under the surface of the ground."
       },
       {
         "label": "Effect",
         "description": "The bulette Burrows up to double its burrow Speed in a straight line and slices each creature on the surface in a line that follows the center of the bulette’s movement. This deals 2d8+7 slashing damage, but each creature that succeeds at a DC 22 Reflex save takes half damage (no damage on a critical success, double damage on a critical failure)."
       },
       {
+        "cost": 2,
         "label": "Leaping Charge",
         "description": "The bulette attempts a High Jump or Long Jump. If it’s adjacent to an enemy at the apex of its High Jump or the end of its Long Jump, it can make a claw Strike against the enemy at that moment. If the bulette jumps at least 5 feet vertically or at least 20 feet horizontally, it can attempt two claw Strikes instead of one. The bulette’s multiple attack penalty doesn’t increase until it has made all the claw Strikes that are part of its Leaping Charge."
       },
@@ -1487,6 +1536,7 @@
     "name": "Bunyip",
     "actions": [
       {
+        "cost": 1,
         "label": "Melee",
         "description": "jaws +9,"
       },
@@ -1495,6 +1545,7 @@
         "description": "1d10+4 piercing plus 1d6 persistent bleed"
       },
       {
+        "cost": 1,
         "label": "Melee",
         "description": "tail +9 (agile),"
       },
@@ -1503,12 +1554,13 @@
         "description": "1d8+4 bludgeoning"
       },
       {
+        "cost": 1,
         "label": "Shift Form",
         "description": "(morph, primal, transmutation) A bunyip can alter its form slightly to gain an advantage and make it harder to recognize. If it does, its teeth shrink and it loses the 1d6 persistent bleed from its jaws Strike. It can choose to gain either a long snake tail, granting its tail Strike reach 10 feet and Grab, or squat crocodile legs, increasing its land Speed to 20 feet. If it uses Shift Form again, the bunyip can return to normal or switch between a long tail or crocodile legs."
       },
       {
-        "label": "Blood Frenzy Requirement",
-        "description": "The bunyip is not fatigued or already in a frenzy."
+        "label": "Blood Frenzy",
+        "description": "Requirement: The bunyip is not fatigued or already in a frenzy."
       },
       {
         "label": "Trigger",
@@ -1519,6 +1571,7 @@
         "description": "The bunyip flies into a frenzy that lasts 1 minute. While frenzied, the bunyip gains a +4 conditional bonus to damage rolls with its jaws, gains 8 temporary HP that go away at the end of the frenzy, and takes a –2 penalty to AC."
       },
       {
+        "cost": 1,
         "label": "Roar",
         "description": "(auditory, concentrate, emotion, enchantment, fear, mental, primal) The bunyip lets out a loud and horrifying roar. Other creatures within 100 feet must succeed at a DC 15 Will save or become frightened 2 (frightened 3 on a critical failure, frightened 1 on a success, or unaffected on a critical success). No matter the result, the creature is bolstered."
       }
@@ -1566,6 +1619,7 @@
     "name": "Caligni Creeper (dark Creeper)",
     "actions": [
       {
+        "cost": 1,
         "label": "Melee",
         "description": "dagger +8 (agile, versatile S),"
       },
@@ -1574,6 +1628,7 @@
         "description": "1d4 piercing and black smear poison"
       },
       {
+        "cost": 1,
         "label": "Ranged",
         "description": "dagger +8 (agile, thrown 10 feet, versatile S),"
       },
@@ -1583,11 +1638,7 @@
       },
       {
         "label": "Arcane Innate Spells",
-        "description": "DC 15;"
-      },
-      {
-        "label": "At Will Cantrips",
-        "description": "(1st)"
+        "description": "DC 15; At Will darkness; Cantrips (1st) detect magic"
       },
       {
         "label": "Sneak Attack",
@@ -1642,6 +1693,7 @@
     "name": "Caligni Stalker (dark Stalker)",
     "actions": [
       {
+        "cost": 1,
         "label": "Melee",
         "description": "shortsword +11 (agile, versatile S),"
       },
@@ -1658,10 +1710,12 @@
         "description": "(2nd)"
       },
       {
+        "cost": 2,
         "label": "Double Slice",
         "description": "The stalker makes two Strikes against the same target, one with each of its shortswords. The stalker combines the damage of any attacks that hit and applies precision damage, resistance, and weaknesses only once. Both attacks count toward the stalker’s multiple attack penalty, but the penalty increases only after both attacks."
       },
       {
+        "cost": 1,
         "label": "Encircling Command",
         "description": "(auditory) Each caligni creeper within 30 feet of the stalker can Step. Each creeper can benefit from only one Encircling Command per round."
       },
@@ -1771,6 +1825,7 @@
     "name": "Camel",
     "actions": [
       {
+        "cost": 1,
         "label": "Melee",
         "description": "jaws +5,"
       },
@@ -1779,6 +1834,7 @@
         "description": "1d4+3 bludgeoning"
       },
       {
+        "cost": 1,
         "label": "Range",
         "description": "spit (range increment 10 feet) +4 touch,"
       },
@@ -1829,6 +1885,7 @@
     "name": "Bobcat",
     "actions": [
       {
+        "cost": 1,
         "label": "Melee",
         "description": "jaws +6,"
       },
@@ -1837,6 +1894,7 @@
         "description": "1d6–1 piercing plus Grab"
       },
       {
+        "cost": 1,
         "label": "Melee",
         "description": "claw +6 (agile),"
       },
@@ -1845,6 +1903,7 @@
         "description": "1d4–1 slashing"
       },
       {
+        "cost": 1,
         "label": "Pounce",
         "description": "The bobcat Strides and makes a Strike at the end of that movement. If the bobcat began this action hidden, it remains hidden until after the attack."
       },
@@ -1886,6 +1945,7 @@
     "name": "Leopard",
     "actions": [
       {
+        "cost": 1,
         "label": "Melee",
         "description": "jaws +7,"
       },
@@ -1894,6 +1954,7 @@
         "description": "1d6+1 piercing plus Grab"
       },
       {
+        "cost": 1,
         "label": "Melee",
         "description": "claw +7 (agile),"
       },
@@ -1902,10 +1963,12 @@
         "description": "1d4+1 slashing"
       },
       {
+        "cost": 1,
         "label": "Maul",
         "description": "The leopard makes two claw Strikes against a creature it has grabbed. Both count toward its multiple attack penalty, but the penalty increases only after both attacks."
       },
       {
+        "cost": 1,
         "label": "Pounce",
         "description": "The leopard Strides and makes a Strike at the end of that movement. If the leopard began this action hidden, it remains hidden until after the attack."
       },
@@ -1947,6 +2010,7 @@
     "name": "Panther",
     "actions": [
       {
+        "cost": 1,
         "label": "Melee",
         "description": "jaws +8,"
       },
@@ -1955,6 +2019,7 @@
         "description": "1d8+3 piercing plus Riding Grab"
       },
       {
+        "cost": 1,
         "label": "Melee",
         "description": "claw +8 (agile),"
       },
@@ -1963,12 +2028,14 @@
         "description": "1d6+3 slashing"
       },
       {
+        "cost": 1,
         "label": "Pounce",
         "description": "The panther Strides and makes a Strike at the end of that movement. If the panther began this action hidden, it remains hidden until after the attack."
       },
       {
-        "label": "Riding Grab Requirements",
-        "description": "On the panther’s most recent action this turn, it hit a creature of its size or larger with a jaws attack."
+        "cost": 1,
+        "label": "Riding Grab",
+        "description": "Requirements: On the panther’s most recent action this turn, it hit a creature of its size or larger with a jaws attack."
       },
       {
         "label": "Effect",
@@ -2011,6 +2078,7 @@
     "name": "Lion",
     "actions": [
       {
+        "cost": 1,
         "label": "Melee",
         "description": "jaws +9,"
       },
@@ -2019,6 +2087,7 @@
         "description": "1d8+4 piercing plus Grab"
       },
       {
+        "cost": 1,
         "label": "Melee",
         "description": "claw +9 (agile),"
       },
@@ -2027,6 +2096,7 @@
         "description": "1d4+4 slashing"
       },
       {
+        "cost": 1,
         "label": "Pounce",
         "description": "The lion Strides and makes a Strike at the end of that movement. If the lion began this action hidden, it remains hidden until after the attack."
       },
@@ -2072,6 +2142,7 @@
     "name": "Tiger",
     "actions": [
       {
+        "cost": 1,
         "label": "Melee",
         "description": "jaws +11,"
       },
@@ -2080,6 +2151,7 @@
         "description": "1d10+5 piercing plus Grab"
       },
       {
+        "cost": 1,
         "label": "Melee",
         "description": "claw +11 (agile),"
       },
@@ -2088,10 +2160,12 @@
         "description": "1d6+5 slashing plus Grab"
       },
       {
+        "cost": 1,
         "label": "Pounce",
         "description": "The tiger Strides and makes a Strike at the end of that movement. If the tiger began this action hidden, it remains hidden until after the attack."
       },
       {
+        "cost": 1,
         "label": "Wrestle",
         "description": "The tiger makes a claw Strike against a creature it has grabbed. If the attack hits, that creature is knocked prone."
       },
@@ -2133,6 +2207,7 @@
     "name": "Smilodon",
     "actions": [
       {
+        "cost": 1,
         "label": "Melee",
         "description": "teeth +13,"
       },
@@ -2141,6 +2216,7 @@
         "description": "1d12+6 piercing plus Grab"
       },
       {
+        "cost": 1,
         "label": "Melee",
         "description": "claw +13,"
       },
@@ -2149,10 +2225,12 @@
         "description": "1d8+6 slashing plus Grab"
       },
       {
+        "cost": 1,
         "label": "Pierce Armor",
         "description": "The smilodon makes a teeth Strike against a creature it has grabbed. If the attack hits, that creature’s armor is dented, the creature falls prone, and the creature takes 1d8 persistent bleed damage."
       },
       {
+        "cost": 1,
         "label": "Pounce",
         "description": "The smilodon Strides and makes a Strike at the end of that movement. If the smilodon began this action hidden, it remains hidden until after the attack."
       },
@@ -2194,6 +2272,7 @@
     "name": "Giant Centipede",
     "actions": [
       {
+        "cost": 1,
         "label": "Melee",
         "description": "mandibles +6,"
       },
@@ -2255,6 +2334,7 @@
     "name": "Chimera",
     "actions": [
       {
+        "cost": 1,
         "label": "Melee",
         "description": "dragon jaws +18,"
       },
@@ -2263,6 +2343,7 @@
         "description": "2d10+5 piercing plus 2d6 dragon bite"
       },
       {
+        "cost": 1,
         "label": "Melee",
         "description": "lion jaws +18,"
       },
@@ -2271,6 +2352,7 @@
         "description": "2d10+10 piercing"
       },
       {
+        "cost": 1,
         "label": "Melee",
         "description": "goat horns +18,"
       },
@@ -2279,6 +2361,7 @@
         "description": "2d8+10 piercing"
       },
       {
+        "cost": 1,
         "label": "Melee",
         "description": "claw +18 (agile),"
       },
@@ -2287,6 +2370,7 @@
         "description": "2d8+10 slashing"
       },
       {
+        "cost": 2,
         "label": "Breath Weapon",
         "description": "(arcane, evocation) The chimera breathes a cone or line that deals 9d6 damage to all creatures in the cone or line (Reflex DC 22 half, double damage on a critical failure, no damage on a critical success). The color of the chimera’s dragon head determines the size and shape of the Breath Weapon, the type of damage it deals, and the type of save to avoid it. The chimera can’t use Breath Weapon again for 1d4 rounds. This activity gains the trait corresponding to the damage type."
       },
