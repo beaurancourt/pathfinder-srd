@@ -5667,7 +5667,7 @@
     "speed": "50 feet, 120 feet, swim 50 feet"
   },
   {
-    "name": "Ancient Black Dragon Uncommon Creature",
+    "name": "Ancient Black Dragon",
     "actions": [
       {
         "label": "Melee",
@@ -5760,7 +5760,7 @@
       "Evil",
       "Huge"
     ],
-    "rarity": "Ancient Black Dragon Uncommon Creature",
+    "rarity": "Uncommon Creature",
     "level": 16,
     "perception": "+29; darkvision, scent 60 feet",
     "languages": "Common, Draconic, Jotun, Goblin, Orcish",
@@ -5995,7 +5995,7 @@
     "speed": "40 feet, burrow 20 feet, fly 140 feet"
   },
   {
-    "name": "Ancient Blue Dragon Uncommon Creature",
+    "name": "Ancient Blue Dragon",
     "actions": [
       {
         "label": "Melee",
@@ -6123,7 +6123,7 @@
       "Gargantuan",
       "Lawful"
     ],
-    "rarity": "Ancient Blue Dragon Uncommon Creature",
+    "rarity": "Uncommon Creature",
     "level": 18,
     "perception": "+31; darkvision, scent 60 feet",
     "languages": "Auran, Common, Draconic, Jotun, Ignan,",
@@ -6346,7 +6346,7 @@
     "speed": "40 feet, fly 160 feet, swim 40 feet; trackless step,"
   },
   {
-    "name": "Ancient Green Dragon Uncommon Creature",
+    "name": "Ancient Green Dragon",
     "actions": [
       {
         "label": "Melee",
@@ -6454,7 +6454,7 @@
       "Gargantuan",
       "Lawful"
     ],
-    "rarity": "Ancient Green Dragon Uncommon Creature",
+    "rarity": "Uncommon Creature",
     "level": 17,
     "perception": "+31; darkvision, scent 60 feet",
     "languages": "Abyssal, Common, Draconic, Elven,",
@@ -6794,7 +6794,7 @@
     "speed": "60 feet, fly 180 feet"
   },
   {
-    "name": "Young White Dragon Uncommon Creature",
+    "name": "Young White Dragon",
     "actions": [
       {
         "label": "Melee",
@@ -6890,7 +6890,7 @@
       "Evil",
       "Large"
     ],
-    "rarity": "Young White Dragon Uncommon Creature",
+    "rarity": "Uncommon Creature",
     "level": 6,
     "perception": "+14; darkvision, scent 60 feet, snow vision",
     "languages": "Draconic",
@@ -7012,7 +7012,7 @@
     "speed": "30 feet, fly 120 feet, ice climb 30 feet"
   },
   {
-    "name": "Ancient White Dragon Uncommon Creature",
+    "name": "Ancient White Dragon",
     "actions": [
       {
         "label": "Melee",
@@ -7124,7 +7124,7 @@
       "Evil",
       "Huge"
     ],
-    "rarity": "Ancient White Dragon Uncommon Creature",
+    "rarity": "Uncommon Creature",
     "level": 15,
     "perception": "+27; darkvision, scent 60 feet, snow vision",
     "languages": "Common, Draconic",
@@ -17403,7 +17403,7 @@
     "speed": "25 feet"
   },
   {
-    "name": "Degenerate Serpentfolk Uncommon Creature",
+    "name": "Degenerate Serpentfolk",
     "actions": [
       {
         "label": "Melee",
@@ -17457,7 +17457,7 @@
       "Medium",
       "Serpentfolk"
     ],
-    "rarity": "Degenerate Serpentfolk Uncommon Creature",
+    "rarity": "Uncommon Creature",
     "level": 3,
     "perception": "+8; darkvision, scent",
     "languages": "Aklo, Undercommon",
