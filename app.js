@@ -2,6 +2,7 @@ var express = require('express');
 var exphbs = require('express-handlebars');
 const creatureList = require('./creatures.json');
 const spellList = require('./spells.json');
+const featList = require('./feats.json')
 
 var app = express();
 
@@ -34,6 +35,14 @@ app.get('/spells/:spellName', (req, res) => {
 
 app.get('/classes/:className', (req, res) => {
   res.render('classes/' + req.params.className);
+})
+
+app.get('/feats', (req, res) => {
+  var columns = [[], [], []];
+  featList.forEach(function(feat, index) {
+    columns[index % 3].push(feat);
+  })
+  res.render('feats', {'firstColumn': columns[0], 'secondColumn': columns[1], 'thirdColumn': columns[2]});
 })
 
 app.listen(process.env.PORT || 3000);
