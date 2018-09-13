@@ -1,0 +1,20 @@
+<ul class="list-group">
+  <li class="list-group-item d-flex justify-content-around align-items-center list-group-item-primary">
+    <h1>{{name}}</h1>
+  </li>
+  <li class="list-group-item d-flex justify-content-around align-items-center">
+    <h2>{{type}}</h2>
+    <h2>{{level}}</h2>
+  </li>
+  <li class="list-group-item d-flex justify-content-around align-items-center list-group-item">
+    {{#each tags}}
+      <span class="badge badge-secondary">{{this}}</span>
+    {{/each}}
+  </li>
+  {{#each details}}
+    <li class="list-group-item list-group-item">
+      <span class="font-weight-bold">{{label}}: </span>
+      {{description}}
+    </li>
+  {{/each}}
+</ul>
