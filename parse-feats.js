@@ -51,20 +51,36 @@ fs.readFile('/Users/beaushinkle/Downloads/PathfinderPlaytestDownloadBundle/ruleb
     var feats = [];
     lists.forEach((string) => {
       if (string.size == "font25") {
-        feats.push({'name': capFirst(string.content)})
+        feats.push({'name': capFirst(string.content), 'traits': []})
       } else {
         if (feats.length > 0) {
           var lastFeat = feats[feats.length-1];
           if (string.size == "font56") {
             lastFeat.level = string.content;
-          } else if (string.size == "font4") {
+          } else if (string.size == "font4" && (string.content == "Prerequisites")) {
             lastFeat.prerequisites = ""
           } else if (lastFeat.prerequisites == "") {
             lastFeat.prerequisites = string.content;
-          } else if (lastFeat.description) {
-            lastFeat.description = lastFeat.description + " " + string.content;
           } else {
-            lastFeat.description = string.content;
+            if (string.size == "font4") {
+              var traits = lastFeat.traits || [];
+              traits.push({'label': string.content})
+              lastFeat.traits = traits;
+            } else {
+              if (lastFeat.traits.length > 0) {
+                if (lastFeat.traits[lastFeat.traits.length-1].description) {
+                  lastFeat.traits[lastFeat.traits.length-1].description = lastFeat.traits[lastFeat.traits.length-1].description + " " + string.content;
+                } else {
+                  lastFeat.traits[lastFeat.traits.length-1].description = string.content;
+                }
+              } else {
+                if (lastFeat.description) {
+                  lastFeat.description = lastFeat.description + " " + string.content;
+                } else {
+                  lastFeat.description = string.content;
+                }
+              }
+            }
           }
         }
       }
