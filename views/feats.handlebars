@@ -1,5 +1,6 @@
+<div class="card-columns">
   {{#each feats}}
-    <div class="card w-50">
+    <div class="card w-33">
       <div class="card-body">
         <h5 class="card-title d-flex justify-content-between">{{name}} <span class="badge badge-secondary">{{level}}</h5>
         <h6 class="card-subtitle mb-2 text-muted">{{prerequisites}} </span></h6>
@@ -7,39 +8,4 @@
       </div>
     </div>
   {{/each}}
-
-<div class="row">
-  <div class="col-lg-4">
-    {{#each firstColumn}}
-      <div class="card w-33">
-        <div class="card-body">
-          <h5 class="card-title d-flex justify-content-between">{{name}} <span class="badge badge-secondary">{{level}}</h5>
-          <h6 class="card-subtitle mb-2 text-muted">{{prerequisites}} </span></h6>
-          <p class="card-text">{{description}}</p>
-        </div>
-      </div>
-    {{/each}}
-  </div>
-  <div class="col-lg-4">
-    {{#each secondColumn}}
-      <div class="card w-33">
-        <div class="card-body">
-          <h5 class="card-title d-flex justify-content-between">{{name}} <span class="badge badge-secondary">{{level}}</h5>
-          <h6 class="card-subtitle mb-2 text-muted">{{prerequisites}} </span></h6>
-          <p class="card-text">{{description}}</p>
-        </div>
-      </div>
-    {{/each}}
-  </div>
-  <div class="col-lg-4">
-    {{#each thirdColumn}}
-      <div class="card w-33">
-        <div class="card-body">
-          <h5 class="card-title d-flex justify-content-between">{{name}} <span class="badge badge-secondary">{{level}}</h5>
-          <h6 class="card-subtitle mb-2 text-muted">{{prerequisites}} </span></h6>
-          <p class="card-text">{{description}}</p>
-        </div>
-      </div>
-    {{/each}}
-  </div>
-<div>
+</div>

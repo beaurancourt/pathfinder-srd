@@ -38,11 +38,7 @@ app.get('/classes/:className', (req, res) => {
 })
 
 app.get('/feats', (req, res) => {
-  var columns = [[], [], []];
-  featList.forEach(function(feat, index) {
-    columns[index % 3].push(feat);
-  })
-  res.render('feats', {'firstColumn': columns[0], 'secondColumn': columns[1], 'thirdColumn': columns[2]});
+  res.render('feats', {'feats': featList})
 })
 
 app.listen(process.env.PORT || 3000);
