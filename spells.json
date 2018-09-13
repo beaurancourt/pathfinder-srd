@@ -102,7 +102,9 @@
       "Chaotic",
       "Disease",
       "Evil",
-      "Necromancy"
+      "Necromancy",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -176,7 +178,9 @@
     "tags": [
       "Acid",
       "Attack",
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -220,7 +224,9 @@
     "tags": [
       "Acid",
       "Cantrip",
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -322,7 +328,9 @@
     "level": "4",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -378,7 +386,10 @@
     ],
     "level": "1",
     "tags": [
-      "Conjuration"
+      "Conjuration",
+      "Arcane",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -408,7 +419,9 @@
     ],
     "level": "4",
     "tags": [
-      "Transmutation"
+      "Transmutation",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -446,7 +459,11 @@
     ],
     "level": "1",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -498,7 +515,8 @@
     ],
     "level": "10",
     "tags": [
-      "Divination"
+      "Divination",
+      "Occult"
     ]
   },
   {
@@ -697,7 +715,8 @@
     "level": "3",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Primal"
     ]
   },
   {
@@ -724,7 +743,8 @@
     "level": "2",
     "tags": [
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Primal"
     ]
   },
   {
@@ -754,7 +774,9 @@
     ],
     "level": "1",
     "tags": [
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -780,7 +802,10 @@
     ],
     "level": "8",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -923,7 +948,9 @@
     "level": "2",
     "tags": [
       "Divination",
-      "Prediction"
+      "Prediction",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -1162,7 +1189,8 @@
     "level": "10",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Divine"
     ]
   },
   {
@@ -1213,7 +1241,9 @@
     "level": "6",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -1244,7 +1274,9 @@
     "level": "1",
     "tags": [
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -1290,7 +1322,11 @@
     ],
     "level": "5",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -1325,7 +1361,8 @@
     "level": "2",
     "tags": [
       "Abjuration",
-      "Plant"
+      "Plant",
+      "Primal"
     ]
   },
   {
@@ -1360,7 +1397,9 @@
     "level": "9",
     "tags": [
       "Evil",
-      "Necromancy"
+      "Necromancy",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -1390,7 +1429,10 @@
     ],
     "level": "3",
     "tags": [
-      "Necromancy"
+      "Necromancy",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -1447,7 +1489,9 @@
     ],
     "level": "5",
     "tags": [
-      "Conjuration"
+      "Conjuration",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -1494,7 +1538,8 @@
     "level": "6",
     "tags": [
       "Evocation",
-      "Force"
+      "Force",
+      "Divine"
     ]
   },
   {
@@ -1525,7 +1570,9 @@
     "level": "1",
     "tags": [
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -1615,7 +1662,11 @@
     ],
     "level": "3",
     "tags": [
-      "Necromancy"
+      "Necromancy",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -1638,7 +1689,9 @@
     "level": "4",
     "tags": [
       "Conjuration",
-      "Teleportation"
+      "Teleportation",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -1669,7 +1722,9 @@
     "level": "2",
     "tags": [
       "Illusion",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -1701,7 +1756,8 @@
     "tags": [
       "Healing",
       "Necromancy",
-      "Positive"
+      "Positive",
+      "Divine"
     ]
   },
   {
@@ -1744,7 +1800,9 @@
     "level": "1",
     "tags": [
       "Evocation",
-      "Fire"
+      "Fire",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -1834,7 +1892,9 @@
     "tags": [
       "Emotion",
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -1960,7 +2020,9 @@
     "level": "6",
     "tags": [
       "Electricity",
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -2016,7 +2078,10 @@
     "tags": [
       "Emotion",
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -2154,7 +2219,10 @@
     "tags": [
       "Attack",
       "Necromancy",
-      "Negative"
+      "Negative",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -2216,7 +2284,9 @@
     ],
     "level": "5",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -2250,7 +2320,9 @@
     ],
     "level": "3",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -2277,7 +2349,9 @@
     "level": "3",
     "tags": [
       "Divination",
-      "Scrying"
+      "Scrying",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -2304,7 +2378,9 @@
     "level": "4",
     "tags": [
       "Divination",
-      "Scrying"
+      "Scrying",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -2347,7 +2423,9 @@
     "level": "5",
     "tags": [
       "Illusion",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -2399,7 +2477,9 @@
     "tags": [
       "Death",
       "Necromancy",
-      "Poison"
+      "Poison",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -2442,7 +2522,9 @@
     "level": "6",
     "tags": [
       "Conjuration",
-      "Teleportation"
+      "Teleportation",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -2485,7 +2567,9 @@
     "level": "1",
     "tags": [
       "Illusion",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -2534,7 +2618,10 @@
       "Auditory",
       "Enchantment",
       "Lingual",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -2619,7 +2706,9 @@
     ],
     "level": "2",
     "tags": [
-      "Divination"
+      "Divination",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -2662,7 +2751,9 @@
     "level": "5",
     "tags": [
       "Cold",
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -2714,7 +2805,9 @@
     "tags": [
       "Emotion",
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -2748,7 +2841,8 @@
     ],
     "level": "7",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane"
     ]
   },
   {
@@ -2787,7 +2881,11 @@
     "level": "2",
     "tags": [
       "Evocation",
-      "Light"
+      "Light",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -2814,7 +2912,9 @@
     "level": "5",
     "tags": [
       "Evocation",
-      "Water"
+      "Water",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -2878,7 +2978,10 @@
     ],
     "level": "2",
     "tags": [
-      "Conjuration"
+      "Conjuration",
+      "Arcane",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -2901,7 +3004,10 @@
     "level": "1",
     "tags": [
       "Conjuration",
-      "Water"
+      "Water",
+      "Arcane",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -2931,7 +3037,9 @@
     ],
     "level": "4",
     "tags": [
-      "Conjuration"
+      "Conjuration",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -2978,7 +3086,8 @@
     "level": "3",
     "tags": [
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Divine"
     ]
   },
   {
@@ -3026,7 +3135,8 @@
     "tags": [
       "Enchantment",
       "Lingual",
-      "Mental"
+      "Mental",
+      "Divine"
     ]
   },
   {
@@ -3074,7 +3184,9 @@
     "tags": [
       "Emotion",
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -3102,7 +3214,10 @@
     "tags": [
       "Cantrip",
       "Evocation",
-      "Light"
+      "Light",
+      "Arcane",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -3184,7 +3299,11 @@
     "level": "2",
     "tags": [
       "Darkness",
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -3210,7 +3329,11 @@
     ],
     "level": "2",
     "tags": [
-      "Divination"
+      "Divination",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -3254,7 +3377,10 @@
     "tags": [
       "Cantrip",
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -3335,7 +3461,11 @@
     ],
     "level": "2",
     "tags": [
-      "Necromancy"
+      "Necromancy",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -3375,7 +3505,9 @@
     "tags": [
       "Attack",
       "Death",
-      "Necromancy"
+      "Necromancy",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -3405,7 +3537,10 @@
     ],
     "level": "5",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -3554,7 +3689,9 @@
     "level": "1",
     "tags": [
       "Detection",
-      "Divination"
+      "Divination",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -3586,7 +3723,11 @@
     "tags": [
       "Cantrip",
       "Detection",
-      "Divination"
+      "Divination",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -3617,7 +3758,9 @@
     "level": "1",
     "tags": [
       "Detection",
-      "Divination"
+      "Divination",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -3648,7 +3791,9 @@
     "level": "4",
     "tags": [
       "Detection",
-      "Divination"
+      "Divination",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -3675,7 +3820,9 @@
     "level": "4",
     "tags": [
       "Conjuration",
-      "Teleportation"
+      "Teleportation",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -3721,7 +3868,10 @@
     ],
     "level": "4",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -3751,7 +3901,10 @@
     ],
     "level": "7",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -3869,7 +4022,8 @@
     "level": "4",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Primal"
     ]
   },
   {
@@ -3932,7 +4086,9 @@
     "tags": [
       "Auditory",
       "Illusion",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -3956,7 +4112,10 @@
     "tags": [
       "Divination",
       "Mental",
-      "Revelation"
+      "Revelation",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -3983,7 +4142,10 @@
     "level": "8",
     "tags": [
       "Detection",
-      "Divination"
+      "Divination",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -4025,7 +4187,8 @@
     ],
     "level": "6",
     "tags": [
-      "Evocation"
+      "Evocation",
+      "Arcane"
     ]
   },
   {
@@ -4051,7 +4214,9 @@
     ],
     "level": "9",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -4077,7 +4242,11 @@
     ],
     "level": "3",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -4136,7 +4305,11 @@
     ],
     "tags": [
       "Necromancy",
-      "Positive"
+      "Positive",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -4171,7 +4344,8 @@
     "level": "1",
     "tags": [
       "Necromancy",
-      "Positive"
+      "Positive",
+      "Divine"
     ]
   },
   {
@@ -4201,7 +4375,8 @@
     ],
     "level": "8",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Divine"
     ]
   },
   {
@@ -4251,7 +4426,8 @@
     ],
     "level": "7",
     "tags": [
-      "Evocation"
+      "Evocation",
+      "Divine"
     ]
   },
   {
@@ -4278,7 +4454,8 @@
     "level": "8",
     "tags": [
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Divine"
     ]
   },
   {
@@ -4372,7 +4549,8 @@
     ],
     "level": "4",
     "tags": [
-      "Evocation"
+      "Evocation",
+      "Divine"
     ]
   },
   {
@@ -4455,7 +4633,9 @@
     "level": "6",
     "tags": [
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -4786,7 +4966,9 @@
     "level": "6",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -4873,7 +5055,9 @@
     "level": "8",
     "tags": [
       "Illusion",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -4908,7 +5092,10 @@
     "level": "3",
     "tags": [
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -4978,7 +5165,9 @@
     "level": "5",
     "tags": [
       "Illusion",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -5024,7 +5213,9 @@
     ],
     "level": "7",
     "tags": [
-      "Conjuration"
+      "Conjuration",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -5070,7 +5261,9 @@
     ],
     "level": "3",
     "tags": [
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -5133,7 +5326,9 @@
     "level": "8",
     "tags": [
       "Earth",
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -5242,7 +5437,9 @@
       "Attack",
       "Cantrip",
       "Electricity",
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -5305,7 +5502,9 @@
     "level": "5",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -5396,7 +5595,10 @@
     ],
     "level": "2",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -5486,7 +5688,11 @@
     ],
     "level": "7",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -5534,7 +5740,10 @@
     "tags": [
       "Attack",
       "Necromancy",
-      "Negative"
+      "Negative",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -5603,7 +5812,9 @@
     "level": "2",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -5634,7 +5845,8 @@
     "level": "2",
     "tags": [
       "Plant",
-      "Transmutation"
+      "Transmutation",
+      "Primal"
     ]
   },
   {
@@ -5682,7 +5894,9 @@
     "tags": [
       "Auditory",
       "Enchantment",
-      "Emotion"
+      "Emotion",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -5709,7 +5923,9 @@
     "level": "7",
     "tags": [
       "Conjuration",
-      "Teleportation"
+      "Teleportation",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -5778,7 +5994,8 @@
     "level": "10",
     "tags": [
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Occult"
     ]
   },
   {
@@ -5875,7 +6092,10 @@
     "level": "2",
     "tags": [
       "Evocation",
-      "Light"
+      "Light",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -5901,7 +6121,9 @@
     ],
     "level": "2",
     "tags": [
-      "Necromancy"
+      "Necromancy",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -5931,7 +6153,9 @@
     ],
     "level": "5",
     "tags": [
-      "Illusion"
+      "Illusion",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -6027,7 +6251,11 @@
       "Emotion",
       "Enchantment",
       "Fear",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -6061,7 +6289,9 @@
     ],
     "level": "1",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -6113,7 +6343,9 @@
     "tags": [
       "Curse",
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -6144,7 +6376,9 @@
     "level": "3",
     "tags": [
       "Morph",
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -6202,7 +6436,9 @@
     "tags": [
       "Healing",
       "Necromancy",
-      "Positive"
+      "Positive",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -6230,7 +6466,9 @@
     "tags": [
       "Fire",
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -6277,7 +6515,9 @@
     "level": "7",
     "tags": [
       "Death",
-      "Necromancy"
+      "Necromancy",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -6356,7 +6596,8 @@
     "tags": [
       "Evocation",
       "Fire",
-      "Plant"
+      "Plant",
+      "Primal"
     ]
   },
   {
@@ -6383,7 +6624,9 @@
     "level": "4",
     "tags": [
       "Evocation",
-      "Fire"
+      "Fire",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -6430,7 +6673,9 @@
     "level": "3",
     "tags": [
       "Evocation",
-      "Fire"
+      "Fire",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -6504,7 +6749,8 @@
     "level": "5",
     "tags": [
       "Evocation",
-      "Fire"
+      "Fire",
+      "Divine"
     ]
   },
   {
@@ -6551,7 +6797,9 @@
     "level": "2",
     "tags": [
       "Evocation",
-      "Fire"
+      "Fire",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -6573,7 +6821,9 @@
     ],
     "level": "1",
     "tags": [
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -6619,7 +6869,9 @@
     ],
     "level": "6",
     "tags": [
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -6641,7 +6893,9 @@
     ],
     "level": "1",
     "tags": [
-      "Conjuration"
+      "Conjuration",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -6675,7 +6929,10 @@
     ],
     "level": "4",
     "tags": [
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -6710,7 +6967,9 @@
     ],
     "tags": [
       "Abjuration",
-      "Cantrip"
+      "Cantrip",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -6836,7 +7095,10 @@
     "tags": [
       "Divination",
       "Mental",
-      "Prediction"
+      "Prediction",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -6866,7 +7128,10 @@
     ],
     "level": "4",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -6897,7 +7162,10 @@
     "level": "4",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -6924,7 +7192,10 @@
     "level": "10",
     "tags": [
       "Conjuration",
-      "Teleportation"
+      "Teleportation",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -6958,7 +7229,11 @@
     ],
     "level": "2",
     "tags": [
-      "Necromancy"
+      "Necromancy",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -6994,7 +7269,9 @@
     "tags": [
       "Auditory",
       "Cantrip",
-      "Illusion"
+      "Illusion",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -7024,7 +7301,9 @@
     ],
     "level": "3",
     "tags": [
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -7101,7 +7380,9 @@
       "Attack",
       "Disease",
       "Evil",
-      "Necromancy"
+      "Necromancy",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -7165,7 +7446,9 @@
     ],
     "level": "2",
     "tags": [
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -7191,7 +7474,10 @@
     ],
     "level": "4",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -7327,7 +7613,9 @@
     "tags": [
       "Attack",
       "Disease",
-      "Necromancy"
+      "Necromancy",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -7405,7 +7693,9 @@
     "level": "1",
     "tags": [
       "Necromancy",
-      "Negative"
+      "Negative",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -7447,7 +7737,9 @@
     ],
     "level": "1",
     "tags": [
-      "Conjuration"
+      "Conjuration",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -7478,7 +7770,10 @@
     ],
     "tags": [
       "Cantrip",
-      "Divination"
+      "Divination",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -7521,7 +7816,9 @@
     "level": "1",
     "tags": [
       "Air",
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -7576,7 +7873,9 @@
     "level": "5",
     "tags": [
       "Illusion",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -7610,7 +7909,10 @@
     ],
     "level": "4",
     "tags": [
-      "Illusion"
+      "Illusion",
+      "Arcane",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -7688,7 +7990,8 @@
     "level": "1",
     "tags": [
       "Necromancy",
-      "Negative"
+      "Negative",
+      "Divine"
     ]
   },
   {
@@ -7744,7 +8047,10 @@
     ],
     "level": "3",
     "tags": [
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -7796,7 +8102,9 @@
     "tags": [
       "Healing",
       "Necromancy",
-      "Positive"
+      "Positive",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -7923,7 +8231,9 @@
     "level": "3",
     "tags": [
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -7995,7 +8305,9 @@
     "tags": [
       "Emotion",
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -8042,7 +8354,9 @@
     "level": "8",
     "tags": [
       "Necromancy",
-      "Negative"
+      "Negative",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -8102,7 +8416,10 @@
     "level": "2",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -8144,7 +8461,8 @@
     ],
     "level": "3",
     "tags": [
-      "Divination"
+      "Divination",
+      "Occult"
     ]
   },
   {
@@ -8187,7 +8505,9 @@
     "level": "3",
     "tags": [
       "Illusion",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -8219,7 +8539,9 @@
     "tags": [
       "Auditory",
       "Illusion",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -8250,7 +8572,9 @@
     "level": "1",
     "tags": [
       "Illusion",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -8289,7 +8613,9 @@
     "level": "1",
     "tags": [
       "Illusion",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -8329,7 +8655,9 @@
     "tags": [
       "Auditory",
       "Illusion",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -8379,7 +8707,9 @@
     ],
     "level": "9",
     "tags": [
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -8490,7 +8820,8 @@
     "level": "3",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Primal"
     ]
   },
   {
@@ -8624,7 +8955,9 @@
     "level": "2",
     "tags": [
       "Illusion",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -8685,7 +9018,9 @@
     "level": "3",
     "tags": [
       "Illusion",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -8724,7 +9059,9 @@
     "level": "1",
     "tags": [
       "Illusion",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -8747,7 +9084,9 @@
     "level": "1",
     "tags": [
       "Move",
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -8843,7 +9182,9 @@
     ],
     "level": "2",
     "tags": [
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -8867,7 +9208,10 @@
     "tags": [
       "Cantrip",
       "Detection",
-      "Divination"
+      "Divination",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -8986,7 +9330,11 @@
     "tags": [
       "Attack",
       "Necromancy",
-      "Poison"
+      "Poison",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -9016,7 +9364,9 @@
     ],
     "level": "3",
     "tags": [
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -9075,7 +9425,11 @@
     "tags": [
       "Cantrip",
       "Evocation",
-      "Light"
+      "Light",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -9118,7 +9472,9 @@
     "level": "3",
     "tags": [
       "Electricity",
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -9347,7 +9703,10 @@
     "level": "3",
     "tags": [
       "Detection",
-      "Divination"
+      "Divination",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -9381,7 +9740,10 @@
     ],
     "level": "1",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -9407,7 +9769,9 @@
     ],
     "level": "1",
     "tags": [
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -9518,7 +9882,9 @@
     ],
     "level": "1",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -9557,7 +9923,9 @@
     ],
     "tags": [
       "Cantrip",
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -9591,7 +9959,9 @@
     ],
     "level": "1",
     "tags": [
-      "Illusion"
+      "Illusion",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -9621,7 +9991,8 @@
     ],
     "level": "1",
     "tags": [
-      "Transmutation"
+      "Transmutation",
+      "Primal"
     ]
   },
   {
@@ -9652,7 +10023,9 @@
     "level": "1",
     "tags": [
       "Evocation",
-      "Force"
+      "Force",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -9684,7 +10057,9 @@
     "tags": [
       "Auditory",
       "Illusion",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -9714,7 +10089,10 @@
     ],
     "level": "1",
     "tags": [
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -9741,7 +10119,9 @@
     "level": "7",
     "tags": [
       "Conjuration",
-      "Extradimensional"
+      "Extradimensional",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -9785,7 +10165,10 @@
     "tags": [
       "Attack",
       "Curse",
-      "Necromancy"
+      "Necromancy",
+      "Arcane",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -9835,7 +10218,10 @@
       "Fear",
       "Illusion",
       "Mental",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -9913,7 +10299,9 @@
     "tags": [
       "Conjuration",
       "Extradimensional",
-      "Teleportation"
+      "Teleportation",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -9936,7 +10324,9 @@
     "level": "3",
     "tags": [
       "Earth",
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -9970,7 +10360,11 @@
     ],
     "level": "1",
     "tags": [
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -10008,7 +10402,10 @@
       "Cantrip",
       "Illusion",
       "Lingual",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -10077,7 +10474,9 @@
     "level": "9",
     "tags": [
       "Evocation",
-      "Fire"
+      "Fire",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -10107,7 +10506,9 @@
     ],
     "level": "8",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -10151,7 +10552,9 @@
     "tags": [
       "Divination",
       "Lingual",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -10199,7 +10602,9 @@
     "tags": [
       "Detection",
       "Divination",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -10226,7 +10631,8 @@
     "level": "1",
     "tags": [
       "Divination",
-      "Mental"
+      "Mental",
+      "Occult"
     ]
   },
   {
@@ -10244,7 +10650,8 @@
     ],
     "level": "10",
     "tags": [
-      "Divination"
+      "Divination",
+      "Divine"
     ]
   },
   {
@@ -10267,7 +10674,9 @@
     "level": "2",
     "tags": [
       "Illusion",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -10297,7 +10706,9 @@
     ],
     "level": "2",
     "tags": [
-      "Illusion"
+      "Illusion",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -10319,7 +10730,9 @@
     ],
     "level": "6",
     "tags": [
-      "Illusion"
+      "Illusion",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -10366,7 +10779,8 @@
     "level": "4",
     "tags": [
       "Divination",
-      "Mental"
+      "Mental",
+      "Occult"
     ]
   },
   {
@@ -10393,7 +10807,9 @@
     "level": "8",
     "tags": [
       "Healing",
-      "Necromancy"
+      "Necromancy",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -10490,7 +10906,9 @@
     "level": "8",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -10529,7 +10947,8 @@
     "level": "5",
     "tags": [
       "Morph",
-      "Transmutation"
+      "Transmutation",
+      "Primal"
     ]
   },
   {
@@ -10674,7 +11093,8 @@
     "level": "10",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Primal"
     ]
   },
   {
@@ -10731,7 +11151,8 @@
     ],
     "level": "9",
     "tags": [
-      "Enchantment"
+      "Enchantment",
+      "Primal"
     ]
   },
   {
@@ -10765,7 +11186,9 @@
     ],
     "level": "1",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -10792,7 +11215,9 @@
     "level": "3",
     "tags": [
       "Healing",
-      "Necromancy"
+      "Necromancy",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -10839,7 +11264,9 @@
     "level": "4",
     "tags": [
       "Illusion",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -10869,7 +11296,10 @@
     ],
     "level": "3",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -10900,7 +11330,9 @@
     "level": "2",
     "tags": [
       "Conjuration",
-      "Water"
+      "Water",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -10946,7 +11378,10 @@
       "Curse",
       "Enchantment",
       "Mental",
-      "Misfortune"
+      "Misfortune",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -10995,7 +11430,9 @@
       "Auditory",
       "Enchantment",
       "Mental",
-      "Visual"
+      "Visual",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -11084,7 +11521,9 @@
     "level": "3",
     "tags": [
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -11135,7 +11574,8 @@
     "level": "2",
     "tags": [
       "Illusion",
-      "Mental"
+      "Mental",
+      "Occult"
     ]
   },
   {
@@ -11165,7 +11605,8 @@
     ],
     "level": "1",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Primal"
     ]
   },
   {
@@ -11200,7 +11641,9 @@
     "level": "5",
     "tags": [
       "Conjuration",
-      "Earth"
+      "Earth",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -11268,7 +11711,9 @@
     "level": "2",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -11315,7 +11760,9 @@
     "level": "6",
     "tags": [
       "Illusion",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -11365,7 +11812,9 @@
       "Emotion",
       "Fear",
       "Illusion",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -11417,7 +11866,8 @@
     "tags": [
       "Illusion",
       "Mental",
-      "Nonlethal"
+      "Nonlethal",
+      "Occult"
     ]
   },
   {
@@ -11455,7 +11905,10 @@
     ],
     "level": "2",
     "tags": [
-      "Conjuration"
+      "Conjuration",
+      "Arcane",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -11512,7 +11965,11 @@
     "level": "7",
     "tags": [
       "Conjuration",
-      "Teleportation"
+      "Teleportation",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -11576,7 +12033,8 @@
     "tags": [
       "Plant",
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Primal"
     ]
   },
   {
@@ -11607,7 +12065,9 @@
     "level": "8",
     "tags": [
       "Cold",
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -11659,7 +12119,8 @@
     "tags": [
       "Mental",
       "Necromancy",
-      "Possession"
+      "Possession",
+      "Occult"
     ]
   },
   {
@@ -11707,7 +12168,8 @@
     "tags": [
       "Auditory",
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Arcane"
     ]
   },
   {
@@ -11756,7 +12218,8 @@
       "Auditory",
       "Death",
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Arcane"
     ]
   },
   {
@@ -11804,7 +12267,8 @@
     "tags": [
       "Auditory",
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Arcane"
     ]
   },
   {
@@ -11882,7 +12346,11 @@
     ],
     "tags": [
       "Cantrip",
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -11933,7 +12401,8 @@
     "level": "10",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Primal"
     ]
   },
   {
@@ -11951,7 +12420,8 @@
     ],
     "level": "10",
     "tags": [
-      "Divination"
+      "Divination",
+      "Primal"
     ]
   },
   {
@@ -11977,7 +12447,9 @@
     ],
     "level": "9",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -11999,7 +12471,9 @@
     ],
     "level": "7",
     "tags": [
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -12026,7 +12500,9 @@
     "level": "8",
     "tags": [
       "Abjuration",
-      "Light"
+      "Light",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -12056,7 +12532,9 @@
     ],
     "level": "4",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -12101,7 +12579,9 @@
       "Attack",
       "Cantrip",
       "Evocation",
-      "Fire"
+      "Fire",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -12132,7 +12612,9 @@
     "level": "7",
     "tags": [
       "Illusion",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -12162,7 +12644,9 @@
     ],
     "level": "1",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -12241,7 +12725,10 @@
     "level": "5",
     "tags": [
       "Divination",
-      "Scrying"
+      "Scrying",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -12272,7 +12759,8 @@
     "level": "8",
     "tags": [
       "Air",
-      "Evocation"
+      "Evocation",
+      "Primal"
     ]
   },
   {
@@ -12298,7 +12786,9 @@
     ],
     "level": "1",
     "tags": [
-      "Necromancy"
+      "Necromancy",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -12362,7 +12852,9 @@
     "tags": [
       "Attack",
       "Necromancy",
-      "Poison"
+      "Poison",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -12479,7 +12971,8 @@
     "level": "6",
     "tags": [
       "Healing",
-      "Necromancy"
+      "Necromancy",
+      "Divine"
     ]
   },
   {
@@ -12526,7 +13019,10 @@
     "level": "1",
     "tags": [
       "Attack",
-      "Necromancy"
+      "Necromancy",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -12571,7 +13067,9 @@
       "Attack",
       "Cantrip",
       "Cold",
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -12607,7 +13105,11 @@
     "tags": [
       "Cantrip",
       "Detection",
-      "Divination"
+      "Divination",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -12653,7 +13155,9 @@
     "level": "4",
     "tags": [
       "Divination",
-      "Prediction"
+      "Prediction",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -12688,7 +13192,9 @@
     "level": "7",
     "tags": [
       "Healing",
-      "Necromancy"
+      "Necromancy",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -12715,7 +13221,9 @@
     "level": "4",
     "tags": [
       "Healing",
-      "Necromancy"
+      "Necromancy",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -12742,7 +13250,9 @@
     "level": "3",
     "tags": [
       "Healing",
-      "Necromancy"
+      "Necromancy",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -12772,7 +13282,10 @@
     ],
     "level": "2",
     "tags": [
-      "Enchantment"
+      "Enchantment",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -12803,7 +13316,9 @@
     "level": "2",
     "tags": [
       "Healing",
-      "Necromancy"
+      "Necromancy",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -12842,7 +13357,10 @@
     "level": "6",
     "tags": [
       "Abjuration",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -12885,7 +13403,9 @@
     "level": "4",
     "tags": [
       "Abjuration",
-      "Force"
+      "Force",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -12923,7 +13443,11 @@
     ],
     "level": "2",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -12949,7 +13473,9 @@
     ],
     "level": "9",
     "tags": [
-      "Conjuration"
+      "Conjuration",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -12992,7 +13518,10 @@
     "level": "2",
     "tags": [
       "Healing",
-      "Necromancy"
+      "Necromancy",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -13023,7 +13552,10 @@
     "level": "2",
     "tags": [
       "Healing",
-      "Necromancy"
+      "Necromancy",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -13105,7 +13637,8 @@
     ],
     "level": "7",
     "tags": [
-      "Divination"
+      "Divination",
+      "Occult"
     ]
   },
   {
@@ -13135,7 +13668,9 @@
     ],
     "level": "7",
     "tags": [
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -13166,7 +13701,8 @@
     "level": "9",
     "tags": [
       "Healing",
-      "Necromancy"
+      "Necromancy",
+      "Divine"
     ]
   },
   {
@@ -13237,7 +13773,8 @@
     "level": "6",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Divine"
     ]
   },
   {
@@ -13269,7 +13806,9 @@
     "tags": [
       "Conjuration",
       "Extradimensional",
-      "Space"
+      "Space",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -13327,7 +13866,8 @@
     "level": "3",
     "tags": [
       "Abjuration",
-      "Consecration"
+      "Consecration",
+      "Divine"
     ]
   },
   {
@@ -13373,7 +13913,9 @@
     ],
     "level": "1",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -13461,7 +14003,9 @@
     "level": "8",
     "tags": [
       "Illusion",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -13508,7 +14052,9 @@
     "level": "6",
     "tags": [
       "Divination",
-      "Scrying"
+      "Scrying",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -13542,7 +14088,9 @@
       "Evocation",
       "Fire",
       "Good",
-      "Light"
+      "Light",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -13573,7 +14121,9 @@
     "level": "3",
     "tags": [
       "Illusion",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -13600,7 +14150,10 @@
     "level": "2",
     "tags": [
       "Divination",
-      "Revelation"
+      "Revelation",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -13626,7 +14179,10 @@
     ],
     "level": "5",
     "tags": [
-      "Divination"
+      "Divination",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -13673,7 +14229,9 @@
     "level": "5",
     "tags": [
       "Evocation",
-      "Shadow"
+      "Shadow",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -13704,7 +14262,9 @@
     "level": "5",
     "tags": [
       "Illusion",
-      "Shadow"
+      "Shadow",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -13736,7 +14296,9 @@
     "tags": [
       "Conjuration",
       "Shadow",
-      "Teleportation"
+      "Teleportation",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -13775,7 +14337,9 @@
     "level": "4",
     "tags": [
       "Earth",
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -13802,7 +14366,8 @@
     "level": "2",
     "tags": [
       "Plant",
-      "Transmutation"
+      "Transmutation",
+      "Primal"
     ]
   },
   {
@@ -13825,7 +14390,9 @@
     "level": "9",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -13861,7 +14428,10 @@
     "tags": [
       "Abjuration",
       "Cantrip",
-      "Force"
+      "Force",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -13891,7 +14461,8 @@
     ],
     "level": "2",
     "tags": [
-      "Necromancy"
+      "Necromancy",
+      "Divine"
     ]
   },
   {
@@ -13945,7 +14516,8 @@
     "level": "1",
     "tags": [
       "Plant",
-      "Transmutation"
+      "Transmutation",
+      "Primal"
     ]
   },
   {
@@ -13977,7 +14549,9 @@
     "tags": [
       "Attack",
       "Electricity",
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -14012,7 +14586,9 @@
     "level": "2",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -14043,7 +14619,8 @@
     "level": "3",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Arcane"
     ]
   },
   {
@@ -14086,7 +14663,11 @@
     ],
     "tags": [
       "Cantrip",
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -14120,7 +14701,9 @@
     ],
     "level": "2",
     "tags": [
-      "Illusion"
+      "Illusion",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -14194,7 +14777,9 @@
     "level": "1",
     "tags": [
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -14244,7 +14829,10 @@
     ],
     "level": "3",
     "tags": [
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -14275,7 +14863,9 @@
     "level": "4",
     "tags": [
       "Conjuration",
-      "Water"
+      "Water",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -14312,7 +14902,8 @@
       "Healing",
       "Mental",
       "Necromancy",
-      "Positive"
+      "Positive",
+      "Occult"
     ]
   },
   {
@@ -14426,7 +15017,9 @@
     "level": "2",
     "tags": [
       "Evocation",
-      "Sonic"
+      "Sonic",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -14448,7 +15041,8 @@
     ],
     "level": "2",
     "tags": [
-      "Divination"
+      "Divination",
+      "Primal"
     ]
   },
   {
@@ -14471,7 +15065,8 @@
     "level": "4",
     "tags": [
       "Divination",
-      "Plant"
+      "Plant",
+      "Primal"
     ]
   },
   {
@@ -14497,7 +15092,9 @@
     ],
     "level": "2",
     "tags": [
-      "Necromancy"
+      "Necromancy",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -14527,7 +15124,10 @@
     ],
     "level": "4",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -14549,7 +15149,8 @@
     ],
     "level": "7",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane"
     ]
   },
   {
@@ -14593,7 +15194,10 @@
     "tags": [
       "Abjuration",
       "Curse",
-      "Force"
+      "Force",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -14623,7 +15227,9 @@
     ],
     "level": "2",
     "tags": [
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -14683,7 +15289,9 @@
     "tags": [
       "Attack",
       "Necromancy",
-      "Poison"
+      "Poison",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -14729,7 +15337,9 @@
     ],
     "level": "6",
     "tags": [
-      "Necromancy"
+      "Necromancy",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -14776,7 +15386,9 @@
     "level": "8",
     "tags": [
       "Curse",
-      "Necromancy"
+      "Necromancy",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -14812,7 +15424,8 @@
     "tags": [
       "Attack",
       "Abjuration",
-      "Force"
+      "Force",
+      "Divine"
     ]
   },
   {
@@ -14848,7 +15461,9 @@
     "tags": [
       "Attack",
       "Evocation",
-      "Force"
+      "Force",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -14881,7 +15496,9 @@
       "Cantrip",
       "Healing",
       "Necromancy",
-      "Positive"
+      "Positive",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -14916,7 +15533,10 @@
     "level": "2",
     "tags": [
       "Detection",
-      "Divination"
+      "Divination",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -14963,7 +15583,9 @@
     "level": "3",
     "tags": [
       "Conjuration",
-      "Poison"
+      "Poison",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -14986,7 +15608,9 @@
     "level": "6",
     "tags": [
       "Divination",
-      "Earth"
+      "Earth",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -15013,7 +15637,9 @@
     "level": "6",
     "tags": [
       "Earth",
-      "Transmutation"
+      "Transmutation",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -15051,7 +15677,9 @@
     ],
     "level": "4",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -15167,7 +15795,8 @@
     "tags": [
       "Air",
       "Electricity",
-      "Evocation"
+      "Evocation",
+      "Primal"
     ]
   },
   {
@@ -15269,7 +15898,9 @@
     "tags": [
       "Enchantment",
       "Linguistic",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -15331,7 +15962,10 @@
     ],
     "level": "1",
     "tags": [
-      "Conjuration"
+      "Conjuration",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -15393,7 +16027,8 @@
     ],
     "level": "1",
     "tags": [
-      "Conjuration"
+      "Conjuration",
+      "Primal"
     ]
   },
   {
@@ -15442,7 +16077,8 @@
       "Evocation",
       "Fire",
       "Light",
-      "Positive"
+      "Positive",
+      "Primal"
     ]
   },
   {
@@ -15562,7 +16198,8 @@
     "level": "5",
     "tags": [
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Occult"
     ]
   },
   {
@@ -15613,7 +16250,8 @@
     "level": "5",
     "tags": [
       "Divination",
-      "Mental"
+      "Mental",
+      "Occult"
     ]
   },
   {
@@ -15685,7 +16323,9 @@
     ],
     "level": "4",
     "tags": [
-      "Necromancy"
+      "Necromancy",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -15733,7 +16373,9 @@
     "tags": [
       "Cantrip",
       "Conjuration",
-      "Plant"
+      "Plant",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -15764,7 +16406,8 @@
     "level": "6",
     "tags": [
       "Conjuration",
-      "Plant"
+      "Plant",
+      "Primal"
     ]
   },
   {
@@ -15794,7 +16437,9 @@
     ],
     "level": "5",
     "tags": [
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -15822,7 +16467,9 @@
     "tags": [
       "Attack",
       "Evocation",
-      "Force"
+      "Force",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -15874,7 +16521,9 @@
     "tags": [
       "Attack",
       "Cantrip",
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -15905,7 +16554,9 @@
     "level": "5",
     "tags": [
       "Divination",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -15933,7 +16584,9 @@
     "tags": [
       "Divination",
       "Linguistic",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -15976,7 +16629,9 @@
     "level": "6",
     "tags": [
       "Conjuration",
-      "Teleportation"
+      "Teleportation",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -16179,7 +16834,9 @@
     ],
     "level": "10",
     "tags": [
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -16209,7 +16866,9 @@
     ],
     "level": "5",
     "tags": [
-      "Divination"
+      "Divination",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -16240,7 +16899,9 @@
     "level": "2",
     "tags": [
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -16391,7 +17052,8 @@
     "level": "2",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Primal"
     ]
   },
   {
@@ -16422,7 +17084,8 @@
     "level": "5",
     "tags": [
       "Conjuration",
-      "Teleportation"
+      "Teleportation",
+      "Primal"
     ]
   },
   {
@@ -16475,7 +17138,11 @@
     "level": "6",
     "tags": [
       "Divination",
-      "Revelation"
+      "Revelation",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -16498,7 +17165,9 @@
     "level": "1",
     "tags": [
       "Divination",
-      "Fortune"
+      "Fortune",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -16545,7 +17214,9 @@
     "level": "8",
     "tags": [
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -16597,7 +17268,9 @@
     ],
     "level": "2",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -16647,7 +17320,8 @@
       "Emotion",
       "Enchantment",
       "Fear",
-      "Mental"
+      "Mental",
+      "Occult"
     ]
   },
   {
@@ -16681,7 +17355,8 @@
     ],
     "level": "7",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Primal"
     ]
   },
   {
@@ -16799,7 +17474,9 @@
     "level": "8",
     "tags": [
       "Divination",
-      "Scrying"
+      "Scrying",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -16825,7 +17502,9 @@
     ],
     "level": "1",
     "tags": [
-      "Conjuration"
+      "Conjuration",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -16896,7 +17575,10 @@
     "tags": [
       "Death",
       "Necromancy",
-      "Negative"
+      "Negative",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -16929,7 +17611,10 @@
       "Attack",
       "Death",
       "Necromancy",
-      "Negative"
+      "Negative",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -16968,7 +17653,9 @@
     "level": "4",
     "tags": [
       "Illusion",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -17018,7 +17705,11 @@
     "level": "1",
     "tags": [
       "Auditory",
-      "Illusion"
+      "Illusion",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -17061,7 +17752,9 @@
     "level": "6",
     "tags": [
       "Illusion",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -17139,7 +17832,8 @@
     "tags": [
       "Auditory",
       "Illusion",
-      "Visual"
+      "Visual",
+      "Occult"
     ]
   },
   {
@@ -17186,7 +17880,8 @@
     "level": "7",
     "tags": [
       "Evocation",
-      "Fire"
+      "Fire",
+      "Primal"
     ]
   },
   {
@@ -17277,7 +17972,9 @@
     "tags": [
       "Auditory",
       "Death",
-      "Necromancy"
+      "Necromancy",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -17327,7 +18024,9 @@
     "level": "4",
     "tags": [
       "Evocation",
-      "Fire"
+      "Fire",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -17358,7 +18057,9 @@
     "level": "6",
     "tags": [
       "Evocation",
-      "Force"
+      "Force",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -17390,7 +18091,9 @@
     "tags": [
       "Cold",
       "Evocation",
-      "Water"
+      "Water",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -17417,7 +18120,9 @@
     "level": "5",
     "tags": [
       "Conjuration",
-      "Earth"
+      "Earth",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -17448,7 +18153,8 @@
     "level": "3",
     "tags": [
       "Conjuration",
-      "Plant"
+      "Plant",
+      "Primal"
     ]
   },
   {
@@ -17491,7 +18197,9 @@
     "level": "3",
     "tags": [
       "Air",
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -17557,7 +18265,9 @@
     "tags": [
       "Emotion",
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -17657,7 +18367,10 @@
     ],
     "level": "2",
     "tags": [
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -17691,7 +18404,10 @@
     ],
     "level": "2",
     "tags": [
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -17726,7 +18442,8 @@
     "level": "7",
     "tags": [
       "Abjuration",
-      "Consecration"
+      "Consecration",
+      "Divine"
     ]
   },
   {
@@ -17765,7 +18482,8 @@
     "level": "9",
     "tags": [
       "Evocation",
-      "Force"
+      "Force",
+      "Divine"
     ]
   },
   {
@@ -17807,7 +18525,9 @@
     ],
     "level": "4",
     "tags": [
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -17875,7 +18595,9 @@
     ],
     "level": "2",
     "tags": [
-      "Conjuration"
+      "Conjuration",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -17917,7 +18639,9 @@
       "Emotion",
       "Fear",
       "Illusion",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -18092,7 +18816,9 @@
     "level": "8",
     "tags": [
       "Air",
-      "Transmutation"
+      "Transmutation",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -18110,7 +18836,8 @@
     ],
     "level": "10",
     "tags": [
-      "Divination"
+      "Divination",
+      "Arcane"
     ]
   },
   {
@@ -18202,7 +18929,9 @@
     "level": "3",
     "tags": [
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Divine",
+      "Occult"
     ]
   }
 ]
