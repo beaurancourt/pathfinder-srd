@@ -32,8 +32,8 @@ app.get('/spells/:spellName', (req, res) => {
   res.render('spell', spell)
 });
 
-app.get('/classes/druid', (req, res) => {
-  res.render('classes/druid');
+app.get('/classes/:className', (req, res) => {
+  res.render('classes/' + req.params.className);
 })
 
 app.listen(process.env.PORT || 3000);
