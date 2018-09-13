@@ -102,7 +102,9 @@
       "Chaotic",
       "Disease",
       "Evil",
-      "Necromancy"
+      "Necromancy",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -176,7 +178,9 @@
     "tags": [
       "Acid",
       "Attack",
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -220,7 +224,9 @@
     "tags": [
       "Acid",
       "Cantrip",
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -280,7 +286,7 @@
       },
       {
         "label": "Damage",
-        "description": "2d6 bludgeoning. ANCESTRY OVERVIEW CLASSES SKILLS FEATS EQUIPMENT SPELLS ADVANCEMENT AND OPTIONS PLAYING THE GAME GAME MASTERING TREASURE APPENDICES paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 204 •"
+        "description": "2d6 bludgeoning."
       },
       {
         "label": "Bird",
@@ -322,7 +328,9 @@
     "level": "4",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -378,7 +386,10 @@
     ],
     "level": "1",
     "tags": [
-      "Conjuration"
+      "Conjuration",
+      "Arcane",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -408,7 +419,9 @@
     ],
     "level": "4",
     "tags": [
-      "Transmutation"
+      "Transmutation",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -446,7 +459,11 @@
     ],
     "level": "1",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -498,7 +515,8 @@
     ],
     "level": "10",
     "tags": [
-      "Divination"
+      "Divination",
+      "Occult"
     ]
   },
   {
@@ -599,7 +617,7 @@
       },
       {
         "label": "Description",
-        "description": "You transform into a Medium animal battle form. You count as an animal in addition to your normal traits. Your gear is absorbed into you; the constant abilities of your gear still function, but you can’t activate it. When you transform, you gain the following: • AC 22 (TAC 20), ignore armor’s check penalty and reduced Speed. paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 205 ANCESTRY OVERVIEW CLASSES SKILLS FEATS EQUIPMENT SPELLS ADVANCEMENT AND OPTIONS PLAYING THE GAME GAME MASTERING TREASURE APPENDICES • One or more unarmed melee attacks, which are the only types of attacks you can use. You’re trained with them. Your attack modifier is +10 and your damage bonus is +5. These are Strength based (for the purpose of enfeebled, for example). • 10 temporary Hit Points while you have the form. • Low-light vision. • Athletics bonus of +11 unless your own is higher. These special statistics can be adjusted only by penalties, circumstance bonuses, and conditional bonuses. Your battle form prevents casting spells, speaking, or using most actions with the manipulate trait that require hands. (The GM decides if there’s doubt.) You can dismiss the spell with a concentrate action. If you prepare this spell, choose from the options below. You gain the attacks, Speeds, and special abilities listed. You can choose the specific type of animal (such as lion or snow leopard for cat). This has no effect on size or statistics. •"
+        "description": "You transform into a Medium animal battle form. You count as an animal in addition to your normal traits. Your gear is absorbed into you; the constant abilities of your gear still function, but you can’t activate it. When you transform, you gain the following: • AC 22 (TAC 20), ignore armor’s check penalty and reduced Speed. • 10 temporary Hit Points while you have the form. • Low-light vision. • Athletics bonus of +11 unless your own is higher. These special statistics can be adjusted only by penalties, circumstance bonuses, and conditional bonuses. Your battle form prevents casting spells, speaking, or using most actions with the manipulate trait that require hands. (The GM decides if there’s doubt.) You can dismiss the spell with a concentrate action. If you prepare this spell, choose from the options below. You gain the attacks, Speeds, and special abilities listed. You can choose the specific type of animal (such as lion or snow leopard for cat). This has no effect on size or statistics. •"
       },
       {
         "label": "Ape",
@@ -697,7 +715,8 @@
     "level": "3",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Primal"
     ]
   },
   {
@@ -724,7 +743,8 @@
     "level": "2",
     "tags": [
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Primal"
     ]
   },
   {
@@ -754,7 +774,9 @@
     ],
     "level": "1",
     "tags": [
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -780,7 +802,10 @@
     ],
     "level": "8",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -861,7 +886,7 @@
       },
       {
         "label": "Description",
-        "description": "Somatic Casting Until the end of your turn, you don’t take check penalties or Speed reduction from armor or encumbrance. paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 206"
+        "description": "Somatic Casting Until the end of your turn, you don’t take check penalties or Speed reduction from armor or encumbrance."
       }
     ],
     "level": "1",
@@ -923,7 +948,9 @@
     "level": "2",
     "tags": [
       "Divination",
-      "Prediction"
+      "Prediction",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -1156,13 +1183,14 @@
       },
       {
         "label": "Damage",
-        "description": "6d6+3. paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 207 ANCESTRY OVERVIEW CLASSES SKILLS FEATS EQUIPMENT SPELLS ADVANCEMENT AND OPTIONS PLAYING THE GAME GAME MASTERING TREASURE APPENDICES"
+        "description": "6d6+3."
       }
     ],
     "level": "10",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Divine"
     ]
   },
   {
@@ -1213,7 +1241,9 @@
     "level": "6",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -1244,7 +1274,9 @@
     "level": "1",
     "tags": [
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -1290,7 +1322,11 @@
     ],
     "level": "5",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -1325,7 +1361,8 @@
     "level": "2",
     "tags": [
       "Abjuration",
-      "Plant"
+      "Plant",
+      "Primal"
     ]
   },
   {
@@ -1360,7 +1397,9 @@
     "level": "9",
     "tags": [
       "Evil",
-      "Necromancy"
+      "Necromancy",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -1390,7 +1429,10 @@
     ],
     "level": "3",
     "tags": [
-      "Necromancy"
+      "Necromancy",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -1447,7 +1489,9 @@
     ],
     "level": "5",
     "tags": [
-      "Conjuration"
+      "Conjuration",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -1488,13 +1532,14 @@
       },
       {
         "label": "Heightened (+1)",
-        "description": "The damage increases by 1d8. paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 208"
+        "description": "The damage increases by 1d8."
       }
     ],
     "level": "6",
     "tags": [
       "Evocation",
-      "Force"
+      "Force",
+      "Divine"
     ]
   },
   {
@@ -1525,7 +1570,9 @@
     "level": "1",
     "tags": [
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -1615,7 +1662,11 @@
     ],
     "level": "3",
     "tags": [
-      "Necromancy"
+      "Necromancy",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -1638,7 +1689,9 @@
     "level": "4",
     "tags": [
       "Conjuration",
-      "Teleportation"
+      "Teleportation",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -1669,7 +1722,9 @@
     "level": "2",
     "tags": [
       "Illusion",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -1701,7 +1756,8 @@
     "tags": [
       "Healing",
       "Necromancy",
-      "Positive"
+      "Positive",
+      "Divine"
     ]
   },
   {
@@ -1744,7 +1800,9 @@
     "level": "1",
     "tags": [
       "Evocation",
-      "Fire"
+      "Fire",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -1834,7 +1892,9 @@
     "tags": [
       "Emotion",
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -1903,7 +1963,7 @@
       },
       {
         "label": "Description",
-        "description": "A blazing symbol appears on the target, marking it for divine paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 209 ANCESTRY OVERVIEW CLASSES SKILLS FEATS EQUIPMENT SPELLS ADVANCEMENT AND OPTIONS PLAYING THE GAME GAME MASTERING TREASURE APPENDICES justice. You and your allies receive a +1 conditional bonus to your attack rolls and skill checks against it. Anytime a good creature damages it, it deals 2d4 additional good damage. The target is bolstered against all castings of celestial brand."
+        "description": "A blazing symbol appears on the target, marking it for divine justice. You and your allies receive a +1 conditional bonus to your attack rolls and skill checks against it. Anytime a good creature damages it, it deals 2d4 additional good damage. The target is bolstered against all castings of celestial brand."
       },
       {
         "label": "Heightened (+2)",
@@ -1960,7 +2020,9 @@
     "level": "6",
     "tags": [
       "Electricity",
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -2016,7 +2078,10 @@
     "tags": [
       "Emotion",
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -2041,7 +2106,7 @@
       },
       {
         "label": "Description",
-        "description": "You infuse your target with love or lust, causing it to act friendlier. On a successful touch attack roll, the target attempts a Will save, with a +4 circumstance bonus if you or your allies recently threatened or acted hostile to it and a –2 circumstance penalty if you critically succeed on the attack roll or it allows you to touch it. paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 210 You can dismiss the spell with a Verbal Casting action. If you act hostile to the target, the spell ends. When the spell ends, the target doesn’t necessarily realize it was charmed unless its friendship with you or the actions you convinced it to take clash with its expectations, which could potentially allow you to convince the target to continue being your friend via mundane means. The effects of the Will save are the same effects as charm."
+        "description": "You infuse your target with love or lust, causing it to act friendlier. On a successful touch attack roll, the target attempts a Will save, with a +4 circumstance bonus if you or your allies recently threatened or acted hostile to it and a –2 circumstance penalty if you critically succeed on the attack roll or it allows you to touch it. You can dismiss the spell with a Verbal Casting action. If you act hostile to the target, the spell ends. When the spell ends, the target doesn’t necessarily realize it was charmed unless its friendship with you or the actions you convinced it to take clash with its expectations, which could potentially allow you to convince the target to continue being your friend via mundane means. The effects of the Will save are the same effects as charm."
       },
       {
         "label": "Heightened (4th)",
@@ -2154,7 +2219,10 @@
     "tags": [
       "Attack",
       "Necromancy",
-      "Negative"
+      "Negative",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -2216,7 +2284,9 @@
     ],
     "level": "5",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -2250,7 +2320,9 @@
     ],
     "level": "3",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -2277,7 +2349,9 @@
     "level": "3",
     "tags": [
       "Divination",
-      "Scrying"
+      "Scrying",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -2298,13 +2372,15 @@
       },
       {
         "label": "Description",
-        "description": "You create an invisible floating eye at a location within range (even if it’s outside your line of sight or line of effect). The eye can’t move, but you can see in all directions as if using your normal visual senses. paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 211 ANCESTRY OVERVIEW CLASSES SKILLS FEATS EQUIPMENT SPELLS ADVANCEMENT AND OPTIONS PLAYING THE GAME GAME MASTERING TREASURE APPENDICES"
+        "description": "You create an invisible floating eye at a location within range (even if it’s outside your line of sight or line of effect). The eye can’t move, but you can see in all directions as if using your normal visual senses."
       }
     ],
     "level": "4",
     "tags": [
       "Divination",
-      "Scrying"
+      "Scrying",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -2347,7 +2423,9 @@
     "level": "5",
     "tags": [
       "Illusion",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -2399,7 +2477,9 @@
     "tags": [
       "Death",
       "Necromancy",
-      "Poison"
+      "Poison",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -2442,7 +2522,9 @@
     "level": "6",
     "tags": [
       "Conjuration",
-      "Teleportation"
+      "Teleportation",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -2485,7 +2567,9 @@
     "level": "1",
     "tags": [
       "Illusion",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -2534,7 +2618,10 @@
       "Auditory",
       "Enchantment",
       "Lingual",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -2606,7 +2693,7 @@
       },
       {
         "label": "Description",
-        "description": "The target can understand the meaning of a single language it MAGIC AND MORALITY Magic allows you to perform some pretty wondrous things in the game, but it can be used for terrible purposes. While some spells are obviously vile, or have the evil trait and a direct connection to the profane, other spells can be used for good or ill. Using magic does not free you from the morality of the outcome. Nowhere is this more true than when it comes to enchantment spells, especially those used to compel a character to do something. These spells can remove the power of choice from a character and can very easily be used in ways that are evil. Dominating an ogre and forcing him to abandon his guard post is not necessarily evil, but using that same spell to force a merchant to give you all of his wares certainly is. The ultimate judgment of whether a player is using a spell for an evil purpose is left up to the GM, but all players should take care when using such spells. Using a spell for an evil purpose can cause a player character’s alignment to shift to evil. Far more importantly, these actions can negatively impact people at the table. Such spells might create situations that the echo truly awful experiences the players might have had, creating uncomfortable or hostile environments. Players and GMs should work to prevent these situations so everyone can focus on having fun at the table. paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 212 is hearing or reading when you cast the spell. This doesn’t let it understand codes, language couched in metaphor, and the like."
+        "description": "The target can understand the meaning of a single language it is hearing or reading when you cast the spell. This doesn’t let it understand codes, language couched in metaphor, and the like."
       },
       {
         "label": "Heightened (3rd)",
@@ -2619,7 +2706,9 @@
     ],
     "level": "2",
     "tags": [
-      "Divination"
+      "Divination",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -2662,7 +2751,9 @@
     "level": "5",
     "tags": [
       "Cold",
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -2714,7 +2805,9 @@
     "tags": [
       "Emotion",
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -2748,7 +2841,8 @@
     ],
     "level": "7",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane"
     ]
   },
   {
@@ -2787,7 +2881,11 @@
     "level": "2",
     "tags": [
       "Evocation",
-      "Light"
+      "Light",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -2814,7 +2912,9 @@
     "level": "5",
     "tags": [
       "Evocation",
-      "Water"
+      "Water",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -2878,7 +2978,10 @@
     ],
     "level": "2",
     "tags": [
-      "Conjuration"
+      "Conjuration",
+      "Arcane",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -2901,7 +3004,10 @@
     "level": "1",
     "tags": [
       "Conjuration",
-      "Water"
+      "Water",
+      "Arcane",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -2926,12 +3032,14 @@
       },
       {
         "label": "Heightened (5th)",
-        "description": "The item is expert quality and can use minerals. paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 213 ANCESTRY OVERVIEW CLASSES SKILLS FEATS EQUIPMENT SPELLS ADVANCEMENT AND OPTIONS PLAYING THE GAME GAME MASTERING TREASURE APPENDICES"
+        "description": "The item is expert quality and can use minerals."
       }
     ],
     "level": "4",
     "tags": [
-      "Conjuration"
+      "Conjuration",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -2978,7 +3086,8 @@
     "level": "3",
     "tags": [
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Divine"
     ]
   },
   {
@@ -3026,7 +3135,8 @@
     "tags": [
       "Enchantment",
       "Lingual",
-      "Mental"
+      "Mental",
+      "Divine"
     ]
   },
   {
@@ -3074,7 +3184,9 @@
     "tags": [
       "Emotion",
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -3102,7 +3214,10 @@
     "tags": [
       "Cantrip",
       "Evocation",
-      "Light"
+      "Light",
+      "Arcane",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -3184,7 +3299,11 @@
     "level": "2",
     "tags": [
       "Darkness",
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -3210,7 +3329,11 @@
     ],
     "level": "2",
     "tags": [
-      "Divination"
+      "Divination",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -3254,7 +3377,10 @@
     "tags": [
       "Cantrip",
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -3310,11 +3436,11 @@
       },
       {
         "label": "Targets",
-        "description": "one creature paizo.com,"
+        "description": "one creature"
       },
       {
         "label": "Description",
-        "description": "Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 214 The target loses hearing, depending on its Fortitude save, and is bolstered against all castings of deafness."
+        "description": "The target loses hearing, depending on its Fortitude save, and is bolstered against all castings of deafness."
       },
       {
         "label": "Success",
@@ -3335,7 +3461,11 @@
     ],
     "level": "2",
     "tags": [
-      "Necromancy"
+      "Necromancy",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -3375,7 +3505,9 @@
     "tags": [
       "Attack",
       "Death",
-      "Necromancy"
+      "Necromancy",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -3405,7 +3537,10 @@
     ],
     "level": "5",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -3554,7 +3689,9 @@
     "level": "1",
     "tags": [
       "Detection",
-      "Divination"
+      "Divination",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -3586,7 +3723,11 @@
     "tags": [
       "Cantrip",
       "Detection",
-      "Divination"
+      "Divination",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -3607,7 +3748,7 @@
       },
       {
         "label": "Description",
-        "description": "ALIGNMENT AURA The strength of an alignment aura depends on the level of the creature, item, or spell. Clerics and other divine spellcasters with a patron deity are treated as 5 levels higher, as are undead and creatures from the Outer Planes. Creature or Item Level Aura Strength 0–5 None 6–10 Faint 11–15 Moderate 16–20 Powerful 21+ Overwhelming Spell or Effect Level Aura Strength 0–3 Faint 4–7 Moderate 8+ Powerful paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 215 ANCESTRY OVERVIEW CLASSES SKILLS FEATS EQUIPMENT SPELLS ADVANCEMENT AND OPTIONS PLAYING THE GAME GAME MASTERING TREASURE APPENDICES You detect whether a creature is venomous or poisonous, or an object is poison or has been poisoned. You do not ascertain whether the target is poisonous in multiple ways, nor do you learn the type or types of poison. Certain substances like lead and alcohol are poisons and thus can mask other poisons."
+        "description": "ALIGNMENT AURA The strength of an alignment aura depends on the level of the creature, item, or spell. Clerics and other divine spellcasters with a patron deity are treated as 5 levels higher, as are undead and creatures from the Outer Planes. Creature or Item Level Aura Strength 0–5 None 6–10 Faint 11–15 Moderate 16–20 Powerful 21+ Overwhelming Spell or Effect Level Aura Strength 0–3 Faint 4–7 Moderate 8+ Powerful You detect whether a creature is venomous or poisonous, or an object is poison or has been poisoned. You do not ascertain whether the target is poisonous in multiple ways, nor do you learn the type or types of poison. Certain substances like lead and alcohol are poisons and thus can mask other poisons."
       },
       {
         "label": "Heightened (2nd)",
@@ -3617,7 +3758,9 @@
     "level": "1",
     "tags": [
       "Detection",
-      "Divination"
+      "Divination",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -3648,7 +3791,9 @@
     "level": "4",
     "tags": [
       "Detection",
-      "Divination"
+      "Divination",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -3675,7 +3820,9 @@
     "level": "4",
     "tags": [
       "Conjuration",
-      "Teleportation"
+      "Teleportation",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -3721,7 +3868,10 @@
     ],
     "level": "4",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -3751,7 +3901,10 @@
     ],
     "level": "7",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -3776,7 +3929,7 @@
       },
       {
         "label": "Heightened (8th)",
-        "description": "The initial and increased distance are 20 feet. paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 216"
+        "description": "The initial and increased distance are 20 feet."
       }
     ],
     "level": "4",
@@ -3869,7 +4022,8 @@
     "level": "4",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Primal"
     ]
   },
   {
@@ -3932,7 +4086,9 @@
     "tags": [
       "Auditory",
       "Illusion",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -3956,7 +4112,10 @@
     "tags": [
       "Divination",
       "Mental",
-      "Revelation"
+      "Revelation",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -3983,7 +4142,10 @@
     "level": "8",
     "tags": [
       "Detection",
-      "Divination"
+      "Divination",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -4025,7 +4187,8 @@
     ],
     "level": "6",
     "tags": [
-      "Evocation"
+      "Evocation",
+      "Arcane"
     ]
   },
   {
@@ -4051,7 +4214,9 @@
     ],
     "level": "9",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -4077,7 +4242,11 @@
     ],
     "level": "3",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -4103,7 +4272,7 @@
       },
       {
         "label": "Description",
-        "description": "The target takes half damage. paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 217 ANCESTRY OVERVIEW CLASSES SKILLS FEATS EQUIPMENT SPELLS ADVANCEMENT AND OPTIONS PLAYING THE GAME GAME MASTERING TREASURE APPENDICES"
+        "description": "The target takes half damage."
       },
       {
         "label": "Critical Success",
@@ -4136,7 +4305,11 @@
     ],
     "tags": [
       "Necromancy",
-      "Positive"
+      "Positive",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -4171,7 +4344,8 @@
     "level": "1",
     "tags": [
       "Necromancy",
-      "Positive"
+      "Positive",
+      "Divine"
     ]
   },
   {
@@ -4201,7 +4375,8 @@
     ],
     "level": "8",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Divine"
     ]
   },
   {
@@ -4251,7 +4426,8 @@
     ],
     "level": "7",
     "tags": [
-      "Evocation"
+      "Evocation",
+      "Divine"
     ]
   },
   {
@@ -4278,7 +4454,8 @@
     "level": "8",
     "tags": [
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Divine"
     ]
   },
   {
@@ -4372,7 +4549,8 @@
     ],
     "level": "4",
     "tags": [
-      "Evocation"
+      "Evocation",
+      "Divine"
     ]
   },
   {
@@ -4429,7 +4607,7 @@
       },
       {
         "label": "Description",
-        "description": "You take command of the target, forcing it to obey your orders. paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 218 If you issue an obviously self-destructive order, the target doesn’t act until you issue a new order. The effect depends on its Will save."
+        "description": "You take command of the target, forcing it to obey your orders. If you issue an obviously self-destructive order, the target doesn’t act until you issue a new order. The effect depends on its Will save."
       },
       {
         "label": "Success",
@@ -4455,7 +4633,9 @@
     "level": "6",
     "tags": [
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -4692,7 +4872,7 @@
       },
       {
         "label": "Damage",
-        "description": "2d8 piercing plus 2d4 fire; paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 219 ANCESTRY OVERVIEW CLASSES SKILLS FEATS EQUIPMENT SPELLS ADVANCEMENT AND OPTIONS PLAYING THE GAME GAME MASTERING TREASURE APPENDICES claw (agile), 2d10 slashing; tail (reach 10 feet),"
+        "description": "2d8 piercing plus 2d4 fire; claw (agile), 2d10 slashing; tail (reach 10 feet),"
       },
       {
         "label": "Damage",
@@ -4786,7 +4966,9 @@
     "level": "6",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -4873,7 +5055,9 @@
     "level": "8",
     "tags": [
       "Illusion",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -4908,7 +5092,10 @@
     "level": "3",
     "tags": [
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -4978,7 +5165,9 @@
     "level": "5",
     "tags": [
       "Illusion",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -5003,7 +5192,7 @@
       },
       {
         "label": "Description",
-        "description": "You try to create a temporary duplicate of an enemy. The target can attempt a Fortitude save to disrupt the spell. The duplicate appears in an unoccupied space adjacent to the target and has the target’s attack modifier, AC, saving throw modifiers, Perception, and skill modifiers, but it has only 70 Hit Points and lacks the target’s special abilities, including immunities, resistances, and weaknesses. It has no magic items except weapon potency runes. The duplicate gains the minion trait, and it can only Stride and Strike. Its Strikes deal the target’s normal damage but don’t apply added effects, since it doesn’t have special abilities. The paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 220 spell automatically ends if its HP drop to 0. The duplicate attacks your enemies to the best of its abilities. You can attempt to command it as if you used Command a Minion as part of your action to Concentrate on the Spell, but the GM determines whether the creature follows your command. The duplicate is imperfect, so each turn after it takes its actions, it loses 8d6 Hit Points. It’s not a living creature, and it can never regain its lost Hit Points in any way."
+        "description": "You try to create a temporary duplicate of an enemy. The target can attempt a Fortitude save to disrupt the spell. The duplicate appears in an unoccupied space adjacent to the target and has the target’s attack modifier, AC, saving throw modifiers, Perception, and skill modifiers, but it has only 70 Hit Points and lacks the target’s special abilities, including immunities, resistances, and weaknesses. It has no magic items except weapon potency runes. The duplicate gains the minion trait, and it can only Stride and Strike. Its Strikes deal the target’s normal damage but don’t apply added effects, since it doesn’t have special abilities. The spell automatically ends if its HP drop to 0. The duplicate attacks your enemies to the best of its abilities. You can attempt to command it as if you used Command a Minion as part of your action to Concentrate on the Spell, but the GM determines whether the creature follows your command. The duplicate is imperfect, so each turn after it takes its actions, it loses 8d6 Hit Points. It’s not a living creature, and it can never regain its lost Hit Points in any way."
       },
       {
         "label": "Success",
@@ -5024,7 +5213,9 @@
     ],
     "level": "7",
     "tags": [
-      "Conjuration"
+      "Conjuration",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -5070,7 +5261,9 @@
     ],
     "level": "3",
     "tags": [
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -5133,7 +5326,9 @@
     "level": "8",
     "tags": [
       "Earth",
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -5242,7 +5437,9 @@
       "Attack",
       "Cantrip",
       "Electricity",
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -5275,7 +5472,7 @@
       },
       {
         "label": "Damage",
-        "description": "2d10 bludgeoning. paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 221 ANCESTRY OVERVIEW CLASSES SKILLS FEATS EQUIPMENT SPELLS ADVANCEMENT AND OPTIONS PLAYING THE GAME GAME MASTERING TREASURE APPENDICES •"
+        "description": "2d10 bludgeoning."
       },
       {
         "label": "Fire",
@@ -5305,7 +5502,9 @@
     "level": "5",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -5396,7 +5595,10 @@
     ],
     "level": "2",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -5486,7 +5688,11 @@
     ],
     "level": "7",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -5534,7 +5740,10 @@
     "tags": [
       "Attack",
       "Necromancy",
-      "Negative"
+      "Negative",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -5603,7 +5812,9 @@
     "level": "2",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -5628,13 +5839,14 @@
       },
       {
         "label": "Description",
-        "description": "Plants in the area entangle creatures. Each round a creature starts its turn in the area, it must attempt a Reflex save. On a failure, it is entangled until it leaves the area, and on a critical failure, it is also immobile for 1 round. Creatures can attempt Acrobatics or Athletics checks at entangle’s DC to remove these effects. paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 222"
+        "description": "Plants in the area entangle creatures. Each round a creature starts its turn in the area, it must attempt a Reflex save. On a failure, it is entangled until it leaves the area, and on a critical failure, it is also immobile for 1 round. Creatures can attempt Acrobatics or Athletics checks at entangle’s DC to remove these effects."
       }
     ],
     "level": "2",
     "tags": [
       "Plant",
-      "Transmutation"
+      "Transmutation",
+      "Primal"
     ]
   },
   {
@@ -5682,7 +5894,9 @@
     "tags": [
       "Auditory",
       "Enchantment",
-      "Emotion"
+      "Emotion",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -5709,7 +5923,9 @@
     "level": "7",
     "tags": [
       "Conjuration",
-      "Teleportation"
+      "Teleportation",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -5778,7 +5994,8 @@
     "level": "10",
     "tags": [
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Occult"
     ]
   },
   {
@@ -5875,7 +6092,10 @@
     "level": "2",
     "tags": [
       "Evocation",
-      "Light"
+      "Light",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -5901,7 +6121,9 @@
     ],
     "level": "2",
     "tags": [
-      "Necromancy"
+      "Necromancy",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -5918,7 +6140,7 @@
       },
       {
         "label": "Area",
-        "description": "100-foot burst paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 223 ANCESTRY OVERVIEW CLASSES SKILLS FEATS EQUIPMENT SPELLS ADVANCEMENT AND OPTIONS PLAYING THE GAME GAME MASTERING TREASURE APPENDICES"
+        "description": "100-foot burst"
       },
       {
         "label": "Duration",
@@ -5931,7 +6153,9 @@
     ],
     "level": "5",
     "tags": [
-      "Illusion"
+      "Illusion",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -6027,7 +6251,11 @@
       "Emotion",
       "Enchantment",
       "Fear",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -6061,7 +6289,9 @@
     ],
     "level": "1",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -6102,7 +6332,7 @@
       },
       {
         "label": "Description",
-        "description": "The target’s intellect is permanently reduced below that of an animal, and it treats its Charisma, Intelligence, and Wisdom modifiers as –5. It loses all paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 224 class abilities that require mental faculties, including all spellcasting. If the target is a PC, she becomes an NPC under the GM’s control."
+        "description": "The target’s intellect is permanently reduced below that of an animal, and it treats its Charisma, Intelligence, and Wisdom modifiers as –5. It loses all class abilities that require mental faculties, including all spellcasting. If the target is a PC, she becomes an NPC under the GM’s control."
       },
       {
         "label": "Heightened (9th)",
@@ -6113,7 +6343,9 @@
     "tags": [
       "Curse",
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -6144,7 +6376,9 @@
     "level": "3",
     "tags": [
       "Morph",
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -6202,7 +6436,9 @@
     "tags": [
       "Healing",
       "Necromancy",
-      "Positive"
+      "Positive",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -6230,7 +6466,9 @@
     "tags": [
       "Fire",
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -6277,7 +6515,9 @@
     "level": "7",
     "tags": [
       "Death",
-      "Necromancy"
+      "Necromancy",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -6356,7 +6596,8 @@
     "tags": [
       "Evocation",
       "Fire",
-      "Plant"
+      "Plant",
+      "Primal"
     ]
   },
   {
@@ -6383,7 +6624,9 @@
     "level": "4",
     "tags": [
       "Evocation",
-      "Fire"
+      "Fire",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -6404,7 +6647,7 @@
       },
       {
         "label": "Description",
-        "description": "A burst of fire explodes, dealing 6d6 fire damage; creatures in the area must attempt a Reflex save. paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 225 ANCESTRY OVERVIEW CLASSES SKILLS FEATS EQUIPMENT SPELLS ADVANCEMENT AND OPTIONS PLAYING THE GAME GAME MASTERING TREASURE APPENDICES"
+        "description": "A burst of fire explodes, dealing 6d6 fire damage; creatures in the area must attempt a Reflex save."
       },
       {
         "label": "Success",
@@ -6430,7 +6673,9 @@
     "level": "3",
     "tags": [
       "Evocation",
-      "Fire"
+      "Fire",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -6504,7 +6749,8 @@
     "level": "5",
     "tags": [
       "Evocation",
-      "Fire"
+      "Fire",
+      "Divine"
     ]
   },
   {
@@ -6551,7 +6797,9 @@
     "level": "2",
     "tags": [
       "Evocation",
-      "Fire"
+      "Fire",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -6573,7 +6821,9 @@
     ],
     "level": "1",
     "tags": [
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -6619,7 +6869,9 @@
     ],
     "level": "6",
     "tags": [
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -6641,7 +6893,9 @@
     ],
     "level": "1",
     "tags": [
-      "Conjuration"
+      "Conjuration",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -6675,7 +6929,10 @@
     ],
     "level": "4",
     "tags": [
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -6710,7 +6967,9 @@
     ],
     "tags": [
       "Abjuration",
-      "Cantrip"
+      "Cantrip",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -6747,7 +7006,7 @@
       },
       {
         "label": "Heightened (+1)",
-        "description": "The damage increases by 1d4. paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 226"
+        "description": "The damage increases by 1d4."
       }
     ],
     "level": "1",
@@ -6836,7 +7095,10 @@
     "tags": [
       "Divination",
       "Mental",
-      "Prediction"
+      "Prediction",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -6866,7 +7128,10 @@
     ],
     "level": "4",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -6897,7 +7162,10 @@
     "level": "4",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -6924,7 +7192,10 @@
     "level": "10",
     "tags": [
       "Conjuration",
-      "Teleportation"
+      "Teleportation",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -6958,7 +7229,11 @@
     ],
     "level": "2",
     "tags": [
-      "Necromancy"
+      "Necromancy",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -6994,7 +7269,9 @@
     "tags": [
       "Auditory",
       "Cantrip",
-      "Illusion"
+      "Illusion",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -7024,7 +7301,9 @@
     ],
     "level": "3",
     "tags": [
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -7057,7 +7336,7 @@
       },
       {
         "label": "Description",
-        "description": "The target is afflicted with ghoul fever at stage 1. paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 227 ANCESTRY OVERVIEW CLASSES SKILLS FEATS EQUIPMENT SPELLS ADVANCEMENT AND OPTIONS PLAYING THE GAME GAME MASTERING TREASURE APPENDICES"
+        "description": "The target is afflicted with ghoul fever at stage 1."
       },
       {
         "label": "Critical Failure",
@@ -7101,7 +7380,9 @@
       "Attack",
       "Disease",
       "Evil",
-      "Necromancy"
+      "Necromancy",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -7165,7 +7446,9 @@
     ],
     "level": "2",
     "tags": [
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -7191,7 +7474,10 @@
     ],
     "level": "4",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -7327,7 +7613,9 @@
     "tags": [
       "Attack",
       "Disease",
-      "Necromancy"
+      "Necromancy",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -7356,7 +7644,7 @@
       },
       {
         "label": "Heightened (+1)",
-        "description": "You can target an additional berry. paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 228"
+        "description": "You can target an additional berry."
       }
     ],
     "level": "1",
@@ -7405,7 +7693,9 @@
     "level": "1",
     "tags": [
       "Necromancy",
-      "Negative"
+      "Negative",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -7447,7 +7737,9 @@
     ],
     "level": "1",
     "tags": [
-      "Conjuration"
+      "Conjuration",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -7478,7 +7770,10 @@
     ],
     "tags": [
       "Cantrip",
-      "Divination"
+      "Divination",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -7521,7 +7816,9 @@
     "level": "1",
     "tags": [
       "Air",
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -7576,7 +7873,9 @@
     "level": "5",
     "tags": [
       "Illusion",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -7610,7 +7909,10 @@
     ],
     "level": "4",
     "tags": [
-      "Illusion"
+      "Illusion",
+      "Arcane",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -7658,7 +7960,7 @@
       },
       {
         "label": "Area",
-        "description": "30-foot aura paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 229 ANCESTRY OVERVIEW CLASSES SKILLS FEATS EQUIPMENT SPELLS ADVANCEMENT AND OPTIONS PLAYING THE GAME GAME MASTERING TREASURE APPENDICES (see text);"
+        "description": "30-foot aura (see text);"
       },
       {
         "label": "Targets",
@@ -7688,7 +7990,8 @@
     "level": "1",
     "tags": [
       "Necromancy",
-      "Negative"
+      "Negative",
+      "Divine"
     ]
   },
   {
@@ -7744,7 +8047,10 @@
     ],
     "level": "3",
     "tags": [
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -7796,7 +8102,9 @@
     "tags": [
       "Healing",
       "Necromancy",
-      "Positive"
+      "Positive",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -7923,7 +8231,9 @@
     "level": "3",
     "tags": [
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -7968,11 +8278,11 @@
       },
       {
         "label": "Duration",
-        "description": "concentration paizo.com,"
+        "description": "concentration"
       },
       {
         "label": "Description",
-        "description": "Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 230 The target is overtaken with uncontrollable laughter, based on the outcome of its Will saving throw."
+        "description": "The target is overtaken with uncontrollable laughter, based on the outcome of its Will saving throw."
       },
       {
         "label": "Success",
@@ -7995,7 +8305,9 @@
     "tags": [
       "Emotion",
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -8042,7 +8354,9 @@
     "level": "8",
     "tags": [
       "Necromancy",
-      "Negative"
+      "Negative",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -8102,7 +8416,10 @@
     "level": "2",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -8144,7 +8461,8 @@
     ],
     "level": "3",
     "tags": [
-      "Divination"
+      "Divination",
+      "Occult"
     ]
   },
   {
@@ -8187,7 +8505,9 @@
     "level": "3",
     "tags": [
       "Illusion",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -8208,7 +8528,7 @@
       },
       {
         "label": "Description",
-        "description": "You create an illusory image of a Huge or smaller creature. It makes appropriate sounds, generates normal smells, and feels right to the touch. If you and the image are ever farther than 500 feet apart, the spell ends. The image can’t speak, but you can use your actions to speak through the creature, with the spell disguising your voice as appropriate. You might need to attempt a Deception or Performance check to convincingly mimic the creature, as determined by the GM. This is especially likely if you’re trying to imitate a specific person and engage with someone that person knows. paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 231 ANCESTRY OVERVIEW CLASSES SKILLS FEATS EQUIPMENT SPELLS ADVANCEMENT AND OPTIONS PLAYING THE GAME GAME MASTERING TREASURE APPENDICES In combat, the illusion counts as a creature for flanking. It uses your spell roll for attack rolls and saving throws and your spell DC for its AC. If the image is hit by an attack or fails a save, the spell is dismissed. The creature has two actions per turn, which it takes when you Concentrate on the Spell. The illusion can’t directly affect the physical world, though its attacks can cause damage by making the target believe they’re real. If the illusory creature hits with a Strike, the target takes mental damage equal to 1d4 plus your spellcasting ability modifier. This is a mental effect. The illusion’s Strikes are nonlethal. If the damage doesn’t correspond to the image of the monster—for example, if a Large dragon dealt only 5 damage— the GM might allow the target to attempt a Perception check to disbelieve the spell as a free action. Any relevant resistances and weaknesses apply if the target thinks they do, as judged by the GM. For example, if the illusion wields a warhammer and attacks a creature resistant to bludgeoning damage, the creature would take less mental damage. However, illusory damage does not suppress regeneration or trigger other effects that require a certain damage type. Any creature that touches the image or uses the Seek action to examine it can attempt to disbelieve your illusion. When a creature disbelieves the illusion, it recovers from half the damage it had taken from it (if any) and doesn’t take any further damage from it. The GM should track illusory damage dealt by the illusion."
+        "description": "You create an illusory image of a Huge or smaller creature. It makes appropriate sounds, generates normal smells, and feels right to the touch. If you and the image are ever farther than 500 feet apart, the spell ends. The image can’t speak, but you can use your actions to speak through the creature, with the spell disguising your voice as appropriate. You might need to attempt a Deception or Performance check to convincingly mimic the creature, as determined by the GM. This is especially likely if you’re trying to imitate a specific person and engage with someone that person knows. In combat, the illusion counts as a creature for flanking. It uses your spell roll for attack rolls and saving throws and your spell DC for its AC. If the image is hit by an attack or fails a save, the spell is dismissed. The creature has two actions per turn, which it takes when you Concentrate on the Spell. The illusion can’t directly affect the physical world, though its attacks can cause damage by making the target believe they’re real. If the illusory creature hits with a Strike, the target takes mental damage equal to 1d4 plus your spellcasting ability modifier. This is a mental effect. The illusion’s Strikes are nonlethal. If the damage doesn’t correspond to the image of the monster—for example, if a Large dragon dealt only 5 damage— the GM might allow the target to attempt a Perception check to disbelieve the spell as a free action. Any relevant resistances and weaknesses apply if the target thinks they do, as judged by the GM. For example, if the illusion wields a warhammer and attacks a creature resistant to bludgeoning damage, the creature would take less mental damage. However, illusory damage does not suppress regeneration or trigger other effects that require a certain damage type. Any creature that touches the image or uses the Seek action to examine it can attempt to disbelieve your illusion. When a creature disbelieves the illusion, it recovers from half the damage it had taken from it (if any) and doesn’t take any further damage from it. The GM should track illusory damage dealt by the illusion."
       },
       {
         "label": "Heightened (+1)",
@@ -8219,7 +8539,9 @@
     "tags": [
       "Auditory",
       "Illusion",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -8250,7 +8572,9 @@
     "level": "1",
     "tags": [
       "Illusion",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -8271,11 +8595,11 @@
       },
       {
         "label": "Duration",
-        "description": "10 minutes paizo.com,"
+        "description": "10 minutes"
       },
       {
         "label": "Description",
-        "description": "Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 232 You create an illusory visual image of a stationary object. The entire image must fit within the spell’s area. The object appears to animate naturally, but it doesn’t make sounds or generate smells. For example, water would appear to pour down an illusory waterfall, but it would be silent. Any creature that touches the image or uses the Seek action to examine it can attempt to disbelieve your illusion."
+        "description": "You create an illusory visual image of a stationary object. The entire image must fit within the spell’s area. The object appears to animate naturally, but it doesn’t make sounds or generate smells. For example, water would appear to pour down an illusory waterfall, but it would be silent. Any creature that touches the image or uses the Seek action to examine it can attempt to disbelieve your illusion."
       },
       {
         "label": "Heightened (2nd)",
@@ -8289,7 +8613,9 @@
     "level": "1",
     "tags": [
       "Illusion",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -8329,7 +8655,9 @@
     "tags": [
       "Auditory",
       "Illusion",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -8379,7 +8707,9 @@
     ],
     "level": "9",
     "tags": [
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -8476,7 +8806,7 @@
       },
       {
         "label": "Speed",
-        "description": "25 feet, climb 25 feet. paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 233 ANCESTRY OVERVIEW CLASSES SKILLS FEATS EQUIPMENT SPELLS ADVANCEMENT AND OPTIONS PLAYING THE GAME GAME MASTERING TREASURE APPENDICES"
+        "description": "25 feet, climb 25 feet."
       },
       {
         "label": "Heightened (4th)",
@@ -8490,7 +8820,8 @@
     "level": "3",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Primal"
     ]
   },
   {
@@ -8624,7 +8955,9 @@
     "level": "2",
     "tags": [
       "Illusion",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -8685,7 +9018,9 @@
     "level": "3",
     "tags": [
       "Illusion",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -8718,13 +9053,15 @@
       },
       {
         "label": "Heightened (3rd)",
-        "description": "The duration is unlimited. paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 234"
+        "description": "The duration is unlimited. "
       }
     ],
     "level": "1",
     "tags": [
       "Illusion",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -8747,7 +9084,9 @@
     "level": "1",
     "tags": [
       "Move",
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -8843,7 +9182,9 @@
     ],
     "level": "2",
     "tags": [
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -8867,7 +9208,10 @@
     "tags": [
       "Cantrip",
       "Detection",
-      "Divination"
+      "Divination",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -8986,7 +9330,11 @@
     "tags": [
       "Attack",
       "Necromancy",
-      "Poison"
+      "Poison",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -9016,7 +9364,9 @@
     ],
     "level": "3",
     "tags": [
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -9061,7 +9411,7 @@
       },
       {
         "label": "Description",
-        "description": "Bulk or less paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 235 ANCESTRY OVERVIEW CLASSES SKILLS FEATS EQUIPMENT SPELLS ADVANCEMENT AND OPTIONS PLAYING THE GAME GAME MASTERING TREASURE APPENDICES"
+        "description": "Bulk or less "
       },
       {
         "label": "Duration",
@@ -9075,7 +9425,11 @@
     "tags": [
       "Cantrip",
       "Evocation",
-      "Light"
+      "Light",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -9118,7 +9472,9 @@
     "level": "3",
     "tags": [
       "Electricity",
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -9347,7 +9703,10 @@
     "level": "3",
     "tags": [
       "Detection",
-      "Divination"
+      "Divination",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -9372,7 +9731,7 @@
       },
       {
         "label": "Description",
-        "description": "The target’s latch mechanism clinks shut, held fast by unseen magical restraints. You magically lock the target, either setting the Thievery DC equal to your spell DC or using the base lock DC with a +4 conditional bonus, whichever is higher. Any key or combination that once opened a lock affected by this spell does not do so for the duration of the spell. If the lock is opened, the spell is dismissed. Assuming the target is not barred in some other way, you can unlock and open it by paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 236 spending a Somatic Casting action during which you touch the target. Doing so does not dismiss the spell. You can dismiss the spell at any time and from any distance with a Verbal Casting action."
+        "description": "The target’s latch mechanism clinks shut, held fast by unseen magical restraints. You magically lock the target, either setting the Thievery DC equal to your spell DC or using the base lock DC with a +4 conditional bonus, whichever is higher. Any key or combination that once opened a lock affected by this spell does not do so for the duration of the spell. If the lock is opened, the spell is dismissed. Assuming the target is not barred in some other way, you can unlock and open it by  spending a Somatic Casting action during which you touch the target. Doing so does not dismiss the spell. You can dismiss the spell at any time and from any distance with a Verbal Casting action."
       },
       {
         "label": "Heightened (2nd)",
@@ -9381,7 +9740,10 @@
     ],
     "level": "1",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -9407,7 +9769,9 @@
     ],
     "level": "1",
     "tags": [
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -9518,7 +9882,9 @@
     ],
     "level": "1",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -9557,7 +9923,9 @@
     ],
     "tags": [
       "Cantrip",
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -9591,7 +9959,9 @@
     ],
     "level": "1",
     "tags": [
-      "Illusion"
+      "Illusion",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -9621,7 +9991,8 @@
     ],
     "level": "1",
     "tags": [
-      "Transmutation"
+      "Transmutation",
+      "Primal"
     ]
   },
   {
@@ -9652,7 +10023,9 @@
     "level": "1",
     "tags": [
       "Evocation",
-      "Force"
+      "Force",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -9677,14 +10050,16 @@
       },
       {
         "label": "Description",
-        "description": "You specify a trigger stimulus (see page 197) and a message up to 25 words long. When the trigger stimulus occurs within 30 feet of the target, an illusory mouth appears on the target and speaks the message. Magic mouth is then dismissed. paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 237 ANCESTRY OVERVIEW CLASSES SKILLS FEATS EQUIPMENT SPELLS ADVANCEMENT AND OPTIONS PLAYING THE GAME GAME MASTERING TREASURE APPENDICES"
+        "description": "You specify a trigger stimulus (see page 197) and a message up to 25 words long. When the trigger stimulus occurs within 30 feet of the target, an illusory mouth appears on the target and speaks the message. Magic mouth is then dismissed. "
       }
     ],
     "level": "2",
     "tags": [
       "Auditory",
       "Illusion",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -9714,7 +10089,10 @@
     ],
     "level": "1",
     "tags": [
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -9741,7 +10119,9 @@
     "level": "7",
     "tags": [
       "Conjuration",
-      "Extradimensional"
+      "Extradimensional",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -9785,7 +10165,10 @@
     "tags": [
       "Attack",
       "Curse",
-      "Necromancy"
+      "Necromancy",
+      "Arcane",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -9835,7 +10218,10 @@
       "Fear",
       "Illusion",
       "Mental",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -9913,7 +10299,9 @@
     "tags": [
       "Conjuration",
       "Extradimensional",
-      "Teleportation"
+      "Teleportation",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -9930,13 +10318,15 @@
       },
       {
         "label": "Description",
-        "description": "You merge with an adjacent block of stone with enough volume to fit you and your worn and held possessions. You must touch this stone when you cast the spell. You can cast spells while in the stone as long as they don’t require line of effect beyond the stone, paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 238 and you can hear, but not see, what’s going on outside the stone. Significant physical damage to the stone while you are inside expels you and deals 10d6 damage to you. Passwall expels you without dealing damage and dismisses meld into stone. You can dismiss this spell with a Verbal Casting action."
+        "description": "You merge with an adjacent block of stone with enough volume to fit you and your worn and held possessions. You must touch this stone when you cast the spell. You can cast spells while in the stone as long as they don’t require line of effect beyond the stone,  and you can hear, but not see, what’s going on outside the stone. Significant physical damage to the stone while you are inside expels you and deals 10d6 damage to you. Passwall expels you without dealing damage and dismisses meld into stone. You can dismiss this spell with a Verbal Casting action."
       }
     ],
     "level": "3",
     "tags": [
       "Earth",
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -9970,7 +10360,11 @@
     ],
     "level": "1",
     "tags": [
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -10008,7 +10402,10 @@
       "Cantrip",
       "Illusion",
       "Lingual",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -10077,7 +10474,9 @@
     "level": "9",
     "tags": [
       "Evocation",
-      "Fire"
+      "Fire",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -10107,7 +10506,9 @@
     ],
     "level": "8",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -10151,7 +10552,9 @@
     "tags": [
       "Divination",
       "Lingual",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -10199,7 +10602,9 @@
     "tags": [
       "Detection",
       "Divination",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -10226,7 +10631,8 @@
     "level": "1",
     "tags": [
       "Divination",
-      "Mental"
+      "Mental",
+      "Occult"
     ]
   },
   {
@@ -10239,12 +10645,13 @@
       },
       {
         "label": "Description",
-        "description": "Material Casting, Somatic Casting, Verbal Casting You form a direct connection with your divine source and request intercession. Your divine source always refuses a request out of line with its nature and might choose to grant a different request paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 239 ANCESTRY OVERVIEW CLASSES SKILLS FEATS EQUIPMENT SPELLS ADVANCEMENT AND OPTIONS PLAYING THE GAME GAME MASTERING TREASURE APPENDICES (potentially more powerful or better fitting its nature) than the one you asked for. A miracle can do any of the following things. • Duplicate any divine spell of 9th level or lower. • Duplicate any non-divine spell of 7th level or lower. • Produce any effect whose power level is in line with the above effects. The GM might allow you to try using miracle to produce greater effects than these, but doing so may be dangerous, or the spell may have only a partial effect."
+        "description": "Material Casting, Somatic Casting, Verbal Casting You form a direct connection with your divine source and request intercession. Your divine source always refuses a request out of line with its nature and might choose to grant a different request (potentially more powerful or better fitting its nature) than the one you asked for. A miracle can do any of the following things. • Duplicate any divine spell of 9th level or lower. • Duplicate any non-divine spell of 7th level or lower. • Produce any effect whose power level is in line with the above effects. The GM might allow you to try using miracle to produce greater effects than these, but doing so may be dangerous, or the spell may have only a partial effect."
       }
     ],
     "level": "10",
     "tags": [
-      "Divination"
+      "Divination",
+      "Divine"
     ]
   },
   {
@@ -10267,7 +10674,9 @@
     "level": "2",
     "tags": [
       "Illusion",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -10297,7 +10706,9 @@
     ],
     "level": "2",
     "tags": [
-      "Illusion"
+      "Illusion",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -10319,7 +10730,9 @@
     ],
     "level": "6",
     "tags": [
-      "Illusion"
+      "Illusion",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -10366,7 +10779,8 @@
     "level": "4",
     "tags": [
       "Divination",
-      "Mental"
+      "Mental",
+      "Occult"
     ]
   },
   {
@@ -10393,7 +10807,9 @@
     "level": "8",
     "tags": [
       "Healing",
-      "Necromancy"
+      "Necromancy",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -10432,7 +10848,7 @@
       },
       {
         "label": "Description",
-        "description": "You transform into the shape of a legendary monster, assuming a Huge battle form. You must have enough space to expand into or the spell is lost. You count as an animal in addition to your normal traits while in this form. Your gear is absorbed into your paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 240 form; your constant abilities of your gear still function, but you can’t activate any item abilities. When you transform, you gain the following: • AC 36 (TAC 33) and ignore your armor’s check penalty and Speed reduction. • One or more natural melee attacks, which are the only types of attacks you can use. You’re trained with them. When attacking with them, your attack modifier is +26 and the damage bonus is listed with your attacks. These are Strength-based attacks (for the purposes of the enfeebled condition, for example). • 20 temporary Hit Points that go away when you leave your battle form. • Darkvision. • Athletics +27 (unless your own total modifier is higher). The special statistics of your battle form can be adjusted only by penalties, circumstance bonuses, and conditional bonuses. Your battle form prevents you from casting spells, speaking, or using most actions with the manipulate trait that require your hands (the GM determines which manipulate actions you can spend if there’s doubt). You can dismiss this spell by using an action (this action has the concentrate trait). When you prepare this spell, choose the creature you wish to turn into from the following options. When in battle form, you gain the attacks, movement types, and special abilities listed. •"
+        "description": "You transform into the shape of a legendary monster, assuming a Huge battle form. You must have enough space to expand into or the spell is lost. You count as an animal in addition to your normal traits while in this form. Your gear is absorbed into your  form; your constant abilities of your gear still function, but you can’t activate any item abilities. When you transform, you gain the following: • AC 36 (TAC 33) and ignore your armor’s check penalty and Speed reduction. • One or more natural melee attacks, which are the only types of attacks you can use. You’re trained with them. When attacking with them, your attack modifier is +26 and the damage bonus is listed with your attacks. These are Strength-based attacks (for the purposes of the enfeebled condition, for example). • 20 temporary Hit Points that go away when you leave your battle form. • Darkvision. • Athletics +27 (unless your own total modifier is higher). The special statistics of your battle form can be adjusted only by penalties, circumstance bonuses, and conditional bonuses. Your battle form prevents you from casting spells, speaking, or using most actions with the manipulate trait that require your hands (the GM determines which manipulate actions you can spend if there’s doubt). You can dismiss this spell by using an action (this action has the concentrate trait). When you prepare this spell, choose the creature you wish to turn into from the following options. When in battle form, you gain the attacks, movement types, and special abilities listed. •"
       },
       {
         "label": "Phoenix",
@@ -10490,7 +10906,9 @@
     "level": "8",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -10529,7 +10947,8 @@
     "level": "5",
     "tags": [
       "Morph",
-      "Transmutation"
+      "Transmutation",
+      "Primal"
     ]
   },
   {
@@ -10632,7 +11051,7 @@
       },
       {
         "label": "Description",
-        "description": "You transform into an incarnation of nature, assuming a battle form: Medium for a green man and Gargantuan (30-foot-by-30-foot space) for a kaiju. You must have enough space to expand into or the spell is lost. You count as a plant if you choose green man or as a beast if you choose kaiju in addition to your normal traits while paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 241 ANCESTRY OVERVIEW CLASSES SKILLS FEATS EQUIPMENT SPELLS ADVANCEMENT AND OPTIONS PLAYING THE GAME GAME MASTERING TREASURE APPENDICES in this form. Your gear is absorbed into your form; your constant abilities of your gear still function, but you can’t activate any item abilities. When you transform, you gain the following: • AC 43 (TAC 39) and ignore your armor’s check penalty and Speed reduction. • One or more natural attacks, which are the only types of attacks you can use. You’re trained with them. When attacking with them, your attack modifier is +31 and the damage bonus is listed with your attacks. Melee attacks you gain are Strength-based attacks (for the purposes of the enfeebled condition, for example), and ranged attacks you gain are Dexterity-based attacks. They all target the enemy’s AC. • 30 temporary Hit Points that go away when you leave your battle form. • Darkvision. • Athletics +32 (unless your own total modifier is higher). The special statistics of your battle form can be adjusted only by penalties, circumstance bonuses, and conditional bonuses. Your battle form prevents you from casting spells or using most actions with the manipulate trait that require your hands (the GM determines which manipulate actions you can spend if there’s doubt). You can dismiss this spell with a concentrate action. When in battle form, you gain the attacks, movement types, and special abilities listed below for the form you chose. •"
+        "description": "You transform into an incarnation of nature, assuming a battle form: Medium for a green man and Gargantuan (30-foot-by-30-foot space) for a kaiju. You must have enough space to expand into or the spell is lost. You count as a plant if you choose green man or as a beast if you choose kaiju in addition to your normal traits while in this form. Your gear is absorbed into your form; your constant abilities of your gear still function, but you can’t activate any item abilities. When you transform, you gain the following: • AC 43 (TAC 39) and ignore your armor’s check penalty and Speed reduction. • One or more natural attacks, which are the only types of attacks you can use. You’re trained with them. When attacking with them, your attack modifier is +31 and the damage bonus is listed with your attacks. Melee attacks you gain are Strength-based attacks (for the purposes of the enfeebled condition, for example), and ranged attacks you gain are Dexterity-based attacks. They all target the enemy’s AC. • 30 temporary Hit Points that go away when you leave your battle form. • Darkvision. • Athletics +32 (unless your own total modifier is higher). The special statistics of your battle form can be adjusted only by penalties, circumstance bonuses, and conditional bonuses. Your battle form prevents you from casting spells or using most actions with the manipulate trait that require your hands (the GM determines which manipulate actions you can spend if there’s doubt). You can dismiss this spell with a concentrate action. When in battle form, you gain the attacks, movement types, and special abilities listed below for the form you chose. •"
       },
       {
         "label": "Green Man",
@@ -10674,7 +11093,8 @@
     "level": "10",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Primal"
     ]
   },
   {
@@ -10691,7 +11111,7 @@
       },
       {
         "label": "Description",
-        "description": "You can cast this spell only in a natural area that supports significant plant life. You call forth nature’s bounty, providing enough clean water and fresh fruits and vegetables to sustain one human for a day. If you have a pool of Spell Points, you can spend more Spell Points to sustain an additional human for each additional Spell Point you spend. Most Medium creatures eat the same amount as a human each day. Most Small creatures eat 1/4 as much as a human (1/16 as much for most Tiny creatures, and so on), and most Large creatures eat 10 times as much as a human (100 times as much for Huge creatures and so on). paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 242"
+        "description": "You can cast this spell only in a natural area that supports significant plant life. You call forth nature’s bounty, providing enough clean water and fresh fruits and vegetables to sustain one human for a day. If you have a pool of Spell Points, you can spend more Spell Points to sustain an additional human for each additional Spell Point you spend. Most Medium creatures eat the same amount as a human each day. Most Small creatures eat 1/4 as much as a human (1/16 as much for most Tiny creatures, and so on), and most Large creatures eat 10 times as much as a human (100 times as much for Huge creatures and so on). "
       },
       {
         "label": "Heightened (+3)",
@@ -10731,7 +11151,8 @@
     ],
     "level": "9",
     "tags": [
-      "Enchantment"
+      "Enchantment",
+      "Primal"
     ]
   },
   {
@@ -10765,7 +11186,9 @@
     ],
     "level": "1",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -10792,7 +11215,9 @@
     "level": "3",
     "tags": [
       "Healing",
-      "Necromancy"
+      "Necromancy",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -10839,7 +11264,9 @@
     "level": "4",
     "tags": [
       "Illusion",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -10869,7 +11296,10 @@
     ],
     "level": "3",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -10900,7 +11330,9 @@
     "level": "2",
     "tags": [
       "Conjuration",
-      "Water"
+      "Water",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -10946,7 +11378,10 @@
       "Curse",
       "Enchantment",
       "Mental",
-      "Misfortune"
+      "Misfortune",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -10971,7 +11406,7 @@
       },
       {
         "label": "Description",
-        "description": "You surround yourself with a supernatural splendor, appearing to be a god or similarly majestic being. You choose the particular majestic aspects of your new appearance. This causes the targets to pay tribute to you by bowing or spending some other action in keeping with your appearance. The number of times they must do this depends on the outcome of their Will saves. paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 243 ANCESTRY OVERVIEW CLASSES SKILLS FEATS EQUIPMENT SPELLS ADVANCEMENT AND OPTIONS PLAYING THE GAME GAME MASTERING TREASURE APPENDICES"
+        "description": "You surround yourself with a supernatural splendor, appearing to be a god or similarly majestic being. You choose the particular majestic aspects of your new appearance. This causes the targets to pay tribute to you by bowing or spending some other action in keeping with your appearance. The number of times they must do this depends on the outcome of their Will saves. "
       },
       {
         "label": "Success",
@@ -10995,7 +11430,9 @@
       "Auditory",
       "Enchantment",
       "Mental",
-      "Visual"
+      "Visual",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -11084,7 +11521,9 @@
     "level": "3",
     "tags": [
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -11135,7 +11574,8 @@
     "level": "2",
     "tags": [
       "Illusion",
-      "Mental"
+      "Mental",
+      "Occult"
     ]
   },
   {
@@ -11165,7 +11605,8 @@
     ],
     "level": "1",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Primal"
     ]
   },
   {
@@ -11200,7 +11641,9 @@
     "level": "5",
     "tags": [
       "Conjuration",
-      "Earth"
+      "Earth",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -11236,7 +11679,7 @@
       },
       {
         "label": "Description",
-        "description": "Somatic Casting, Verbal Casting You meditate upon perfection to remove all distractions from your mind. Attempt another Will save against one mental effect currently affecting you that required a Will save. If the new save would have a worse result than the original save, nothing happens. You can use perfected mind only once against a particular effect. paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 244"
+        "description": "Somatic Casting, Verbal Casting You meditate upon perfection to remove all distractions from your mind. Attempt another Will save against one mental effect currently affecting you that required a Will save. If the new save would have a worse result than the original save, nothing happens. You can use perfected mind only once against a particular effect. "
       }
     ],
     "level": "1",
@@ -11268,7 +11711,9 @@
     "level": "2",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -11315,7 +11760,9 @@
     "level": "6",
     "tags": [
       "Illusion",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -11365,7 +11812,9 @@
       "Emotion",
       "Fear",
       "Illusion",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -11417,7 +11866,8 @@
     "tags": [
       "Illusion",
       "Mental",
-      "Nonlethal"
+      "Nonlethal",
+      "Occult"
     ]
   },
   {
@@ -11450,12 +11900,15 @@
       },
       {
         "label": "Heightened (6th)",
-        "description": "The steed can walk or fly at a Speed of 80 feet, can walk on water, and ignores areas of natural difficult terrain. paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 245 ANCESTRY OVERVIEW CLASSES SKILLS FEATS EQUIPMENT SPELLS ADVANCEMENT AND OPTIONS PLAYING THE GAME GAME MASTERING TREASURE APPENDICES"
+        "description": "The steed can walk or fly at a Speed of 80 feet, can walk on water, and ignores areas of natural difficult terrain. "
       }
     ],
     "level": "2",
     "tags": [
-      "Conjuration"
+      "Conjuration",
+      "Arcane",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -11512,7 +11965,11 @@
     "level": "7",
     "tags": [
       "Conjuration",
-      "Teleportation"
+      "Teleportation",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -11576,7 +12033,8 @@
     "tags": [
       "Plant",
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Primal"
     ]
   },
   {
@@ -11607,7 +12065,9 @@
     "level": "8",
     "tags": [
       "Cold",
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -11659,7 +12119,8 @@
     "tags": [
       "Mental",
       "Necromancy",
-      "Possession"
+      "Possession",
+      "Occult"
     ]
   },
   {
@@ -11680,11 +12141,11 @@
       },
       {
         "label": "Duration",
-        "description": "varies paizo.com,"
+        "description": "varies"
       },
       {
         "label": "Description",
-        "description": "Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 246 You utter a word of power that can make the target blinded upon hearing it. Once targeted, the target is bolstered against all castings of power word blind. The effect of the spell depends on the target’s level."
+        "description": "You utter a word of power that can make the target blinded upon hearing it. Once targeted, the target is bolstered against all castings of power word blind. The effect of the spell depends on the target’s level."
       },
       {
         "label": "12th or Lower",
@@ -11707,7 +12168,8 @@
     "tags": [
       "Auditory",
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Arcane"
     ]
   },
   {
@@ -11756,7 +12218,8 @@
       "Auditory",
       "Death",
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Arcane"
     ]
   },
   {
@@ -11804,7 +12267,8 @@
     "tags": [
       "Auditory",
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Arcane"
     ]
   },
   {
@@ -11882,7 +12346,11 @@
     ],
     "tags": [
       "Cantrip",
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -11907,7 +12375,7 @@
       },
       {
         "label": "Description",
-        "description": "You transform the targets into a herd of mammoths, and they assume a Huge battle form. Each target must have enough space to expand into or the spell fails for that target. Targets count as animals in addition to their normal traits while in this form. The targets’ gear is absorbed into their forms; the constant abilities of the gear still function, but targets can’t activate any item abilities. When targets transform, each target gains the following abilities: • AC 41 (TAC 38) and ignores armor’s check penalty and Speed reduction. • New attacks, which are the only types of attacks they can use. They’re trained with them. When attacking with them, they use their attack modifier with the proficiency and item bonus of their most favorable weapon or unarmed Strike, and the damage bonus is listed with the attacks. All attacks are Strength-based attacks (for the purposes of the enfeebled condition, for example). • 20 temporary Hit Points that go away when they leave their battle form. • Low-light vision. • Athletics +28 (unless their own total modifiers are higher). The special statistics of the battle form can be adjusted only by penalties, circumstance bonuses, and conditional bonuses. The battle form prevents the targets from casting spells, or spending most manipulate actions that require hands (the GM determines which manipulate actions you can spend if there’s doubt). Each target can dismiss the spell’s effects on her own by using an action (this action has the concentrate trait). When in battle form, each target gains the attacks, movement types, and special abilities listed below. paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 247 ANCESTRY OVERVIEW CLASSES SKILLS FEATS EQUIPMENT SPELLS ADVANCEMENT AND OPTIONS PLAYING THE GAME GAME MASTERING TREASURE APPENDICES •"
+        "description": "You transform the targets into a herd of mammoths, and they assume a Huge battle form. Each target must have enough space to expand into or the spell fails for that target. Targets count as animals in addition to their normal traits while in this form. The targets’ gear is absorbed into their forms; the constant abilities of the gear still function, but targets can’t activate any item abilities. When targets transform, each target gains the following abilities: • AC 41 (TAC 38) and ignores armor’s check penalty and Speed reduction. • New attacks, which are the only types of attacks they can use. They’re trained with them. When attacking with them, they use their attack modifier with the proficiency and item bonus of their most favorable weapon or unarmed Strike, and the damage bonus is listed with the attacks. All attacks are Strength-based attacks (for the purposes of the enfeebled condition, for example). • 20 temporary Hit Points that go away when they leave their battle form. • Low-light vision. • Athletics +28 (unless their own total modifiers are higher). The special statistics of the battle form can be adjusted only by penalties, circumstance bonuses, and conditional bonuses. The battle form prevents the targets from casting spells, or spending most manipulate actions that require hands (the GM determines which manipulate actions you can spend if there’s doubt). Each target can dismiss the spell’s effects on her own by using an action (this action has the concentrate trait). When in battle form, each target gains the attacks, movement types, and special abilities listed below. •"
       },
       {
         "label": "Mammoth",
@@ -11933,7 +12401,8 @@
     "level": "10",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Primal"
     ]
   },
   {
@@ -11951,7 +12420,8 @@
     ],
     "level": "10",
     "tags": [
-      "Divination"
+      "Divination",
+      "Primal"
     ]
   },
   {
@@ -11977,7 +12447,9 @@
     ],
     "level": "9",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -11999,7 +12471,9 @@
     ],
     "level": "7",
     "tags": [
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -12026,7 +12500,9 @@
     "level": "8",
     "tags": [
       "Abjuration",
-      "Light"
+      "Light",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -12056,7 +12532,9 @@
     ],
     "level": "4",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -12082,7 +12560,7 @@
       },
       {
         "label": "Heightened (3rd)",
-        "description": "1d6 + your spellcasting ability modifier. paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 248"
+        "description": "1d6 + your spellcasting ability modifier. "
       },
       {
         "label": "Heightened (5th)",
@@ -12101,7 +12579,9 @@
       "Attack",
       "Cantrip",
       "Evocation",
-      "Fire"
+      "Fire",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -12132,7 +12612,9 @@
     "level": "7",
     "tags": [
       "Illusion",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -12162,7 +12644,9 @@
     ],
     "level": "1",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -12241,7 +12725,10 @@
     "level": "5",
     "tags": [
       "Divination",
-      "Scrying"
+      "Scrying",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -12272,7 +12759,8 @@
     "level": "8",
     "tags": [
       "Air",
-      "Evocation"
+      "Evocation",
+      "Primal"
     ]
   },
   {
@@ -12298,7 +12786,9 @@
     ],
     "level": "1",
     "tags": [
-      "Necromancy"
+      "Necromancy",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -12362,7 +12852,9 @@
     "tags": [
       "Attack",
       "Necromancy",
-      "Poison"
+      "Poison",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -12379,11 +12871,11 @@
       },
       {
         "label": "Targets",
-        "description": "one creature your size or smaller paizo.com,"
+        "description": "one creature your size or smaller"
       },
       {
         "label": "Description",
-        "description": "Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 249 ANCESTRY OVERVIEW CLASSES SKILLS FEATS EQUIPMENT SPELLS ADVANCEMENT AND OPTIONS PLAYING THE GAME GAME MASTERING TREASURE APPENDICES Giving the air a push, you assault the target with a powerful gust of wind; it must attempt a Fortitude save."
+        "description": "Giving the air a push, you assault the target with a powerful gust of wind; it must attempt a Fortitude save."
       },
       {
         "label": "Failure",
@@ -12479,7 +12971,8 @@
     "level": "6",
     "tags": [
       "Healing",
-      "Necromancy"
+      "Necromancy",
+      "Divine"
     ]
   },
   {
@@ -12496,7 +12989,7 @@
       },
       {
         "label": "Targets",
-        "description": "one creature paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 250"
+        "description": "one creature "
       },
       {
         "label": "Duration",
@@ -12526,7 +13019,10 @@
     "level": "1",
     "tags": [
       "Attack",
-      "Necromancy"
+      "Necromancy",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -12571,7 +13067,9 @@
       "Attack",
       "Cantrip",
       "Cold",
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -12607,7 +13105,11 @@
     "tags": [
       "Cantrip",
       "Detection",
-      "Divination"
+      "Divination",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -12653,7 +13155,9 @@
     "level": "4",
     "tags": [
       "Divination",
-      "Prediction"
+      "Prediction",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -12688,7 +13192,9 @@
     "level": "7",
     "tags": [
       "Healing",
-      "Necromancy"
+      "Necromancy",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -12715,7 +13221,9 @@
     "level": "4",
     "tags": [
       "Healing",
-      "Necromancy"
+      "Necromancy",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -12742,7 +13250,9 @@
     "level": "3",
     "tags": [
       "Healing",
-      "Necromancy"
+      "Necromancy",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -12772,7 +13282,10 @@
     ],
     "level": "2",
     "tags": [
-      "Enchantment"
+      "Enchantment",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -12797,13 +13310,15 @@
       },
       {
         "label": "Description",
-        "description": "The spell’s range increases to 30 feet, and you can target up to 10 creatures. paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 251 ANCESTRY OVERVIEW CLASSES SKILLS FEATS EQUIPMENT SPELLS ADVANCEMENT AND OPTIONS PLAYING THE GAME GAME MASTERING TREASURE APPENDICES"
+        "description": "The spell’s range increases to 30 feet, and you can target up to 10 creatures. "
       }
     ],
     "level": "2",
     "tags": [
       "Healing",
-      "Necromancy"
+      "Necromancy",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -12842,7 +13357,10 @@
     "level": "6",
     "tags": [
       "Abjuration",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -12885,7 +13403,9 @@
     "level": "4",
     "tags": [
       "Abjuration",
-      "Force"
+      "Force",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -12923,7 +13443,11 @@
     ],
     "level": "2",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -12949,7 +13473,9 @@
     ],
     "level": "9",
     "tags": [
-      "Conjuration"
+      "Conjuration",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -12992,7 +13518,10 @@
     "level": "2",
     "tags": [
       "Healing",
-      "Necromancy"
+      "Necromancy",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -13009,11 +13538,11 @@
       },
       {
         "label": "Targets",
-        "description": "one creature paizo.com,"
+        "description": "one creature"
       },
       {
         "label": "Description",
-        "description": "Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 252 You can counteract a single effect making the target blinded or deafened. This can counteract both temporary magic and permanent consequences of magic, but it doesn’t cure someone who is missing the sense from some natural state or effect, such as from birth or from a nonmagical wound or toxin."
+        "description": " You can counteract a single effect making the target blinded or deafened. This can counteract both temporary magic and permanent consequences of magic, but it doesn’t cure someone who is missing the sense from some natural state or effect, such as from birth or from a nonmagical wound or toxin."
       },
       {
         "label": "Heightened (6th)",
@@ -13023,7 +13552,10 @@
     "level": "2",
     "tags": [
       "Healing",
-      "Necromancy"
+      "Necromancy",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -13105,7 +13637,8 @@
     ],
     "level": "7",
     "tags": [
-      "Divination"
+      "Divination",
+      "Occult"
     ]
   },
   {
@@ -13135,7 +13668,9 @@
     ],
     "level": "7",
     "tags": [
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -13166,7 +13701,8 @@
     "level": "9",
     "tags": [
       "Healing",
-      "Necromancy"
+      "Necromancy",
+      "Divine"
     ]
   },
   {
@@ -13227,7 +13763,7 @@
       },
       {
         "label": "Description",
-        "description": "You focus all your divine energy into transforming yourself into a battle form, similar to your normal form but armed with powerful divine armaments granted by your deity. Your gear is absorbed into your form; the constant abilities of your gear still function, but you can’t activate any items. When you transform, you gain the following. • AC 27 (Touch 24) and ignore your armor’s check penalty and Speed reduction • A special attack with a righteous armament version of your favored weapon, which is the only type of attack you can use. When attacking with the special weapon, your attack paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 253 ANCESTRY OVERVIEW CLASSES SKILLS FEATS EQUIPMENT SPELLS ADVANCEMENT AND OPTIONS PLAYING THE GAME GAME MASTERING TREASURE APPENDICES modifier is +20 and your damage bonus is +4 (or +2 for a ranged attack). Use four of your weapon’s normal damage dice, or one damage die higher if your weapon is a simple weapon with a d4 or d6 damage die. The weapon has one of the following properties that matches your deity’s alignment: anarchic, axiomatic, holy, unholy. If your deity is true neutral, you instead gain access to the weapon’s critical specialization effect. • 10 temporary Hit Points that go away when you leave your battle form. • Resistance 3 against physical damage. • Darkvision. • Speed of 40 feet. • Athletics +20 unless your own total modifier is higher. The special statistics of your battle form can be adjusted only by penalties, circumstance bonuses, and conditional bonuses. Your battle form prevents you from casting spells or using most actions with the manipulate trait that require your hands (the GM determines which manipulate actions you can spend if there’s doubt). You can dismiss this spell by using an action (this action has the concentrate trait)."
+        "description": "You focus all your divine energy into transforming yourself into a battle form, similar to your normal form but armed with powerful divine armaments granted by your deity. Your gear is absorbed into your form; the constant abilities of your gear still function, but you can’t activate any items. When you transform, you gain the following. • AC 27 (Touch 24) and ignore your armor’s check penalty and Speed reduction • A special attack with a righteous armament version of your favored weapon, which is the only type of attack you can use. When attacking with the special weapon, your attack modifier is +20 and your damage bonus is +4 (or +2 for a ranged attack). Use four of your weapon’s normal damage dice, or one damage die higher if your weapon is a simple weapon with a d4 or d6 damage die. The weapon has one of the following properties that matches your deity’s alignment: anarchic, axiomatic, holy, unholy. If your deity is true neutral, you instead gain access to the weapon’s critical specialization effect. • 10 temporary Hit Points that go away when you leave your battle form. • Resistance 3 against physical damage. • Darkvision. • Speed of 40 feet. • Athletics +20 unless your own total modifier is higher. The special statistics of your battle form can be adjusted only by penalties, circumstance bonuses, and conditional bonuses. Your battle form prevents you from casting spells or using most actions with the manipulate trait that require your hands (the GM determines which manipulate actions you can spend if there’s doubt). You can dismiss this spell by using an action (this action has the concentrate trait)."
       },
       {
         "label": "Heightened (8th)",
@@ -13237,7 +13773,8 @@
     "level": "6",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Divine"
     ]
   },
   {
@@ -13269,7 +13806,9 @@
     "tags": [
       "Conjuration",
       "Extradimensional",
-      "Space"
+      "Space",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -13327,7 +13866,8 @@
     "level": "3",
     "tags": [
       "Abjuration",
-      "Consecration"
+      "Consecration",
+      "Divine"
     ]
   },
   {
@@ -13373,7 +13913,9 @@
     ],
     "level": "1",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -13443,7 +13985,7 @@
       },
       {
         "label": "Description",
-        "description": "A field of vibrant, ever-changing colors manifests in the air. Creatures are dazzled while inside the pattern. A creature must attempt a Will saving throw if it is inside the pattern when you cast it, enters the pattern, ends its turn within the pattern, or paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 254 uses a Seek or Interact action on the pattern. A creature currently affected by the pattern doesn’t need to attempt new saves."
+        "description": "A field of vibrant, ever-changing colors manifests in the air. Creatures are dazzled while inside the pattern. A creature must attempt a Will saving throw if it is inside the pattern when you cast it, enters the pattern, ends its turn within the pattern, or  uses a Seek or Interact action on the pattern. A creature currently affected by the pattern doesn’t need to attempt new saves."
       },
       {
         "label": "Success",
@@ -13461,7 +14003,9 @@
     "level": "8",
     "tags": [
       "Illusion",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -13508,7 +14052,9 @@
     "level": "6",
     "tags": [
       "Divination",
-      "Scrying"
+      "Scrying",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -13542,7 +14088,9 @@
       "Evocation",
       "Fire",
       "Good",
-      "Light"
+      "Light",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -13573,7 +14121,9 @@
     "level": "3",
     "tags": [
       "Illusion",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -13600,7 +14150,10 @@
     "level": "2",
     "tags": [
       "Divination",
-      "Revelation"
+      "Revelation",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -13626,7 +14179,10 @@
     ],
     "level": "5",
     "tags": [
-      "Divination"
+      "Divination",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -13673,7 +14229,9 @@
     "level": "5",
     "tags": [
       "Evocation",
-      "Shadow"
+      "Shadow",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -13704,7 +14262,9 @@
     "level": "5",
     "tags": [
       "Illusion",
-      "Shadow"
+      "Shadow",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -13729,14 +14289,16 @@
       },
       {
         "label": "Description",
-        "description": "The targets enter the edge of the Shadow Plane, where it borders the Material Plane. Targets can’t see the Material Plane while on the Shadow Plane, and while on the Shadow Plane, they are exposed to potential encounters with that plane’s denizens. The shadows on the border between the planes bend space, speeding up your movement with respect to the Material Plane. Every 3 minutes the targets travel along this border, they move as far as they would through the Material Plane in 1 hour. At any point, paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 255 ANCESTRY OVERVIEW CLASSES SKILLS FEATS EQUIPMENT SPELLS ADVANCEMENT AND OPTIONS PLAYING THE GAME GAME MASTERING TREASURE APPENDICES a target can dismiss the spell’s effects, although this affects only that target. The shadow bending is inexact, so when the spell ends, the targets appear roughly 1 mile from their intended location on the Material Plane (though those who are traveling together appear together)."
+        "description": "The targets enter the edge of the Shadow Plane, where it borders the Material Plane. Targets can’t see the Material Plane while on the Shadow Plane, and while on the Shadow Plane, they are exposed to potential encounters with that plane’s denizens. The shadows on the border between the planes bend space, speeding up your movement with respect to the Material Plane. Every 3 minutes the targets travel along this border, they move as far as they would through the Material Plane in 1 hour. At any point, a target can dismiss the spell’s effects, although this affects only that target. The shadow bending is inexact, so when the spell ends, the targets appear roughly 1 mile from their intended location on the Material Plane (though those who are traveling together appear together)."
       }
     ],
     "level": "5",
     "tags": [
       "Conjuration",
       "Shadow",
-      "Teleportation"
+      "Teleportation",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -13775,7 +14337,9 @@
     "level": "4",
     "tags": [
       "Earth",
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -13802,7 +14366,8 @@
     "level": "2",
     "tags": [
       "Plant",
-      "Transmutation"
+      "Transmutation",
+      "Primal"
     ]
   },
   {
@@ -13825,7 +14390,9 @@
     "level": "9",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -13861,7 +14428,10 @@
     "tags": [
       "Abjuration",
       "Cantrip",
-      "Force"
+      "Force",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -13891,7 +14461,8 @@
     ],
     "level": "2",
     "tags": [
-      "Necromancy"
+      "Necromancy",
+      "Divine"
     ]
   },
   {
@@ -13945,7 +14516,8 @@
     "level": "1",
     "tags": [
       "Plant",
-      "Transmutation"
+      "Transmutation",
+      "Primal"
     ]
   },
   {
@@ -13977,7 +14549,9 @@
     "tags": [
       "Attack",
       "Electricity",
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -14012,7 +14586,9 @@
     "level": "2",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -14043,7 +14619,8 @@
     "level": "3",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Arcane"
     ]
   },
   {
@@ -14086,7 +14663,11 @@
     ],
     "tags": [
       "Cantrip",
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -14120,7 +14701,9 @@
     ],
     "level": "2",
     "tags": [
-      "Illusion"
+      "Illusion",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -14194,7 +14777,9 @@
     "level": "1",
     "tags": [
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -14239,12 +14824,15 @@
       },
       {
         "label": "Description",
-        "description": "You can target up to 10 creatures. paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 257 ANCESTRY OVERVIEW CLASSES SKILLS FEATS EQUIPMENT SPELLS ADVANCEMENT AND OPTIONS PLAYING THE GAME GAME MASTERING TREASURE APPENDICES"
+        "description": "You can target up to 10 creatures. "
       }
     ],
     "level": "3",
     "tags": [
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -14275,7 +14863,9 @@
     "level": "4",
     "tags": [
       "Conjuration",
-      "Water"
+      "Water",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -14312,7 +14902,8 @@
       "Healing",
       "Mental",
       "Necromancy",
-      "Positive"
+      "Positive",
+      "Occult"
     ]
   },
   {
@@ -14426,7 +15017,9 @@
     "level": "2",
     "tags": [
       "Evocation",
-      "Sonic"
+      "Sonic",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -14443,12 +15036,13 @@
       },
       {
         "label": "Description",
-        "description": "You can ask questions of, receive answers from, and use the Diplomacy skill with animals. The spell doesn’t make them more friendly than normal. Wary and cunning animals are likely to be terse and evasive; less intelligent ones often make inane comments. paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 258"
+        "description": "You can ask questions of, receive answers from, and use the Diplomacy skill with animals. The spell doesn’t make them more friendly than normal. Wary and cunning animals are likely to be terse and evasive; less intelligent ones often make inane comments. "
       }
     ],
     "level": "2",
     "tags": [
-      "Divination"
+      "Divination",
+      "Primal"
     ]
   },
   {
@@ -14471,7 +15065,8 @@
     "level": "4",
     "tags": [
       "Divination",
-      "Plant"
+      "Plant",
+      "Primal"
     ]
   },
   {
@@ -14497,7 +15092,9 @@
     ],
     "level": "2",
     "tags": [
-      "Necromancy"
+      "Necromancy",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -14527,7 +15124,10 @@
     ],
     "level": "4",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -14549,7 +15149,8 @@
     ],
     "level": "7",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane"
     ]
   },
   {
@@ -14593,7 +15194,10 @@
     "tags": [
       "Abjuration",
       "Curse",
-      "Force"
+      "Force",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -14623,7 +15227,9 @@
     ],
     "level": "2",
     "tags": [
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -14683,7 +15289,9 @@
     "tags": [
       "Attack",
       "Necromancy",
-      "Poison"
+      "Poison",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -14729,7 +15337,9 @@
     ],
     "level": "6",
     "tags": [
-      "Necromancy"
+      "Necromancy",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -14754,7 +15364,7 @@
       },
       {
         "label": "Description",
-        "description": "You lay a curse on the target, sapping its spirit and leaving a contagious trap in its spiritual essence for those who contact it. paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 259 ANCESTRY OVERVIEW CLASSES SKILLS FEATS EQUIPMENT SPELLS ADVANCEMENT AND OPTIONS PLAYING THE GAME GAME MASTERING TREASURE APPENDICES The results depend on the target’s Will save. Any creature that casts a divine or occult spell on the target while it’s affected must also attempt a Will save as if targeted, and the curse continues to spread in this way."
+        "description": "You lay a curse on the target, sapping its spirit and leaving a contagious trap in its spiritual essence for those who contact it. The results depend on the target’s Will save. Any creature that casts a divine or occult spell on the target while it’s affected must also attempt a Will save as if targeted, and the curse continues to spread in this way."
       },
       {
         "label": "Success",
@@ -14776,7 +15386,9 @@
     "level": "8",
     "tags": [
       "Curse",
-      "Necromancy"
+      "Necromancy",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -14812,7 +15424,8 @@
     "tags": [
       "Attack",
       "Abjuration",
-      "Force"
+      "Force",
+      "Divine"
     ]
   },
   {
@@ -14848,7 +15461,9 @@
     "tags": [
       "Attack",
       "Evocation",
-      "Force"
+      "Force",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -14881,7 +15496,9 @@
       "Cantrip",
       "Healing",
       "Necromancy",
-      "Positive"
+      "Positive",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -14916,7 +15533,10 @@
     "level": "2",
     "tags": [
       "Detection",
-      "Divination"
+      "Divination",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -14945,7 +15565,7 @@
       },
       {
         "label": "Success",
-        "description": "Sick 1. paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 260"
+        "description": "Sick 1. "
       },
       {
         "label": "Critical Success",
@@ -14963,7 +15583,9 @@
     "level": "3",
     "tags": [
       "Conjuration",
-      "Poison"
+      "Poison",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -14986,7 +15608,9 @@
     "level": "6",
     "tags": [
       "Divination",
-      "Earth"
+      "Earth",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -15013,7 +15637,9 @@
     "level": "6",
     "tags": [
       "Earth",
-      "Transmutation"
+      "Transmutation",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -15051,7 +15677,9 @@
     ],
     "level": "4",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -15167,7 +15795,8 @@
     "tags": [
       "Air",
       "Electricity",
-      "Evocation"
+      "Evocation",
+      "Primal"
     ]
   },
   {
@@ -15211,7 +15840,7 @@
       },
       {
         "label": "Description",
-        "description": "An enemy misses you with a melee attack. You Step; your new position must remain in that enemy’s reach. paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 261 ANCESTRY OVERVIEW CLASSES SKILLS FEATS EQUIPMENT SPELLS ADVANCEMENT AND OPTIONS PLAYING THE GAME GAME MASTERING TREASURE APPENDICES"
+        "description": "An enemy misses you with a melee attack. You Step; your new position must remain in that enemy’s reach. "
       }
     ],
     "level": "1",
@@ -15269,7 +15898,9 @@
     "tags": [
       "Enchantment",
       "Linguistic",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -15331,7 +15962,10 @@
     ],
     "level": "1",
     "tags": [
-      "Conjuration"
+      "Conjuration",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -15352,7 +15986,7 @@
       },
       {
         "label": "Description",
-        "description": "You summon a level 0 creature from the summon nature’s ally list. This creature fights for you until the spell ends. The creature gains the summoned trait. The spell automatically ends if the monster’s Hit Points drop to 0. Summoned creatures have 2 actions per turn (which they use when you Concentrate on the Spell) and can’t use reactions. The creature attacks your enemies to the best of its abilities. If you can communicate with it, you can attempt to command it as part of your action to Concentrate on a Spell, but the GM determines the degree to which it follows your commands. Heightening the spell increases the maximum level of monster you can summon. You can always summon a monster of a lower level than the spell allows. SUMMON LISTS The following monsters appear in the Pathfinder Playtest Bestiary, which can be found at paizo.com. They can be summoned using the listed level of spell. The level number subheading indicates the levels of the monsters that follow. Summon monSter 1st: Level 0: Animated broom, bloodseeker, bobcat, dog, dire rat, fire beetle, pig, pony, viper 2nd: Level 1: Animated bureau, imp devil, mephit elemental, quasit demon 3rd: Level 2: Animated armor, lemure devil, sloth demon 4th: Level 3: Animated statue, hell hound, minor elemental 5th: Level 5: Lesser elemental; Level 4: bearded devil 6th: Level 7: Blood demon, major elemental; Level 6: lust demon, nightmare, salamander 7th: Level 9: Bone devil, efreeti genie, greater elemental, wrath demon; Level 8: erinyes devil 8th: Level 11: Elder elemental, toad demon; Level 10: barbed devil, slaver demon 9th: Level 13: Ice devil, treachery demon; Level 12: slime demon, valkyrie 10th: Level 15: Phoenix; Level 14: boar demon Summon nature’S ally 1st: Level 0: Bloodseeker, bobcat, dog, dire rat, fire beetle, pig, pony, viper 2nd: Level 1: Constrictor snake, electric eel, goblin dog, horse, hunting spider, hyena, leopard, mephit elemental, wolf 3rd: Level 2: Blue shark, boar, crocodile, deinonychus, giant bat, giant snake, panther, pteranodon, warg, warhorse 4th: Level 3: Ankhrav, bunyip, cockatrice, dryad, giant scorpion, grizzly bear, hyaenadon, lion, minor elemental 5th: Level 5: Lesser elemental, redcap, smilodon; Level 4: great white shark, tiger 6th: Level 7: Quetzalcoatlus pterosaur; Level 6: ankylosaurus, cave bear, shambler, smilodon tiger 7th: Level 8: Greater elemental, megalodon, roc, giant anaconda, mastodon, treant 8th: Level 11: Elder elemental, goliath spider; Level 10: tyrannosaurus 9th: Level 13: Purple worm; Level 12: rusalka, sea serpent 10th: Level 15: Phoenix paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 262"
+        "description": "You summon a level 0 creature from the summon nature’s ally list. This creature fights for you until the spell ends. The creature gains the summoned trait. The spell automatically ends if the monster’s Hit Points drop to 0. Summoned creatures have 2 actions per turn (which they use when you Concentrate on the Spell) and can’t use reactions. The creature attacks your enemies to the best of its abilities. If you can communicate with it, you can attempt to command it as part of your action to Concentrate on a Spell, but the GM determines the degree to which it follows your commands. Heightening the spell increases the maximum level of monster you can summon. You can always summon a monster of a lower level than the spell allows. SUMMON LISTS The following monsters appear in the Pathfinder Playtest Bestiary, which can be found at paizo.com. They can be summoned using the listed level of spell. The level number subheading indicates the levels of the monsters that follow. Summon monSter 1st: Level 0: Animated broom, bloodseeker, bobcat, dog, dire rat, fire beetle, pig, pony, viper 2nd: Level 1: Animated bureau, imp devil, mephit elemental, quasit demon 3rd: Level 2: Animated armor, lemure devil, sloth demon 4th: Level 3: Animated statue, hell hound, minor elemental 5th: Level 5: Lesser elemental; Level 4: bearded devil 6th: Level 7: Blood demon, major elemental; Level 6: lust demon, nightmare, salamander 7th: Level 9: Bone devil, efreeti genie, greater elemental, wrath demon; Level 8: erinyes devil 8th: Level 11: Elder elemental, toad demon; Level 10: barbed devil, slaver demon 9th: Level 13: Ice devil, treachery demon; Level 12: slime demon, valkyrie 10th: Level 15: Phoenix; Level 14: boar demon Summon nature’S ally 1st: Level 0: Bloodseeker, bobcat, dog, dire rat, fire beetle, pig, pony, viper 2nd: Level 1: Constrictor snake, electric eel, goblin dog, horse, hunting spider, hyena, leopard, mephit elemental, wolf 3rd: Level 2: Blue shark, boar, crocodile, deinonychus, giant bat, giant snake, panther, pteranodon, warg, warhorse 4th: Level 3: Ankhrav, bunyip, cockatrice, dryad, giant scorpion, grizzly bear, hyaenadon, lion, minor elemental 5th: Level 5: Lesser elemental, redcap, smilodon; Level 4: great white shark, tiger 6th: Level 7: Quetzalcoatlus pterosaur; Level 6: ankylosaurus, cave bear, shambler, smilodon tiger 7th: Level 8: Greater elemental, megalodon, roc, giant anaconda, mastodon, treant 8th: Level 11: Elder elemental, goliath spider; Level 10: tyrannosaurus 9th: Level 13: Purple worm; Level 12: rusalka, sea serpent 10th: Level 15: Phoenix "
       },
       {
         "label": "Heightened (2nd)",
@@ -15393,7 +16027,8 @@
     ],
     "level": "1",
     "tags": [
-      "Conjuration"
+      "Conjuration",
+      "Primal"
     ]
   },
   {
@@ -15442,7 +16077,8 @@
       "Evocation",
       "Fire",
       "Light",
-      "Positive"
+      "Positive",
+      "Primal"
     ]
   },
   {
@@ -15562,7 +16198,8 @@
     "level": "5",
     "tags": [
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Occult"
     ]
   },
   {
@@ -15613,7 +16250,8 @@
     "level": "5",
     "tags": [
       "Divination",
-      "Mental"
+      "Mental",
+      "Occult"
     ]
   },
   {
@@ -15664,7 +16302,7 @@
       },
       {
         "label": "Description",
-        "description": "You grant the corpse a semblance of life, which it uses to speak the answers to three questions. This uses the physical body’s latent memories rather than calling back the deceased’s spirit, so the corpse must be mostly intact. The more damage it has taken, the more inaccurate or patchwork its answers, and it must have a throat and mouth to speak at all. If anyone has previously cast this spell on the corpse in the last week, the spell paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 263 ANCESTRY OVERVIEW CLASSES SKILLS FEATS EQUIPMENT SPELLS ADVANCEMENT AND OPTIONS PLAYING THE GAME GAME MASTERING TREASURE APPENDICES automatically fails. The corpse can attempt a Will save to resist the questions as if it were the original creature at its time of death, with the following effects."
+        "description": "You grant the corpse a semblance of life, which it uses to speak the answers to three questions. This uses the physical body’s latent memories rather than calling back the deceased’s spirit, so the corpse must be mostly intact. The more damage it has taken, the more inaccurate or patchwork its answers, and it must have a throat and mouth to speak at all. If anyone has previously cast this spell on the corpse in the last week, the spell automatically fails. The corpse can attempt a Will save to resist the questions as if it were the original creature at its time of death, with the following effects."
       },
       {
         "label": "Success",
@@ -15685,7 +16323,9 @@
     ],
     "level": "4",
     "tags": [
-      "Necromancy"
+      "Necromancy",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -15733,7 +16373,9 @@
     "tags": [
       "Cantrip",
       "Conjuration",
-      "Plant"
+      "Plant",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -15764,7 +16406,8 @@
     "level": "6",
     "tags": [
       "Conjuration",
-      "Plant"
+      "Plant",
+      "Primal"
     ]
   },
   {
@@ -15794,7 +16437,9 @@
     ],
     "level": "5",
     "tags": [
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -15822,7 +16467,9 @@
     "tags": [
       "Attack",
       "Evocation",
-      "Force"
+      "Force",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -15874,7 +16521,9 @@
     "tags": [
       "Attack",
       "Cantrip",
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -15905,7 +16554,9 @@
     "level": "5",
     "tags": [
       "Divination",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -15933,7 +16584,9 @@
     "tags": [
       "Divination",
       "Linguistic",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -15950,11 +16603,11 @@
       },
       {
         "label": "Targets",
-        "description": "you and up to four willing creatures touched paizo.com,"
+        "description": "you and up to four willing creatures touched"
       },
       {
         "label": "Description",
-        "description": "Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 264 You and the targets instantly transport to any location within range, as long as you can identify the location precisely both by its position relative to your starting position and by its appearance. Incorrect knowledge of the location’s appearance usually causes the spell to fail, but it could lead to teleporting to an unwanted location or some other unusual mishap determined by the GM. Teleport is not precise over great distances. The targets appear at a distance from the intended destination equal to roughly 1% of the total distance traveled, in a direction determined by the GM. For short journeys, this lack of precision is irrelevant, but journeys of the maximum 100 miles are 1 mile off target."
+        "description": " You and the targets instantly transport to any location within range, as long as you can identify the location precisely both by its position relative to your starting position and by its appearance. Incorrect knowledge of the location’s appearance usually causes the spell to fail, but it could lead to teleporting to an unwanted location or some other unusual mishap determined by the GM. Teleport is not precise over great distances. The targets appear at a distance from the intended destination equal to roughly 1% of the total distance traveled, in a direction determined by the GM. For short journeys, this lack of precision is irrelevant, but journeys of the maximum 100 miles are 1 mile off target."
       },
       {
         "label": "Heightened (7th)",
@@ -15976,7 +16629,9 @@
     "level": "6",
     "tags": [
       "Conjuration",
-      "Teleportation"
+      "Teleportation",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -16179,7 +16834,9 @@
     ],
     "level": "10",
     "tags": [
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -16204,12 +16861,14 @@
       },
       {
         "label": "Description",
-        "description": "The target can understand the meaning of the words of all languages as well as speak the languages of other creatures. paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 265 ANCESTRY OVERVIEW CLASSES SKILLS FEATS EQUIPMENT SPELLS ADVANCEMENT AND OPTIONS PLAYING THE GAME GAME MASTERING TREASURE APPENDICES When in a mixed group of creatures, each time she speaks, the target can choose a creature and speak in a language that creature understands, even if she doesn’t know what language that is."
+        "description": "The target can understand the meaning of the words of all languages as well as speak the languages of other creatures. When in a mixed group of creatures, each time she speaks, the target can choose a creature and speak in a language that creature understands, even if she doesn’t know what language that is."
       }
     ],
     "level": "5",
     "tags": [
-      "Divination"
+      "Divination",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -16240,7 +16899,9 @@
     "level": "2",
     "tags": [
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -16385,13 +17046,14 @@
       },
       {
         "label": "Description",
-        "description": "You transform into a Large tree. Perception checks don’t reveal your true nature, but a successful Nature or Survival check against your spell DC reveals that the tree is new to the area. While in tree form, you can observe everything around you, but you can’t act other than by using an action (this action has the concentrate trait) to end the spell, which ends your turn. As a tree, your AC is 20; your TAC is 12; and only conditional bonuses, conditional penalties, circumstance bonuses, and circumstance penalties affect you. You treat successes and critical successes on Reflex saves as failures. paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 266"
+        "description": "You transform into a Large tree. Perception checks don’t reveal your true nature, but a successful Nature or Survival check against your spell DC reveals that the tree is new to the area. While in tree form, you can observe everything around you, but you can’t act other than by using an action (this action has the concentrate trait) to end the spell, which ends your turn. As a tree, your AC is 20; your TAC is 12; and only conditional bonuses, conditional penalties, circumstance bonuses, and circumstance penalties affect you. You treat successes and critical successes on Reflex saves as failures. "
       }
     ],
     "level": "2",
     "tags": [
       "Polymorph",
-      "Transmutation"
+      "Transmutation",
+      "Primal"
     ]
   },
   {
@@ -16422,7 +17084,8 @@
     "level": "5",
     "tags": [
       "Conjuration",
-      "Teleportation"
+      "Teleportation",
+      "Primal"
     ]
   },
   {
@@ -16475,7 +17138,11 @@
     "level": "6",
     "tags": [
       "Divination",
-      "Revelation"
+      "Revelation",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -16498,7 +17165,9 @@
     "level": "1",
     "tags": [
       "Divination",
-      "Fortune"
+      "Fortune",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -16545,7 +17214,9 @@
     "level": "8",
     "tags": [
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -16597,7 +17268,9 @@
     ],
     "level": "2",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -16647,7 +17320,8 @@
       "Emotion",
       "Enchantment",
       "Fear",
-      "Mental"
+      "Mental",
+      "Occult"
     ]
   },
   {
@@ -16681,7 +17355,8 @@
     ],
     "level": "7",
     "tags": [
-      "Abjuration"
+      "Abjuration",
+      "Primal"
     ]
   },
   {
@@ -16698,7 +17373,7 @@
       },
       {
         "label": "Description",
-        "description": "You use a Step or Stride action. You can ignore magical impediments to your movement as if you paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 267 ANCESTRY OVERVIEW CLASSES SKILLS FEATS EQUIPMENT SPELLS ADVANCEMENT AND OPTIONS PLAYING THE GAME GAME MASTERING TREASURE APPENDICES benefited from the freedom of movement spell. This doesn’t let you escape being grabbed, restrained, tied up, or bound, from either mundane or magical means."
+        "description": "You use a Step or Stride action. You can ignore magical impediments to your movement as if you benefited from the freedom of movement spell. This doesn’t let you escape being grabbed, restrained, tied up, or bound, from either mundane or magical means."
       }
     ],
     "level": "1",
@@ -16799,7 +17474,9 @@
     "level": "8",
     "tags": [
       "Divination",
-      "Scrying"
+      "Scrying",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -16825,7 +17502,9 @@
     ],
     "level": "1",
     "tags": [
-      "Conjuration"
+      "Conjuration",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -16896,7 +17575,10 @@
     "tags": [
       "Death",
       "Necromancy",
-      "Negative"
+      "Negative",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -16929,7 +17611,10 @@
       "Attack",
       "Death",
       "Necromancy",
-      "Negative"
+      "Negative",
+      "Arcane",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -16968,7 +17653,9 @@
     "level": "4",
     "tags": [
       "Illusion",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -17018,7 +17705,11 @@
     "level": "1",
     "tags": [
       "Auditory",
-      "Illusion"
+      "Illusion",
+      "Arcane",
+      "Divine",
+      "Occult",
+      "Primal"
     ]
   },
   {
@@ -17061,7 +17752,9 @@
     "level": "6",
     "tags": [
       "Illusion",
-      "Visual"
+      "Visual",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -17139,7 +17832,8 @@
     "tags": [
       "Auditory",
       "Illusion",
-      "Visual"
+      "Visual",
+      "Occult"
     ]
   },
   {
@@ -17156,11 +17850,11 @@
       },
       {
         "label": "Area",
-        "description": "5-foot radius, 80-foot-tall cylinder paizo.com,"
+        "description": "5-foot radius, 80-foot-tall cylinder"
       },
       {
         "label": "Description",
-        "description": "Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 269 ANCESTRY OVERVIEW CLASSES SKILLS FEATS EQUIPMENT SPELLS ADVANCEMENT AND OPTIONS PLAYING THE GAME GAME MASTERING TREASURE APPENDICES The ground opens up, spraying a column of lava high into the air in a vertical cylinder, dealing 13d6 fire damage. Creatures in the area must attempt a Reflex save or take 13d6 fire damage. The lava rapidly cools, and creatures in the area might become partially encased in rock depending on their Reflex saves. A creature encased in rock is sluggish 1, is hampered 5 feet, and when flying treats all normal terrain as difficult terrain. A flying creature immediately descends 20 feet the moment it’s encased, but doesn’t take falling damage from this movement. A creature encased in rock can attempt to Break Open or Escape against your spell DC to end the effect. Otherwise, the creature remains encased until it takes a total of 50 damage, freeing it from the rock."
+        "description": "The ground opens up, spraying a column of lava high into the air in a vertical cylinder, dealing 13d6 fire damage. Creatures in the area must attempt a Reflex save or take 13d6 fire damage. The lava rapidly cools, and creatures in the area might become partially encased in rock depending on their Reflex saves. A creature encased in rock is sluggish 1, is hampered 5 feet, and when flying treats all normal terrain as difficult terrain. A flying creature immediately descends 20 feet the moment it’s encased, but doesn’t take falling damage from this movement. A creature encased in rock can attempt to Break Open or Escape against your spell DC to end the effect. Otherwise, the creature remains encased until it takes a total of 50 damage, freeing it from the rock."
       },
       {
         "label": "Success",
@@ -17186,7 +17880,8 @@
     "level": "7",
     "tags": [
       "Evocation",
-      "Fire"
+      "Fire",
+      "Primal"
     ]
   },
   {
@@ -17277,7 +17972,9 @@
     "tags": [
       "Auditory",
       "Death",
-      "Necromancy"
+      "Necromancy",
+      "Divine",
+      "Occult"
     ]
   },
   {
@@ -17327,7 +18024,9 @@
     "level": "4",
     "tags": [
       "Evocation",
-      "Fire"
+      "Fire",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -17358,7 +18057,9 @@
     "level": "6",
     "tags": [
       "Evocation",
-      "Force"
+      "Force",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -17383,14 +18084,16 @@
       },
       {
         "label": "Heightened (+2)",
-        "description": "The Hardness of each section of the wall increases by 4 and the cold damage for crossing a broken or destroyed section increases by 1d6. paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 270"
+        "description": "The Hardness of each section of the wall increases by 4 and the cold damage for crossing a broken or destroyed section increases by 1d6. "
       }
     ],
     "level": "5",
     "tags": [
       "Cold",
       "Evocation",
-      "Water"
+      "Water",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -17417,7 +18120,9 @@
     "level": "5",
     "tags": [
       "Conjuration",
-      "Earth"
+      "Earth",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -17448,7 +18153,8 @@
     "level": "3",
     "tags": [
       "Conjuration",
-      "Plant"
+      "Plant",
+      "Primal"
     ]
   },
   {
@@ -17491,7 +18197,9 @@
     "level": "3",
     "tags": [
       "Air",
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -17557,7 +18265,9 @@
     "tags": [
       "Emotion",
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -17613,7 +18323,7 @@
       },
       {
         "label": "Description",
-        "description": "You tap into the pulse of the city and its wardens, gaining knowledge of their movements. You instantly learn the location paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 271 ANCESTRY OVERVIEW CLASSES SKILLS FEATS EQUIPMENT SPELLS ADVANCEMENT AND OPTIONS PLAYING THE GAME GAME MASTERING TREASURE APPENDICES of the nearest openly visible city guard activity within the city, outside the regular patrols and activities, and the spell ends. If the city guard isn’t currently engaged in such an activity, the spell reports the next one that occurs during the duration and the spell ends."
+        "description": "You tap into the pulse of the city and its wardens, gaining knowledge of their movements. You instantly learn the location of the nearest openly visible city guard activity within the city, outside the regular patrols and activities, and the spell ends. If the city guard isn’t currently engaged in such an activity, the spell reports the next one that occurs during the duration and the spell ends."
       }
     ],
     "level": "2",
@@ -17657,7 +18367,10 @@
     ],
     "level": "2",
     "tags": [
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -17691,7 +18404,10 @@
     ],
     "level": "2",
     "tags": [
-      "Transmutation"
+      "Transmutation",
+      "Arcane",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -17726,7 +18442,8 @@
     "level": "7",
     "tags": [
       "Abjuration",
-      "Consecration"
+      "Consecration",
+      "Divine"
     ]
   },
   {
@@ -17765,7 +18482,8 @@
     "level": "9",
     "tags": [
       "Evocation",
-      "Force"
+      "Force",
+      "Divine"
     ]
   },
   {
@@ -17807,7 +18525,9 @@
     ],
     "level": "4",
     "tags": [
-      "Evocation"
+      "Evocation",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -17842,7 +18562,7 @@
       },
       {
         "label": "Area",
-        "description": "10-foot burst paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 272"
+        "description": "10-foot burst "
       },
       {
         "label": "Duration",
@@ -17875,7 +18595,9 @@
     ],
     "level": "2",
     "tags": [
-      "Conjuration"
+      "Conjuration",
+      "Arcane",
+      "Primal"
     ]
   },
   {
@@ -17917,7 +18639,9 @@
       "Emotion",
       "Fear",
       "Illusion",
-      "Mental"
+      "Mental",
+      "Arcane",
+      "Occult"
     ]
   },
   {
@@ -18086,13 +18810,15 @@
       },
       {
         "label": "Description",
-        "description": "When you cast this spell, all targets transform into a vaguely cloud-like form and are picked up by a wind moving in the direction of your choice. You can Concentrate on the Spell to change the wind’s direction. The wind carries the targets at paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 273 ANCESTRY OVERVIEW CLASSES SKILLS FEATS EQUIPMENT SPELLS ADVANCEMENT AND OPTIONS PLAYING THE GAME GAME MASTERING TREASURE APPENDICES a Speed of 20 miles per hour, but if any of the targets make an attack, Cast a Spell, come under attack, or otherwise enter encounter mode, the spell ends for all targets and they drift gently to the ground."
+        "description": "When you cast this spell, all targets transform into a vaguely cloud-like form and are picked up by a wind moving in the direction of your choice. You can Concentrate on the Spell to change the wind’s direction. The wind carries the targets at a Speed of 20 miles per hour, but if any of the targets make an attack, Cast a Spell, come under attack, or otherwise enter encounter mode, the spell ends for all targets and they drift gently to the ground."
       }
     ],
     "level": "8",
     "tags": [
       "Air",
-      "Transmutation"
+      "Transmutation",
+      "Divine",
+      "Primal"
     ]
   },
   {
@@ -18110,7 +18836,8 @@
     ],
     "level": "10",
     "tags": [
-      "Divination"
+      "Divination",
+      "Arcane"
     ]
   },
   {
@@ -18196,13 +18923,15 @@
       },
       {
         "label": "Critical Failure",
-        "description": "The target can’t speak any deliberate and intentional lies and takes a –4 conditional penalty to Deception checks. paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018 paizo.com, Beau Shinkle <beaushinkle@gmail.com>, Sep 1, 2018"
+        "description": "The target can’t speak any deliberate and intentional lies and takes a –4 conditional penalty to Deception checks."
       }
     ],
     "level": "3",
     "tags": [
       "Enchantment",
-      "Mental"
+      "Mental",
+      "Divine",
+      "Occult"
     ]
   }
 ]
