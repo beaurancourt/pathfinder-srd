@@ -1,0 +1,51 @@
+<ul class="list-group">
+  <li class="list-group-item d-flex justify-content-around align-items-center list-group-item-primary">
+    <h1>{{name}}</h1>
+  </li>
+  <li class="list-group-item d-flex justify-content-around align-items-center">
+    <h2>{{hp}} hp</h2>
+    <h2>{{rarity}} {{level}}</h2>
+  </li>
+  <li class="list-group-item d-flex justify-content-around align-items-center list-group-item">
+    {{#each tags}}
+      <span class="badge badge-secondary">{{this}}</span>
+    {{/each}}
+  </li>
+  <li class="list-group-item">
+    {{#each defenses}}
+      <span class="font-weight-bold">{{@key}}: </span>
+      {{this}}
+    {{/each}}
+  </li>
+  <li class="list-group-item">
+    {{#each stats}}
+      <span class="font-weight-bold">{{@key}}: </span>
+      {{this}}
+    {{/each}}
+  </li>
+  <li class="list-group-item">
+    <span class="font-weight-bold">Perception: </span>
+    {{perception}};
+    <span class="font-weight-bold">Skills: </span>
+    {{skills}};
+  </li>
+  {{#each traits}}
+    <li class="list-group-item list-group-item-info">
+      <span class="font-weight-bold">{{label}}: </span>
+      {{description}}
+    </li>
+  {{/each}}
+  <li class="list-group-item">
+    <span class="font-weight-bold">Speed: </span>
+    {{speed}}
+  </li>
+  {{#each actions}}
+    <li class="list-group-item list-group-item-warning">
+      {{#if cost}}
+        <span class="badge badge-secondary">{{cost}}</span>
+      {{/if}}
+      <span class="font-weight-bold">{{label}}: </span>
+      {{description}}
+    </li>
+  {{/each}}
+</ul>

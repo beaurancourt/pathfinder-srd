@@ -4,11 +4,12 @@ const conditionList = require('./conditions.json');
 const creatureList = require('./creatures.json');
 const spellList = require('./spells.json');
 const featList = require('./feats.json');
-var generator = require('./generateEncounter.js');
+const generator = require('./generateEncounter.js');
 var app = express();
 
-app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+app.engine('handlebars', exphbs({defaultLayout: 'main', partialsDir: __dirname + '/views/partials'}));
 app.set('view engine', 'handlebars');
+app.set('views', __dirname + '/views');
 
 app.use(express.static('public'))
 
@@ -46,31 +47,17 @@ app.get('/feats', (req, res) => {
   res.render('feats', {'feats': featList})
 })
 
-// app.get('/encounter', (req, res) => {
-  
-//   res.render('encounter')
-// })
-
-app.get('/encounter/generate', (req, res) => {
-
-  const urlArray = 
-    req.query.list != undefined
-    ? req.query.list.split(",").map( creatureInList => 
-        creatureList.find((creature) => 
-          creature.name == creatureInList)
-      ).filter(each => each != undefined)
-    
-    : null
-  
-  req.query.list != undefined
-  ? urlArray.map( each => each.id = each.name.split("(")[0].split(" ").join(""))
-  : null
-  
-  const creatureObj = req.query.list != undefined
-    ? { list: urlArray, url: `${req.query.list}`}
-    : generator();
-
-  res.render('encounter', {'encounter':creatureObj})
+app.get('/generate', (req, res) => {
+  if (req.query.list != undefined) {
+    const urlArray =  req.query.list.split(",")
+      .map( creatureInList => creatureList.find((creature) => creature.name == creatureInList))
+      .filter(each => each != undefined);
+    urlArray.map( each => each.id = each.name.split("(")[0].split(" ").join(""));
+    res.render('encounter', {'encounter': { list: urlArray, url: `${req.query.list}`}});
+  }
+  else{
+    res.render('encounter', {'encounter': generator()});
+  }
 })
 
 app.listen(process.env.PORT || 3000);
