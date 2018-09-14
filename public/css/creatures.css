@@ -1,3 +1,11 @@
 #creatures-table tr {
   cursor: pointer;
 }
+
+.dataTables_filter {
+  margin-top: 10px;
+}
+
+.dataTables_filter > label {
+  width: 100%;
+}

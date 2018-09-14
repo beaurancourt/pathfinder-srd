@@ -1,0 +1,170 @@
+[
+  {
+    "label": "Accelerated",
+    "description": "Your Speed is increased. Accelerated is always followed by a number indicating how many feet the condition increases your movement Speed by (for example, accelerated 10 increases your Speed by 10 feet). If the condition doesn’t specify which of your movement types it applies to, it applies to all of them, but it doesn’t grant you any movement types that you don’t already have."
+  },
+  {
+    "label": "Asleep",
+    "description": "You can’t act. Furthermore, you have the blinded and flat-footed conditions and take a –4 conditional penalty to AC and Perception. You critically fail all Reflex saves you must attempt. When you gain this condition, you fall prone and drop items you are holding or wielding unless the effect states otherwise or the GM determines you’re in a position in which you wouldn’t. If you take damage while asleep, the condition ends. If you are within an ally’s natural reach, that ally can usually nudge or shake you awake with an Interact action. If there is loud noise going on around you, at the start of your turn you can attempt a Perception check as a free action with a –4 circumstance penalty against the noise’s DC (or the lowest DC if there is more than one noise), waking up if you succeed. For creatures attempting to stay quiet, this is a Stealth DC. Some magical effects make you sleep so deeply that they don’t allow you to attempt this Perception check."
+  },
+  {
+    "label": "Blinded",
+    "description": "You can’t see. While blinded, you treat all terrain as difficult terrain. All other creatures and objects are unseen to you (see page 303) unless you succeed at a Seek action to sense them. You automatically fail or critically fail (whichever’s worse) Perception checks that are fully dependent on sight, and if vision is your only precise sense, you take a –4 conditional penalty to Perception checks. You are immune to visual effects. Blinded overrides dazzled."
+  },
+  {
+    "label": "Broken",
+    "description": "Broken is a condition that affects objects. A broken object can’t be used for its normal function, nor does it grant bonuses. It still imposes the penalties and limitations normally incurred by carrying, holding, or wearing it. For example, a suit of armor would still impose its Dexterity modifier cap, check penalty, and so forth. Broken armor is an exception. It still grants its item bonuses, but also gives you a conditional penalty to AC depending on its category: –1 for broken light armor, –2 for broken medium armor, or –3 for broken heavy armor."
+  },
+  {
+    "label": "Concealed",
+    "description": "While you are concealed from a creature, such as in a thick fog, you are difficult for that creature to see, but you are not unseen. A creature that you’re concealed from must succeed at a DC 5 flat check when making an attack against you or targeting you with a spell or effect, unless the attack is an area effect. If the check fails, the attack, spell, or effect misses with no effect. For more information on being concealed, see page 302."
+  },
+  {
+    "label": "Confused",
+    "description": "You don’t have your wits about you, and you act rashly. You can’t use reactions, nor can you Delay or Ready. On each of your turns, you must use your actions to attack the creature that attacked you most recently since your last turn. The GM might allow you to use actions to draw a weapon, move so the creature is in reach, and so forth, as long as the actions lead up to you attacking as required. If no creature attacked you since your last turn, roll 1d4. On a 1, you must spend your turn attempting to attack the nearest creature to you. On a 2, you must attack yourself once, hitting automatically for your normal damage, and use no further actions. On a 3, you must do nothing but babble incoherently. On a 4, you can act normally."
+  },
+  {
+    "label": "Dazzled",
+    "description": "Your eyes are overstimulated. If vision is your only precise sense, all creatures and objects are concealed from you."
+  },
+  {
+    "label": "Dead",
+    "description": "You are no longer alive. You can’t act or be affected by spells that target creatures (unless they specifically target dead creatures), and for all other purposes you count as an object. When you gain the dead condition, you go to 0 HP if you had a different amount, and you can’t be brought above 0 HP as long as you remain dead."
+  },
+  {
+    "label": "Deafened",
+    "description": "You can’t hear. You automatically fail or critically fail (whichever’s worse) Perception checks based on sound. You take a –2 conditional penalty to Perception checks for initiative and checks that involve sound but also rely on other senses. If you perform an action that involves auditory elements, you must succeed at a DC 5 flat check or the action is lost; attempt the check after spending the action but before any effects are applied. You are immune to auditory effects."
+  },
+  {
+    "label": "Drained",
+    "description": "When a creature successfully drains you of blood or some other life force, you become less healthy. Drained always includes a value. You take a conditional penalty equal to the value on Fortitude saves and Constitution- based checks. You also lose a number of Hit Points equal to your level (minimum 1) times the drained value, and your maximum Hit Points are reduced by the same amount. For example, if you’re hit with an effect that inflicts drained 3 and you’re a 3rd-level character, you lose 9 Hit Points and reduce your maximum Hit Points by 9. Losing these Hit Points doesn’t count as taking damage. In most cases, the drained condition heals naturally at a slow rate. Each day, when you regain Hit Points by resting, your drained value is reduced by 1. This increases your maximum Hit Points, but you don’t immediately recover the lost Hit Points. When the drained value reaches 0, you no longer have this condition."
+  },
+  {
+    "label": "Dying",
+    "description": "You are bleeding out or otherwise at death’s door. Dying always includes a value, and if it ever reaches dying 4, you die. If you’re dying, the recovery saving throws from the unconscious condition determine whether you get better or worse (see page 295). If you have 1 HP or more and are conscious, your dying condition decreases by 1 at the end of your turn each round."
+  },
+  {
+    "label": "Encumbered",
+    "description": "You are carrying more weight than you can manage. If you’re encumbered, decrease your Speed by 10 feet, to a minimum of 5 feet. This applies to every movement type you have. You also increase your armor’s check penalty by 2, or take a –2 check penalty if you’re unarmored."
+  },
+  {
+    "label": "Enervated",
+    "description": "Enervation makes you less competent, as though your hard- earned experience had drained away. Enervated always includes a value. You take a conditional penalty equal to your enervated value on checks that include a proficiency modifier. The penalty can’t exceed your level, even if the enervated value is greater. For example, if you become enervated 4 and were level 3, you’d take only a –3 penalty. In addition, you treat your level as though it were lowered by your enervated value (to a minimum of 1st level) when determining which spells you can cast and which abilities you can use. This applies only to actions, activities, free actions, and reactions you gained from feats and class features, and only those that have a level prerequisite. You don’t lose your prepared spells, but you can’t cast those that are higher level than the enervated condition allows. You regain access to them if your enervated value is sufficiently reduced. Every day you can attempt a Fortitude save to reduce your enervated value by 1 (or 2 on a critical success). The DC is the same as that of the effect that enervated you. If multiple effects enervated you, use the highest DC for your daily checks to recover from enervated. You can also spend a day of downtime training to reduce your enervated value by 1 automatically (in addition to attempting one save for that day to reduce your enervated value)."
+  },
+  {
+    "label": "Enfeebled",
+    "description": "You’re physically weakened. Enfeebled always includes a value. When you are enfeebled, you take a conditional penalty equal to the enfeebled value on attack rolls, damage rolls, and Strength-based checks."
+  },
+  {
+    "label": "Entangled",
+    "description": "A snare or another entrapping effect holds you back. You’re hampered 10 (see the condition). If you attempt a manipulate action, activity, free action, or reaction while entangled, you must succeed at a DC 5 flat check or it is lost; attempt the check after using it but before any effects are applied."
+  },
+  {
+    "label": "Fascinated",
+    "description": "You are compelled to focus your attention on something, which distracts you from other things going on around you. You take a –2 conditional penalty to Perception and skill checks, and you can’t use actions, activities, free actions, or reactions with the concentrate trait unless they or their intended consequences are related to the subject of your fascination (as determined by the GM). For instance, you might be able to Seek and Recall Knowledge about the subject, but not cast This condition ends if creatures act in a hostile fashion toward you or your allies."
+  },
+  {
+    "label": "Fatigued",
+    "description": "You’re tired, and expending energy makes you worse off. You’re hampered 5 (see page 323). You take a –1 conditional penalty to AC and saving throws; each action you use during an encounter increases the penalty by 1 until the start of your next turn. For example, if you use 1 Stride action and 2 Strike actions on your turn, the conditional penalty would increase by 3 to a –4 penalty, which would reset to –1 at the start of your next turn. The penalty increases after each action you spend, so if you triggered an attack as a reaction to the first action you used, you’d take a –2 conditional penalty to AC against that attack. If you’re fatigued in exploration mode, you can’t choose any tactic other than wandering. You recover from fatigue with a full night’s rest (8 hours)."
+  },
+  {
+    "label": "Flat-footed",
+    "description": "You’re unable to focus your full attention on defense. You take a –2 circumstance penalty to AC."
+  },
+  {
+    "label": "Fleeing",
+    "description": "You’re forced to run away due to fear or some other compulsion. On your turn, you must spend each of your actions trying to escape the source of the fleeing condition as expediently as possible (such as by using move actions like Climbing or Flying to flee, or opening doors barring your escape). The source is usually the effect or caster that gave you the condition, though some effects might define something else as the source from which you must flee. You can’t Delay or Ready while fleeing."
+  },
+  {
+    "label": "Friendly",
+    "description": "This condition affects only creatures that are not player characters. This attitude reflects a creature’s disposition toward the character who applied the condition. A creature that is friendly to a character likes that character. The character can attempt to make a Request of a friendly creature, and the friendly creature is likely to agree to a simple and safe request that doesn’t cost it much to fulfill. A character gains a +2 circumstance bonus to Lie, to Make an Impression on, or Request things from a friendly creature. This condition ends if the character who applied the condition (or the allies of that character) acts in a hostile fashion toward the creature."
+  },
+  {
+    "label": "Frightened",
+    "description": "You’re gripped by fear and struggle to control your nerves. The frightened condition always includes a value. You take a conditional penalty equal to this value to your checks and saving throws. Unless specified otherwise, at the end of each of your turns, the value of your frightened condition decreases by 1."
+  },
+  {
+    "label": "Grabbed",
+    "description": "You’re held in place by another creature, making you immobile and flat-footed. If you attempt a manipulate action, activity, free action, or reaction while grabbed, you must succeed at a DC 5 flat check or it is lost; attempt the check after using it but before any effects are applied."
+  },
+  {
+    "label": "Hampered",
+    "description": "Your Speed is reduced. Hampered is always followed by a number indicating by how many feet the condition reduces your Speed. This condition can’t reduce your Speed below 5 feet. If the condition doesn’t specify which of your movement types it applies to, it applies to all of them. You can have both the accelerated and hampered conditions at the same time, so if you were accelerated 10 and hampered 15, your Speed would be reduced by 5 feet."
+  },
+  {
+    "label": "Helpful",
+    "description": "This condition affects only creatures that aren’t player characters. This attitude reflects a creature’s disposition toward the character who applied the condition. A creature that is helpful to a character wishes to actively aid that character. It will accept reasonable Requests from that character, as long as such requests aren’t at the expense of the helpful creature’s goals or quality of life. A character gains a +4 circumstance bonus to Deception checks to Lie to the helpful creature. This condition ends if the character who applied the condition (or the allies of that character) acts in a hostile fashion toward the creature, and the creature could gain a worse attitude condition depending on the severity of the hostile act."
+  },
+  {
+    "label": "Hostile",
+    "description": "This attitude affects only creatures that are not player characters. This condition reflects a creature’s disposition toward the character who applied the condition. A creature that is hostile to a character actively seeks to harm the character. It doesn’t necessarily attack, but it won’t accept Requests from the character. A character takes a –4 penalty to Make an Impression and Lie actions against a creature hostile to them."
+  },
+  {
+    "label": "Immobile",
+    "description": "You can’t use any action, activity, free action, or reaction that has the move trait. If an external force would move you out of your space, it must succeed at a check against either the DC of the effect rooting you or the relevant defense (usually Fortitude DC) of a monster rooting you, as appropriate."
+  },
+  {
+    "label": "Indifferent",
+    "description": "This attitude affects only creatures that are not player characters. This condition reflects a creature’s disposition toward the character who applied the condition. A creature that is indifferent to a character doesn’t really care one way or the other about the character. The rules assume a creature’s attitude is indifferent unless specified otherwise."
+  },
+  {
+    "label": "Paralyzed",
+    "description": "Your body is frozen in place. You have the flat-footed condition and can’t act except to Recall Knowledge and act in other ways that require only the use of your mind (as determined by the GM)."
+  },
+  {
+    "label": "Persistent Damage",
+    "description": "Persistent damage comes from effects like acid or burning and appears as “X persistent [type] damage,” where the “X” is the amount of damage dealt and “[type]” is the damage type. While affected by persistent damage, at the end of your turn you take the specified amount and type of damage, after which you can attempt a DC 20 flat check to remove the persistent damage. You roll the damage dice anew each time you take the persistent damage. Immunities, resistances, and weaknesses all apply to persistent damage. If an effect deals damage immediately and also deals persistent damage, you don’t take the persistent damage if you negate the other damage. For example, an attack that deals slashing damage and persistent bleed damage wouldn’t deal the persistent bleed damage if you blocked all of the slashing damage. You can be simultaneously affected by multiple persistent damage conditions so long as they have different damage types. If you would gain more than one persistent damage condition with the same damage type, the higher amount of damage overrides the lower amount. All types of persistent damage occur at once, so if something triggers when you take damage, it triggers only one time. Persistent damage can have the bleed type, meaning it affects only living creatures that need blood to survive. Bleeding automatically ends if you’re healed to your maximum Hit Points. You or an ally can spend actions to help you recover from persistent damage, such as casting healing spells or using Medicine to Administer First Aid against bleeding, dousing a flame, or washing off acid; successfully doing so reduces the DC of that condition’s flat check to 15 and usually lets you immediately attempt an extra flat check to end that persistent damage. The reduction to the DC lasts until you remove the persistent damage or gain another persistent damage condition with the same damage type."
+  },
+  {
+    "label": "Petrified",
+    "description": "You have been turned to stone. You can’t act and you have the blinded and deafened conditions. You become an object with a Bulk equal to twice your normal Bulk (typically 16 for a petrified Medium creature or 8 for a petrified Small creature), AC 9, TAC 5, and Hardness 8. In this state, you can take a number of Dents equal to 1 plus your Constitution modifier (minimum 1) before being broken (see page 320). When you’re turned back into flesh, you have as many HP as when you turned into a statue minus 5 HP for every Dent your statue had taken. This can’t reduce you below a minimum of 1 HP, and if your statue was broken you return with exactly 1 HP. If the statue is completely destroyed, you immediately die."
+  },
+  {
+    "label": "Prone",
+    "description": "You’re lying on the ground. You take a –2 circumstance penalty to attack rolls but gain a +1 circumstance bonus to AC against ranged attacks. You’re flat-footed against melee attacks. The only move actions you can use while you’re prone are Crawl and Stand. Standing up ends the prone condition. If you’re Climbing or Flying when you would be knocked prone, you fall instead (see page 310 for the rules on falling). You can’t be knocked prone when Swimming unless you sink to the bottom of a body of water."
+  },
+  {
+    "label": "Quick",
+    "description": "You gain 1 additional action at the start of your turn each round. Many effects that make you quick specify the types of actions you can use with this additional action. If you become quick from multiple sources, you can use the extra action granted to use any single action granted by any of the effects that made you quick."
+  },
+  {
+    "label": "Restrained",
+    "description": "You’re tied up so you can barely move or a creature has you pinned. You have the immobile and flat-footed conditions, and you can’t do anything with the attack or manipulate traits except Break Grapple or Escape. The restrained condition overrides grabbed."
+  },
+  {
+    "label": "Sensed",
+    "description": "You become sensed when you were unseen by a creature (see below) but that creature has managed to determine the space you’re in (usually by succeeding at the Seek action). A creature who has sensed you is flat-footed to you but can target you with a Strike or another action that targets individuals, though it must succeed at a DC 11 flat check or the action fails to affect you."
+  },
+  {
+    "label": "Sick",
+    "description": "You feel ill. Sick always includes a value. You take a conditional penalty equal to this value on all your checks. You can’t willingly ingest anything (including potions) while sick. You can spend an action retching in an attempt to recover, which lets you attempt a Fortitude save against the DC of the effect that made you sick. On a success, you reduce your sickness value by 1 (or by 2 on a critical success)."
+  },
+  {
+    "label": "Slowed",
+    "description": "You can spend fewer actions. Slowed always includes a value. When you regain your actions at the start of your turn, reduce that number of actions by your slowed value. You can’t Ready an action when you’re slowed. If you become slowed during your turn, you don’t lose any actions until the start of your next turn."
+  },
+  {
+    "label": "Sluggish",
+    "description": "Your movements become clumsy and inexact. Sluggish always includes a value. When you are sluggish, you take a conditional penalty to AC, attack rolls, Dexterity-based checks, and Reflex saves equal to the condition’s value."
+  },
+  {
+    "label": "Stunned",
+    "description": "Your body is unresponsive. You can’t act."
+  },
+  {
+    "label": "Stupefied",
+    "description": "Your thoughts and instincts are clouded. Stupefied always includes a value. You take a conditional penalty equal to the value on spell rolls; spell DCs; and Intelligence-, Wisdom-, and Charisma-based checks. Anytime you attempt to cast a spell while stupefied, the spell is disrupted unless you succeed at a spell roll against the DC of the effect that gave you the stupefied condition."
+  },
+  {
+    "label": "Unconscious",
+    "description": "You’ve been knocked out. You can’t act, and you have the blinded, deafened, and flat-footed conditions, and you take a –4 conditional penalty to AC. When you gain this condition, you fall prone and drop items you are wielding or holding unless the effect states otherwise or the GM determines you’re in a position in which you wouldn’t. You must attempt a recovery saving throw (see page 295) at the start of each of your turns."
+  },
+  {
+    "label": "Unfriendly",
+    "description": "This attitude affects only creatures that are not player characters. This condition reflects a creature’s disposition toward the character who applied the condition. A creature that is unfriendly to a character dislikes and specifically distrusts that character. The creature won’t accept Requests from the character. A character takes a –2 circumstance penalty to Lie and Make an Impression actions against an unfriendly creature."
+  },
+  {
+    "label": "Unseen",
+    "description": "When you are unseen by a creature, that creature cannot see you at all, has no idea what space you occupy, and can’t target you with attacks or targeted spells and effects, though you still can be affected by area effects. The creature can attempt to guess which square you’re in to try targeting you, as detailed on page 303. When you’re unseen by a creature, that creature is flat-footed to you. A creature can use the Seek action to try to find you. If it succeeds, you cease to be unseen by it and are sensed instead. Diseases, gases, poisons, and venoms are types of afflictions, as are some alchemical items, curses, and other effects. An affliction can infect a creature for a long time, progressing through different and often increasingly debilitating stages. The level of an affliction is the level of the monster or item causing the affliction, or, in the case of a spell, is listed in the affliction entry in the spell’s effect. Afflictions appear in the following format."
+  }
+]
