@@ -51,11 +51,14 @@
     </li>
 </ul>
 </nav>
+
+ <h4 style=" text-align:center" >
+    <a href ='/encounter/generate/?list={{encounter.url}}' > This Encounter's Specific URL </a>
+</h4>
 <div class="container"  style="margin: 20px;">
     <div class="row justify-content-center">
-        
-        
-        {{#each encounter}}
+
+        {{#each encounter.list}}
         <div class="col align-self-center">
             <div class="card" style="margin: 10px auto; width: 18rem" type="button" data-toggle="modal" data-target= '#{{id}}'>
             <div class="card-body">

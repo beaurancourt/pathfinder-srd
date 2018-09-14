@@ -41,17 +41,31 @@ app.get('/feats', (req, res) => {
   res.render('feats', {'feats': featList})
 })
 
-app.get('/encounter', (req, res) => {
+// app.get('/encounter', (req, res) => {
   
-  res.render('encounter')
-})
+//   res.render('encounter')
+// })
 
 app.get('/encounter/generate', (req, res) => {
-  console.log(generator())
-  res.render('encounter', {'encounter': generator().list})
+
+  const urlArray = 
+    req.query.list != undefined
+    ? req.query.list.split(",").map( creatureInList => 
+        creatureList.find((creature) => 
+          creature.name == creatureInList.trim())
+      ).filter(each => each != undefined)
+    
+    : null
+  
+  req.query.list != undefined
+  ? urlArray.map( each => each.id = each.name.split(" ").join(""))
+  : null
+  
+  const creatureObj = req.query.list != undefined
+    ? { list: urlArray, url: `${req.query.list}`}
+    : generator();
+
+  res.render('encounter', {'encounter':creatureObj})
 })
 
-app.get('/encounter/no/', (req,res)=> {
-  res.json(req.query)
-})
 app.listen(process.env.PORT || 3000);

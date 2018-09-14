@@ -97,7 +97,7 @@ console.log(DMsSelection)
 
                     oneRandomCreature = eligibleCreatures[Math.floor( Math.random() * eligibleCreatures.length )],
                     oneRandomCreature.id = oneRandomCreature.name.split(" ").join(""),
-                    randomCreatures.url.push(`${oneRandomCreature.name},` ),
+                    randomCreatures.url.push(`${oneRandomCreature.name}` ),
                     randomCreatures.list.push(oneRandomCreature),
                     theAdjuster = oneRandomCreature.level - partyLevel,
                     adjusterIndex = creatureXpAndRole.partyLevelAdjuster.findIndex( adj => adj === theAdjuster),
