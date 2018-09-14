@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="/css/feats.css" />
+
+<input class="form-control" id="search" type="text" placeholder="Search..">
+<div id="conditions" class="card-columns">
+  {{#each conditions}}
+    <div class="card w-33">
+      <div class="card-body">
+        <h5 class="card-title">{{label}}</h5>
+        <p class="card-text">{{{description}}}</p>
+      </div>
+    </div>
+  {{/each}}
+</div>
+
+<script src="/js/conditions.js"></script>

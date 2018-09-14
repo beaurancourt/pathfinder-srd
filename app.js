@@ -1,5 +1,6 @@
 var express = require('express');
 var exphbs = require('express-handlebars');
+const conditionList = require('./conditions.json');
 const creatureList = require('./creatures.json');
 const spellList = require('./spells.json');
 const featList = require('./feats.json')
@@ -13,6 +14,10 @@ app.use(express.static('public'))
 
 app.get('/', (req, res) => {
   res.render('creatures', {'creatures': creatureList});
+});
+
+app.get('/conditions', (req, res) => {
+  res.render('conditions', {'conditions': conditionList});
 });
 
 app.get('/creatures', (req, res) => {
