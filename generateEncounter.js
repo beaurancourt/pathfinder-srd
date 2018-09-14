@@ -8,8 +8,9 @@ function generate() {
 //     parseInt(document.getElementById("partyLevel").value.trim())
     
 // ] ;
+
 const DMsSelection = ["High-Threat",0,5] ;
-console.log(DMsSelection)
+
 //-- Encounter Budget Based on Difficulty --
 
     const encounterBudget = {
