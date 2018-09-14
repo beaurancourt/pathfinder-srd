@@ -57,13 +57,13 @@ app.get('/encounter/generate', (req, res) => {
     req.query.list != undefined
     ? req.query.list.split(",").map( creatureInList => 
         creatureList.find((creature) => 
-          creature.name == creatureInList.trim())
+          creature.name == creatureInList)
       ).filter(each => each != undefined)
     
     : null
   
   req.query.list != undefined
-  ? urlArray.map( each => each.id = each.name.split(" ").join(""))
+  ? urlArray.map( each => each.id = each.name.split("(")[0].split(" ").join(""))
   : null
   
   const creatureObj = req.query.list != undefined
