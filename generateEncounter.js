@@ -1,16 +1,15 @@
-const monsters = require("./creatures.json");
+function generate() {
 
-// const DMsSelection = [
-//     $("#difficultyDropdown").val().trim(), 
-//     parseInt($("#addRemovePlayers").val().trim()),
-//     parseInt($("#partyLevel").val().trim())
+    const monsters = require("./creatures.json");
+
+// const DMsSelection2 =  [
+//     document.getElementById("encounterDifficulty").value.trim(), 
+//     parseInt(document.getElementById("moreLessPlayers").value.trim()),
+//     parseInt(document.getElementById("partyLevel").value.trim())
     
 // ] ;
-const DMsSelection = [
-    "High-Threat",0,5
-    
-] ;
-
+const DMsSelection = ["High-Threat",0,5] ;
+console.log(DMsSelection)
 //-- Encounter Budget Based on Difficulty --
 
     const encounterBudget = {
@@ -46,7 +45,7 @@ const DMsSelection = [
 
         // Make your pool of monsters
 
-            const creaturesEncountered = makeMyCreaturePool(XpBudget, partyLevel, []);
+            const creaturesEncountered = makeMyCreaturePool(XpBudget, partyLevel, {url:[],list:[]});
 
         //-------------------------------------------------
         return creaturesEncountered
@@ -97,9 +96,9 @@ const DMsSelection = [
                 ?  (
 
                     oneRandomCreature = eligibleCreatures[Math.floor( Math.random() * eligibleCreatures.length )],
-
-                    randomCreatures.push(`${oneRandomCreature.name}/` ),
-                    
+                    oneRandomCreature.id = oneRandomCreature.name.split(" ").join(""),
+                    randomCreatures.url.push(`${oneRandomCreature.name},` ),
+                    randomCreatures.list.push(oneRandomCreature),
                     theAdjuster = oneRandomCreature.level - partyLevel,
                     adjusterIndex = creatureXpAndRole.partyLevelAdjuster.findIndex( adj => adj === theAdjuster),
 
@@ -112,14 +111,22 @@ const DMsSelection = [
 
         //-------------------------------------------------
 
-
+        // randomCreatures.test = DMsSelection2;
         // Return all eligible creatures a string to use as URL
-            return {url: `generate/` + randomCreatures.join("")}
+            return randomCreatures        
+            //return {url: randomCreatures.join("")}
         //----------------------------
     }
 
 //--------------------------------------------------- //
 
-DMsSelection[0].length > 0 
-? DMsTotalXpBudget(DMsSelection[0], DMsSelection[1], DMsSelection[2] )
-:  {url: ""}
+    return(
+        DMsSelection[0].length > 0 
+            ? DMsTotalXpBudget(DMsSelection[0], DMsSelection[1], DMsSelection[2] )
+            : [{name: "NO creatures yet", level:"Select inputs", category: "Then Submit", rarity:"This is not rare"}]
+    )  
+
+
+};
+
+module.exports = generate;

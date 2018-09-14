@@ -2,8 +2,8 @@ var express = require('express');
 var exphbs = require('express-handlebars');
 const creatureList = require('./creatures.json');
 const spellList = require('./spells.json');
-const featList = require('./feats.json')
-
+const featList = require('./feats.json');
+var generator = require('./generateEncounter.js');
 var app = express();
 
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
@@ -41,4 +41,17 @@ app.get('/feats', (req, res) => {
   res.render('feats', {'feats': featList})
 })
 
+app.get('/encounter', (req, res) => {
+  
+  res.render('encounter')
+})
+
+app.get('/encounter/generate', (req, res) => {
+  console.log(generator())
+  res.render('encounter', {'encounter': generator().list})
+})
+
+app.get('/encounter/no/', (req,res)=> {
+  res.json(req.query)
+})
 app.listen(process.env.PORT || 3000);
