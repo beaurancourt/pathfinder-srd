@@ -3,7 +3,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 	<ul class="navbar-nav mr-auto">
-    <li class="nav-item ">
+	<li class="nav-item ">
 			<div class="input-group mb-3" >
 				<div class="input-group-prepend">
 						<label class="input-group-text" for="encounterDifficulty">Encounter Difficulty</label>
@@ -16,16 +16,16 @@
 					<option value="Extreme-Threat">Extreme-Threat</option>
 				</select>
 			</div>
-    </li>
-    <li class = "nav-item">
+	</li>
+	<li class = "nav-item">
 			<div class="input-group mb-3" >
 				<div class="input-group-prepend">
 						<label class="input-group-text" for="partyLevel">Party's Level</label>
 				</div>
 				<input type="text" class="form-control" id="partyLevel" value = "0" >
 			</div>
-    </li>
-    <li class = "nav-item">
+	</li>
+	<li class = "nav-item">
 			<div class="input-group mb-3" >
 				<div class="input-group-prepend">
 					<label class="input-group-text" for="moreLessPlayers">
@@ -34,12 +34,12 @@
 				</div>
 				<input type="text" class="form-control" id="moreLessPlayers" value = "0" >
 			</div>
-    </li>
-    <li class = "nav-item" >
+	</li>
+	<li class = "nav-item" >
 			<button type="button" id = "generateCreatures" onclick="window.location='/generate'">
 				Generate Encounter
 			</button>
-    </li>
+	</li>
 	</ul>
 </nav>
 <h4 style=" text-align:center" >
@@ -47,7 +47,7 @@
 </h4>
 <div class="container"  style="margin: 20px;">
   <div class="row justify-content-center">
-    {{#each encounter.list}}
+	{{#each encounter.list}}
 			<div class="col align-self-center">
 				<!-- Card -->
 					<div class="card" style="margin: 10px auto; width: 18rem" type="button" data-toggle="modal" data-target= '#{{id}}'>
@@ -79,5 +79,5 @@
 				</div>
 			</div>
 		{{/each}}
-    </div>
+  </div>
 </div>

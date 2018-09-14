@@ -58,7 +58,6 @@ function generate() {
 		// Return all eligible creatures a string to use as URL
 		return randomCreatures        
 	}
-
 	return (
 		dmSelection[0].length > 0 
 			? dmTotalXpBudget(dmSelection[0], dmSelection[1], dmSelection[2] )
