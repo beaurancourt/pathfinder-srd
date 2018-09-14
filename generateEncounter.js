@@ -18,7 +18,7 @@ function generate() {
 	};
 
 	// Determine the DMs Total initial budget
-	const dmTotalXpBudget = (encounterDifficulty, additonalMissingPlayers, partyLevel)  => {
+	const dmTotalXpBudget = (encounterDifficulty, additonalMissingPlayers, partyLevel) => {
 		// Adjust the Budget based on additional/missing players
 		const XpBudget = encounterBudget[encounterDifficulty].xpBudget 
 			+ additonalMissingPlayers * encounterBudget[encounterDifficulty].charAdjustment;
