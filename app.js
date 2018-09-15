@@ -5,6 +5,7 @@ const creatureList = require('./creatures.json');
 const spellList = require('./spells.json');
 const featList = require('./feats.json');
 const generator = require('./generateEncounter.js');
+const bodyParser = require("body-parser");
 
 var app = express();
 
@@ -12,6 +13,8 @@ app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
 app.use(express.static('public'))
+app.use(bodyParser.urlencoded({ extended: true}));
+app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
   res.render('creatures', {'creatures': creatureList});
@@ -59,9 +62,16 @@ app.get('/encounter', (req, res) => {
     }});
   }
   else {
-    const genInfo = generator();
-    res.redirect(`./encounter/?list=${genInfo}`);
+    res.render("encounter")
   }
 })
 
+app.post("/encounter", (req, res) => {
+  const genInfo = generator(
+    req.body.difficulty, 
+    parseInt(req.body.totalPlayers), 
+    parseInt(req.body.partyLevel)
+  );
+  res.redirect(`./encounter/?list=${genInfo}`);
+})
 app.listen(process.env.PORT || 3000);

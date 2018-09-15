@@ -1,4 +1,4 @@
-function generate() {
+function generate(threatLevel, numOfPlayers, partysLevel) {
   const monsters = require("./creatures.json");
 
   // dmSelection should NOT be hard coded; change on user inputs
@@ -36,7 +36,7 @@ function generate() {
     const highestCreatureLevel = partyLevel + creatureXpAndAdjusters.partyLevelAdjuster[trueIndex];
     // Filter list by the highest affordable level & the lowest eligible level (-4 the partyLevel)
     const eligibleCreatures = monsters.filter(
-      eachMonster =>  eachMonster.level <= highestCreatureLevel && eachMonster.level >= partyLevel - 4
+      eachMonster => eachMonster.level <= highestCreatureLevel && eachMonster.level >= partyLevel - 4
     );
     if(eligibleCreatures.length > 0 && xpBudgetLeft >= 0){
       const oneRandomCreature = eligibleCreatures[Math.floor(Math.random() * eligibleCreatures.length)];
@@ -49,11 +49,11 @@ function generate() {
     }
     // Compiling query string
     randomCreatures = randomCreatures.join(",") ;
-    randomCreatures += `&difficulty=${dmSelection[0]}&totalPlayers=${dmSelection[1]}&playersLevel=${dmSelection[2]}`;
-    return randomCreatures        
+    randomCreatures += `&difficulty=${threatLevel}&totalPlayers=${numOfPlayers}&playersLevel=${partysLevel}`;
+    return randomCreatures
   }
 
-  const dmTotalXpBudget = findDmTotalXpBudget(dmSelection[0], dmSelection[1]);
-  return (makeCreaturePool(dmTotalXpBudget, dmSelection[2], []))  
+  const dmTotalXpBudget = findDmTotalXpBudget(threatLevel, numOfPlayers);
+  return (makeCreaturePool(dmTotalXpBudget, partysLevel, []))
 };
 module.exports = generate;
