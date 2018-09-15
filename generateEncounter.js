@@ -1,8 +1,6 @@
 function generate(threatLevel, numOfPlayers, partysLevel) {
   const monsters = require("./creatures.json");
 
-  // dmSelection should NOT be hard coded; change on user inputs
-  const dmSelection = ["High-Threat", 4, 1] ;
   const encounterBudget = {
     "Trivial": {xpBudget: 40, charAdjustment: 10 },
     "Low-Threat": {xpBudget: 60, charAdjustment: 15},
