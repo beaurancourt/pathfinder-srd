@@ -3,17 +3,17 @@ function generate(threatLevel, numOfPlayers, partysLevel) {
 
   const encounterBudget = {
     "Trivial": {xpBudget: 40, charAdjustment: 10 },
-    "Low-Threat": {xpBudget: 60, charAdjustment: 15},
-    "High-Threat": {xpBudget: 80, charAdjustment: 20},
-    "Severe-Threat": {xpBudget:120, charAdjustment: 30},
-    "Extreme-Threat": {xpBudget:160, charAdjustment: 40}
+    "Low": {xpBudget: 60, charAdjustment: 15},
+    "High": {xpBudget: 80, charAdjustment: 20},
+    "Severe": {xpBudget:120, charAdjustment: 30},
+    "Extreme": {xpBudget:160, charAdjustment: 40}
   };
   const creatureXpAndAdjusters = {
     partyLevelAdjuster: [-4, -3, -2, -1, 0, 1, 2, 3, 4], 
     xp: [10, 15, 20, 30, 40, 60, 80, 120, 160]
   };
 
-  const findDmTotalXpBudget = (encounterDifficulty, totalNumPlayers) => {
+  const totalXpBudget = (encounterDifficulty, totalNumPlayers) => {
     // Adjust the budget based on total players; default = 4
     const xpBudget = encounterBudget[encounterDifficulty].xpBudget 
       + (totalNumPlayers - 4) * encounterBudget[encounterDifficulty].charAdjustment;
@@ -36,22 +36,25 @@ function generate(threatLevel, numOfPlayers, partysLevel) {
     const eligibleCreatures = monsters.filter(
       eachMonster => eachMonster.level <= highestCreatureLevel && eachMonster.level >= partyLevel - 4
     );
-    if(eligibleCreatures.length > 0 && xpBudgetLeft >= 0){
+    if (eligibleCreatures.length > 0 && xpBudgetLeft >= 0) {
       const oneRandomCreature = eligibleCreatures[Math.floor(Math.random() * eligibleCreatures.length)];
       randomCreatures.push(oneRandomCreature.name);
       const xpSpent = xpCost(oneRandomCreature.level, partyLevel);
-      makeCreaturePool(xpBudgetLeft - xpSpent, partyLevel, randomCreatures)
-    }
-    else{
+      return makeCreaturePool(xpBudgetLeft - xpSpent, partyLevel, randomCreatures)
+    } else {
       return randomCreatures
     }
-    // Compiling query string
-    randomCreatures = randomCreatures.join(",") ;
-    randomCreatures += `&difficulty=${threatLevel}&totalPlayers=${numOfPlayers}&playersLevel=${partysLevel}`;
-    return randomCreatures
   }
 
-  const dmTotalXpBudget = findDmTotalXpBudget(threatLevel, numOfPlayers);
-  return (makeCreaturePool(dmTotalXpBudget, partysLevel, []))
+  const makeQueryUrl = (creaturesArray) => {
+    const creaturesString = creaturesArray.join(",") ;
+    const queryString =  `/?list=` + creaturesString + `&difficulty=${threatLevel}&totalPlayers=${numOfPlayers}&playersLevel=${partysLevel}`;
+    return queryString
+  }
+
+  const remainingXpBudget = totalXpBudget(threatLevel, numOfPlayers);
+  const creaturesArray = makeCreaturePool(remainingXpBudget, partysLevel, []);
+  const queryUrl = makeQueryUrl(creaturesArray)
+  return queryUrl
 };
 module.exports = generate;

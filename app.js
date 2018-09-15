@@ -55,23 +55,22 @@ app.get('/encounter', (req, res) => {
     const creaturesArray = req.query.list.split(",")
       .map(creatureInList => creatureList.find((creature) => creature.name == creatureInList))
       .filter(creature => creature);
-    creaturesArray.forEach(creature => creature.id = creature.name.split("(")[0].split(" ").join(""));
+      creaturesArray.forEach(creature => creature.id = creature.name.split("(")[0].split(" ").join(""));
     res.render('encounter', {'encounter': { 
       list: creaturesArray, 
       url: req.query,
     }});
-  }
-  else {
+  } else {
     res.render("encounter")
   }
 })
 
 app.post("/encounter", (req, res) => {
-  const genInfo = generator(
+  const queryUrl = generator(
     req.body.difficulty, 
     parseInt(req.body.totalPlayers), 
     parseInt(req.body.partyLevel)
   );
-  res.redirect(`./encounter/?list=${genInfo}`);
+  res.redirect(`./encounter${queryUrl}`);
 })
 app.listen(process.env.PORT || 3000);

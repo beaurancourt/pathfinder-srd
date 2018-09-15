@@ -1,51 +1,54 @@
 <link rel="stylesheet" href="/css/encounter.css" />
 
-<form method="post" action = "/encounter">
-  <div class="input-group mb-3" >
-    <div class="input-group-prepend">
-        <label class="input-group-text" for="encounterDifficulty">Encounter Difficulty</label>
+<form method="post" action="/encounter">
+  <div class="row justify-content-center">
+    <div class="col input-group mb-3 my-3">
+      <div class="input-group-prepend">
+          <label class="input-group-text" for="encounterDifficulty">Encounter Difficulty</label>
+      </div>
+      <select class="custom-select form-control" id="encounterDifficulty" name="difficulty">
+        <option disabled selected>Select</option>
+        <option attributeName="value">Trivial</option>
+        <option attributeName="value">Low</option>
+        <option attributeName="value">High</option>
+        <option attributeName="value">Severe</option>
+        <option attributeName="value">Extreme</option>
+      </select>
     </div>
-    <select class="custom-select form-control" id="encounterDifficulty" name="difficulty">
-      <option value="Trivial" selected>Trivial</option>
-      <option value="Low-Threat">Low-Threat</option>
-      <option value="High-Threat">High-Threat</option>
-      <option value="Severe-Threat">Severe-Threat</option>
-      <option value="Extreme-Threat">Extreme-Threat</option>
-    </select>
-  </div>
-  <div class="input-group mb-3" >
-    <div class="input-group-prepend">
-      <label class="input-group-text" for="partyLevel">Party's Level</label>
+    <div class="col input-group mb-3 my-3">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="partyLevel">Party's Level</label>
+      </div>
+      <input type="text" class="form-control" id="partyLevel" attributeName="value" name="partyLevel">
     </div>
-    <input type="text" class="form-control" id="partyLevel" value="1" name="partyLevel">
-  </div>
-  <div class="input-group mb-3" >
-    <div class="input-group-prepend">
-      <label class="input-group-text" for="totalPlayers">
-        Total # of Players
-      </label>
+    <div class="col input-group mb-3 my-3">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="totalPlayers">
+          Total # of Players
+        </label>
+      </div>
+      <input type="text" class="form-control" id="totalPlayers" attributeName="value" name="totalPlayers">
     </div>
-    <input type="text" class="form-control" id="totalPlayers" value = "4" name="totalPlayers">
-  </div>
-  <div class="input-group mb-3" >
-    <button class = "btn btn-secondary" type="submit" id = "generateCreatures">
-      Change Encounter Difficulty
-    </button>
+    <div class="col input-group mb-3 my-3">
+      <button class="btn btn-secondary" type="submit" id="generateCreatures">
+        Randomize
+      </button>
+    </div>
   </div>
 </form>
 {{#if encounter.url}}
-<h5 style= "text-align:center; margin: 10px">
-  Difficulty: {{encounter.url.difficulty}} / 
-  Total Players: {{encounter.url.totalPlayers}} / 
-  Players Level: {{encounter.url.playersLevel}}
-</h5>
+  <h5 style="text-align:center; margin: 10px">
+    Difficulty: {{encounter.url.difficulty}} / 
+    Total Players: {{encounter.url.totalPlayers}} / 
+    Players Level: {{encounter.url.playersLevel}}
+  </h5>
 {{/if}}
 <div class="container" style="margin: 20px;">
   <div class="row justify-content-center">
     {{#each encounter.list}}
       <div class="col align-self-center">
         <!-- Card -->
-          <div class="card" style="margin: 10px auto; width: 18rem" type="button" data-toggle="modal" data-target= '#{{id}}'>
+          <div class="card" style="margin: 10px auto; width: 18rem" type="button" data-toggle="modal" data-target='#{{id}}'>
             <div class="card-body">
                 <h5 class="card-title">{{name}}</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Level {{level}} - {{rarity}}</h6>
