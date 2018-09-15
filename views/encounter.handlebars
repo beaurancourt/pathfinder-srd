@@ -1,77 +1,77 @@
-<link rel="stylesheet" href="/css/creatures.css" />
+{{!-- <link rel="stylesheet" href="/css/creatures.css" /> --}}
 
 <div class="navbar navbar-expand-lg navbar-light bg-light">
-	<div class="input-group mb-3" >
-		<div class="input-group-prepend">
-				<label class="input-group-text" for="encounterDifficulty">Encounter Difficulty</label>
-		</div>
-		<select class="custom-select" id="encounterDifficulty">
-			<option value="" selected disabled>High-Threat</option>
-			<option value="Trivial">Trivial</option>
-			<option value="Low-Threat">Low-Threat</option>
-			<option value="High-Threat">High-Threat</option>
-			<option value="Severe-Threat">Severe-Threat</option>
-			<option value="Extreme-Threat">Extreme-Threat</option>
-		</select>
-	</div>
-	<div class="input-group mb-3" >
-		<div class="input-group-prepend">
-			<label class="input-group-text" for="partyLevel">Party's Level</label>
-		</div>
-		<input type="text" class="form-control" id="partyLevel" value = "1" >
-	</div>
-	<div class="input-group mb-3" >
-		<div class="input-group-prepend">
-			<label class="input-group-text" for="moreLessPlayers">
-				Total # of Players
-			</label>
-		</div>
-		<input type="text" class="form-control" id="moreLessPlayers" value = "4" >
-	</div>
-	<div class="input-group mb-3" >
-		<button class = "btn btn-secondary" type="button" id = "generateCreatures" onclick="window.location='/encounter'">
-			Change Encounter Difficulty
-		</button>
-	</div>
+  <div class="input-group mb-3" >
+    <div class="input-group-prepend">
+        <label class="input-group-text" for="encounterDifficulty">Encounter Difficulty</label>
+    </div>
+    <select class="custom-select" id="encounterDifficulty">
+      <option value="" selected disabled>High-Threat</option>
+      <option value="Trivial">Trivial</option>
+      <option value="Low-Threat">Low-Threat</option>
+      <option value="High-Threat">High-Threat</option>
+      <option value="Severe-Threat">Severe-Threat</option>
+      <option value="Extreme-Threat">Extreme-Threat</option>
+    </select>
+  </div>
+  <div class="input-group mb-3" >
+    <div class="input-group-prepend">
+      <label class="input-group-text" for="partyLevel">Party's Level</label>
+    </div>
+    <input type="text" class="form-control" id="partyLevel" value = "1" >
+  </div>
+  <div class="input-group mb-3" >
+    <div class="input-group-prepend">
+      <label class="input-group-text" for="moreLessPlayers">
+        Total # of Players
+      </label>
+    </div>
+    <input type="text" class="form-control" id="moreLessPlayers" value = "4" >
+  </div>
+  <div class="input-group mb-3" >
+    <button class = "btn btn-secondary" type="button" id = "generateCreatures" onclick="window.location='/encounter'">
+      Change Encounter Difficulty
+    </button>
+  </div>
 </div>
 <h5 style= "text-align:center; margin: 10px">
-	Difficulty: {{encounter.url.difficulty}} / 
-	Total Players: {{encounter.url.totalPlayers}} / 
-	Players Level: {{encounter.url.playersLevel}}
+  Difficulty: {{encounter.url.difficulty}} / 
+  Total Players: {{encounter.url.totalPlayers}} / 
+  Players Level: {{encounter.url.playersLevel}}
 </h5>
 <div class="container"  style="margin: 20px;">
   <div class="row justify-content-center">
-	{{#each encounter.list}}
-			<div class="col align-self-center">
-				<!-- Card -->
-					<div class="card" style="margin: 10px auto; width: 18rem" type="button" data-toggle="modal" data-target= '#{{id}}'>
-						<div class="card-body">
-								<h5 class="card-title">{{name}}</h5>
-								<h6 class="card-subtitle mb-2 text-muted">Level {{level}} - {{rarity}}</h6>
-								<p class="card-text">Category: {{category}}</p>
-						</div>
-					</div>
-			</div>
-			<!-- Modal -->
-			<div class="modal fade" id={{id}} tabindex="-1" role="dialog" aria-labelledby="longScrollModalTitle" aria-hidden="true">
-				<div class="modal-dialog modal-lg" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-								<h5 class="modal-title" id="longScrollModalTitle">Creature Stats</h5>
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								<span aria-hidden="true">&times;</span>
-								</button>
-						</div>
-						<div class="modal-body">
-							<!-- Partial of Creature -->
-							{{> creature}}
-							<div class="modal-footer">
-									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		{{/each}}
+    {{#each encounter.list}}
+      <div class="col align-self-center">
+        <!-- Card -->
+          <div class="card" style="margin: 10px auto; width: 18rem" type="button" data-toggle="modal" data-target= '#{{id}}'>
+            <div class="card-body">
+                <h5 class="card-title">{{name}}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Level {{level}} - {{rarity}}</h6>
+                <p class="card-text">Category: {{category}}</p>
+            </div>
+          </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id={{id}} tabindex="-1" role="dialog" aria-labelledby="longScrollModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="longScrollModalTitle">Creature Stats</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+              <!-- Partial of Creature -->
+              {{> creature}}
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {{/each}}
   </div>
 </div>

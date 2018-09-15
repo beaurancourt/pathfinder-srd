@@ -8,9 +8,8 @@ const generator = require('./generateEncounter.js');
 
 var app = express();
 
-app.engine('handlebars', exphbs({defaultLayout: 'main', partialsDir: __dirname + '/views/partials'}));
+app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
-app.set('views', __dirname + '/views');
 
 app.use(express.static('public'))
 
@@ -50,10 +49,10 @@ app.get('/feats', (req, res) => {
 
 app.get('/encounter', (req, res) => {
   if (req.query.list != undefined) {
-    const creaturesArray =  req.query.list.split(",")
-      .map( creatureInList => creatureList.find((creature) => creature.name == creatureInList))
-      .filter(each => each != undefined);
-    creaturesArray.map( each => each.id = each.name.split("(")[0].split(" ").join(""));
+    const creaturesArray = req.query.list.split(",")
+      .map(creatureInList => creatureList.find((creature) => creature.name == creatureInList))
+      .filter(creature => creature);
+    creaturesArray.forEach(creature => creature.id = creature.name.split("(")[0].split(" ").join(""));
     res.render('encounter', {'encounter': { 
       list: creaturesArray, 
       url: req.query,
@@ -61,7 +60,7 @@ app.get('/encounter', (req, res) => {
   }
   else {
     const genInfo = generator();
-    res.redirect( `./encounter/?list=${genInfo}`);
+    res.redirect(`./encounter/?list=${genInfo}`);
   }
 })
 
