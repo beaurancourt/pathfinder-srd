@@ -5,6 +5,7 @@ const creatureList = require('./creatures.json');
 const spellList = require('./spells.json');
 const featList = require('./feats.json');
 const generator = require('./generateEncounter.js');
+
 var app = express();
 
 app.engine('handlebars', exphbs({defaultLayout: 'main', partialsDir: __dirname + '/views/partials'}));
@@ -47,16 +48,20 @@ app.get('/feats', (req, res) => {
   res.render('feats', {'feats': featList})
 })
 
-app.get('/generate', (req, res) => {
+app.get('/encounter', (req, res) => {
   if (req.query.list != undefined) {
-    const urlArray =  req.query.list.split(",")
+    const creaturesArray =  req.query.list.split(",")
       .map( creatureInList => creatureList.find((creature) => creature.name == creatureInList))
       .filter(each => each != undefined);
-    urlArray.map( each => each.id = each.name.split("(")[0].split(" ").join(""));
-    res.render('encounter', {'encounter': { list: urlArray, url: `${req.query.list}`}});
+    creaturesArray.map( each => each.id = each.name.split("(")[0].split(" ").join(""));
+    res.render('encounter', {'encounter': { 
+      list: creaturesArray, 
+      url: req.query,
+    }});
   }
-  else{
-    res.render('encounter', {'encounter': generator()});
+  else {
+    const genInfo = generator();
+    res.redirect( `./encounter/?list=${genInfo}`);
   }
 })
 

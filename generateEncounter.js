@@ -1,8 +1,8 @@
 function generate() {
 	const monsters = require("./creatures.json");
 
-	// dmSelection should NOT be hard coded; based on user inputs
-	const dmSelection = ["High-Threat",0,5] ;
+	// dmSelection should NOT be hard coded; change on user inputs
+	const dmSelection = ["High-Threat", 4, 1] ;
 	//-- Encounter Budget Based on Difficulty --
 	const encounterBudget = {
 				"Trivial": { xpBudget: 40, charAdjustment: 10 },
@@ -18,12 +18,12 @@ function generate() {
 	};
 
 	// Determine the DMs Total initial budget
-	const dmTotalXpBudget = (encounterDifficulty, additonalMissingPlayers, partyLevel) => {
-		// Adjust the Budget based on additional/missing players
+	const dmTotalXpBudget = (encounterDifficulty, totalNumPlayers, partyLevel) => {
+		// Adjust the Budget based on additional/missing players. Default = 4
 		const XpBudget = encounterBudget[encounterDifficulty].xpBudget 
-			+ additonalMissingPlayers * encounterBudget[encounterDifficulty].charAdjustment;
+			+ (totalNumPlayers - 4) * encounterBudget[encounterDifficulty].charAdjustment;
 		// Make your pool of monsters
-		const creaturesEncountered = makeMyCreaturePool(XpBudget, partyLevel, {url:[],list:[]});
+		const creaturesEncountered = makeMyCreaturePool(XpBudget, partyLevel, []);
 		return creaturesEncountered
 	}
 
@@ -46,27 +46,18 @@ function generate() {
 		eligibleCreatures.length > 0 && xpBudgetLeft >= 0
 			?(
 				oneRandomCreature = eligibleCreatures[Math.floor( Math.random() * eligibleCreatures.length )],
-				oneRandomCreature.id = oneRandomCreature.name.split("(")[0].split(" ").join(""),
-				randomCreatures.url.push(oneRandomCreature.name),
-				randomCreatures.list.push(oneRandomCreature),
+				randomCreatures.push(oneRandomCreature.name),
 				theAdjuster = oneRandomCreature.level - partyLevel,
 				adjusterIndex = creatureXpAndRole.partyLevelAdjuster.findIndex( adj => adj === theAdjuster),
 				XpSpent = creatureXpAndRole.xp[adjusterIndex],
 				makeMyCreaturePool(xpBudgetLeft - XpSpent, partyLevel, randomCreatures)
 			)
-			: randomCreatures
-		// Return all eligible creatures a string to use as URL
+			: randomCreatures;
+		// Compiling query string
+		randomCreatures = randomCreatures.join(",") ;
+		randomCreatures += `&difficulty=${dmSelection[0]}&totalPlayers=${dmSelection[1]}&playersLevel=${dmSelection[2]}`;
 		return randomCreatures        
 	}
-	return (
-		dmSelection[0].length > 0 
-			? dmTotalXpBudget(dmSelection[0], dmSelection[1], dmSelection[2] )
-			:[{
-				name: "NO Creatures Found", 
-				level:"Choose Encounter Difficulty", 
-				category: "Submit", 
-				rarity:""
-			}]
-	)  
+	return (dmTotalXpBudget(dmSelection[0], dmSelection[1], dmSelection[2]))  
 };
 module.exports = generate;
