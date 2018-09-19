@@ -51,26 +51,26 @@ app.get('/feats', (req, res) => {
 })
 
 app.get('/encounter', (req, res) => {
-  if (req.query.list != undefined) {
-    const creaturesArray = req.query.list.split(",")
+  const query = req.query;
+  if (query.list) {
+    const creaturesArray = query.list.split(",")
       .map(creatureInList => creatureList.find((creature) => creature.name == creatureInList))
       .filter(creature => creature);
-      creaturesArray.forEach(creature => creature.id = creature.name.split("(")[0].split(" ").join(""));
+
+    creaturesArray.forEach(creature => creature.id = creature.name.split("(")[0].trim().split(" ").join(""));
     res.render('encounter', {'encounter': { 
       list: creaturesArray, 
-      url: req.query,
+      url: req.url,
+      difficulty: query.difficulty,
+      totalPlayers: query.totalPlayers,
+      partyLevel: query.partyLevel
     }});
+  } else if (query.partyLevel && query.totalPlayers && query.difficulty) {
+    const encounterInfo = generator(query.difficulty, parseInt(query.totalPlayers), parseInt(query.partyLevel));
+    res.render('encounter', {'encounter': encounterInfo});
   } else {
-    res.render("encounter")
+    res.render('encounter');
   }
 })
 
-app.post("/encounter", (req, res) => {
-  const queryUrl = generator(
-    req.body.difficulty, 
-    parseInt(req.body.totalPlayers), 
-    parseInt(req.body.partyLevel)
-  );
-  res.redirect(`./encounter${queryUrl}`);
-})
 app.listen(process.env.PORT || 3000);

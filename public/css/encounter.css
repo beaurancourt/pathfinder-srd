@@ -1,0 +1,8 @@
+.creatureCard {
+  width:15rem; 
+  margin:auto;
+}
+
+.creatureCard:hover { 
+  background-color: #E9ECEF;
+}

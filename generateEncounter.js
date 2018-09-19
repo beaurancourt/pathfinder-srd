@@ -1,8 +1,8 @@
-function generate(threatLevel, numOfPlayers, partysLevel) {
+function generate(threatLevel, numOfPlayers, partyLevel) {
   const monsters = require("./creatures.json");
 
   const encounterBudget = {
-    "Trivial": {xpBudget: 40, charAdjustment: 10 },
+    "Trivial": {xpBudget: 40, charAdjustment: 10},
     "Low": {xpBudget: 60, charAdjustment: 15},
     "High": {xpBudget: 80, charAdjustment: 20},
     "Severe": {xpBudget:120, charAdjustment: 30},
@@ -15,46 +15,56 @@ function generate(threatLevel, numOfPlayers, partysLevel) {
 
   const totalXpBudget = (encounterDifficulty, totalNumPlayers) => {
     // Adjust the budget based on total players; default = 4
-    const xpBudget = encounterBudget[encounterDifficulty].xpBudget 
-      + (totalNumPlayers - 4) * encounterBudget[encounterDifficulty].charAdjustment;
-    return xpBudget
+    return encounterBudget[encounterDifficulty].xpBudget 
+      + (parseInt(totalNumPlayers) - 4) * encounterBudget[encounterDifficulty].charAdjustment;
   }
 
-  const xpCost = (creatureLevel, partyLevel) => {
+  const xpCost = (creatureLevel) => {
     const theAdjuster = creatureLevel - partyLevel;
     const adjusterIndex = creatureXpAndAdjusters.partyLevelAdjuster
       .findIndex( eachAdjuster => eachAdjuster === theAdjuster);
     return creatureXpAndAdjusters.xp[adjusterIndex];
   }
 
-  const makeCreaturePool = (xpBudgetLeft, partyLevel, randomCreatures) => {
-    const creatureIndex = creatureXpAndAdjusters.xp.findIndex(eachXP => eachXP > xpBudgetLeft) ;	
-    const trueIndex = creatureIndex >= 0 ? creatureIndex -1 : 8;
-    // Determine the highest potential level of the creature you CAN afford
-    const highestCreatureLevel = partyLevel + creatureXpAndAdjusters.partyLevelAdjuster[trueIndex];
-    // Filter list by the highest affordable level & the lowest eligible level (-4 the partyLevel)
-    const eligibleCreatures = monsters.filter(
-      eachMonster => eachMonster.level <= highestCreatureLevel && eachMonster.level >= partyLevel - 4
-    );
-    if (eligibleCreatures.length > 0 && xpBudgetLeft >= 0) {
-      const oneRandomCreature = eligibleCreatures[Math.floor(Math.random() * eligibleCreatures.length)];
-      randomCreatures.push(oneRandomCreature.name);
-      const xpSpent = xpCost(oneRandomCreature.level, partyLevel);
-      return makeCreaturePool(xpBudgetLeft - xpSpent, partyLevel, randomCreatures)
+  const eligibleCreaturePool = (xpBudgetLeft, currentCreaturePool) => {
+    let creatureIndex;
+    if (xpBudgetLeft >= 160) {
+      creatureIndex = 8;
+    } else if (xpBudgetLeft >= 10 && xpBudgetLeft < 160) {
+      creatureIndex = creatureXpAndAdjusters.xp.findIndex(eachXP => eachXP > xpBudgetLeft) -1;	
+    }
+    if (creatureIndex >= 0) {
+      // Determine the highest potential level of the creature you CAN afford
+      const highestCreatureLevel = partyLevel + creatureXpAndAdjusters.partyLevelAdjuster[creatureIndex];
+      // Filter list by the highest affordable level & the lowest eligible level (-4 the partyLevel)
+      return currentCreaturePool.filter(eachMonster => eachMonster.level <= highestCreatureLevel && eachMonster.level >= partyLevel - 4);
+    } else {
+      return []
+    }
+  }
+
+  const compileRandomCreatures = (xpBudgetLeft, currentCreaturePool, randomCreatures) => {
+    if (currentCreaturePool.length > 0 && xpBudgetLeft >= 10) {
+      const oneRandomCreature = currentCreaturePool[Math.floor(Math.random() * currentCreaturePool.length)];
+      oneRandomCreature.id = oneRandomCreature.name.split("(")[0].trim().split(" ").join("");
+      randomCreatures.push(oneRandomCreature);
+      const xpSpent = xpCost(oneRandomCreature.level);
+      currentCreaturePool = eligibleCreaturePool(xpBudgetLeft - xpSpent, currentCreaturePool);
+      return compileRandomCreatures(xpBudgetLeft - xpSpent, currentCreaturePool, randomCreatures);
     } else {
       return randomCreatures
     }
   }
 
   const makeQueryUrl = (creaturesArray) => {
-    const creaturesString = creaturesArray.join(",") ;
-    const queryString =  `/?list=` + creaturesString + `&difficulty=${threatLevel}&totalPlayers=${numOfPlayers}&playersLevel=${partysLevel}`;
-    return queryString
+    const creaturesString = creaturesArray.map(creature => creature.name).join(",").split(" ").join("%20");
+    return `/encounter/?list=${creaturesString}&difficulty=${threatLevel}&totalPlayers=${numOfPlayers}&partyLevel=${partyLevel}`;
   }
 
-  const remainingXpBudget = totalXpBudget(threatLevel, numOfPlayers);
-  const creaturesArray = makeCreaturePool(remainingXpBudget, partysLevel, []);
-  const queryUrl = makeQueryUrl(creaturesArray)
-  return queryUrl
+  const currentXpBudget = totalXpBudget(threatLevel, numOfPlayers);
+  const currentEligiblePool = eligibleCreaturePool(currentXpBudget, monsters);
+  const creaturesArray = compileRandomCreatures(currentXpBudget, currentEligiblePool, []);
+  const queryUrl = makeQueryUrl(creaturesArray);
+  return {list: creaturesArray, url: queryUrl, difficulty: threatLevel, totalPlayers: numOfPlayers, partyLevel: partyLevel}
 };
 module.exports = generate;
