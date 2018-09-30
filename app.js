@@ -68,7 +68,13 @@ app.get('/encounter', (req, res) => {
       .map(creatureInList => creatureList.find((creature) => creature.name == creatureInList))
       .filter(creature => creature);
 
-    creaturesArray.forEach(creature => creature.id = creature.name.split("(")[0].trim().split(" ").join(""));
+    var creatureCount = {};
+    creaturesArray.forEach(creature => {
+      creature.id = creature.name.split("(")[0].trim().split(" ").join("")
+      const perception = parseInt((creature.perception || "0").match(/[-+]?\d+/)[0]);
+      creatureCount[creature.name] = (creatureCount[creature.name] || 0) + 1;
+      creature.editorDescription = `${10 + perception} ${creature.name}#${creatureCount[creature.name]} ${creature.hp}`
+    });
     res.render('encounter', {
       list: creaturesArray,
       url: req.url,
