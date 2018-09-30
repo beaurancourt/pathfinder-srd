@@ -1,25 +1,26 @@
 <link rel="stylesheet" href="/css/encounter.css" />
 
-<form method="get" action="/encounter/">
+<form method="post" action="/encounter/">
   <div class="row">
     <div class="col-sm-12 col-md-6 col-lg-3 input-group mb-3 my-3">
       <div class="input-group-prepend">
         <label class="input-group-text" for="encounterDifficulty">Encounter Difficulty</label>
       </div>
       <select required class="custom-select form-control" id="encounterDifficulty" name="difficulty">
-        <option value={{encounter.difficulty}}>{{encounter.difficulty}}</option>
-        <option attributeName="value">Trivial</option>
-        <option attributeName="value">Low</option>
-        <option attributeName="value">High</option>
-        <option attributeName="value">Severe</option>
-        <option attributeName="value">Extreme</option>
+        {{#select difficulty}}
+          <option value="Trivial">Trivial</option>
+          <option value="Low">Low</option>
+          <option value="High">High</option>
+          <option value="Severe">Severe</option>
+          <option value="Extreme">Extreme</option>
+        {{/select}}
       </select>
     </div>
     <div class="col-sm-6 col-md-6 col-lg-3 input-group mb-3 my-3">
       <div class="input-group-prepend">
         <label class="input-group-text" for="partyLevel">Party's Level</label>
       </div>
-      <input type="number" min="0" max="27" class="form-control" id="partyLevel" attributeName="value" name="partyLevel" value={{encounter.partyLevel}} required>
+      <input type="number" min="0" max="27" class="form-control" id="partyLevel" attributeName="value" name="partyLevel" value={{partyLevel}} required>
     </div>
     <div class="col-sm-6 col-md-6 col-lg-3 input-group mb-3 my-3">
       <div class="input-group-prepend">
@@ -27,7 +28,7 @@
           Total # of Players
         </label>
       </div>
-      <input type="number" min="1" max="8" class="form-control" id="totalPlayers" attributeName="value" name="totalPlayers" value={{encounter.totalPlayers}} required>
+      <input type="number" min="1" max="8" class="form-control" id="totalPlayers" attributeName="value" name="totalPlayers" value={{totalPlayers}} required>
     </div>
     <div class="col-sm-12 col-md-6 col-lg-3 input-group mb-3 my-3">
       <button class="btn btn-block btn-secondary" type="submit" id="generateCreatures">
@@ -36,18 +37,9 @@
     </div>
   </div>
 </form>
-<h5 style="text-align:center; margin:10px">
-  {{#if encounter.url}}
-    <div style="margin:10px"><a href={{encounter.url}} target="_blank">Encounter:</a></div>
-    Difficulty: {{encounter.difficulty}} / 
-    Total Players: {{encounter.totalPlayers}} / 
-    Players Level: {{encounter.partyLevel}}
-    
-  {{/if}}
-</h5>
 <div class="container" style="margin:20px;">
   <div class="row justify-content-center">
-    {{#each encounter.list}}
+    {{#each list}}
       <div class="col align-self-center mb-4">
         <!-- Card -->
           <div class="card creatureCard" data-toggle="modal" data-target="#{{id}}">

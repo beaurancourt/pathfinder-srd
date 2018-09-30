@@ -9,7 +9,18 @@ const bodyParser = require("body-parser");
 
 var app = express();
 
-app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+app.engine('handlebars', exphbs({
+  defaultLayout: 'main',
+  helpers: {
+    select: function(selected, options) {
+      return options.fn(this).replace(
+        new RegExp(' value=\"' + selected + '\"'),
+        '$& selected="selected"'
+      );
+    }
+  }
+}));
+
 app.set('view engine', 'handlebars');
 
 app.use(express.static('public'))
@@ -58,19 +69,26 @@ app.get('/encounter', (req, res) => {
       .filter(creature => creature);
 
     creaturesArray.forEach(creature => creature.id = creature.name.split("(")[0].trim().split(" ").join(""));
-    res.render('encounter', {'encounter': { 
-      list: creaturesArray, 
+    res.render('encounter', {
+      list: creaturesArray,
       url: req.url,
       difficulty: query.difficulty,
       totalPlayers: query.totalPlayers,
       partyLevel: query.partyLevel
-    }});
-  } else if (query.partyLevel && query.totalPlayers && query.difficulty) {
-    const encounterInfo = generator(query.difficulty, parseInt(query.totalPlayers), parseInt(query.partyLevel));
-    res.render('encounter', {'encounter': encounterInfo});
+    });
   } else {
-    res.render('encounter');
+    res.render('encounter', {
+      difficulty: 'High',
+      totalPlayers: 4,
+      partyLevel: 4
+    });
   }
 })
+
+app.post('/encounter', (req, res) => {
+  const query = req.body;
+  const encounterInfo = generator(query.difficulty, parseInt(query.totalPlayers), parseInt(query.partyLevel));
+  res.redirect(encounterInfo.url)
+});
 
 app.listen(process.env.PORT || 3000);

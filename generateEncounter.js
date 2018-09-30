@@ -9,13 +9,13 @@ function generate(threatLevel, numOfPlayers, partyLevel) {
     "Extreme": {xpBudget:160, charAdjustment: 40}
   };
   const creatureXpAndAdjusters = {
-    partyLevelAdjuster: [-4, -3, -2, -1, 0, 1, 2, 3, 4], 
+    partyLevelAdjuster: [-4, -3, -2, -1, 0, 1, 2, 3, 4],
     xp: [10, 15, 20, 30, 40, 60, 80, 120, 160]
   };
 
   const totalXpBudget = (encounterDifficulty, totalNumPlayers) => {
     // Adjust the budget based on total players; default = 4
-    return encounterBudget[encounterDifficulty].xpBudget 
+    return encounterBudget[encounterDifficulty].xpBudget
       + (parseInt(totalNumPlayers) - 4) * encounterBudget[encounterDifficulty].charAdjustment;
   }
 
@@ -31,7 +31,7 @@ function generate(threatLevel, numOfPlayers, partyLevel) {
     if (xpBudgetLeft >= 160) {
       creatureIndex = 8;
     } else if (xpBudgetLeft >= 10 && xpBudgetLeft < 160) {
-      creatureIndex = creatureXpAndAdjusters.xp.findIndex(eachXP => eachXP > xpBudgetLeft) -1;	
+      creatureIndex = creatureXpAndAdjusters.xp.findIndex(eachXP => eachXP > xpBudgetLeft) -1;
     }
     if (creatureIndex >= 0) {
       // Determine the highest potential level of the creature you CAN afford
@@ -67,4 +67,5 @@ function generate(threatLevel, numOfPlayers, partyLevel) {
   const queryUrl = makeQueryUrl(creaturesArray);
   return {list: creaturesArray, url: queryUrl, difficulty: threatLevel, totalPlayers: numOfPlayers, partyLevel: partyLevel}
 };
+
 module.exports = generate;
