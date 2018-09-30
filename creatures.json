@@ -3009,8 +3009,8 @@
       "Fiend",
       "Medium"
     ],
-    "rarity": "Rare Ritual",
-    "level": 1,
+    "rarity": "Creature",
+    "level": 7,
     "perception": "+14; darkvision,",
     "languages": "Abyssal, Celestial, Draconic; telepathy",
     "skills": "+7; Acrobatics +15, Athletics +13, Religion",
@@ -4495,7 +4495,7 @@
       },
       {
         "label": "Flames of Fury",
-        "description": "Any weapon a fury devil holds gains the effects of a"
+        "description": "Any weapon a fury devil holds gains the effects of a flaming rune."
       },
       {
         "label": "Furious Fusillade",
@@ -4537,7 +4537,7 @@
       "TAC": "24;",
       "Fort": "+13,",
       "Ref": "+15,",
-      "Will": "+13, +1 conditional to saves"
+      "Will": "+13, +1 conditional to saves vs magic"
     },
     "category": "Devil",
     "tags": [
@@ -4547,9 +4547,9 @@
       "Lawful",
       "Medium"
     ],
-    "rarity": "Rare Ritual",
-    "level": 1,
-    "perception": "+16; greater darkvision,",
+    "rarity": "Creature",
+    "level": 8,
+    "perception": "+16; greater darkvision, true seeing",
     "languages": "Celestial, Common, Draconic, Infernal;",
     "skills": "+8; Acrobatics +17, Crafting +15, Deception",
     "hp": "90;",
@@ -5219,8 +5219,8 @@
       "Dinosaur",
       "Huge"
     ],
-    "rarity": "Rare Ritual",
-    "level": 10,
+    "rarity": "Creature",
+    "level": 6,
     "perception": "+11; low-light vision, scent 30 feet",
     "languages": "—",
     "skills": "+4; Acrobatics +8, Athletics +14",

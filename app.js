@@ -9,7 +9,18 @@ const bodyParser = require("body-parser");
 
 var app = express();
 
-app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+app.engine('handlebars', exphbs({
+  defaultLayout: 'main',
+  helpers: {
+    select: function(selected, options) {
+      return options.fn(this).replace(
+        new RegExp(' value=\"' + selected + '\"'),
+        '$& selected="selected"'
+      );
+    }
+  }
+}));
+
 app.set('view engine', 'handlebars');
 
 app.use(express.static('public'))
@@ -57,20 +68,33 @@ app.get('/encounter', (req, res) => {
       .map(creatureInList => creatureList.find((creature) => creature.name == creatureInList))
       .filter(creature => creature);
 
-    creaturesArray.forEach(creature => creature.id = creature.name.split("(")[0].trim().split(" ").join(""));
-    res.render('encounter', {'encounter': { 
-      list: creaturesArray, 
+    var creatureCount = {};
+    creaturesArray.forEach(creature => {
+      creature.id = creature.name.split("(")[0].trim().split(" ").join("")
+      const perception = parseInt((creature.perception || "0").match(/[-+]?\d+/)[0]);
+      creatureCount[creature.name] = (creatureCount[creature.name] || 0) + 1;
+      creature.editorDescription = `${10 + perception} ${creature.name}#${creatureCount[creature.name]} ${creature.hp}`
+    });
+    res.render('encounter', {
+      list: creaturesArray,
       url: req.url,
       difficulty: query.difficulty,
       totalPlayers: query.totalPlayers,
       partyLevel: query.partyLevel
-    }});
-  } else if (query.partyLevel && query.totalPlayers && query.difficulty) {
-    const encounterInfo = generator(query.difficulty, parseInt(query.totalPlayers), parseInt(query.partyLevel));
-    res.render('encounter', {'encounter': encounterInfo});
+    });
   } else {
-    res.render('encounter');
+    res.render('encounter', {
+      difficulty: 'High',
+      totalPlayers: 4,
+      partyLevel: 4
+    });
   }
 })
+
+app.post('/encounter', (req, res) => {
+  const query = req.body;
+  const encounterInfo = generator(query.difficulty, parseInt(query.totalPlayers), parseInt(query.partyLevel));
+  res.redirect(encounterInfo.url)
+});
 
 app.listen(process.env.PORT || 3000);

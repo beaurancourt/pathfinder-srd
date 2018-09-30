@@ -1,83 +1,77 @@
 <link rel="stylesheet" href="/css/encounter.css" />
 
-<form method="get" action="/encounter/">
-  <div class="row">
-    <div class="col-sm-12 col-md-6 col-lg-3 input-group mb-3 my-3">
-      <div class="input-group-prepend">
-        <label class="input-group-text" for="encounterDifficulty">Encounter Difficulty</label>
-      </div>
-      <select required class="custom-select form-control" id="encounterDifficulty" name="difficulty">
-        <option value={{encounter.difficulty}}>{{encounter.difficulty}}</option>
-        <option attributeName="value">Trivial</option>
-        <option attributeName="value">Low</option>
-        <option attributeName="value">High</option>
-        <option attributeName="value">Severe</option>
-        <option attributeName="value">Extreme</option>
-      </select>
-    </div>
-    <div class="col-sm-6 col-md-6 col-lg-3 input-group mb-3 my-3">
+<form method="post" action="/encounter/">
+  <div class="row mb-3 mt-3">
+    <div class="col input-group">
       <div class="input-group-prepend">
         <label class="input-group-text" for="partyLevel">Party's Level</label>
       </div>
-      <input type="number" min="0" max="27" class="form-control" id="partyLevel" attributeName="value" name="partyLevel" value={{encounter.partyLevel}} required>
+      <input type="number" min="0" max="27" class="form-control" id="partyLevel" attributeName="value" name="partyLevel" value={{partyLevel}} required>
     </div>
-    <div class="col-sm-6 col-md-6 col-lg-3 input-group mb-3 my-3">
+    <div class="col input-group">
       <div class="input-group-prepend">
         <label class="input-group-text" for="totalPlayers">
           Total # of Players
         </label>
       </div>
-      <input type="number" min="1" max="8" class="form-control" id="totalPlayers" attributeName="value" name="totalPlayers" value={{encounter.totalPlayers}} required>
+      <input type="number" min="1" max="8" class="form-control" id="totalPlayers" attributeName="value" name="totalPlayers" value={{totalPlayers}} required>
     </div>
-    <div class="col-sm-12 col-md-6 col-lg-3 input-group mb-3 my-3">
+  </div>
+  <div class="row mb-3">
+    <div class="col input-group">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="encounterDifficulty">Encounter Difficulty</label>
+      </div>
+      <select required class="custom-select form-control" id="encounterDifficulty" name="difficulty">
+        {{#select difficulty}}
+          <option value="Trivial">Trivial</option>
+          <option value="Low">Low</option>
+          <option value="High">High</option>
+          <option value="Severe">Severe</option>
+          <option value="Extreme">Extreme</option>
+        {{/select}}
+      </select>
+    </div>
+    <div class="col input-group">
       <button class="btn btn-block btn-secondary" type="submit" id="generateCreatures">
         Randomize
       </button>
     </div>
   </div>
 </form>
-<h5 style="text-align:center; margin:10px">
-  {{#if encounter.url}}
-    <div style="margin:10px"><a href={{encounter.url}} target="_blank">Encounter:</a></div>
-    Difficulty: {{encounter.difficulty}} / 
-    Total Players: {{encounter.totalPlayers}} / 
-    Players Level: {{encounter.partyLevel}}
-    
-  {{/if}}
-</h5>
-<div class="container" style="margin:20px;">
-  <div class="row justify-content-center">
-    {{#each encounter.list}}
-      <div class="col align-self-center mb-4">
-        <!-- Card -->
-          <div class="card creatureCard" data-toggle="modal" data-target="#{{id}}">
-            <div class="card-body">
-                <h5 class="card-title">{{name}}</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Level {{level}} - {{rarity}}</h6>
-                <p class="card-text">Category: {{category}}</p>
-            </div>
-          </div>
+<div class="card-columns">
+  {{#each list}}
+    <div class="card w-33" data-toggle="modal" data-target="#{{id}}">
+      <div class="card-body">
+        <h5 class="card-title">{{name}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Level {{level}} - {{rarity}}</h6>
+        <p class="card-text">Category: {{category}}</p>
       </div>
-      <!-- Modal -->
-      <div class="modal fade" id="{{id}}" tabindex="-1" role="dialog" aria-labelledby="longScrollModalTitle" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="longScrollModalTitle">Creature Stats</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-              <!-- Partial of Creature -->
-              {{> creature}}
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="{{id}}" tabindex="-1" role="dialog" aria-labelledby="longScrollModalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="longScrollModalTitle">Creature Stats</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+            <!-- Partial of Creature -->
+            {{> creature}}
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
       </div>
-    {{/each}}
-  </div>
+    </div>
+  {{/each}}
 </div>
+<pre><code>
+{{#each list}}
+{{editorDescription}}
+{{/each}}
+</code></pre>
