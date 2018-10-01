@@ -17,7 +17,7 @@ function generate(threatLevel, numOfPlayers, partyLevel, tags) {
   const capitalTags = tags.map(capFirst)
   const creaturesWithTags = tags.length == 0 ? creatures : (
     creatures.filter(creature => {
-      return containsAll(capitalTags, creature.tags);
+      return containsAll(capitalTags, creature.tags.concat([creature.category]));
     })
   );
 
