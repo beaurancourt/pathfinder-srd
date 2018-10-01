@@ -1,11 +1,33 @@
-var express = require('express');
-var exphbs = require('express-handlebars');
+const express = require('express');
+const exphbs = require('express-handlebars');
 const conditionList = require('./conditions.json');
 const creatureList = require('./creatures.json');
 const spellList = require('./spells.json');
 const featList = require('./feats.json');
 const generator = require('./generateEncounter.js');
 const bodyParser = require("body-parser");
+
+const passport = require('passport');
+const Strategy = require('passport-local').Strategy;
+const ensureLogin = require('connect-ensure-login');
+
+function loggedIn() {
+  return ensureLogin.ensureLoggedIn();
+}
+
+passport.use(new Strategy(
+  function(username, password, cb) {
+    return cb(null,  password == 'mimic');
+  }
+));
+
+passport.serializeUser(function(user, cb) {
+  cb(null, "id");
+});
+
+passport.deserializeUser(function(id, cb) {
+  cb(null, {});
+});
 
 var app = express();
 
@@ -25,43 +47,56 @@ app.set('view engine', 'handlebars');
 
 app.use(express.static('public'))
 app.use(bodyParser.urlencoded({ extended: true}));
+app.use(require('cookie-parser')());
 app.use(bodyParser.json());
+app.use(require('express-session')({ secret: 'keyboard cat', resave: false, saveUninitialized: false }));
 
-app.get('/', (req, res) => {
+app.use(passport.initialize());
+app.use(passport.session());
+
+app.get('/', loggedIn(), (req, res) => {
   res.render('creatures', {'creatures': creatureList});
 });
 
-app.get('/conditions', (req, res) => {
+app.get('/login', (req, res) => {
+  res.render('login');
+});
+
+app.post('/login', passport.authenticate('local', { failureRedirect: '/login' }), (req, res) => {
+  res.redirect('/');
+});
+
+app.get('/conditions', loggedIn(), (req, res) => {
   res.render('conditions', {'conditions': conditionList});
 });
 
-app.get('/creatures', (req, res) => {
+app.get('/creatures', loggedIn(), (req, res) => {
   res.render('creatures', {'creatures': creatureList});
 });
 
-app.get('/creatures/:creatureName', (req, res) => {
+app.get('/creatures/:creatureName', loggedIn(), (req, res) => {
   const creature = creatureList.find((creature) => creature.name == req.params.creatureName)
   res.render('creature', creature)
 });
 
-app.get('/spells', (req, res) => {
+app.get('/spells', loggedIn(), (req, res) => {
   res.render('spells', {'spells': spellList})
 })
 
-app.get('/spells/:spellName', (req, res) => {
+app.get('/spells/:spellName', loggedIn(), (req, res) => {
   const spell = spellList.find((spell) => spell.name == req.params.spellName)
   res.render('spell', spell)
 });
 
-app.get('/classes/:className', (req, res) => {
+app.get('/classes/:className', loggedIn(), (req, res) => {
   res.render('classes/' + req.params.className);
 })
 
-app.get('/feats', (req, res) => {
+app.get('/feats', loggedIn(), (req, res) => {
   res.render('feats', {'feats': featList})
 })
 
-app.get('/encounter', (req, res) => {
+app.get('/encounter', loggedIn(), (req, res) => {
   const query = req.query;
   if (query.list) {
     const creaturesArray = query.list.split(",")
@@ -89,9 +124,9 @@ app.get('/encounter', (req, res) => {
       partyLevel: 4
     });
   }
-})
+});
 
-app.post('/encounter', (req, res) => {
+app.post('/encounter', loggedIn(), (req, res) => {
   const query = req.body;
   const encounterInfo = generator(query.difficulty, parseInt(query.totalPlayers), parseInt(query.partyLevel));
   res.redirect(encounterInfo.url)
