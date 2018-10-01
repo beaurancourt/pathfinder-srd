@@ -115,20 +115,27 @@ app.get('/encounter', loggedIn(), (req, res) => {
       url: req.url,
       difficulty: query.difficulty,
       totalPlayers: query.totalPlayers,
-      partyLevel: query.partyLevel
+      partyLevel: query.partyLevel,
+      tags: (query.tags || '')
     });
   } else {
     res.render('encounter', {
       difficulty: 'High',
       totalPlayers: 4,
-      partyLevel: 4
+      partyLevel: 4,
+      tags: (query.tags || '')
     });
   }
 });
 
 app.post('/encounter', loggedIn(), (req, res) => {
   const query = req.body;
-  const encounterInfo = generator(query.difficulty, parseInt(query.totalPlayers), parseInt(query.partyLevel));
+  const encounterInfo = generator(
+    query.difficulty,
+    parseInt(query.totalPlayers),
+    parseInt(query.partyLevel),
+    (query.tags || "").split(' ').filter(x => x)
+  );
   res.redirect(encounterInfo.url)
 });
 
