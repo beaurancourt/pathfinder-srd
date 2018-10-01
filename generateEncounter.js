@@ -1,5 +1,25 @@
-function generate(threatLevel, numOfPlayers, partyLevel) {
-  const monsters = require("./creatures.json");
+function containsAll(needles, haystack){
+  return needles.every((needle) => haystack.includes(needle))
+}
+
+function capFirst(str) {
+  if (str) {
+    const words = str.split(" ");
+    const cappedFirst = words.map((word) => {
+      return word[0].toUpperCase() + word.slice(1).toLowerCase()
+    });
+    return cappedFirst.join(" ");
+  }
+}
+
+function generate(threatLevel, numOfPlayers, partyLevel, tags) {
+  const creatures = require("./creatures.json");
+  const capitalTags = tags.map(capFirst)
+  const creaturesWithTags = tags.length == 0 ? creatures : (
+    creatures.filter(creature => {
+      return containsAll(capitalTags, creature.tags);
+    })
+  );
 
   const encounterBudget = {
     "Trivial": {xpBudget: 40, charAdjustment: 10},
@@ -58,11 +78,12 @@ function generate(threatLevel, numOfPlayers, partyLevel) {
 
   const makeQueryUrl = (creaturesArray) => {
     const creaturesString = creaturesArray.map(creature => creature.name).join(",").split(" ").join("%20");
-    return `/encounter/?list=${creaturesString}&difficulty=${threatLevel}&totalPlayers=${numOfPlayers}&partyLevel=${partyLevel}`;
+    const tagsString = tags.join('%20');
+    return `/encounter/?list=${creaturesString}&difficulty=${threatLevel}&totalPlayers=${numOfPlayers}&partyLevel=${partyLevel}&tags=${tagsString}`;
   }
 
   const currentXpBudget = totalXpBudget(threatLevel, numOfPlayers);
-  const currentEligiblePool = eligibleCreaturePool(currentXpBudget, monsters);
+  const currentEligiblePool = eligibleCreaturePool(currentXpBudget, creaturesWithTags);
   const creaturesArray = compileRandomCreatures(currentXpBudget, currentEligiblePool, []);
   const queryUrl = makeQueryUrl(creaturesArray);
   return {list: creaturesArray, url: queryUrl, difficulty: threatLevel, totalPlayers: numOfPlayers, partyLevel: partyLevel}
