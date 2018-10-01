@@ -104,14 +104,17 @@ app.get('/encounter', loggedIn(), (req, res) => {
       .filter(creature => creature);
 
     var creatureCount = {};
+    var parsedCreatures = [];
     creaturesArray.forEach(creature => {
+      var clonedCreature = Object.assign({}, creature);
       creature.id = creature.name.split("(")[0].trim().split(" ").join("")
       const perception = parseInt((creature.perception || "0").match(/[-+]?\d+/)[0]);
       creatureCount[creature.name] = (creatureCount[creature.name] || 0) + 1;
-      creature.editorDescription = `${10 + perception} ${creature.name}#${creatureCount[creature.name]} ${creature.hp}`
+      clonedCreature.editorDescription = `${10 + perception} ${creature.name}#${creatureCount[creature.name]} ${creature.hp}`
+      parsedCreatures.push(clonedCreature);
     });
     res.render('encounter', {
-      list: creaturesArray,
+      list: parsedCreatures,
       url: req.url,
       difficulty: query.difficulty,
       totalPlayers: query.totalPlayers,
