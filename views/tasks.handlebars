@@ -1,0 +1,24 @@
+<table id="creatures-table" class="table table-striped table-hover table-sm">
+  <thead>
+    <tr>
+      <th scope="col">Level</th>
+      <th scope="col">Easy</th>
+      <th scope="col">Medium</th>
+      <th scope="col">Hard</th>
+      <th scope="col">Incredible</th>
+      <th scope="col">Ultimate</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each levels}}
+      <tr>
+        <td>{{level}}</td>
+        <td>{{easy}}</td>
+        <td>{{medium}}</td>
+        <td class="table-secondary">{{hard}}</td>
+        <td>{{incredible}}</td>
+        <td>{{ultimate}}</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
