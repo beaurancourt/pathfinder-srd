@@ -2,6 +2,7 @@ const express = require('express');
 const exphbs = require('express-handlebars');
 const conditionList = require('./conditions.json');
 const creatureList = require('./creatures.json');
+const itemList = require('./items.json');
 const spellList = require('./spells.json');
 const featList = require('./feats.json');
 const generator = require('./generateEncounter.js');
@@ -158,5 +159,14 @@ app.get('/tasks', loggedIn(), (req, res) => {
     }
   })});
 })
+
+app.get('/items', loggedIn(), (req, res) => {
+  res.render('items', {'items': itemList});
+});
+
+app.get('/items/:itemName', loggedIn(), (req, res) => {
+  const item = itemList.find((item) => item.label == req.params.itemName)
+  res.render('item', item)
+});
 
 app.listen(process.env.PORT || 3000);

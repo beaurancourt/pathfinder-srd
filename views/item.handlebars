@@ -1,0 +1,24 @@
+<ul class="list-group">
+  <li class="list-group-item d-flex justify-content-around align-items-center list-group-item-primary">
+    <h1>{{label}} - {{level}}</h1>
+  </li>
+  <li class="list-group-item d-flex justify-content-around align-items-center list-group-item">
+    {{#each tags}}
+      <span class="badge badge-secondary">{{this}}</span>
+    {{/each}}
+  </li>
+  {{#if activation}}
+    <li class="list-group-item">
+      <span class="font-weight-bold">Activation: </span>
+      {{#each activation}}
+        <span class="badge badge-secondary">{{this}}</span>
+      {{/each}}
+    </li>
+  {{/if}}
+  {{#each properties}}
+    <li class="list-group-item">
+      <span class="font-weight-bold">{{label}}: </span>
+      {{value}}
+    </li>
+  {{/each}}
+</ul>
