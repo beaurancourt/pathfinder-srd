@@ -41,7 +41,7 @@
   },
   {
     "label": "Dying",
-    "description": "You are bleeding out or otherwise at death’s door. Dying always includes a value, and if it ever reaches dying 4, you die. If you’re dying, the recovery saving throws from the unconscious condition determine whether you get better or worse (see page 295). If you have 1 HP or more and are conscious, your dying condition decreases by 1 at the end of your turn each round."
+    "description": "You are bleeding out or otherwise at death’s door. Dying always includes a value, and if it ever reaches dying 4, you die. If you’re dying, you must attempt a recovery saving throw at the start of your turn to determine whether you get better or worse. If you ever have 1 HP or more, you lose the dying condition. Any time you lose the dying condition, you increase your wounded value by 1 if you already have the condition, or gain wounded 1 if you do not currently have the condition."
   },
   {
     "label": "Encumbered",
@@ -157,7 +157,7 @@
   },
   {
     "label": "Unconscious",
-    "description": "You’ve been knocked out. You can’t act, and you have the blinded, deafened, and flat-footed conditions, and you take a –4 conditional penalty to AC. When you gain this condition, you fall prone and drop items you are wielding or holding unless the effect states otherwise or the GM determines you’re in a position in which you wouldn’t. You must attempt a recovery saving throw (see page 295) at the start of each of your turns."
+    "description": "You’ve been knocked out. You can’t act. You also take a –4 conditional penalty to AC and have the blinded, deafened, and flat-footed conditions. When you gain this condition, you fall prone and drop items you are wielding or holding unless the effect states otherwise or the GM determines you’re in a position in which you wouldn’t. If you ever return to 1 Hit Point or more, you become conscious. If you were dying when you regain conscious, you’re slowed for 1 round, with a slowed value equal to the dying value you had just before you returned to 1 HP. When you’re unconscious and at 0 HP but no longer dying, you naturally return to 1 HP and awaken after sufficient time passes. The GM determines how long you remain unconscious, from at least 10 minutes to several hours."
   },
   {
     "label": "Unfriendly",
@@ -166,5 +166,9 @@
   {
     "label": "Unseen",
     "description": "When you are unseen by a creature, that creature cannot see you at all, has no idea what space you occupy, and can’t target you with attacks or targeted spells and effects, though you still can be affected by area effects. The creature can attempt to guess which square you’re in to try targeting you, as detailed on page 303. When you’re unseen by a creature, that creature is flat-footed to you. A creature can use the Seek action to try to find you. If it succeeds, you cease to be unseen by it and are sensed instead. Diseases, gases, poisons, and venoms are types of afflictions, as are some alchemical items, curses, and other effects. An affliction can infect a creature for a long time, progressing through different and often increasingly debilitating stages. The level of an affliction is the level of the monster or item causing the affliction, or, in the case of a spell, is listed in the affliction entry in the spell’s effect. Afflictions appear in the following format."
+  },
+  {
+    "label": "Wounded",
+    "description": "You have been seriously injured during a fight. As long as you have the wounded condition, if you gain the dying condition or increase it for any reason, increase the amount you gain or increase by your wounded value. The wounded condition ends if someone attends to you with Treat Wounds, or if you are healed to full Hit Points and rest for 10 minutes."
   }
 ]

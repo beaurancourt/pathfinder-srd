@@ -1061,9 +1061,10 @@
       }
     ],
     "traits": [
+      { "label": "Ferocity" },
       {
         "cost": "R",
-        "label": "Ferocity Trigger",
+        "label": "Trigger",
         "description": "The boar is reduced to 0 HP."
       },
       {
@@ -2404,8 +2405,9 @@
       }
     ],
     "traits": [
+      { "label": "Attack of Opportunity" },
       {
-        "label": "Attack of Opportunity Three Heads",
+        "label": "Three Heads",
         "description": "Any ability that would sever a chimera’s head (such as a critical hit with a vorpal weapon) severs one head at random. Losing a head doesn’t kill a chimera (as long as it has one head left), but it does prevent it from making Strikes with the lost head or using the head’s Breath Weapon."
       },
       {
@@ -2573,8 +2575,9 @@
         "label": "Damage",
         "description": "1d6+4 bludgeoning"
       },
+      { "label": "Ambush Sprint" },
       {
-        "label": "Ambush Sprint Trigger",
+        "label": "Trigger",
         "description": "While the crocodile is hiding in water, a creature that hasn’t detected the crocodile moves within 30 feet of it."
       },
       {
@@ -2652,8 +2655,9 @@
         "label": "Items",
         "description": "greataxe, heavy crossbow with 10 bolts, hide armor"
       },
+      { "label": "Ferocity" },
       {
-        "label": "Ferocity Trigger",
+        "label": "Trigger",
         "description": "The cyclops is reduced to 0 HP."
       },
       {
@@ -2796,8 +2800,9 @@
         "label": "Brain Loss",
         "description": "If it takes 55 damage from a critical hit or takes 50 mental damage, the deh-nolo is stupefied 2 for 1 round and must also succeed at a DC 31 Fortitude save (for critical damage) or DC 31 Will save (for mental damage) to avoid having one of its brain blisters destroyed."
       },
+      { "label": "Open Pustules" },
       {
-        "label": "Open Pustules Trigger",
+        "label": "Trigger",
         "description": "The deh-nolo takes at least 20 physical damage at once."
       },
       {
@@ -2977,8 +2982,9 @@
         "label": "Items",
         "description": "expert longspear vs. magic"
       },
+      { "label": "Protective Slime" },
       {
-        "label": "Protective Slime Trigger",
+        "label": "Trigger",
         "description": "A creature Strikes the blood demon with a weapon or unarmed attack, or otherwise touches the blood demon."
       },
       {
@@ -3098,8 +3104,9 @@
         "label": "Aura of Flame",
         "description": "(aura, divine, evocation) 20 feet. Any creature that starts its turn in the aura takes 20 fire damage, or 40 fire damage if the fire demon has grabbed or restrained it. Any creature that hits a fire demon with an unarmed Strike takes 20 fire damage, and weapons that hit a fire demon also take 20 fire damage."
       },
+      { "label": "Attack of Opportunity" },
       {
-        "label": "Attack of Opportunity Disruptive",
+        "label": "Disruptive",
         "description": "In addition to its normal triggers, the fire demon’s Attack of Opportunity can also be used when a creature within the fire demon’s reach uses an action with the concentrate trait. Furthermore, the fire demon doesn’t take the normal –2 penalty when it makes an Attack of Opportunity."
       },
       {
@@ -3409,8 +3416,9 @@
         "label": "Commander’s Aura",
         "description": "(aura, divine, enchantment) 100 feet. Commanded or allied evil creatures in the aura that are lower level than the pride demon gain a +1 circumstance bonus to attack rolls, damage rolls, AC, saves, and skill checks."
       },
+      { "label": "Attack of Opportunity" },
       {
-        "label": "Attack of Opportunity Sextuple Opportunity",
+        "label": "Sextuple Opportunity",
         "description": "A pride demon gains 5 extra reactions per round that it can use only to make Attacks of Opportunity. It can’t use more than one on the same triggering action, even if a creature leaves several squares in its reach, and it must use a different weapon for each Attack of Opportunity."
       }
     ],
@@ -3591,8 +3599,10 @@
       }
     ],
     "traits": [
+      { "label": "Attack of Opportunity" },
+      { "label": "Horn Snare" },
       {
-        "label": "Attack of Opportunity Horn Snare Trigger",
+        "label": "Trigger",
         "description": "A creature misses the slaver demon with a melee weapon Strike."
       },
       {
@@ -4082,8 +4092,9 @@
         "label": "Effect",
         "description": "The devastator rolls a spell roll (+34) to attempt to dispel the spell (as a 10th-level spell). Roll the spell roll even if the dispel attempt is automatically successful because the spell is lower than 10th level. On a critical success, the spell’s caster also can’t cast spells for 1 minute."
       },
+      { "label": "Attack of Opportunity" },
       {
-        "label": "Attack of Opportunity Opportune Armaments",
+        "label": "Opportune Armaments",
         "description": "The devastator can use Attack of Opportunity as a free action, and adds actions with the concentrate trait to the potential triggers."
       }
     ],
@@ -4175,8 +4186,9 @@
         "label": "Weaknesses",
         "description": "good 10"
       },
+      { "label": "Attack of Opportunity" },
       {
-        "label": "Attack of Opportunity Barbs",
+        "label": "Barbs",
         "description": "Each time a creature hits the barbed devil with an unarmed attack or non-reach melee weapon, or otherwise touches it, that creature takes 2d6 piercing damage."
       }
     ],
@@ -4265,8 +4277,9 @@
         "label": "Infernal Wound",
         "description": "(divine, necromancy) A glaive wound caused by a bearded devil also deals 1d6 persistent bleed damage that’s difficult to heal. The flat check DC starts out at 21 and drops to 16 if the bleeding creature or an ally successfully Aids with the recovery. The DC for applying first aid to a creature with an infernal wound is increased by 2. A caster or item trying to use healing magic on a creature suffering the effects of an infernal wound must succeed at a DC 21 spell roll or the magic fails to heal the creature."
       },
+      { "label": "Reposition" },
       {
-        "label": "Reposition Trigger",
+        "label": "Trigger",
         "description": "The devil hits a creature with its glaive Strike."
       },
       {
@@ -4515,8 +4528,9 @@
         "label": "Weaknesses",
         "description": "good 5"
       },
+      { "label": "Weeping Wound" },
       {
-        "label": "Weeping Wound Trigger",
+        "label": "Trigger",
         "description": "The fury devil takes piercing or slashing damage."
       },
       {
@@ -5075,8 +5089,9 @@
         "label": "Frightful Presence",
         "description": "(aura, divine, emotion, enchantment, fear, mental) 20 feet, DC 38"
       },
+      { "label": "Attack of Opportunity" },
       {
-        "label": "Attack of Opportunity Disruptive",
+        "label": "Disruptive",
         "description": "In addition to its normal triggers, the pit fiend’s Attack of Opportunity can also be used when a creature within the pit fiend’s reach uses an action with the concentrate trait. Furthermore, the pit fiend doesn’t take the normal –2 penalty when it makes an Attack of Opportunity."
       }
     ],
@@ -5515,8 +5530,9 @@
         "label": "Frightful Presence",
         "description": "(aura, emotion, fear, mental) 90 feet, DC 19"
       },
+      { "label": "Tail Lash" },
       {
-        "label": "Tail Lash Trigger",
+        "label": "Trigger",
         "description": "A creature within reach of the dragon’s tail takes an action to Strike or attempt a skill check."
       },
       {
@@ -5625,8 +5641,9 @@
         "label": "Frightful Presence",
         "description": "(aura, emotion, fear, mental) 90 feet, DC 24"
       },
+      { "label": "Tail Lash" },
       {
-        "label": "Tail Lash Trigger",
+        "label": "Trigger",
         "description": "A creature within reach of the dragon’s tail takes an action to Strike or attempts a skill check."
       },
       {
@@ -5727,8 +5744,9 @@
         "label": "Frightful Presence",
         "description": "(aura, emotion, fear, mental) 90 feet, DC 32"
       },
+      { "label": "Tail Lash" },
       {
-        "label": "Tail Lash Trigger",
+        "label": "Trigger",
         "description": "A creature within reach of the dragon’s tail takes an action to Strike or attempt a skill check."
       },
       {
@@ -5841,8 +5859,9 @@
         "label": "Frightful Presence",
         "description": "(aura, emotion, fear, mental) 90 feet, DC 21"
       },
+      { "label": "Wing Deflection" },
       {
-        "label": "Wing Deflection Trigger",
+        "label": "Trigger",
         "description": "The dragon is targeted with an attack."
       },
       {
@@ -5954,8 +5973,9 @@
         "label": "Frightful Presence",
         "description": "(aura, emotion, fear, mental) 90 feet, DC 28"
       },
+      { "label": "Wing Deflection" },
       {
-        "label": "Wing Deflection Trigger",
+        "label": "Trigger",
         "description": "The dragon is targeted with an attack."
       },
       {
@@ -6091,8 +6111,9 @@
         "label": "Frightful Presence",
         "description": "(aura, emotion, fear, mental) 90 feet, DC 34"
       },
+      { "label": "Wing Deflection" },
       {
-        "label": "Wing Deflection Trigger",
+        "label": "Trigger",
         "description": "The dragon is targeted with an attack."
       },
       {
@@ -6196,8 +6217,9 @@
         "label": "Frightful Presence",
         "description": "(aura, emotion, fear, mental) 90 feet, DC 20"
       },
+      { "label": "Twisting Tail" },
       {
-        "label": "Twisting Tail Trigger",
+        "label": "Trigger",
         "description": "A creature within reach of the dragon’s tail uses a move action or leaves a square during a move action it’s using."
       },
       {
@@ -6305,8 +6327,9 @@
         "label": "Frightful Presence",
         "description": "(aura, emotion, fear, mental) 90 feet, DC 26"
       },
+      { "label": "Twisting Tail" },
       {
-        "label": "Twisting Tail Trigger",
+        "label": "Trigger",
         "description": "A creature within reach of the dragon’s tail uses a move action or leaves a square during a move action it’s using."
       },
       {
@@ -6422,8 +6445,9 @@
         "label": "Miasma",
         "description": "(aura, poison) 20 feet. After the dragon uses its Breath Weapon, a cloud of poison gas continues to emanate from its body for 1 round. Any creature that ends its turn in the miasma takes 4d6 poison damage. Any creature in the aura is concealed and treats other creatures as concealed. The dragon ignores this concealment."
       },
+      { "label": "Twisting Tail" },
       {
-        "label": "Twisting Tail Trigger",
+        "label": "Trigger",
         "description": "A creature within reach of the dragon’s tail uses a move action or leaves a square during a move action it’s using."
       },
       {
@@ -7557,8 +7581,9 @@
       }
     ],
     "traits": [
+      { "label": "Disperse" },
       {
-        "label": "Disperse Trigger",
+        "label": "Trigger",
         "description": "The air elemental takes damage from a hostile source."
       },
       {
@@ -7616,8 +7641,9 @@
         "label": "High Winds",
         "description": "(air, aura) 30 feet. Air in the aura is difficult terrain for flying creatures that do not have the air trait."
       },
+      { "label": "Disperse" },
       {
-        "label": "Disperse Trigger",
+        "label": "Trigger",
         "description": "The air elemental takes damage from a hostile action."
       },
       {
@@ -7675,8 +7701,9 @@
         "label": "High Winds",
         "description": "(air, aura) 40 feet. Air in the aura is difficult terrain for flying creatures that do not have the air trait. stun"
       },
+      { "label": "Disperse" },
       {
-        "label": "Disperse Trigger",
+        "label": "Trigger",
         "description": "The air elemental takes damage from a hostile action."
       },
       {
@@ -7754,8 +7781,9 @@
         "label": "High Winds",
         "description": "(air, aura) 40 feet. Air in the aura is difficult terrain for flying creatures that do not have the air trait. precision, stun"
       },
+      { "label": "Disperse" },
       {
-        "label": "Disperse Trigger",
+        "label": "Trigger",
         "description": "The air elemental takes damage from a hostile action."
       },
       {
@@ -7833,8 +7861,9 @@
         "label": "High Winds",
         "description": "(air, aura) 40 feet. Air in the aura is difficult terrain for flying creatures that do not have the air trait."
       },
+      { "label": "Disperse" },
       {
-        "label": "Disperse Trigger",
+        "label": "Trigger",
         "description": "The air elemental takes damage from a hostile action."
       },
       {
@@ -7912,8 +7941,9 @@
         "label": "High Winds",
         "description": "(air, aura) 40 feet. Air in the aura is difficult terrain for flying creatures that do not have the air trait. precision, stun"
       },
+      { "label": "Disperse" },
       {
-        "label": "Disperse Trigger",
+        "label": "Trigger",
         "description": "The air elemental takes damage from a hostile source."
       },
       {
@@ -8022,8 +8052,9 @@
         "label": "Earthbound",
         "description": "When not touching solid ground, an earth elemental is slowed 1 and can’t take reactions."
       },
+      { "label": "Crumble" },
       {
-        "label": "Crumble Trigger",
+        "label": "Trigger",
         "description": "The elemental takes damage from a hostile source while atop rock or earth."
       },
       {
@@ -8081,8 +8112,9 @@
         "label": "Earthbound",
         "description": "When not touching solid ground, an earth elemental is slowed 1 and can’t take reactions."
       },
+      { "label": "Crumble" },
       {
-        "label": "Crumble Trigger",
+        "label": "Trigger",
         "description": "The elemental takes damage from a hostile source while atop rock or earth."
       },
       {
@@ -8144,8 +8176,9 @@
         "label": "Spike Stones",
         "description": "(arcane, aura, earth, transmutation) 10 feet. Spikes of rock rise up from all stone surfaces in the aura, creating difficult terrain. A creature moving in the terrain takes 1d10 piercing damage for each square of spikes it moves into (though a Large or larger creature takes damage only once for each square it moves, even if its space covers multiple squares of spikes). Creature with the earth trait ignore all effects of the aura."
       },
+      { "label": "Crumble" },
       {
-        "label": "Crumble Trigger",
+        "label": "Trigger",
         "description": "The elemental takes damage from a hostile source while atop rock or earth."
       },
       {
@@ -8207,8 +8240,9 @@
         "label": "Spike Stones",
         "description": "(arcane, aura, earth, transmutation) 10 feet. Spikes of rock rise up from all stone surfaces in the aura, creating difficult terrain. A creature moving in the terrain takes 2d6 piercing damage for each square of spikes it moves into (though a Large or larger creature takes damage only once for each square it moves, even if its space covers multiple squares of spikes). Creature with the earth trait ignore all effects of the aura."
       },
+      { "label": "Crumble" },
       {
-        "label": "Crumble Trigger",
+        "label": "Trigger",
         "description": "The elemental takes damage from a hostile source while atop rock or earth."
       },
       {
@@ -8270,8 +8304,9 @@
         "label": "Spike Stones",
         "description": "(arcane, aura, earth, transmutation) 10 feet. Spikes of rock rise up from all stone surfaces in the aura, creating difficult terrain. A creature moving in the terrain takes 2d8 piercing damage for each square of spikes it moves into (though a Large or larger creature takes damage only once for each square it moves, even if its space covers multiple squares of spikes). Creature with the earth trait ignore all effects of the aura."
       },
+      { "label": "Crumble" },
       {
-        "label": "Crumble Trigger",
+        "label": "Trigger",
         "description": "The elemental takes damage from a hostile source while atop rock or earth."
       },
       {
@@ -9974,8 +10009,9 @@
         "label": "Items",
         "description": "expert half plate, sack with 5 rocks"
       },
+      { "label": "Attack of Opportunity" },
       {
-        "label": "Attack of Opportunity Catch Rock",
+        "label": "Catch Rock",
         "description": "See the sidebar on page 72."
       }
     ],
@@ -10270,8 +10306,9 @@
         "label": "Items",
         "description": "three"
       },
+      { "label": "Attack of Opportunity" },
       {
-        "label": "Attack of Opportunity Catch Rock",
+        "label": "Catch Rock",
         "description": "See the sidebar above."
       }
     ],
@@ -10560,8 +10597,9 @@
         "label": "Items",
         "description": "dogslicer, leather armor, shortbow with 10 arrows"
       },
+      { "label": "Goblin Scuttle" },
       {
-        "label": "Goblin Scuttle Trigger",
+        "label": "Trigger",
         "description": "A goblin ally ends a move action adjacent to the warrior."
       },
       {
@@ -10625,8 +10663,9 @@
         "label": "Items",
         "description": "horsechopper, shortbow with 20 arrows, studded leather"
       },
+      { "label": "Goblin Scuttle" },
       {
-        "label": "Goblin Scuttle Trigger",
+        "label": "Trigger",
         "description": "A goblin ally ends a move action adjacent to the commando."
       },
       {
@@ -10701,8 +10740,9 @@
         "label": "Items",
         "description": "club"
       },
+      { "label": "Goblin Scuttle" },
       {
-        "label": "Goblin Scuttle Trigger",
+        "label": "Trigger",
         "description": "A goblin ally ends a move action adjacent to the pyro."
       },
       {
@@ -10773,8 +10813,9 @@
         "label": "Items",
         "description": "dogslicer, leather armor, shortbow with 10 arrows"
       },
+      { "label": "Goblin Scuttle" },
       {
-        "label": "Goblin Scuttle Trigger",
+        "label": "Trigger",
         "description": "A goblin ally ends a move action adjacent to the war chanter."
       },
       {
@@ -11285,8 +11326,9 @@
         "label": "Damage",
         "description": "2d10+14"
       },
+      { "label": "Impose Paralysis" },
       {
-        "label": "Impose Paralysis Trigger",
+        "label": "Trigger",
         "description": "The stone golem hits a slowed creature."
       },
       {
@@ -11450,8 +11492,9 @@
         "label": "Resistances",
         "description": "all damage 20 (except unarmed attacks)"
       },
+      { "label": "Ferocity" },
       {
-        "label": "Ferocity Trigger",
+        "label": "Trigger",
         "description": "Grendel is reduced to 0 or fewer Hit Points."
       },
       {
@@ -11903,8 +11946,9 @@
       }
     ],
     "traits": [
+      { "label": "Flame Overflow" },
       {
-        "label": "Flame Overflow Trigger",
+        "label": "Trigger",
         "description": "The hell hound is hit with a fire attack or effect."
       },
       {
@@ -11977,8 +12021,9 @@
         "label": "Will",
         "description": "+3"
       },
+      { "label": "Attack of Opportunity" },
       {
-        "label": "Attack of Opportunity Formation",
+        "label": "Formation",
         "description": "When it’s adjacent to at least two other allies, the hobgoblin gains a +1 circumstance bonus to AC and saving throws. This bonus increases to +2 on Reflex saves against area effects."
       },
       {
@@ -12402,8 +12447,9 @@
         "label": "All-Around Vision",
         "description": "As long as it has at least two heads, a hydra can’t be flanked."
       },
+      { "label": "Attack of Opportunity" },
       {
-        "label": "Attack of Opportunity Head Regrowth",
+        "label": "Head Regrowth",
         "description": "The hydra ordinarily has five heads. A creature can attempt to sever one of the hydra’s heads by specifically attacking it and dealing damage equal to the head’s HP value. A head that is not completely severed returns to full HP at the end of any creature’s turn. Once the hydra’s head has been severed, the hydra can regrow it using hydra regeneration. A creature can prevent this regrowth by dealing any acid or fire damage to the remaining stump, cauterizing it. Single-target acid or fire attacks need to be directed at a stump, but splash damage and areas covering the hydra’s whole space cauterize all stumps if they deal acid or fire damage. If the attack that severs a head deals any acid or fire damage, the stump is cauterized instantly."
       },
       {
@@ -12626,8 +12672,9 @@
         "label": "Whiffling",
         "description": "(aura) 100 feet. Whenever the jabberwock Flies or makes a wing Strike, whiffling begins until the start of its next turn, raising severe winds around the jabberwock. Any creature that approaches must succeed at a DC 44 Athletics check to move closer to the jabberwock. On a critical failure, the creature is blown directly away until it exits the aura, at which point it falls prone. Physical ranged attacks shot through the whiffling take a –4 circumstance penalty."
       },
+      { "label": "Claws That Catch" },
       {
-        "label": "Claws That Catch Trigger",
+        "label": "Trigger",
         "description": "A creature moves into the reach of the jabberwock’s claw."
       },
       {
@@ -13196,8 +13243,9 @@
         "label": "Frightful Presence",
         "description": "(aura, emotion, fear, mental) 60 feet, DC 26"
       },
+      { "label": "Counterspell" },
       {
-        "label": "Counterspell Trigger",
+        "label": "Trigger",
         "description": "A creature casts a spell the lich has prepared."
       },
       {
@@ -13347,8 +13395,9 @@
         "label": "Effect",
         "description": "The demilich leaves its torpor, rolls initiative, and gains the benefit of its companion spell."
       },
+      { "label": "Countermeasures" },
       {
-        "label": "Countermeasures Trigger",
+        "label": "Trigger",
         "description": "The demilich’s turn begins."
       },
       {
@@ -13476,8 +13525,9 @@
         "label": "Will",
         "description": "+3"
       },
+      { "label": "Attack of Opportunity" },
       {
-        "label": "Attack of Opportunity Cold-Blooded",
+        "label": "Cold-Blooded",
         "description": "If the lizardfolk warrior takes cold damage, it’s slowed 1 for 1 round."
       },
       {
@@ -13821,8 +13871,9 @@
         "label": "All-Around Vision",
         "description": "A medusa can’t be flanked."
       },
+      { "label": "Biting Snakes" },
       {
-        "label": "Biting Snakes Trigger",
+        "label": "Trigger",
         "description": "A creature ends its turn adjacent to the medusa."
       },
       {
@@ -13881,8 +13932,9 @@
         "label": "Adhesive",
         "description": "The mimic is coated in an adhesive slime. Any creature that hits the mimic, is hit by the mimic, or otherwise touches the mimic must succeed at a DC 19 Reflex save or becomes grabbed. A weapon that hits the mimic is stuck to the mimic, and can be removed with a successful DC 21 Athletics check. To free itself, a grabbed creature must successfully Escape (DC 21) or Break Grapple (DC 21). A mimic can have any number of objects or creatures stuck to it at a time. The mimic can release a stuck creature or object with an action, and the adhesive dissolves 1d10 rounds after the mimic dies."
       },
+      { "label": "Object Lesson" },
       {
-        "label": "Object Lesson Trigger",
+        "label": "Trigger",
         "description": "A creature touches or physically interacts with the mimic while it is disguised."
       },
       {
@@ -14033,8 +14085,9 @@
         "label": "Spore Cough",
         "description": "The mu spore releases a cloud of burrowing spores in a 400-foot cone. The spores deal 20d8 piercing damage to all creatures, objects, and unliving plant or fungal matter (such as a wooden structure), but not to living plants or fungi or to creatures with the plant or fungus trait (Reflex DC 44 half, no damage on a critical success, double damage on a critical failure). The mu spore can’t use this ability again for 1d4 rounds."
       },
+      { "label": "Swallow" },
       {
-        "label": "Swallow Trigger",
+        "label": "Trigger",
         "description": "The mu spore Grabs a creature with its jaws."
       },
       {
@@ -14288,8 +14341,9 @@
         "label": "Undead Mastery",
         "description": "(aura, divine, necromancy) 100 feet. Commanded or allied undead in the aura that are of a lower level than the pharaoh gain a +1 circumstance bonus to AC, attack rolls, damage rolls, saves, and skill checks."
       },
+      { "label": "Attack of Opportunity" },
       {
-        "label": "Attack of Opportunity Disruptive",
+        "label": "Disruptive",
         "description": "In addition to its normal triggers, the pharaoh’s Attack of Opportunity can also be used when a creature within the pharaoh’s reach uses an action with the concentrate trait. Furthermore, the pharaoh doesn’t take the normal –2 penalty when it makes an Attack of Opportunity."
       },
       {
@@ -14943,8 +14997,9 @@
         "label": "Damage",
         "description": "3d8+14 electricity plus flat-footed for 1 round"
       },
+      { "label": "Shocking Douse" },
       {
-        "label": "Shocking Douse Trigger",
+        "label": "Trigger",
         "description": "A creature within 100 feet casts a fire spell."
       },
       {
@@ -15045,8 +15100,9 @@
         "label": "Items",
         "description": "poor breastplate, 3 javelins, 2 orc knuckle daggers against magic"
       },
+      { "label": "Ferocity" },
       {
-        "label": "Ferocity Trigger",
+        "label": "Trigger",
         "description": "The orc is reduced to 0 or fewer Hit Points."
       },
       {
@@ -15090,6 +15146,7 @@
     "actions": [
       {
         "label": "Melee",
+        "cost": 1,
         "description": "orc necksplitter +7 (forceful, versatile P),"
       },
       {
@@ -15114,8 +15171,10 @@
         "label": "Items",
         "description": "breastplate, 4 javelins, 2 orc necksplitters against magic"
       },
+      { "label": "Attack of Opportunity"},
+      { "label": "Ferocity" },
       {
-        "label": "Attack of Opportunity Ferocity Trigger",
+        "label": "Trigger",
         "description": "The orc is reduced to 0 or fewer Hit Points."
       },
       {
@@ -15183,8 +15242,9 @@
         "label": "Items",
         "description": "falchion, hide armor, 6 javelins"
       },
+      { "label": "Ferocity" },
       {
-        "label": "Ferocity Trigger",
+        "label": "Trigger",
         "description": "The orc is reduced to 0 or fewer Hit Points."
       },
       {
@@ -15638,8 +15698,9 @@
         "label": "Rejuvenation",
         "description": "(necromancy, occult) When a poltergeist is destroyed, it re-forms where it was destroyed—fully healed— after 2d4 days. A poltergeist can be permanently destroyed only if someone determines the reason for its existence and sets right whatever prevents the spirit from resting."
       },
+      { "label": "Telekinetic Defense" },
       {
-        "label": "Telekinetic Defense Trigger",
+        "label": "Trigger",
         "description": "A creature approaches within 10 feet of the poltergeist."
       },
       {
@@ -15812,8 +15873,9 @@
         "label": "Damage",
         "description": "varies (see below)"
       },
+      { "label": "Fast Swallow" },
       {
-        "label": "Fast Swallow Trigger",
+        "label": "Trigger",
         "description": "The purple worm Grabs a creature."
       },
       {
@@ -15980,8 +16042,9 @@
         "label": "Items",
         "description": "saves vs. magic, +3 conditional to saves vs. divine magic good 5"
       },
+      { "label": "Scoff at the Divine" },
       {
-        "label": "Scoff at the Divine Trigger",
+        "label": "Trigger",
         "description": "A creature within 30 feet casts a divine spell or uses a divine ability. The rakshasa must have a spell slot that can be used to cast remaining."
       },
       {
@@ -16179,8 +16242,9 @@
         "label": "Blood Soak",
         "description": "(manipulate) The redcap dips its cap in the blood of a slain foe. The foe must have died in the last minute, and the redcap must have helped kill it. The redcap gains a +4 conditional bonus to damage rolls for 1 minute."
       },
+      { "label": "Deadly Cleave" },
       {
-        "label": "Deadly Cleave Trigger",
+        "label": "Trigger",
         "description": "The redcap drops a creature to 0 Hit Points with a scythe Strike."
       },
       {
@@ -16272,8 +16336,9 @@
       }
     ],
     "traits": [
+      { "label": "Death Strike" },
       {
-        "label": "Death Strike Trigger",
+        "label": "Trigger",
         "description": "The reefclaw is reduced to 0 Hit Points."
       },
       {
@@ -16352,8 +16417,9 @@
       }
     ],
     "traits": [
+      { "label": "Wing Rebuff" },
       {
-        "label": "Wing Rebuff Trigger",
+        "label": "Trigger",
         "description": "A creature moves from beyond the reach of the roc’s wing to within the reach of the roc’s wing."
       },
       {
@@ -16426,8 +16492,9 @@
       }
     ],
     "traits": [
+      { "label": "Reactive Lash" },
       {
-        "label": "Reactive Lash Trigger",
+        "label": "Trigger",
         "description": "A creature within reach of the roper’s strand leaves a square during a move action it’s taking."
       },
       {
@@ -16615,8 +16682,9 @@
         "label": "Metal Scent",
         "description": "A rust monster has the scent ability, but it can smell only metals using it."
       },
+      { "label": "Tail Trip" },
       {
-        "label": "Tail Trip Trigger",
+        "label": "Trigger",
         "description": "A creature carrying a metal item moves out of a square the rust monster threatens."
       },
       {
@@ -16894,8 +16962,9 @@
         "label": "Items",
         "description": "expert ranseur"
       },
+      { "label": "Attack of Opportunity" },
       {
-        "label": "Attack of Opportunity Ignite",
+        "label": "Ignite",
         "description": "(fire)"
       },
       {
@@ -17170,8 +17239,9 @@
       }
     ],
     "traits": [
+      { "label": "Scorpion Sting" },
       {
-        "label": "Scorpion Sting Trigger",
+        "label": "Trigger",
         "description": "A creature moves from out of the scorpion’s reach into the scorpion’s reach."
       },
       {
@@ -18255,8 +18325,9 @@
         "label": "Resistances",
         "description": "cold 5, electricity 5, fire 5, piercing 5, slashing 5"
       },
+      { "label": "Attack of Opportunity" },
       {
-        "label": "Attack of Opportunity Shield Block"
+        "label": "Shield Block"
       }
     ],
     "stats": {
@@ -18382,8 +18453,9 @@
       }
     ],
     "traits": [
+      { "label": "Tighten Coils" },
       {
-        "label": "Tighten Coils Trigger",
+        "label": "Trigger",
         "description": "A creature grabbed or restrained by the ball python attempts an Acrobatics check to Escape or an Athletics check to Break Grapple."
       },
       {
@@ -18530,8 +18602,9 @@
       }
     ],
     "traits": [
+      { "label": "Tighten Coils" },
       {
-        "label": "Tighten Coils Trigger",
+        "label": "Trigger",
         "description": "A creature grabbed or restrained by the ball python attempts an Acrobatics check to Escape or an Athletics check to Break Grapple."
       },
       {
@@ -19029,8 +19102,9 @@
         "label": "Aura of Blasphemy",
         "description": "(aura, divine) 100 feet. The thanatotic titan’s aura attempts to dispel all divine spells cast within the aura. This is a 10th-level spell with a spell roll of +34."
       },
+      { "label": "Attack of Opportunity" },
       {
-        "label": "Attack of Opportunity Disruptive",
+        "label": "Disruptive",
         "description": "In addition to its normal triggers, the thanatotic titan’s Attack of Opportunity can also be used when a creature within the thanatotic titan’s reach uses an action with the concentrate trait. Furthermore, the thanatotic titan doesn’t take the normal –2 penalty when it makes an Attack of Opportunity."
       }
     ],
@@ -19799,8 +19873,9 @@
       }
     ],
     "traits": [
+      { "label": "Guardian Bite" },
       {
-        "label": "Guardian Bite Trigger",
+        "label": "Trigger",
         "description": "A creature within the warg’s reach attacks one of the warg’s allies."
       },
       {
@@ -19858,8 +19933,9 @@
       }
     ],
     "traits": [
+      { "label": "Guardian Bite" },
       {
-        "label": "Guardian Bite Trigger",
+        "label": "Trigger",
         "description": "A creature within the winter wolf’s reach attacks one of the winter wolf’s allies."
       },
       {
@@ -20158,8 +20234,9 @@
         "label": "Rat Empathy",
         "description": "(divination, primal) A wererat can communicate with rodents"
       },
+      { "label": "Nimble Dodge" },
       {
-        "label": "Nimble Dodge Trigger",
+        "label": "Trigger",
         "description": "The wererat is targeted with a melee or ranged attack by an attacker it can see."
       },
       {
@@ -20323,8 +20400,9 @@
       }
     ],
     "traits": [
+      { "label": "Final Spite" },
       {
-        "label": "Final Spite Trigger",
+        "label": "Trigger",
         "description": "The wight is reduced to 0 Hit Points."
       },
       {
@@ -20487,8 +20565,9 @@
         "label": "Damage",
         "description": "2d8+5 negative plus drain life"
       },
+      { "label": "Attack of Opportunity" },
       {
-        "label": "Attack of Opportunity Drain Life",
+        "label": "Drain Life",
         "description": "(divine, necromancy) When the wraith damages a living creature with a touch attack, the wraith gains 5 temporary Hit Points. A living creature damaged by a wraith’s touch must also succeed at a DC 19 Fortitude save or become drained 1. Further damage dealt by the wraith increases the amount of drain by 1 on a failed save."
       },
       {
@@ -20721,8 +20800,9 @@
         "label": "Nightmare Guardian",
         "description": "Yetis defend the world from eldritch portals high in the mountains. They gain a +4 conditional bonus to saves against fear and against spells and abilities that affect dreams. Yetis who fall prey to nightmares lose this ability and become permanently maddened, gaining a +1 conditional bonus to attack and damage rolls but a –1 conditional penalty to AC."
       },
+      { "label": "Vanish" },
       {
-        "label": "Vanish Trigger",
+        "label": "Trigger",
         "description": "A creature sees or hears the yeti, and the yeti is in a snowy environment. This can’t be used if the yeti is already in combat."
       },
       {
@@ -21547,560 +21627,5 @@
     "skills": "+7; Athletics +10, Deception +15, Diplomacy",
     "hp": "90",
     "speed": "25 feet"
-  },
-  {
-    "name": "Masterful Rogue",
-    "actions": [
-      {
-        "label": "Melee",
-        "description": "+20 (deadly 1d8, disarm, magical),"
-      },
-      {
-        "label": "Damage",
-        "description": "3d6+5 piercing"
-      },
-      {
-        "label": "Melee",
-        "description": "+19 (agile, magical, versatile S),"
-      },
-      {
-        "label": "Damage",
-        "description": "2d4+5 piercing"
-      },
-      {
-        "label": "Melee",
-        "description": "fist +18 (agile, nonlethal),"
-      },
-      {
-        "label": "Damage",
-        "description": "1d4+5 bludgeoning"
-      },
-      {
-        "label": "Ranged",
-        "description": "+19 (agile, magical, versatile S),"
-      },
-      {
-        "label": "Damage",
-        "description": "2d4+5 piercing"
-      },
-      {
-        "label": "Debilitating Strike Trigger",
-        "description": "The rogue hits and deals damage to a flat-footed creature with a Strike."
-      },
-      {
-        "label": "Effect",
-        "description": "The rogue applies one of the following debilitations, which lasts until the end of the rogue’s next turn."
-      },
-      {
-        "label": "Debilitation",
-        "description": "The target becomes entangled."
-      },
-      {
-        "label": "Debilitation",
-        "description": "The target becomes enfeebled 1."
-      },
-      {
-        "label": "Light Step",
-        "description": "When the rogue Strides or Steps, they ignore difficult terrain."
-      },
-      {
-        "label": "Mobility",
-        "description": "When the rogue takes a Stride action to move half their Speed or less, that movement does not trigger reactions."
-      },
-      {
-        "label": "Sneak Attack",
-        "description": "If the rogue’s Strike hits a flat-footed creature, it deals 2d6 extra precision damage."
-      },
-      {
-        "label": "Surprise Attack",
-        "description": "On the first round of combat, the rogue treats any creatures that haven’t acted yet as if they were flat-footed."
-      },
-      {
-        "label": "At-Will Spells",
-        "description": "The monster can cast its at-will spells any number of times without using up spell slots. An at-will spell that the monster casts at a higher level than the spell’s base level has that level listed in parentheses."
-      },
-      {
-        "label": "Attack of Opportunity Trigger",
-        "description": "A creature within the monster’s reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it’s using."
-      },
-      {
-        "label": "Effect",
-        "description": "The monster attempts a melee Strike against the triggering creature at a –2 penalty. If the attack hits and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn’t count toward the monster’s multiple attack penalty, and its multiple attack penalty doesn’t apply to this Strike."
-      },
-      {
-        "label": "Change Shape",
-        "description": "(concentrate, polymorph, transmutation) The monster changes its shape indefinitely. It can use this action again to return to its natural shape or adopt a new shape. Unless otherwise noted, a monster cannot use Change Shape to appear as a specific individual. Using Change Shape counts as creating a disguise for the Impersonate use of Deception. The monster’s transformation automatically defeats Perception DCs to determine whether the creature is a member of the race into which it transformed, and it gains a +4 conditional bonus to its Deception DC to prevent others from seeing through its disguise. Change Shape abilities specify what shapes the monster can adopt. The monster doesn’t gain any special abilities of the new shape, only its physical form. In each shape, it replaces its normal Speeds and Strikes, and might potentially change its senses or size. Any changes are listed in its stat block."
-      },
-      {
-        "label": "Constant Spells",
-        "description": "A constant spell affects the monster without the monster needing to cast it, and its duration is unlimited. If a constant spell gets dispelled, the monster can reactivate it by spending the normal spellcasting actions the spell requires."
-      },
-      {
-        "label": "Continuous Aura",
-        "description": "A monster’s continuous aura automatically affects everything within a specified radius emanating from that monster. The monster doesn’t need to spend actions on a continuous aura; rather, a continuous aura’s effects are applied at specific times, such as at the end of each creature’s turn or when creatures enter the aura."
-      },
-      {
-        "label": "Constrict",
-        "description": "The monster automatically deals the listed amount of damage to any number of creatures grabbed or restrained by it."
-      },
-      {
-        "label": "Coven",
-        "description": "(arcane, divination, mental) This monster can form a coven with two or more other creatures who also have this ability. This involves performing an 8-hour ceremony with all prospective coven members. After the coven is formed, each of its members gains elite adjustments (see page 22), adjusting their level accordingly. Coven members can sense other members’ locations and conditions by spending an action and can sense what another coven member is sensing with an activity that takes two actions (these both have the concentrate trait). Covens also grant spells and rituals to their members, but these can be cast only in cooperation between three coven members who are all within 30 feet of one another. A coven member can contribute to a coven spell with a Verbal Casting action. If two coven members have contributed these actions within the last round, a third member can cast a coven spell on her turn by spending the normal spellcasting actions. A coven can cast its coven spells an unlimited number of times, but can cast only one coven spell each round. All covens include the 8th-level spell and all the following spells, which the coven can cast at any level up to 5th: and Individual creatures with the coven ability also grant additional spells to any coven they join. A coven can also cast the ritual, with a DC of 23 instead of the standard DC. If a coven member leaves the coven, the coven ends immediately. If the death of a coven member brings the coven below three members, the remaining members keep their elite adjustments for 24 hours, but without enough members to contribute the necessary actions, they can’t cast coven spells."
-      },
-      {
-        "label": "Disease",
-        "description": "When a creature is exposed to a monster’s disease, it attempts a Fortitude save or succumbs to the disease. The disease follows the rules for afflictions found on page 324 of the"
-      },
-      {
-        "label": "Engulf",
-        "description": "The monster Strides up to double its Speed and can move through the spaces of any creatures in its path. Any creature of the monster’s size or smaller whose space the monster moves through can attempt a Reflex save with the listed DC to avoid being engulfed. A creature unable to act automatically critically fails this save. If a creature succeeds at its save, it chooses to be either pushed aside (out of the monster’s path) or pushed in front of the monster to the end of the monster’s movement. The monster can’t attempt to Engulf the same creature twice in a single action. The monster can contain as many creatures as can fit in its space. A creature that fails its save is pulled into the monster’s body. It is grabbed, is slowed 1, and has to hold its breath or start suffocating. The creature takes the listed amount of damage when first engulfed and at the end of each of its turns while it’s engulfed. An engulfed creature can get free by Escaping against the listed escape DC. An engulfed creature can attack the monster engulfing it, but only with unarmed attacks or with weapons of light Bulk or less. These attacks target the monster’s TAC. If the monster takes piercing or slashing damage equaling or exceeding the toughness value listed in its Engulf entry, the engulfed creature cuts itself free. A creature that gets free by either method can immediately breathe and exits the swallowing monster’s space. If the monster dies, all engulfed creatures are automatically released as the monster’s form loses cohesion."
-      },
-      {
-        "label": "Fast Healing",
-        "description": "A monster with this ability regains the given number of Hit Points each round at the beginning of its turn."
-      },
-      {
-        "label": "Frightful Presence",
-        "description": "(aura, emotion, fear, mental) A creature that enters the area must attempt a Will save. It’s frightened 1 on a success, unaffected on a critical success, frightened 2 on a failure, or frightened 3 and fleeing for 1 round on a critical failure. After a creature attempts its save, it’s bolstered."
-      },
-      {
-        "label": "Grab Requirements",
-        "description": "The monster’s last action was a success with an attack that lists Grab in its damage entry, or it has a creature grabbed using this action."
-      },
-      {
-        "label": "Effect",
-        "description": "The monster automatically Grabs the target until the end of the monster’s next turn. The creature is grabbed by whichever body part the monster attacked with, and that body part can’t be used to Strike creatures until the grab is ended. Using Grab extends the duration of the monster’s Grab until the end of its next turn for all creatures grabbed by it. The grabbed creature can Escape using Acrobatics or Break the Grapple with Athletics, and the Grab ends if the monster moves away."
-      },
-      {
-        "label": "Greater Constrict",
-        "description": "The monster automatically deals the listed amount of damage to a creature grabbed or restrained by it, and the creature must attempt a Fortitude save at the listed DC or fall unconscious. A creature that succeeds at its save is bolstered against falling unconscious in this way."
-      },
-      {
-        "label": "Improved Grab, Improved Knockdown, or Improved Push",
-        "description": "The monster can use Grab, Knockdown, or Push (as appropriate) as a free action triggered by a hit with its initial attack. A creature with Improved Grab still needs to spend an action to extend the duration for creatures it already has grabbed."
-      },
-      {
-        "label": "Knockdown Requirements",
-        "description": "The monster’s last action was a success with an attack that lists Knockdown in its damage entry."
-      },
-      {
-        "label": "Effect",
-        "description": "The monster automatically knocks the target prone."
-      },
-      {
-        "label": "Poison",
-        "description": "When a creature is exposed to a monster’s poison, it attempts a Fortitude save or becomes poisoned. The poison follows the rules for afflictions found in the (page 324)."
-      },
-      {
-        "label": "Push Requirements",
-        "description": "The monster’s last action was a success with an attack that lists Push in its damage entry."
-      },
-      {
-        "label": "Effect",
-        "description": "The monster automatically knocks the target away from the monster. Unless otherwise noted in the ability description, the creature is pushed 5 feet. If the attack was a critical hit, this distance is doubled."
-      },
-      {
-        "label": "Raise a Shield Requirements",
-        "description": "You are wielding a shield."
-      },
-      {
-        "label": "Effect",
-        "description": "You position your shield to protect yourself. When you have Raised a Shield, you gain its listed bonuses to AC and TAC as circumstance bonuses and you can use the Shield Block reaction. Your shield remains raised until the start of your next turn."
-      },
-      {
-        "label": "Regeneration",
-        "description": "This monster regains the listed number of Hit Points each round at the beginning of its turn. It can’t die from damage or the dying condition; its dying condition never increases beyond dying 3 as long as its regeneration is active. If it takes damage of a type listed in the regeneration entry, however, its regeneration deactivates until the end of its next turn. Deactivate the regeneration before applying the damage, since that damage might kill the monster by bringing it to dying 4."
-      },
-      {
-        "label": "Rend",
-        "description": "A Rend entry lists a Strike the monster has."
-      },
-      {
-        "label": "Requirements",
-        "description": "The monster hit the same enemy with two consecutive Strikes of the listed type in the same round."
-      },
-      {
-        "label": "Effect",
-        "description": "The monster automatically deals that Strike’s damage again to the enemy."
-      },
-      {
-        "label": "Shield Block Trigger",
-        "description": "While you have your shield raised, you take damage from a physical attack."
-      },
-      {
-        "label": "Effect",
-        "description": "You snap your shield into place to deflect a blow. Your shield prevents you from taking an amount of damage up to its Hardness—the shield takes this damage instead, possibly becoming dented or broken."
-      },
-      {
-        "label": "Swallow Whole",
-        "description": "(attack) The monster attempts to swallow a creature of the listed size or smaller that it has grabbed in its jaws or mouth. If a swallowed creature is of the maximum size listed, the monster can’t use Swallow Whole again. If the creature is smaller than the maximum, the monster can usually swallow more creatures; the GM determines the maximum. The monster attempts an Athletics check opposed by the grabbed creature’s Reflex DC. If it succeeds, it swallows the creature. The monster’s jaws or mouth no longer grabs a creature it has swallowed, so the monster is free to use them to Strike or Grab once again. The monster can’t attack creatures it has swallowed. A swallowed creature is grabbed, slowed 1, and has to hold its breath or start suffocating. The swallowed creature takes the listed amount of damage when first swallowed and at the end of each of its turns while it’s swallowed. Escaping this ability’s grabbed condition puts the victim back in the monster’s mouth. This frees any other creature grabbed in the monster’s mouth. A swallowed creature can attack the monster that has swallowed it, but only with unarmed attacks or with weapons of light Bulk or less. These attacks target the monster’s TAC. If the monster takes piercing or slashing damage equaling or exceeding the toughness value listed in its Swallow Whole entry, the swallowed creature cuts a large enough opening to exit through. The creature can immediately breathe and exits the swallowing monster’s space. If the monster dies, a swallowed creature can be freed by creatures adjacent to the corpse spending a combined total of 3 actions cutting with a weapon or unarmed attack that deals piercing or slashing damage."
-      },
-      {
-        "label": "Telepathy",
-        "description": "(aura, divination, magical) A monster with telepathy in can communicate mentally with any creatures within the listed radius, as long as they have a language. This doesn’t give any special access to their thoughts, and communicates no more information than normal speech would."
-      },
-      {
-        "label": "Trample",
-        "description": "The monster Strides up to double its Speed and can move through the spaces of creatures of the listed size, Trampling each creature whose space it enters. A trampled creature takes the damage of the listed Strike, but can attempt a Reflex save at the listed DC (half damage on a success, no damage on a critical success, double damage on a critical failure)."
-      },
-      {
-        "label": "Aberration",
-        "description": "Aberrations are creatures from beyond the planes or corruptions of the natural order."
-      },
-      {
-        "label": "Acid",
-        "description": "Effects with this trait deal acid damage. An item with 5 or lower Hardness takes 1 extra Dent from acid damage. Creatures with this trait have a magical connection to acid."
-      },
-      {
-        "label": "Air",
-        "description": "Effects with the air trait either manipulate or conjure air. Those that manipulate air have no effect in a vacuum or an area without air. Creatures with this trait consist primarily of air or have a magical connection to the element."
-      },
-      {
-        "label": "Amphibious",
-        "description": "An amphibious creature can breathe either in water or in air and outside of their preferred environment, usually indefinitely but at least for hours. These creatures often have a swim Speed."
-      },
-      {
-        "label": "Animal",
-        "description": "An animal is a creature with a relatively low intelligence. It typically doesn’t have an Intelligence ability score over 3, can’t speak languages, and can’t be trained in Intelligence-based skills."
-      },
-      {
-        "label": "Aquatic",
-        "description": "Aquatic creatures are at home underwater. Their bludgeoning and slashing unarmed Strikes don’t take the –2 penalty for being underwater. Unless they have amphibious or another trait that says otherwise, aquatic creatures can breathe water but not air."
-      },
-      {
-        "label": "Beast",
-        "description": "A creature similar to an animal but with an Intelligence of 4 or higher is usually a beast. Unlike an animal, a beast might be able to speak and reason."
-      },
-      {
-        "label": "Boggard",
-        "description": "Boggards are frog-like humanoids. They typically have darkvision, a grabbing tongue, and a horrifying croak."
-      },
-      {
-        "label": "Caligni",
-        "description": "Subterranean people with powers to create darkness are called caligni."
-      },
-      {
-        "label": "Chaotic",
-        "description": "Chaotic effects often manipulate energy from chaos- aligned Outer Planes and are anathema to lawful divine servants and divine servants of lawful deities. A creature with this trait is chaotic in alignment."
-      },
-      {
-        "label": "Cold",
-        "description": "Effects with this trait deal cold damage. Creatures with this trait have a magical connection to cold."
-      },
-      {
-        "label": "Complex",
-        "description": "Hazards with this trait roll initiative after their reactions, possibly starting a new encounter, and use actions of their own."
-      },
-      {
-        "label": "Construct",
-        "description": "A construct is an artificial creature empowered by a force other than necromancy. Constructs are often mindless; they are immune to disease, paralysis, and poison; and they may have Hardness based on the materials used to construct their bodies. Constructs are not living creatures, nor are they undead. When reduced to 0 Hit Points, a construct creature is destroyed."
-      },
-      {
-        "label": "Demon",
-        "description": "A race of fiends, demons hail from or trace their origins to the Abyss. Most are irredeemably chaotic evil. They typically have darkvision and resistances to damage."
-      },
-      {
-        "label": "Devil",
-        "description": "A race of fiends from Hell, most devils are irredeemably lawful evil. They typically have greater darkvision, immunity to fire, and telepathy."
-      },
-      {
-        "label": "Dinosaur",
-        "description": "These reptiles have survived from prehistoric times."
-      },
-      {
-        "label": "Dragon",
-        "description": "Dragons are reptilian creatures, often winged or with the power of flight. Most are able to use a breath weapon and are immune to sleep and paralysis."
-      },
-      {
-        "label": "Drow",
-        "description": "Subterranean kin of the elves, drow typically have darkvision and inborn magical abilities."
-      },
-      {
-        "label": "Earth",
-        "description": "Effects with the earth trait either manipulate or conjure earth. Those that manipulate earth have no effect in an area without earth. Creatures with this trait consist primarily of earth or have a magical connection to the element."
-      },
-      {
-        "label": "Electricity",
-        "description": "Effects with this trait deal electricity damage. A creature with this trait has a magical connection to electricity."
-      },
-      {
-        "label": "Elemental",
-        "description": "Elementals are creatures directly tied to an element, and are natives of the Elemental Planes. Elementals don’t need to breathe."
-      },
-      {
-        "label": "Elf",
-        "description": "A creature with this trait is an elf; these mysterious people have rich traditions of magic and scholarship and typically have low-light vision."
-      },
-      {
-        "label": "Environmental",
-        "description": "A hazard with this trait is something dangerous that’s part of the natural world, such as quicksand or harmful mold. Skills like Survival are often necessary to overcome them."
-      },
-      {
-        "label": "Evil",
-        "description": "Evil effects often manipulate energy from evil-aligned Outer Planes and are anathema to good divine servants and divine servants of good deities. A creature with this trait is evil in alignment."
-      },
-      {
-        "label": "Fey",
-        "description": "Creatures of the First World are called the fey."
-      },
-      {
-        "label": "Fiend",
-        "description": "Creatures that hail from or have a strong connection to the evil-aligned planes are called fiends. Fiends can survive the basic environmental effects of planes in the Outer Sphere."
-      },
-      {
-        "label": "Fire",
-        "description": "Effects with the fire trait deal fire damage or either conjure or manipulate fire. Those that manipulate fire have no effect in an area without fire. Creatures with this trait are primarily constituted of fire or have a magical connection to the element."
-      },
-      {
-        "label": "Fungus",
-        "description": "Fungal creatures have the fungus tag. They are distinct from normal fungi."
-      },
-      {
-        "label": "Gargantuan",
-        "description": "This creature is Gargantuan in size."
-      },
-      {
-        "label": "Genie",
-        "description": "The diverse races of genies hold positions of prominence in the Elemental Planes. They have powerful magical abilities."
-      },
-      {
-        "label": "Ghost",
-        "description": "Lost souls that haunt the world as incorporeal undead are called ghosts."
-      },
-      {
-        "label": "Ghoul",
-        "description": "Ghouls are vile undead creatures that feast on flesh."
-      },
-      {
-        "label": "Giant",
-        "description": "Giants are massive humanoid creatures."
-      },
-      {
-        "label": "Gnoll",
-        "description": "Gnolls are humanoids that resemble hyenas."
-      },
-      {
-        "label": "Goblin",
-        "description": "Creatures with this trait can be of any of several ancestries, including small and canny goblins, militaristic hobgoblins, and hulking and savage bugbears. They tend to have darkvision."
-      },
-      {
-        "label": "Golem",
-        "description": "A golem is a special type of construct. A golem is immune to almost all magic, but most have a weakness to certain spells."
-      },
-      {
-        "label": "Good",
-        "description": "Good effects often manipulate energy from good-aligned Outer Planes and are anathema to evil divine servants and divine servants of evil deities. A creature with this trait is good in alignment."
-      },
-      {
-        "label": "Hag",
-        "description": "These creatures are spellcasting crones."
-      },
-      {
-        "label": "Halfling",
-        "description": "A creature with this trait is a halfling; these small people are considered to be lucky, friendly wanderers."
-      },
-      {
-        "label": "Haunt",
-        "description": "A hazard with this trait is a spiritual echo, often of someone with a tragic death. The means to put a haunt to rest varies, and often involves resolving the haunt’s unfinished business. A haunt that hasn’t been properly put to rest always returns after a time."
-      },
-      {
-        "label": "Huge",
-        "description": "This creature is Huge in size."
-      },
-      {
-        "label": "Human",
-        "description": "A creature with this trait is a human; these people are known for their adaptability."
-      },
-      {
-        "label": "Humanoid",
-        "description": "Humanoid creatures reason and act much like humans. They typically stand upright and have two arms and two legs."
-      },
-      {
-        "label": "Incorporeal",
-        "description": "An incorporeal creature or object has no physical body. It can pass through solid objects, including walls. When inside an object, it can’t perceive, attack, or interact with anything outside the object, and it is slowed 1. If it exits an object, it remains slowed until the end of its turn. Corporeal creatures can pass through an incorporeal creature, but can’t end their movement in its space. An incorporeal creature can’t attempt Strength-based checks against physical creatures or objects—only against incorporeal ones—unless those objects have the property rune. Likewise, a corporeal creature can’t attempt Strength-based checks against incorporeal creatures or objects. Incorporeal creatures usually have immunity to nonmagical attacks and other effects or conditions that require a physical body, like disease, poison, and precision damage. They usually resist all damage (except force damage and damage from weapons with the property rune)."
-      },
-      {
-        "label": "Kobold",
-        "description": "Kobolds are reptilian humanoids who typically have darkvision."
-      },
-      {
-        "label": "Large",
-        "description": "This creature is Large in size."
-      },
-      {
-        "label": "Lawful",
-        "description": "Lawful effects often manipulate energy from law-aligned Outer Planes and are anathema to chaotic divine servants and divine servants of chaotic deities. A creature with this trait is lawful in alignment."
-      },
-      {
-        "label": "Lizardfolk",
-        "description": "Lizardfolk are a race of reptilian humanoids. They typically have swim speeds."
-      },
-      {
-        "label": "Magical",
-        "description": "Like an item with this trait, a magical hazard is imbued with magical energies. It radiates a magic aura infused with its dominant school of magic (abjuration, conjuration, divination, enchantment, evocation, illusion, necromancy, or transmutation). Some items or hazards are closely tied to a particular tradition of magic. In these cases, the item or hazard has the arcane, divine, occult, or primal trait instead of the magical trait. Any of these traits indicates that it is magical."
-      },
-      {
-        "label": "Mechanical",
-        "description": "A hazard with this trait—typically a trap—is a constructed physical object."
-      },
-      {
-        "label": "Medium",
-        "description": "This creature is Medium in size."
-      },
-      {
-        "label": "Mindless",
-        "description": "A mindless creature has either programmed or rudimentary mental attributes. Most, if not all, of their mental ability scores are 1. They are immune to all mental effects."
-      },
-      {
-        "label": "Minion",
-        "description": "A creature with this trait can use only 2 actions per turn and can’t use reactions. A minion acts on your turn in combat when you spend an action to issue it verbal commands (this action has the concentrate trait). If given no commands, minions use no actions except to defend themselves or to escape obvious harm. If left unattended for at least 1 minute, mindless minions don’t act, whereas intelligent ones act as they please."
-      },
-      {
-        "label": "Mummy",
-        "description": "A mummy is an undead created from a preserved corpse."
-      },
-      {
-        "label": "Mutant",
-        "description": "The monster has mutated or evolved, granting it unusual benefits, drawbacks, or both."
-      },
-      {
-        "label": "Oni",
-        "description": "Evil spirits that take humanoid form, oni typically have the ability to change their shape."
-      },
-      {
-        "label": "Ooze",
-        "description": "Oozes are creatures with simple anatomies. They tend to be immune to mental effects and precision damage, and tend to have low mental ability scores."
-      },
-      {
-        "label": "Orc",
-        "description": "A creature with this trait is an orc. These green-skinned people have a reputation as warmongers and tend to have darkvision."
-      },
-      {
-        "label": "Plant",
-        "description": "Vegetable creatures have the plant trait. They are distinct from normal plants. Magical effects with this trait manipulate or conjure plants or plant matter in some way. Those that manipulate plants have no effect in an area with no plants."
-      },
-      {
-        "label": "Rakshasa",
-        "description": "Reincarnations of evil souls, rakshasa live on the Material Plane but are fiends."
-      },
-      {
-        "label": "Sahuagin",
-        "description": "Ocean-dwelling evil humanoids, sahuagin usually have blindsense and darkvision."
-      },
-      {
-        "label": "Serpentfolk",
-        "description": "Serpentfolk are ancient reptilian humanoids who tend to be immune to mental spells."
-      },
-      {
-        "label": "Shade",
-        "description": "Most incorporeal undead creatures that feed on the life force of the living belong to the family of shades."
-      },
-      {
-        "label": "Skeleton",
-        "description": "This undead is made from a dead creature’s animated skeleton."
-      },
-      {
-        "label": "Small",
-        "description": "This creature is Small in size."
-      },
-      {
-        "label": "Swarm",
-        "description": "A swarm is a mass or cloud of creatures that functions as one monster. Its size trait gives the size of the entire mass, though for most swarms the individual creatures that make up that mass are Tiny. A swarm can occupy the same space as other creatures, and must do so in order to use its damaging action. Swarms are immune to any effects that target a single creatures or a specific number of creatures. A swarm typically has weakness to effects that deal damage over an area (like area spells and splash weapons)."
-      },
-      {
-        "label": "Tane",
-        "description": "The Tane are powerful primeval creatures originally from the First World."
-      },
-      {
-        "label": "Tiny",
-        "description": "This creature is Tiny in size."
-      },
-      {
-        "label": "Titan",
-        "description": "Ancient creatures formed by the gods, titans are few in number but immensely powerful."
-      },
-      {
-        "label": "Trap",
-        "description": "A hazard or item with this trait is purposefully set or constructed to hinder interlopers. Traps usually require Thievery to disable or bypass, though magical means can assist against magical traps."
-      },
-      {
-        "label": "Troll",
-        "description": "Trolls are brutish giant creatures and are well known for their ability to regenerate."
-      },
-      {
-        "label": "Undead",
-        "description": "Once living, these creatures were infused after death with negative energy and soul-corrupting evil magic. When reduced to 0 Hit Points, an undead creature is destroyed. Undead creatures are damaged by positive energy, are healed by negative energy, and don’t benefit from healing effects."
-      },
-      {
-        "label": "Vampire",
-        "description": "Undead creatures that thirst for blood, vampires are notoriously versatile and hard to destroy."
-      },
-      {
-        "label": "Water",
-        "description": "Effects with the water trait either manipulate or conjure water. Those that manipulate water have no effect in an area without water. Creatures with this trait are primarily constituted of fire or have a magical connection to the element."
-      },
-      {
-        "label": "Werecreature",
-        "description": "These shapechanging creatures are either naturally able to shift between animal, humanoid, and hybrid shape or are afflicted with a curse that forces them to shift involuntarily."
-      },
-      {
-        "label": "Xulgath",
-        "description": "These subterranean reptilian creatures tend to have darkvision."
-      },
-      {
-        "label": "Zombie",
-        "description": "These undead hunger for brains."
-      }
-    ],
-    "traits": [
-      {
-        "label": "Items",
-        "description": "(affixed to rapier), 2"
-      },
-      {
-        "label": "Deny Advantage",
-        "description": "The rogue isn’t treated as flat-footed by flanking, sensed, or unseen creatures of 10th level or lower."
-      },
-      {
-        "label": "Evasion",
-        "description": "When the rogue succeeds at a Reflex save, they treat it as a critical success."
-      },
-      {
-        "label": "Sidestep Trigger",
-        "description": "A Strike attack roll against the rogue fails or critically fails."
-      },
-      {
-        "label": "Effect",
-        "description": "The rogue redirects the attack to a creature of the rogue’s choice that is adjacent to the rogue and within the reach of the triggering attack. The attacker rerolls the Strike’s attack roll at the same multiple attack penalty against the new target."
-      }
-    ],
-    "stats": {
-      "Str": "+0,",
-      "Dex": "+5,",
-      "Con": "+3,",
-      "Int": "+3,",
-      "Wis": "+1,",
-      "Cha": "+3"
-    },
-    "defenses": {
-      "AC": "28,",
-      "TAC": "27;",
-      "Fort": "+15,",
-      "Ref": "+19 (evasion),",
-      "Will": "+14"
-    },
-    "category": "Zombie",
-    "tags": [
-      "Human",
-      "Humanoid",
-      "Medium"
-    ],
-    "rarity": "Creature",
-    "level": 10,
-    "perception": "+18",
-    "languages": "Common",
-    "skills": "+8; Acrobatics +20, Athletics +18, Deception",
-    "hp": "155",
-    "speed": "25 feet, light step, mobility"
   }
 ]
