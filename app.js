@@ -169,4 +169,8 @@ app.get('/magic-items/:itemName', loggedIn(), (req, res) => {
   res.render('item', item)
 });
 
+app.get('/traits', loggedIn(), (req, res) => {
+  res.render('traits');
+})
+
 app.listen(process.env.PORT || 3000);
