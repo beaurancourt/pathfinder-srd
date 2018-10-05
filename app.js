@@ -160,11 +160,11 @@ app.get('/tasks', loggedIn(), (req, res) => {
   })});
 })
 
-app.get('/items', loggedIn(), (req, res) => {
+app.get('/magic-items', loggedIn(), (req, res) => {
   res.render('items', {'items': itemList});
 });
 
-app.get('/items/:itemName', loggedIn(), (req, res) => {
+app.get('/magic-items/:itemName', loggedIn(), (req, res) => {
   const item = itemList.find((item) => item.label == req.params.itemName)
   res.render('item', item)
 });
