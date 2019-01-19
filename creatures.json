@@ -10725,14 +10725,15 @@
       },
       {
         "label": "Arcane Spontaneous Spells",
-        "description": "DC 15, attack +6;"
+        "description": "DC 15, attack +6"
       },
       {
         "label": "1st",
-        "description": "(2 slots)"
+        "description": "(2 slots) burning hands, grease"
       },
       {
-        "label": "Cantrips"
+        "label": "Cantrips",
+        "description": "light, mage hand, prestidigitation, produce flame, tanglefoot"
       }
     ],
     "traits": [
