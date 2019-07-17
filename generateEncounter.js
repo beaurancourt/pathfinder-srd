@@ -12,8 +12,7 @@ function capFirst(str) {
   }
 }
 
-function generate(threatLevel, numOfPlayers, partyLevel, tags) {
-  const creatures = require("./creatures.json");
+function generateEncounter(threatLevel, numOfPlayers, partyLevel, tags, creatures) {
   const capitalTags = tags.map(capFirst)
   const creaturesWithTags = tags.length == 0 ? creatures : (
     creatures.filter(creature => {
@@ -89,4 +88,4 @@ function generate(threatLevel, numOfPlayers, partyLevel, tags) {
   return {list: creaturesArray, url: queryUrl, difficulty: threatLevel, totalPlayers: numOfPlayers, partyLevel: partyLevel}
 };
 
-module.exports = generate;
+module.exports = generateEncounter;
