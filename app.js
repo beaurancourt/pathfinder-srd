@@ -1,10 +1,12 @@
 const express = require('express');
 const exphbs = require('express-handlebars');
 
-const generator = require('./generateEncounter.js');
+const generateEncounter = require('./generateEncounter.js');
 const bodyParser = require("body-parser");
 
-const MongoClient = require('mongodb').MongoClient;
+const mongo = require('mongodb')
+const MongoClient = mongo.MongoClient;
+const ObjectId = mongo.ObjectId;
 const client = new MongoClient(process.env.MONGODB_URI, { useNewUrlParser: true });
 
 client.connect((err) => {
@@ -51,6 +53,34 @@ client.connect((err) => {
   };
 
   app.get('/', renderCreatures);
+
+  const tablesByName = {
+    'conditions': {table: conditionTable, key: 'label'},
+    'creatures': {table: creatureTable, key: 'name'},
+    'magic-items': {table: itemTable, key: 'label'},
+    'spells': {table: spellTable, key: 'name'},
+    'feats': {table: featTable, key: 'name'},
+    'traits': {table: traitTable, key: 'name'}
+  }
+
+  app.get("/:tableName/:entityName/edit", (req, res) => {
+    const {table, key} = tablesByName[req.params.tableName];
+    let query = {}
+    query[key] = req.params.entityName;
+    table.findOne(query, (err, entity) => {
+      res.render('edit', {'json': JSON.stringify(entity)})
+    })
+  })
+
+  app.post("/:tableName/:entityName/edit", (req, res) => {
+    const {table, key} = tablesByName[req.params.tableName];
+    const json = req.body;
+    const id = ObjectId(json._id)
+    delete json._id
+    table.updateOne({'_id': id}, {$set: json}).then(() => {
+      res.redirect(`/${req.params.tableName}/${req.params.entityName}`)
+    })
+  })
 
   app.get('/classes/:className', (req, res) => {
     res.render('classes/' + req.params.className);
@@ -119,13 +149,17 @@ client.connect((err) => {
 
   app.post('/encounter', (req, res) => {
     const query = req.body;
-    const encounterInfo = generator(
-      query.difficulty,
-      parseInt(query.totalPlayers),
-      parseInt(query.partyLevel),
-      (query.tags || "").split(' ').filter(x => x)
-    );
-    res.redirect(encounterInfo.url)
+
+    creatureTable.find().toArray((err, creatureList) => {
+      const encounterInfo = generateEncounter(
+        query.difficulty,
+        parseInt(query.totalPlayers),
+        parseInt(query.partyLevel),
+        (query.tags || "").split(' ').filter(x => x),
+        creatureList
+      );
+      res.redirect(encounterInfo.url)
+    })
   });
 
   app.get('/feats', (req, res) => {
