@@ -1,17 +1,11 @@
 const express = require('express');
 const exphbs = require('express-handlebars');
 
-const conditionList = require('./conditions.json');
-const creatureList = require('./creatures.json');
-const itemList = require('./items.json');
-const spellList = require('./spells.json');
-const featList = require('./feats.json');
-
 const generator = require('./generateEncounter.js');
 const bodyParser = require("body-parser");
 
 const MongoClient = require('mongodb').MongoClient;
-const client = new MongoClient(process.env.MONGODB_URI);
+const client = new MongoClient(process.env.MONGODB_URI, { useNewUrlParser: true });
 
 client.connect((err) => {
   if (err) {
@@ -21,11 +15,11 @@ client.connect((err) => {
   }
 
   const db = client.db("heroku_d8hk9vs8");
-  const conditions = db.collection('conditions');
-  const creatures = db.collection('creatures');
-  const items = db.collection('items');
-  const spells = db.collection('spells');
-  const feats = db.collection('feats');
+  const conditionTable = db.collection('conditions');
+  const creatureTable = db.collection('creatures');
+  const itemTable = db.collection('items');
+  const spellTable = db.collection('spells');
+  const featTable = db.collection('feats');
 
   let app = express();
 
@@ -49,27 +43,29 @@ client.connect((err) => {
   app.use(bodyParser.json());
   app.use(require('express-session')({ secret: 'keyboard cat', resave: false, saveUninitialized: false }));
 
-  app.get('/', (req, res) => {
-    res.render('creatures', {'creatures': creatureList});
-  });
+  const renderCreatures = (req, res) => {
+    creatureTable.find().toArray((err, creatures) => {
+      res.render('creatures', {'creatures': creatures});
+    })
+  };
+
+  app.get('/', renderCreatures);
 
   app.get('/classes/:className', (req, res) => {
     res.render('classes/' + req.params.className);
   })
 
   app.get('/conditions', (req, res) => {
-    res.render('conditions', {'conditions': conditionList});
-  });
-
-  app.get('/creatures', (req, res) => {
-    creatures.find().toArray((err, creatures) => {
-      res.render('creatures', {'creatures': creatures});
+    conditionTable.find().toArray((err, conditions) => {
+      res.render('conditions', {'conditions': conditions});
     })
   });
 
+  app.get('/creatures', renderCreatures);
+
   app.get('/creatures/:creatureName', (req, res) => {
-    creatures.findOne({'name': req.params.creatureName}, (err, creature) => {
-      if (!err) {
+    creatureTable.findOne({'name': req.params.creatureName}, (err, creature) => {
+      if (err) {
         console.log(err)
       }
       res.render('creature', creature)
@@ -79,28 +75,31 @@ client.connect((err) => {
   app.get('/encounter', (req, res) => {
     const query = req.query;
     if (query.list) {
-      const creaturesArray = query.list.split(",")
-        .map(creatureInList => creatureList.find((creature) => creature.name == creatureInList))
-        .filter(creature => creature);
+      const creatureQuery = {'$or': query.list.split(",").map(name => { return {'name': name}})}
+      creatureTable.find(creatureQuery).toArray((err, creatureList) => {
+        const creaturesArray = query.list.split(",")
+          .map(creatureInList => creatureList.find((creature) => creature.name == creatureInList))
+          .filter(creature => creature);
 
-      let creatureCount = {};
-      let parsedCreatures = [];
-      creaturesArray.forEach(creature => {
-        let clonedCreature = Object.assign({}, creature);
-        creature.id = creature.name.split("(")[0].trim().split(" ").join("")
-        const perception = parseInt((creature.perception || "0").match(/[-+]?\d+/)[0]);
-        creatureCount[creature.name] = (creatureCount[creature.name] || 0) + 1;
-        clonedCreature.editorDescription = `${10 + perception} ${creature.name}#${creatureCount[creature.name]} ${creature.hp}`
-        parsedCreatures.push(clonedCreature);
-      });
-      res.render('encounter', {
-        list: parsedCreatures,
-        url: req.url,
-        difficulty: query.difficulty,
-        totalPlayers: query.totalPlayers,
-        partyLevel: query.partyLevel,
-        tags: (query.tags || '')
-      });
+        let creatureCount = {};
+        let parsedCreatures = [];
+        creaturesArray.forEach(creature => {
+          let clonedCreature = Object.assign({}, creature);
+          creature.id = creature.name.split("(")[0].trim().split(" ").join("")
+          const perception = parseInt((creature.perception || "0").match(/[-+]?\d+/)[0]);
+          creatureCount[creature.name] = (creatureCount[creature.name] || 0) + 1;
+          clonedCreature.editorDescription = `${10 + perception} ${creature.name}#${creatureCount[creature.name]} ${creature.hp}`
+          parsedCreatures.push(clonedCreature);
+        });
+        res.render('encounter', {
+          list: parsedCreatures,
+          url: req.url,
+          difficulty: query.difficulty,
+          totalPlayers: query.totalPlayers,
+          partyLevel: query.partyLevel,
+          tags: (query.tags || '')
+        });
+      })
     } else {
       res.render('encounter', {
         difficulty: 'High',
@@ -123,25 +122,33 @@ client.connect((err) => {
   });
 
   app.get('/feats', (req, res) => {
-    res.render('feats', {'feats': featList})
+    featTable.find().toArray((err, feats) => {
+      res.render('feats', {'feats': feats})
+    })
   })
 
   app.get('/magic-items', (req, res) => {
-    res.render('items', {'items': itemList});
+    itemTable.find().toArray((err, items) => {
+      res.render('items', {'items': items});
+    })
   });
 
   app.get('/magic-items/:itemName', (req, res) => {
-    const item = itemList.find((item) => item.label == req.params.itemName)
-    res.render('item', item)
+    itemTable.findOne({'label': req.params.itemName}, (err, item) => {
+      res.render('item', item)
+    })
   });
 
   app.get('/spells', (req, res) => {
-    res.render('spells', {'spells': spellList})
+    spellTable.find().toArray((err, spells) => {
+      res.render('spells', {'spells': spells})
+    })
   })
 
   app.get('/spells/:spellName', (req, res) => {
-    const spell = spellList.find((spell) => spell.name == req.params.spellName)
-    res.render('spell', spell)
+    spellTable.findOne({'name': req.params.spellName}, (err, spell) => {
+      res.render('spell', spell)
+    })
   });
 
   app.get('/tasks', (req, res) => {
