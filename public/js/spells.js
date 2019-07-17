@@ -4,7 +4,7 @@ $(document).ready(function () {
     dom: "ft",
     language: {
       search: "",
-      searchPlaceholder: "Search.."
+      searchPlaceholder: "Filter.."
     }
   }).column(0).data().sort();
   $('input.form-control').removeClass("form-control-sm").addClass("form-control-md");

@@ -21,6 +21,11 @@ client.connect((err) => {
   const spellTable = db.collection('spells');
   const featTable = db.collection('feats');
 
+  conditionTable.createIndex({label: "text", description: "text"})
+  creatureTable.createIndex({name: "text", category: "text"})
+  itemTable.createIndex({label: "text"})
+  spellTable.createIndex({name: "text"})
+  featTable.createIndex({name: "text", description: "text"})
   let app = express();
 
   app.engine('handlebars', exphbs({
@@ -60,6 +65,12 @@ client.connect((err) => {
       res.render('conditions', {'conditions': conditions});
     })
   });
+
+  app.get('/conditions/:conditionName', (req, res) => {
+    conditionTable.findOne({'label': req.params.conditionName}, (err, condition) => {
+      res.render('condition', condition)
+    })
+  })
 
   app.get('/creatures', renderCreatures);
 
@@ -127,6 +138,12 @@ client.connect((err) => {
     })
   })
 
+  app.get('/feats/:featName', (req, res) => {
+    featTable.findOne({'name': req.params.featName}, (err, feat) => {
+      res.render('feat', feat)
+    })
+  })
+
   app.get('/magic-items', (req, res) => {
     itemTable.find().toArray((err, items) => {
       res.render('items', {'items': items});
@@ -170,6 +187,72 @@ client.connect((err) => {
 
   app.get('/traits', (req, res) => {
     res.render('traits');
+  })
+
+  app.get('/api/search/:query', (req, res) => {
+    const regex = new RegExp('.*' + req.params.query + '.*', 'i');
+    const creatureResults = creatureTable
+      .find({'name': {$regex: regex}})
+      .toArray()
+      .then(creatures => {
+        return (creatures || []).map(creature => {
+          return {'display': `${creature.name} - Creature`, 'value': `/creatures/${creature.name}`}
+        })
+      })
+
+    const magicItemResults = itemTable
+      .find({'label': {$regex: regex}})
+      .toArray()
+      .then(items => {
+        return (items || []).map(item => {
+          return {'display': `${item.label} - Item`, 'value': `/magic-items/${item.label}`}
+        })
+      })
+
+    const featResults = featTable
+      .find({'name': {$regex: regex}})
+      .toArray()
+      .then(feats => {
+        return (feats || []).map(feat => {
+          return {'display': `${feat.name} - Feat`, 'value': `/feats/${feat.name}`}
+        })
+      })
+
+    const conditionResults = conditionTable
+      .find({'label': {$regex: regex}})
+      .toArray()
+      .then(conditions => {
+        return (conditions || []).map(condition => {
+          return {'display': `${condition.label} - Condition`, 'value': `/conditions/${condition.label}`}
+        })
+      })
+
+    const spellResults = spellTable
+      .find({'name': {$regex: regex}})
+      .toArray()
+      .then(spells => {
+        return (spells || []).map(spell => {
+          return {'display': `${spell.name} - Spell`, 'value': `/spells/${spell.name}`}
+        })
+      })
+
+    Promise.all([
+      creatureResults,
+      magicItemResults,
+      featResults,
+      conditionResults,
+      spellResults
+    ]).then(results => {
+      let flatResults = results.reduce((soFar, result) => soFar.concat(result), []);
+      flatResults.sort((a, b) => {
+        if (a.display < b.display) {
+          return -1
+        }
+        return 1
+      });
+
+      res.json(flatResults)
+    })
   })
 
   app.listen(process.env.PORT || 3000);

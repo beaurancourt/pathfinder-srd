@@ -1,0 +1,14 @@
+<div class="card w-33">
+  <div class="card-body">
+    <h5 class="card-title d-flex justify-content-between">{{name}} <span class="badge badge-secondary">{{level}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{prerequisites}}</span></h6>
+    <p class="card-text">{{{description}}}</p>
+    {{#if traits}}
+      <ul class="list-group list-group-flush">
+        {{#each traits}}
+          <li class="list-group-item"><strong>{{label}}:</strong> {{description}}</li>
+        {{/each}}
+      </ul>
+    {{/if}}
+  </div>
+</div>
