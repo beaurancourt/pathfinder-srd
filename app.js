@@ -20,12 +20,8 @@ client.connect((err) => {
   const itemTable = db.collection('items');
   const spellTable = db.collection('spells');
   const featTable = db.collection('feats');
+  const traitTable = db.collection('traits');
 
-  conditionTable.createIndex({label: "text", description: "text"})
-  creatureTable.createIndex({name: "text", category: "text"})
-  itemTable.createIndex({label: "text"})
-  spellTable.createIndex({name: "text"})
-  featTable.createIndex({name: "text", description: "text"})
   let app = express();
 
   app.engine('handlebars', exphbs({
@@ -186,7 +182,15 @@ client.connect((err) => {
   })
 
   app.get('/traits', (req, res) => {
-    res.render('traits');
+    traitTable.find().toArray((err, traits) => {
+      res.render('traits', {traits: traits});
+    });
+  })
+
+  app.get('/traits/:traitName', (req, res) => {
+    traitTable.findOne({name: req.params.traitName}, (err, trait) => {
+      res.render('trait', trait)
+    });
   })
 
   app.get('/api/search/:query', (req, res) => {
@@ -236,12 +240,22 @@ client.connect((err) => {
         })
       })
 
+    const traitResults = traitTable
+      .find({'name': {$regex: regex}})
+      .toArray()
+      .then(traits => {
+        return (traits || []).map(trait => {
+          return {'display': `${trait.name} - Trait`, 'value': `/traits/${trait.name}`}
+        })
+      })
+
     Promise.all([
       creatureResults,
       magicItemResults,
       featResults,
       conditionResults,
-      spellResults
+      spellResults,
+      traitResults
     ]).then(results => {
       let flatResults = results.reduce((soFar, result) => soFar.concat(result), []);
       flatResults.sort((a, b) => {
