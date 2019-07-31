@@ -11,8 +11,6 @@ function afterSelectFunction(suggestionObject) {
   }
 }
 
-$("#site-wide-search").off('blur')
-
 $("#site-wide-search").elemicaSuggest({
   suggestFunction: suggestFunction,
   valueInput: $("#site-wide-search-id"),

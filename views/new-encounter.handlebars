@@ -1,0 +1,15 @@
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+{{{{vue-js}}}}
+<div id="app">
+  <input class="form-control" type="text" id="creature-name-typeahead">
+  <input type="hidden" id="creature-id">
+  <ol>
+    <li v-for="creature in creaturesSoFar()" :key="creature._id">
+      {{ creature.creature.name }}
+    </li>
+  </ol>
+</div>
+{{{{/vue-js}}}}
+
+<script src="/js/new-encounter.js"></script>

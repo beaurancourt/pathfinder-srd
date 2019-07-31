@@ -34,6 +34,9 @@ client.connect((err) => {
           new RegExp(' value=\"' + selected + '\"'),
           '$& selected="selected"'
         );
+      },
+      'vue-js': function(options) {
+        return options.fn();
       }
     }
   }));
@@ -108,6 +111,10 @@ client.connect((err) => {
       res.render('creature', creature)
     });
   });
+
+  app.get('/new-encounter', (req, res) => {
+    res.render('new-encounter')
+  })
 
   app.get('/encounter', (req, res) => {
     const query = req.query;
@@ -225,6 +232,12 @@ client.connect((err) => {
     traitTable.findOne({name: req.params.traitName}, (err, trait) => {
       res.render('trait', trait)
     });
+  })
+
+  app.get('/api/creatures', (req, res) => {
+    creatureTable.find().toArray().then(creatures => {
+      res.json(creatures)
+    })
   })
 
   app.get('/api/search/:query', (req, res) => {
