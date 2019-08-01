@@ -73,7 +73,7 @@ var app = new Vue({
         const perception = parseInt((creature.perception || "0").match(/[-+]?\d+/)[0]);
         const creatureInit = Math.floor(Math.random() * 20) + 1 + perception;
         for (let i = 1; i <= creature.quantity; i++) {
-          lines.push(`${creatureInit} ${creature.name}#${i} - ${creature.hp}`);
+          lines.push(`${creatureInit} ${creature.name}#${i} - ${creature.HP}`);
         }
       })
       return lines.join("\n");
