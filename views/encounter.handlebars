@@ -1,82 +1,123 @@
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 <link rel="stylesheet" href="/css/encounter.css" />
 
-<form method="post" action="/encounter/">
+{{{{vue-js}}}}
+<div id="app">
   <div class="row mb-3 mt-3">
     <div class="col input-group">
       <div class="input-group-prepend">
-        <label class="input-group-text" for="partyLevel">Party's Level</label>
+        <label class="input-group-text" for="creature-name-typeahead">Add Creature</label>
       </div>
-      <input type="number" min="0" max="27" class="form-control" id="partyLevel" attributeName="value" name="partyLevel" value={{partyLevel}} required>
-    </div>
-    <div class="col input-group">
-      <div class="input-group-prepend">
-        <label class="input-group-text" for="totalPlayers">
-          Total # of Players
-        </label>
-      </div>
-      <input type="number" min="1" max="8" class="form-control" id="totalPlayers" attributeName="value" name="totalPlayers" value={{totalPlayers}} required>
+      <input class="form-control" type="text" id="creature-name-typeahead">
+      <input type="hidden" id="creature-id">
     </div>
   </div>
-  <div class="row mb-3">
+  <div class="row mb-3 mt-3">
     <div class="col input-group">
       <div class="input-group-prepend">
-        <label class="input-group-text" for="encounterDifficulty">Encounter Difficulty</label>
+        <label class="input-group-text" for="party-level">Party's Level</label>
       </div>
-      <select required class="custom-select form-control" id="encounterDifficulty" name="difficulty">
-        {{#select difficulty}}
-          <option value="Trivial">Trivial</option>
-          <option value="Low">Low</option>
-          <option value="High">High</option>
-          <option value="Severe">Severe</option>
-          <option value="Extreme">Extreme</option>
-        {{/select}}
-      </select>
+      <input v-model="partyLevelText" type="number" min="0" max="20" class="form-control" id="party-level" attributeName="value" name="party-level" required>
     </div>
     <div class="col input-group">
       <div class="input-group-prepend">
-        <label class="input-group-text" for="partyLevel">Tags</label>
+        <label class="input-group-text" for="number-of-members">Number Of Members</label>
       </div>
-      <input type="text" class="form-control" id="tags" name="tags" value={{tags}}>
-    </div>
-    <div class="col input-group">
-      <button class="btn btn-block btn-secondary" type="submit" id="generateCreatures">
-        Randomize
-      </button>
+      <input v-model="numberOfMembersText"
+             type="number"
+             min="0"
+             max="10"
+             class="form-control"
+             id="number-of-members"
+             attributeName="value"
+             name="party-level" required>
     </div>
   </div>
-</form>
-<div class="card-columns">
-  {{#each list}}
-    <div class="card w-33" data-toggle="modal" data-target="#{{id}}">
+
+  <div class="card-columns">
+    <div v-for="creature in selectedCreatures" :key="creature._id" class="card w-33 creatureCard modal-target" data-toggle="modal" v-bind:data-target="'#' + creature._id">
       <div class="card-body">
-        <h5 class="card-title">{{name}}</h5>
-        <h6 class="card-subtitle mb-2 text-muted">Level {{level}} - {{rarity}}</h6>
-        <p class="card-text">Category: {{category}}</p>
+        <h5 class="card-title">{{creature.name}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Level {{creature.level}} - {{creature.rarity}}</h6>
+        <p class="card-text">Category: {{creature.category}}</p>
+      </div>
+      <div class="card-body">
+        <span>Quantity: {{creature.quantity}}</span>
+        <div class="float-right">
+          <button class="add-or-delete btn btn-primary btn-small" @click="addCreature(creature)">+</button>
+          <button class="add-or-delete btn btn-danger btn-small" @click="removeCreature(creature)">-</button>
+        </div>
       </div>
     </div>
-    <!-- Modal -->
-    <div class="modal fade" id="{{id}}" tabindex="-1" role="dialog" aria-labelledby="longScrollModalTitle" aria-hidden="true">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-              <h5 class="modal-title" id="longScrollModalTitle">Creature Stats</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-              </button>
-          </div>
-          <div class="modal-body">
-            {{> creature}}
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
+  </div>
+  <!-- Modal -->
+  <div v-for="creature in selectedCreatures" class="modal fade" v-bind:id="creature._id" tabindex="-1" role="dialog" aria-labelledby="longScrollModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="longScrollModalTitle">Creature Stats</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-around align-items-center list-group-item-primary">
+              <h1>{{creature.name}}</h1>
+            </li>
+            <li class="list-group-item d-flex justify-content-around align-items-center">
+              <h2>{{creature.hp}} hp</h2>
+              <h2>{{creature.rarity}} {{creature.level}}</h2>
+            </li>
+            <li class="list-group-item d-flex justify-content-around align-items-center list-group-item">
+              <span v-for="tag in creature.tags" class="badge badge-secondary">{{tag}}</span>
+            </li>
+            <li class="list-group-item">
+              <span v-for="(value, key) in creature.defenses">
+                <span class="font-weight-bold">{{key}}: </span>
+                {{value}}
+              </span>
+            </li>
+            <li class="list-group-item">
+              <span v-for="(value, key) in creature.stats">
+                <span class="font-weight-bold">{{key}}: </span>
+                {{value}}
+              </span>
+            </li>
+            <li class="list-group-item">
+              <span class="font-weight-bold">Perception: </span>
+              {{creature.perception}};
+              <span class="font-weight-bold">Skills: </span>
+              {{creature.skills}};
+            </li>
+            <li v-for="trait in creature.traits" class="list-group-item list-group-item-info">
+              <span class="font-weight-bold">{{trait.label}}: </span>
+              {{trait.description}}
+            </li>
+            <li class="list-group-item">
+              <span class="font-weight-bold">Speed: </span>
+              {{creature.speed}}
+            </li>
+            <li v-for="action in creature.actions" class="list-group-item list-group-item-warning">
+              <span v-if="action.cost" class="badge badge-secondary">{{action.cost}}</span>
+              <span class="font-weight-bold">{{action.label}}: </span>
+              {{action.description}}
+            </li>
+          </ul>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
     </div>
-  {{/each}}
-</div>
-<pre><code>
-{{#each list}}
-{{editorDescription}}
-{{/each}}
-</code></pre>
+  </div>
+  <div>XP: {{encounterXp}}</div>
+  <div>Difficulty: {{difficulty}}</div>
+
+  <pre><code>
+{{encounterCodeExport}}
+  </code></pre>
+  </div>
+{{{{/vue-js}}}}
+
+<script src="/js/encounter.js"></script>

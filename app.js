@@ -112,62 +112,9 @@ client.connect((err) => {
     });
   });
 
-  app.get('/new-encounter', (req, res) => {
-    res.render('new-encounter')
-  })
-
   app.get('/encounter', (req, res) => {
-    const query = req.query;
-    if (query.list) {
-      const creatureQuery = {'$or': query.list.split(",").map(name => { return {'name': name}})}
-      creatureTable.find(creatureQuery).toArray((err, creatureList) => {
-        const creaturesArray = query.list.split(",")
-          .map(creatureInList => creatureList.find((creature) => creature.name == creatureInList))
-          .filter(creature => creature);
-
-        let creatureCount = {};
-        let parsedCreatures = [];
-        creaturesArray.forEach(creature => {
-          let clonedCreature = Object.assign({}, creature);
-          creature.id = creature.name.split("(")[0].trim().split(" ").join("")
-          const perception = parseInt((creature.perception || "0").match(/[-+]?\d+/)[0]);
-          creatureCount[creature.name] = (creatureCount[creature.name] || 0) + 1;
-          clonedCreature.editorDescription = `${10 + perception} ${creature.name}#${creatureCount[creature.name]} ${creature.hp}`
-          parsedCreatures.push(clonedCreature);
-        });
-        res.render('encounter', {
-          list: parsedCreatures,
-          url: req.url,
-          difficulty: query.difficulty,
-          totalPlayers: query.totalPlayers,
-          partyLevel: query.partyLevel,
-          tags: (query.tags || '')
-        });
-      })
-    } else {
-      res.render('encounter', {
-        difficulty: 'High',
-        totalPlayers: 4,
-        partyLevel: 4,
-        tags: (query.tags || '')
-      });
-    }
-  });
-
-  app.post('/encounter', (req, res) => {
-    const query = req.body;
-
-    creatureTable.find().toArray((err, creatureList) => {
-      const encounterInfo = generateEncounter(
-        query.difficulty,
-        parseInt(query.totalPlayers),
-        parseInt(query.partyLevel),
-        (query.tags || "").split(' ').filter(x => x),
-        creatureList
-      );
-      res.redirect(encounterInfo.url)
-    })
-  });
+    res.render('encounter')
+  })
 
   app.get('/feats', (req, res) => {
     featTable.find().toArray((err, feats) => {
