@@ -51,7 +51,7 @@ client.connect((err) => {
   app.use(require('express-session')({ secret: 'keyboard cat', resave: false, saveUninitialized: false }));
 
   const renderCreatures = (req, res) => {
-    creatureTable.find().toArray((err, creatures) => {
+    creatureTable.find().sort({"name": 1}).toArray((err, creatures) => {
       res.render('creatures', {'creatures': creatures});
     })
   };
@@ -99,7 +99,7 @@ client.connect((err) => {
   })
 
   app.get('/conditions', (req, res) => {
-    conditionTable.find().toArray((err, conditions) => {
+    conditionTable.find().sort({"name": 1}).toArray((err, conditions) => {
       res.render('conditions', {'conditions': conditions});
     })
   });
