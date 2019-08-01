@@ -38,8 +38,7 @@
     <div v-for="creature in selectedCreatures" :key="creature._id" class="card w-33 creatureCard modal-target" data-toggle="modal" v-bind:data-target="'#' + creature._id">
       <div class="card-body">
         <h5 class="card-title">{{creature.name}}</h5>
-        <h6 class="card-subtitle mb-2 text-muted">Level {{creature.level}} - {{creature.rarity}}</h6>
-        <p class="card-text">Category: {{creature.category}}</p>
+        <h6 class="card-subtitle mb-2 text-muted">Level {{creature.level}}</h6>
       </div>
       <div class="card-body">
         <span>Quantity: {{creature.quantity}}</span>
@@ -50,7 +49,6 @@
       </div>
     </div>
   </div>
-  <!-- Modal -->
   <div v-for="creature in selectedCreatures" class="modal fade" v-bind:id="creature._id" tabindex="-1" role="dialog" aria-labelledby="longScrollModalTitle" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
@@ -63,45 +61,45 @@
         <div class="modal-body">
           <ul class="list-group">
             <li class="list-group-item d-flex justify-content-around align-items-center list-group-item-primary">
-              <h1>{{creature.name}}</h1>
-            </li>
-            <li class="list-group-item d-flex justify-content-around align-items-center">
-              <h2>{{creature.hp}} hp</h2>
-              <h2>{{creature.rarity}} {{creature.level}}</h2>
+              <h1>{{creature.name}} - Creature {{creature.level}}</h1>
             </li>
             <li class="list-group-item d-flex justify-content-around align-items-center list-group-item">
-              <span v-for="tag in creature.tags" class="badge badge-secondary">{{tag}}</span>
-            </li>
-            <li class="list-group-item">
-              <span v-for="(value, key) in creature.defenses">
-                <span class="font-weight-bold">{{key}}: </span>
-                {{value}}
-              </span>
+              <span v-for="tag in creature.tags "class="badge badge-secondary">{{tag}}</span>
             </li>
             <li class="list-group-item">
               <span v-for="(value, key) in creature.stats">
-                <span class="font-weight-bold">{{key}}: </span>
-                {{value}}
+                <span class="font-weight-bold">{{key}}: </span> {{value}}
               </span>
             </li>
-            <li class="list-group-item">
-              <span class="font-weight-bold">Perception: </span>
-              {{creature.perception}};
-              <span class="font-weight-bold">Skills: </span>
-              {{creature.skills}};
+            <li v-for="item in creature.information" class="list-group-item">
+              <span class="font-weight-bold">{{item.label}}: </span>{{item.description}}
             </li>
-            <li v-for="trait in creature.traits" class="list-group-item list-group-item-info">
-              <span class="font-weight-bold">{{trait.label}}: </span>
-              {{trait.description}}
+            <li class="list-group-item list-group-item-secondary">
+              <span v-for="(value, key) in creature.saves">
+                <span class="font-weight-bold">{{key}}: </span>{{value}}
+              </span>
             </li>
-            <li class="list-group-item">
-              <span class="font-weight-bold">Speed: </span>
-              {{creature.speed}}
+            <li class="list-group-item list-group-item-secondary">
+              <span class="font-weight-bold">HP: </span>{{creature.HP}}
             </li>
-            <li v-for="action in creature.actions" class="list-group-item list-group-item-warning">
-              <span v-if="action.cost" class="badge badge-secondary">{{action.cost}}</span>
-              <span class="font-weight-bold">{{action.label}}: </span>
-              {{action.description}}
+            <li v-for="defense in creature.defenses" class="list-group-item list-group-item-secondary">
+              <img v-if="defense.actionCost" v-bind:src="'/img/' + defense.actionCost + '.png'" style="height: 20px;">
+              <span class="font-weight-bold">{{defense.label}}: </span>{{defense.description}}
+            </li>
+
+            <li v-for="item in creature.combat" class="list-group-item list-group-item-warning">
+              <img v-if="item.actionCost" v-bind:src="'/img/' + item.actionCost + '.png'" style="height: 20px;">
+              <span class="font-weight-bold">{{item.label}}: </span>
+              {{item.description}}
+            </li>
+
+            <li v-if="creature.creatureDescription" class="list-group-item">
+              <span class="font-weight-bold">Description: </span>
+              {{creature.creatureDescription}}
+            </li>
+            <li v-if="creature.familyDescription" class="list-group-item">
+              <span class="font-weight-bold">Family Description: </span>
+              {{creature.familyDescription}}
             </li>
           </ul>
           <div class="modal-footer">
