@@ -1,6 +1,11 @@
 <div class="card w-33">
-  <div class="card-body">
-    <h5 class="card-title">{{label}}</h5>
-    <p class="card-text">{{{description}}}</p>
-  </div>
+  <div class="card-header">{{name}}</div>
+  <ul class="list-group list-group-flush">
+    {{#each information}}
+      <li class="list-group-item">
+        <span class="font-weight-bold">{{label}}: </span>
+        {{description}}
+      </li>
+    {{/each}}
+  </ul>
 </div>
