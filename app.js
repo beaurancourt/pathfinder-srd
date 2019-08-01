@@ -59,7 +59,7 @@ client.connect((err) => {
   app.get('/', renderCreatures);
 
   const tablesByName = {
-    'conditions': {table: conditionTable, key: 'label'},
+    'conditions': {table: conditionTable, key: 'name'},
     'creatures': {table: creatureTable, key: 'name'},
     'magic-items': {table: itemTable, key: 'label'},
     'spells': {table: spellTable, key: 'name'},
@@ -103,20 +103,15 @@ client.connect((err) => {
       res.render('conditions', {'conditions': conditions});
     })
   });
-
   app.get('/conditions/:conditionName', (req, res) => {
-    conditionTable.findOne({'label': req.params.conditionName}, (err, condition) => {
+    conditionTable.findOne({'name': req.params.conditionName}, (err, condition) => {
       res.render('condition', condition)
     })
   })
 
   app.get('/creatures', renderCreatures);
-
   app.get('/creatures/:creatureName', (req, res) => {
     creatureTable.findOne({'name': req.params.creatureName}, (err, creature) => {
-      if (err) {
-        console.log(err)
-      }
       res.render('creature', creature)
     });
   });
@@ -236,11 +231,11 @@ client.connect((err) => {
       })
 
     const conditionResults = conditionTable
-      .find({'label': {$regex: regex}})
+      .find({'name': {$regex: regex}})
       .toArray()
       .then(conditions => {
         return (conditions || []).map(condition => {
-          return {'display': `${condition.label} - Condition`, 'value': `/conditions/${condition.label}`}
+          return {'display': `${condition.name} - Condition`, 'value': `/conditions/${condition.name}`}
         })
       })
 
