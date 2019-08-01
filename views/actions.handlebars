@@ -1,0 +1,10 @@
+<link rel="stylesheet" href="/css/feats.css" />
+
+<input class="form-control" id="search" type="text" placeholder="Filter..">
+<div id="conditions" class="card-columns">
+  {{#each actions}}
+    {{> action}}
+  {{/each}}
+</div>
+
+<script src="/js/conditions.js"></script>

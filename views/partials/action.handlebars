@@ -1,0 +1,16 @@
+<div class="card w-33">
+  <div class="card-header">
+    {{name}}
+    {{#if actionCost}}
+      <img src="/img/{{actionCost}}.png" style="height: 20px;">
+    {{/if}}
+  </div>
+  <ul class="list-group list-group-flush">
+    {{#each information}}
+      <li class="list-group-item">
+        <span class="font-weight-bold">{{label}}: </span>
+        {{description}}
+      </li>
+    {{/each}}
+  </ul>
+</div>

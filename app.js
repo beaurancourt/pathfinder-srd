@@ -17,6 +17,7 @@ client.connect((err) => {
   }
 
   const db = client.db("heroku_d8hk9vs8");
+  const actionTable = db.collection('actions');
   const conditionTable = db.collection('conditions');
   const creatureTable = db.collection('creatures');
   const itemTable = db.collection('items');
@@ -63,7 +64,8 @@ client.connect((err) => {
     'magic-items': {table: itemTable, key: 'label'},
     'spells': {table: spellTable, key: 'name'},
     'feats': {table: featTable, key: 'name'},
-    'traits': {table: traitTable, key: 'name'}
+    'traits': {table: traitTable, key: 'name'},
+    'actions': {table: actionTable, key: 'name'}
   }
 
   app.get("/:tableName/:entityName/edit", (req, res) => {
@@ -85,8 +87,15 @@ client.connect((err) => {
     })
   })
 
-  app.get('/classes/:className', (req, res) => {
-    res.render('classes/' + req.params.className);
+  app.get('/actions', (req, res) => {
+    actionTable.find().sort({"name": 1}).toArray((err, actions) => {
+      res.render('actions', {'actions': actions});
+    })
+  });
+  app.get('/actions/:actionName', (req, res) => {
+    actionTable.findOne({'name': req.params.actionName}, (err, action) => {
+      res.render('action', action)
+    })
   })
 
   app.get('/conditions', (req, res) => {
@@ -189,6 +198,16 @@ client.connect((err) => {
 
   app.get('/api/search/:query', (req, res) => {
     const regex = new RegExp('.*' + req.params.query + '.*', 'i');
+
+    const actionResults = actionTable
+      .find({'name': {$regex: regex}})
+      .toArray()
+      .then(actions => {
+        return (actions || []).map(action => {
+          return {'display': `${action.name} - Action`, 'value': `/actions/${action.name}`}
+        })
+      })
+
     const creatureResults = creatureTable
       .find({'name': {$regex: regex}})
       .toArray()
@@ -244,10 +263,11 @@ client.connect((err) => {
       })
 
     Promise.all([
+      actionResults,
+      conditionResults,
       creatureResults,
       magicItemResults,
       featResults,
-      conditionResults,
       spellResults,
       traitResults
     ]).then(results => {
