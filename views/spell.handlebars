@@ -1,17 +1,28 @@
 <ul class="list-group">
   <li class="list-group-item d-flex justify-content-around align-items-center list-group-item-primary">
-    <h1>{{name}}</h1>
-  </li>
-  <li class="list-group-item d-flex justify-content-around align-items-center">
-    <h2>{{type}}</h2>
-    <h2>{{level}}</h2>
+    <h1>{{name}} - {{type}} {{level}}</h1>
   </li>
   <li class="list-group-item d-flex justify-content-around align-items-center list-group-item">
+    {{#each traditions}}
+      <span class="badge badge-primary">{{this}}</span>
+    {{/each}}
     {{#each tags}}
       <span class="badge badge-secondary">{{this}}</span>
     {{/each}}
   </li>
-  {{#each details}}
+  {{#each information}}
+    <li class="list-group-item list-group-item">
+      <span class="font-weight-bold">{{label}}: </span>
+      {{description}}
+    </li>
+  {{/each}}
+  {{#each effects}}
+    <li class="list-group-item list-group-item">
+      <span class="font-weight-bold">{{label}}: </span>
+      {{description}}
+    </li>
+  {{/each}}
+  {{#each heightening}}
     <li class="list-group-item list-group-item">
       <span class="font-weight-bold">{{label}}: </span>
       {{description}}
