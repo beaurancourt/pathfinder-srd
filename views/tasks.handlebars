@@ -2,23 +2,46 @@
   <thead>
     <tr>
       <th scope="col">Level</th>
+      <th scope="col">Incredibly Easy</th>
+      <th scope="col">Very easy</th>
       <th scope="col">Easy</th>
       <th scope="col">Medium</th>
       <th scope="col">Hard</th>
-      <th scope="col">Incredible</th>
-      <th scope="col">Ultimate</th>
+      <th scope="col">Very Hard</th>
+      <th scope="col">Incredibly Hard</th>
     </tr>
   </thead>
   <tbody>
     {{#each levels}}
       <tr>
         <td>{{level}}</td>
+        <td>{{ie}}</td>
+        <td>{{ve}}</td>
         <td>{{easy}}</td>
-        <td>{{medium}}</td>
-        <td class="table-secondary">{{hard}}</td>
-        <td>{{incredible}}</td>
-        <td>{{ultimate}}</td>
+        <td class="table-secondary">{{medium}}</td>
+        <td>{{hard}}</td>
+        <td>{{vh}}</td>
+        <td>{{ih}}</td>
       </tr>
     {{/each}}
+  </tbody>
+</table>
+
+<table class="table table-striped table-hover table-sm">
+  <thead>
+    <th scope="col">Untrained</th>
+    <th scope="col">Trained</th>
+    <th scope="col">Expert</th>
+    <th scope="col">Master</th>
+    <th scope="col">Legendary</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>10</td>
+      <td>15</td>
+      <td>20</td>
+      <td>30</td>
+      <td>40</td>
+    </tr>
   </tbody>
 </table>
