@@ -20,9 +20,10 @@ client.connect((err) => {
   const actionTable = db.collection('actions');
   const conditionTable = db.collection('conditions');
   const creatureTable = db.collection('creatures');
+  const featTable = db.collection('feats');
+  const hazardTable = db.collection('hazards');
   const itemTable = db.collection('items');
   const spellTable = db.collection('spells');
-  const featTable = db.collection('feats');
   const traitTable = db.collection('traits');
 
   let app = express();
@@ -59,13 +60,14 @@ client.connect((err) => {
   app.get('/', renderCreatures);
 
   const tablesByName = {
+    'actions': {table: actionTable, key: 'name'},
     'conditions': {table: conditionTable, key: 'name'},
     'creatures': {table: creatureTable, key: 'name'},
+    'feats': {table: featTable, key: 'name'},
+    'hazards': {table: hazardTable, key: 'name'},
     'magic-items': {table: itemTable, key: 'label'},
     'spells': {table: spellTable, key: 'name'},
-    'feats': {table: featTable, key: 'name'},
-    'traits': {table: traitTable, key: 'name'},
-    'actions': {table: actionTable, key: 'name'}
+    'traits': {table: traitTable, key: 'name'}
   }
 
   app.get("/:tableName/:entityName/edit", (req, res) => {
@@ -125,11 +127,21 @@ client.connect((err) => {
       res.render('feats', {'feats': feats})
     })
   })
-
   app.get('/feats/:featName', (req, res) => {
     featTable.findOne({'name': req.params.featName}, (err, feat) => {
       res.render('feat', feat)
     })
+  })
+
+  app.get('/hazards', (req, res) => {
+    hazardTable.find().sort({"name": 1}).toArray((err, hazards) => {
+      res.render('hazards', {'hazards': hazards})
+    });
+  })
+  app.get('/hazards/:hazardName', (req, res) => {
+    hazardTable.findOne({'name': req.params.hazardName}, (err, hazard) => {
+      res.render('hazard', hazard);
+    });
   })
 
   app.get('/magic-items', (req, res) => {
@@ -230,6 +242,15 @@ client.connect((err) => {
         })
       })
 
+    const hazardResults = hazardTable
+      .find({'name': {$regex: regex}})
+      .toArray()
+      .then(hazards => {
+        return (hazards || []).map(hazard => {
+          return {'display': `${hazard.name} - Hazard`, 'value': `/hazards/${hazard.name}`}
+        })
+      })
+
     const conditionResults = conditionTable
       .find({'name': {$regex: regex}})
       .toArray()
@@ -263,6 +284,7 @@ client.connect((err) => {
       creatureResults,
       magicItemResults,
       featResults,
+      hazardResults,
       spellResults,
       traitResults
     ]).then(results => {
