@@ -1,8 +1,28 @@
 <link rel="stylesheet" href="/css/feats.css" />
 
-<input class="form-control" id="search" type="text" placeholder="Filter..">
-<div id="feats" class="card-columns">
-  {{#each feats}}
+<div class="row mb-3 mt-3">
+  <div class="col input-group">
+    <div class="input-group-prepend">
+      <label class="input-group-text" for="general-feat-search">Search General Feats</label>
+    </div>
+    <input class="form-control" id="general-feat-search" attributeName="value" name="general-feat-search" required>
+  </div>
+  <div class="col input-group">
+    <div class="input-group-prepend">
+      <label class="input-group-text" for="skill-feat-search">Search Skill Feats</label>
+    </div>
+    <input class="form-control" id="skill-feat-search" attributeName="value" name="skill-feat-search" required>
+  </div>
+</div>
+
+<div id="general-feats" class="card-columns">
+  {{#each generalFeats}}
+    {{> feat}}
+  {{/each}}
+</div>
+
+<div id="skill-feats" class="card-columns">
+  {{#each skillFeats}}
     {{> feat}}
   {{/each}}
 </div>
