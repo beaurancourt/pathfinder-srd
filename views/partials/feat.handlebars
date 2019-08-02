@@ -1,16 +1,14 @@
 <div class="card w-33">
   <div class="card-body">
-    <h5 class="card-title d-flex justify-content-between">{{name}} <span class="badge badge-secondary">{{level}}</span></h5>
+    <h5 class="card-title">{{name}} <span class="badge badge-secondary float-right">{{level}}</span></h5>
     <h6 class="card-subtitle mb-2 text-muted">
       {{#each traits}}
         <span>{{this}}</span>
       {{/each}}
     </h6>
-    <ul class="list-group list-group-flush">
-      {{#each information}}
-        <li class="list-group-item"><strong>{{label}}:</strong> {{description}}</li>
-      {{/each}}
-    </ul>
+    {{#each information}}
+      <p class="card-text"><strong>{{label}}:</strong> {{description}}</p>
+    {{/each}}
     <p class="card-text">{{{description}}}</p>
   </div>
 </div>
