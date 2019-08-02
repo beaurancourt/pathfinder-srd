@@ -13,5 +13,8 @@
     {{#each information}}
       <p class="card-text"><strong>{{label}}:</strong> {{description}}</p>
     {{/each}}
+    {{#if source}}
+      <footer class="blockquote-footer">{{source}}</footer>
+    {{/if}}
   </div>
 </div>
