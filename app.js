@@ -123,7 +123,7 @@ client.connect((err) => {
   })
 
   app.get('/feats', (req, res) => {
-    featTable.find().toArray((err, feats) => {
+    featTable.find().sort({"name": 1}).toArray((err, feats) => {
       let generalFeats = [];
       let skillFeats = [];
       feats.forEach(feat => {
@@ -154,7 +154,7 @@ client.connect((err) => {
   })
 
   app.get('/magic-items', (req, res) => {
-    itemTable.find().toArray((err, items) => {
+    itemTable.find().sort({"label": 1}).toArray((err, items) => {
       res.render('items', {'items': items});
     })
   });
@@ -166,7 +166,7 @@ client.connect((err) => {
   });
 
   app.get('/spells', (req, res) => {
-    spellTable.find().toArray((err, spells) => {
+    spellTable.find().sort({"name": 1}).toArray((err, spells) => {
       res.render('spells', {'spells': spells})
     })
   })
