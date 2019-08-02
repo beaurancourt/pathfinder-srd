@@ -124,16 +124,14 @@ client.connect((err) => {
 
   app.get('/feats', (req, res) => {
     featTable.find().sort({"name": 1}).toArray((err, feats) => {
-      let generalFeats = [];
-      let skillFeats = [];
       feats.forEach(feat => {
         if (feat.traits.includes('Skill')) {
-          skillFeats.push(feat);
+          feat.type = 'Skill'
         } else {
-          generalFeats.push(feat);
+          feat.type = 'General'
         }
       })
-      res.render('feats', {generalFeats, skillFeats})
+      res.render('feats', {feats: feats})
     })
   })
   app.get('/feats/:featName', (req, res) => {

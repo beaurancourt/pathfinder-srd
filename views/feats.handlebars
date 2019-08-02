@@ -3,26 +3,26 @@
 <div class="row mb-3 mt-3">
   <div class="col input-group">
     <div class="input-group-prepend">
-      <label class="input-group-text" for="general-feat-search">Search General Feats</label>
+      <label class="input-group-text" for="feat-search">Search Feats</label>
     </div>
-    <input class="form-control" id="general-feat-search" attributeName="value" name="general-feat-search" required>
+    <input class="form-control" id="feat-search" attributeName="value" name="feat-search" required>
   </div>
   <div class="col input-group">
-    <div class="input-group-prepend">
-      <label class="input-group-text" for="skill-feat-search">Search Skill Feats</label>
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+      <label class="feat-filter btn btn-secondary active">
+        <input type="radio" name="options" id="all-feats" autocomplete="off" checked>All
+      </label>
+      <label class="feat-filter btn btn-secondary">
+        <input type="radio" name="options" id="General" autocomplete="off">General
+      </label>
+      <label class="feat-filter btn btn-secondary">
+        <input type="radio" name="options" id="Skill" autocomplete="off">Skill
+      </label>
     </div>
-    <input class="form-control" id="skill-feat-search" attributeName="value" name="skill-feat-search" required>
-  </div>
 </div>
 
-<div id="general-feats" class="card-columns">
-  {{#each generalFeats}}
-    {{> feat}}
-  {{/each}}
-</div>
-
-<div id="skill-feats" class="card-columns">
-  {{#each skillFeats}}
+<div id="feats" class="card-columns">
+  {{#each feats}}
     {{> feat}}
   {{/each}}
 </div>

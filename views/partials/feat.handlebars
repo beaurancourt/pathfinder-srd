@@ -1,4 +1,4 @@
-<div class="card w-33">
+<div class="card w-33" {{#if type}}data-type="{{type}}"{{/if}}>
   <div class="card-body">
     <h5 class="card-title">{{name}} <span class="badge badge-secondary float-right">{{level}}</span></h5>
     {{#if prerequisites}}

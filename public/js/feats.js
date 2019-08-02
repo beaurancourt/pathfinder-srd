@@ -3,45 +3,38 @@ $(document).ready(function(){
     return new RegExp('.*' + term + '.*', 'i');
   };
 
-  $("#general-feat-search").on("keyup", function() {
-    var value = $(this).val().toLowerCase().trim();
+  let selectedType = 'all-feats';
+
+  const searchFilter = (value) => {
     if (value) {
       const regex = createRegex(value);
-      $("#general-feats > div").filter(function() {
+      $("#feats > div").filter(function() {
         const text = $(this).text().toLowerCase();
-        $(this).toggle(!!text.match(regex));
-      });
-      $("#skill-feats > div").filter(function() {
-        $(this).toggle(false);
+        if (selectedType === 'all-feats') {
+          $(this).toggle(!!text.match(regex));
+        } else {
+          $(this).toggle($(this).data('type') === selectedType && !!text.match(regex));
+        }
       });
     } else {
-      $("#general-feats > div").filter(function() {
-        $(this).toggle(true);
-      });
-      $("#skill-feats > div").filter(function() {
-        $(this).toggle(true);
+      $("#feats > div").filter(function() {
+        if (selectedType === 'all-feats') {
+          $(this).toggle(true);
+        } else {
+          $(this).toggle($(this).data('type') === selectedType);
+        }
       });
     }
+  }
+
+  $("#feat-search").on("keyup", function() {
+    const value = $(this).val().toLowerCase().trim();
+    searchFilter(value);
   });
 
-  $("#skill-feat-search").on("keyup", function() {
-    var value = $(this).val().toLowerCase().trim();
-    if (value) {
-      const regex = createRegex(value);
-      $("#skill-feats > div").filter(function() {
-        const text = $(this).text().toLowerCase();
-        $(this).toggle(!!text.match(regex));
-      });
-      $("#general-feats > div").filter(function() {
-        $(this).toggle(false);
-      });
-    } else {
-      $("#general-feats > div").filter(function() {
-        $(this).toggle(true);
-      });
-      $("#skill-feats > div").filter(function() {
-        $(this).toggle(true);
-      });
-    }
-  });
+  $(".feat-filter").on('click', function() {
+    selectedType = $(this).find("input").attr("id");
+    const value = $("#feat-search").val().toLowerCase().trim();
+    searchFilter(value);
+  })
 });
