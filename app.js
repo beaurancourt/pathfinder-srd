@@ -211,7 +211,7 @@ client.connect((err) => {
   })
 
   app.get('/api/search/:query', (req, res) => {
-    const regex = new RegExp('.*' + req.params.query + '.*', 'i');
+    const regex = new RegExp(req.params.query, 'i');
 
     const actionResults = actionTable
       .find({'name': {$regex: regex}})

@@ -1,6 +1,6 @@
 $(document).ready(function(){
   const createRegex = (term) => {
-    return new RegExp('.*' + term + '.*', 'i');
+    return new RegExp(term, 'i');
   };
 
   let selectedType = 'all-feats';
