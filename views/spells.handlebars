@@ -6,6 +6,7 @@
   <thead>
     <tr>
       <th scope="col">Name</th>
+      <th scope="col">Traditions</th>
       <th scope="col">Tags</th>
       <th scope="col">Level</th>
     </tr>
@@ -14,6 +15,11 @@
     {{#each spells}}
       <tr onclick="window.location='/spells/{{name}}';">
         <td>{{name}}</td>
+        <td>
+          {{#each traditions}}
+            <span class="badge badge-secondary">{{this}}</span>
+          {{/each}}
+        </td>
         <td>
           {{#each tags}}
             <span class="badge badge-secondary">{{this}}</span>
