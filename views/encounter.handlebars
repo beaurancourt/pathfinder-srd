@@ -75,12 +75,11 @@
               <span class="font-weight-bold">{{item.label}}: </span>{{item.description}}
             </li>
             <li class="list-group-item list-group-item-secondary">
+              <span class="font-weight-bold">HP: </span>{{creature.HP}}
+              <span class="font-weight-bold">AC: </span>{{creature.AC}}
               <span v-for="(value, key) in creature.saves">
                 <span class="font-weight-bold">{{key}}: </span>{{value}}
               </span>
-            </li>
-            <li class="list-group-item list-group-item-secondary">
-              <span class="font-weight-bold">HP: </span>{{creature.HP}}
             </li>
             <li v-for="defense in creature.defenses" class="list-group-item list-group-item-secondary">
               <img v-if="defense.actionCost" v-bind:src="'/img/' + defense.actionCost + '.png'" style="height: 20px;">

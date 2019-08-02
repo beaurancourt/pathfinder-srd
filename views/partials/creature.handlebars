@@ -18,12 +18,11 @@
     </li>
   {{/each}}
   <li class="list-group-item list-group-item-secondary">
+    <span class="font-weight-bold">HP: </span>{{HP}}
+    <span class="font-weight-bold">AC: </span>{{AC}}
     {{#each saves}}
       <span class="font-weight-bold">{{@key}}: </span>{{this}}
     {{/each}}
-  </li>
-  <li class="list-group-item list-group-item-secondary">
-    <span class="font-weight-bold">HP: </span>{{HP}}
   </li>
   {{#each defenses}}
     <li class="list-group-item list-group-item-secondary">
