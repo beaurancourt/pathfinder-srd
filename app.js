@@ -195,7 +195,7 @@ client.connect((err) => {
   })
 
   app.get('/traits', (req, res) => {
-    traitTable.find().toArray((err, traits) => {
+    traitTable.find().sort({"name": 1}).toArray((err, traits) => {
       res.render('traits', {traits: traits});
     });
   })
