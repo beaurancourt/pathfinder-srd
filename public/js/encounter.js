@@ -74,7 +74,7 @@ var app = new Vue({
         case 'TPK':
           return '200';
       }
-    }
+    },
     encounterUrl: function() {
       const creaturesString = this.selectedCreatures
         .map(creature => Array(creature.quantity).fill(creature.name))
