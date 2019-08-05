@@ -4,6 +4,12 @@
     {{#if actionCost}}
       <img src="/img/{{actionCost}}.png" style="height: 20px;">
     {{/if}}
+    {{#if category}}
+      - {{category}}
+    {{/if}}
+    {{#if proficiency}}
+      <span class="badge badge-secondary float-right">{{proficiency}}</span>
+    {{/if}}
   </div>
   <ul class="list-group list-group-flush">
     {{#each information}}
