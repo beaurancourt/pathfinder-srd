@@ -76,7 +76,7 @@ client.connect((err) => {
     'weapons': {table: weaponTable, key: 'name'}
   }
 
-  app.get("/:tableName/:entityName/edit", (req, res) => {
+  app.get("/:tableName/:entityName/secretEdit", (req, res) => {
     const {table, key} = tablesByName[req.params.tableName];
     let query = {}
     query[key] = req.params.entityName;
@@ -85,7 +85,7 @@ client.connect((err) => {
     })
   })
 
-  app.post("/:tableName/:entityName/edit", (req, res) => {
+  app.post("/:tableName/:entityName/secretEdit", (req, res) => {
     const {table, key} = tablesByName[req.params.tableName];
     const json = req.body;
     const id = ObjectId(json._id)
