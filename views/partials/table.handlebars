@@ -1,13 +1,21 @@
 <h5>{{name}}</h5>
 {{#each tables}}
-  <table class="table">
+  <table class="table table-sm">
     <tbody>
       {{#each rows}}
-        <tr>
-          {{#each this}}
-            <td>{{this}}</td>
-          {{/each}}
-        </tr>
+        {{#if @index}}
+          <tr>
+            {{#each this}}
+              <td>{{this}}</td>
+            {{/each}}
+          </tr>
+        {{else}}
+          <tr class="table-secondary">
+            {{#each this}}
+              <td>{{this}}</td>
+            {{/each}}
+          </tr>
+        {{/if}}
       {{/each}}
     </tbody>
   </table>
