@@ -1,0 +1,14 @@
+<h5>{{name}}</h5>
+{{#each tables}}
+  <table class="table">
+    <tbody>
+      {{#each rows}}
+        <tr>
+          {{#each this}}
+            <td>{{this}}</td>
+          {{/each}}
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+{{/each}}
