@@ -1,0 +1,62 @@
+<ul class="list-group">
+  <li class="list-group-item d-flex justify-content-around align-items-center list-group-item-primary">
+    <h4>{{name}} {{#if category}}- {{category}}{{/if}}{{#if subcategory}} - {{subcategory}}{{/if}}{{#if level}} - {{level}}{{else}} - 0{{/if}}</h4>
+  </li>
+  {{#if traits}}
+    <li class="list-group-item d-flex justify-content-around align-items-center list-group-item">
+      {{#each traits}}
+        <span class="badge badge-secondary">{{this}}</span>
+      {{/each}}
+    </li>
+  {{/if}}
+  <li class="list-group-item">
+    {{#if price}}
+      <span class="font-weight-bold">Price: </span>
+      {{price}}
+    {{/if}}
+    {{#if damage}}
+      <span class="font-weight-bold">Damage: </span>
+      {{damage}}
+    {{/if}}
+    {{#if bulk}}
+      <span class="font-weight-bold">Bulk: </span>
+      {{bulk}}
+    {{/if}}
+  </li>
+  <li class="list-group-item">
+    {{#if hands}}
+      <span class="font-weight-bold">Hands: </span>
+      {{hands}}
+    {{/if}}
+    {{#if group}}
+      <span class="font-weight-bold">Group: </span>
+      {{group}}
+    {{/if}}
+  </li>
+  {{#if description}}
+    <li class="list-group-item">
+      {{{description}}}
+    </li>
+  {{/if}}
+  {{#each information}}
+    <li class="list-group-item">
+      <span class="font-weight-bold">{{label}}: </span>
+      {{description}}
+    </li>
+  {{/each}}
+  {{#if criticalSpecialization}}
+    <li class="list-group-item">
+      <span class="font-weight-bold">Specialization Effect: </span>
+      {{criticalSpecialization}}
+    </li>
+  {{/if}}
+  {{#each subtypes}}
+    <li class="list-group-item">
+      {{> armor}}
+    </li>
+  {{/each}}
+</ul>
+
+{{#if source}}
+  <footer class="blockquote-footer">{{source}}</footer>
+{{/if}}

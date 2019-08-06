@@ -1,0 +1,35 @@
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+<link rel="stylesheet" href="/css/creatures.css" />
+
+<table id="creatures-table" class="table table-hover table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+      <th scope="col">Damage</th>
+      <th scope="col">Bulk</th>
+      <th scope="col">Hands</th>
+      <th scope="col">Group</th>
+      <th scope="col">Weapon Traits</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each weapons}}
+      <tr onclick='window.location="/weapons/{{name}}";'>
+        <td>{{name}}</td>
+        <td>{{price}}</td>
+        <td>{{damage}}</td>
+        <td>{{bulk}}</td>
+        <td>{{hands}}</td>
+        <td>{{group}}</td>
+        <td>
+          {{#each traits}}
+            <span class="badge badge-secondary">{{this}}</span>
+          {{/each}}
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+<script src="/js/creatures.js"></script>

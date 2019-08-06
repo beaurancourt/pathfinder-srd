@@ -26,6 +26,7 @@ client.connect((err) => {
   const itemTable = db.collection('items');
   const spellTable = db.collection('spells');
   const traitTable = db.collection('traits');
+  const weaponTable = db.collection('weapons');
 
   let app = express();
 
@@ -69,7 +70,8 @@ client.connect((err) => {
     'hazards': {table: hazardTable, key: 'name'},
     'items': {table: itemTable, key: 'name'},
     'spells': {table: spellTable, key: 'name'},
-    'traits': {table: traitTable, key: 'name'}
+    'traits': {table: traitTable, key: 'name'},
+    'weapons': {table: weaponTable, key: 'name'}
   }
 
   app.get("/:tableName/:entityName/edit", (req, res) => {
@@ -216,6 +218,17 @@ client.connect((err) => {
     });
   });
 
+  app.get('/weapons', (req, res) => {
+    weaponTable.find().sort({"name": 1}).toArray((err, weapons) => {
+      res.render('weapons', {weapons: weapons});
+    });
+  });
+  app.get('/weapons/:weaponName', (req, res) => {
+    weaponTable.findOne({name: req.params.weaponName}, (err, weapon) => {
+      res.render('weapon', weapon);
+    });
+  });
+
   app.get('/api/creatures', (req, res) => {
     creatureTable.find().toArray().then(creatures => {
       res.json(creatures)
@@ -306,6 +319,15 @@ client.connect((err) => {
         })
       })
 
+    const weaponResults = weaponTable
+      .find({'name': {$regex: regex}})
+      .toArray()
+      .then(weapons => {
+        return (weapons || []).map(weapon => {
+          return {'display': `${weapon.name} - Weapons`, 'value': `/weapons/${weapon.name}`}
+        })
+      })
+
     Promise.all([
       actionResults,
       armorResults,
@@ -315,7 +337,8 @@ client.connect((err) => {
       featResults,
       hazardResults,
       spellResults,
-      traitResults
+      traitResults,
+      weaponResults
     ]).then(results => {
       let flatResults = results.reduce((soFar, result) => soFar.concat(result), []);
       flatResults.sort((a, b) => {
