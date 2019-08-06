@@ -1,25 +1,32 @@
 <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+<script src="/js/bootstrap-table-natural-sorting.js"></script>
 <link rel="stylesheet" href="/css/creatures.css" />
 
 <table id="creatures-table" class="table table-hover table-striped">
   <thead>
     <tr>
       <th scope="col">Name</th>
+      <th scope="col">Category</th>
+      <th scope="col">Subcategory</th>
       <th scope="col">Tags</th>
       <th scope="col">Level</th>
+      <th scope="col">Price</th>
     </tr>
   </thead>
   <tbody>
     {{#each items}}
-      <tr onclick="window.location='/magic-items/{{label}}';">
-        <td>{{label}}</td>
+      <tr onclick="window.location='/items/{{name}}';">
+        <td>{{name}}</td>
+        <td>{{category}}</td>
+        <td>{{subcategory}}</td>
         <td>
-          {{#each tags}}
+          {{#each traits}}
             <span class="badge badge-secondary">{{this}}</span>
           {{/each}}
         </td>
         <td>{{level}}</td>
+        <td>{{price}}</td>
       </tr>
     {{/each}}
   </tbody>

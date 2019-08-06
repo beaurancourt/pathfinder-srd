@@ -1,0 +1,38 @@
+<ul class="list-group">
+  <li class="list-group-item d-flex justify-content-around align-items-center list-group-item-primary">
+    <h4>{{name}} {{#if category}}- {{category}}{{/if}}{{#if subcategory}} - {{subcategory}}{{/if}} - {{level}}</h4>
+  </li>
+  {{#if traits}}
+    <li class="list-group-item d-flex justify-content-around align-items-center list-group-item">
+      {{#each traits}}
+        <span class="badge badge-secondary">{{this}}</span>
+      {{/each}}
+    </li>
+  {{/if}}
+  {{#if price}}
+    <li class="list-group-item">
+      <span class="font-weight-bold">Price: </span>
+      {{price}}
+    </li>
+  {{/if}}
+  {{#if description}}
+    <li class="list-group-item">
+      {{{description}}}
+    </li>
+  {{/if}}
+  {{#each information}}
+    <li class="list-group-item">
+      <span class="font-weight-bold">{{label}}: </span>
+      {{description}}
+    </li>
+  {{/each}}
+  {{#each subtypes}}
+    <li class="list-group-item">
+      {{> item}}
+    </li>
+  {{/each}}
+</ul>
+
+{{#if source}}
+  <footer class="blockquote-footer">{{source}}</footer>
+{{/if}}
