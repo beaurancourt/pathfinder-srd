@@ -25,6 +25,7 @@ client.connect((err) => {
   const hazardTable = db.collection('hazards');
   const itemTable = db.collection('items');
   const spellTable = db.collection('spells');
+  const tableTable = db.collection('tables');
   const traitTable = db.collection('traits');
   const weaponTable = db.collection('weapons');
 
@@ -71,6 +72,7 @@ client.connect((err) => {
     'items': {table: itemTable, key: 'name'},
     'spells': {table: spellTable, key: 'name'},
     'traits': {table: traitTable, key: 'name'},
+    'tables': {table: tableTable, key: 'name'},
     'weapons': {table: weaponTable, key: 'name'}
   }
 
@@ -218,6 +220,17 @@ client.connect((err) => {
     });
   });
 
+  app.get('/tables', (req, res) => {
+    tableTable.find().sort({"name": 1}).toArray((err, tables) => {
+      res.render('tables', {tables: tables});
+    });
+  });
+  app.get('/tables/:tableName', (req, res) => {
+    tableTable.findOne({name: req.params.tableName}, (err, table) => {
+      res.render('table', table)
+    });
+  });
+
   app.get('/weapons', (req, res) => {
     weaponTable.find().sort({"name": 1}).toArray((err, weapons) => {
       res.render('weapons', {weapons: weapons});
@@ -319,6 +332,15 @@ client.connect((err) => {
         })
       })
 
+    const tableResults = tableTable
+      .find({'name': {$regex: regex}})
+      .toArray()
+      .then(tables => {
+        return (tables || []).map(table => {
+          return {'display': `${table.name} - Table`, 'value': `/tables/${table.name}`}
+        })
+      })
+
     const weaponResults = weaponTable
       .find({'name': {$regex: regex}})
       .toArray()
@@ -338,6 +360,7 @@ client.connect((err) => {
       hazardResults,
       spellResults,
       traitResults,
+      tableResults,
       weaponResults
     ]).then(results => {
       let flatResults = results.reduce((soFar, result) => soFar.concat(result), []);
