@@ -18,6 +18,7 @@ client.connect((err) => {
 
   const db = client.db("heroku_d8hk9vs8");
   const actionTable = db.collection('actions');
+  const armorTable = db.collection('armor');
   const conditionTable = db.collection('conditions');
   const creatureTable = db.collection('creatures');
   const featTable = db.collection('feats');
@@ -61,11 +62,12 @@ client.connect((err) => {
 
   const tablesByName = {
     'actions': {table: actionTable, key: 'name'},
+    'armors': {table: armorTable, key: 'name'},
     'conditions': {table: conditionTable, key: 'name'},
     'creatures': {table: creatureTable, key: 'name'},
     'feats': {table: featTable, key: 'name'},
     'hazards': {table: hazardTable, key: 'name'},
-    'magic-items': {table: itemTable, key: 'label'},
+    'items': {table: itemTable, key: 'name'},
     'spells': {table: spellTable, key: 'name'},
     'traits': {table: traitTable, key: 'name'}
   }
@@ -92,13 +94,24 @@ client.connect((err) => {
   app.get('/actions', (req, res) => {
     actionTable.find().sort({"name": 1}).toArray((err, actions) => {
       res.render('actions', {'actions': actions});
-    })
+    });
   });
   app.get('/actions/:actionName', (req, res) => {
     actionTable.findOne({'name': req.params.actionName}, (err, action) => {
       res.render('action', action)
     })
   })
+
+  app.get('/armors', (req, res) => {
+    armorTable.find().sort({"name": 1}).toArray((err, armors) => {
+      res.render('armors', {'armors': armors});
+    });
+  });
+  app.get('/armors/:armorName', (req, res) => {
+    armorTable.findOne({'name': req.params.armorName}, (err, armor) => {
+      res.render('armor', armor);
+    });
+  });
 
   app.get('/conditions', (req, res) => {
     conditionTable.find().sort({"name": 1}).toArray((err, conditions) => {
@@ -151,14 +164,14 @@ client.connect((err) => {
     });
   })
 
-  app.get('/magic-items', (req, res) => {
-    itemTable.find().sort({"label": 1}).toArray((err, items) => {
+  app.get('/items', (req, res) => {
+    itemTable.find().sort({"name": 1}).toArray((err, items) => {
       res.render('items', {'items': items});
     })
   });
 
-  app.get('/magic-items/:itemName', (req, res) => {
-    itemTable.findOne({'label': req.params.itemName}, (err, item) => {
+  app.get('/items/:itemName', (req, res) => {
+    itemTable.findOne({'name': req.params.itemName}, (err, item) => {
       res.render('item', item)
     })
   });
@@ -196,13 +209,12 @@ client.connect((err) => {
     traitTable.find().sort({"name": 1}).toArray((err, traits) => {
       res.render('traits', {traits: traits});
     });
-  })
-
+  });
   app.get('/traits/:traitName', (req, res) => {
     traitTable.findOne({name: req.params.traitName}, (err, trait) => {
       res.render('trait', trait)
     });
-  })
+  });
 
   app.get('/api/creatures', (req, res) => {
     creatureTable.find().toArray().then(creatures => {
@@ -219,7 +231,16 @@ client.connect((err) => {
       .then(actions => {
         return (actions || []).map(action => {
           return {'display': `${action.name} - Action`, 'value': `/actions/${action.name}`}
-        })
+        });
+      })
+
+    const armorResults = armorTable
+      .find({'name': {$regex: regex}})
+      .toArray()
+      .then(armors => {
+        return (armors || []).map(armor => {
+          return {'display': `${armor.name} - Armor`, 'value': `/armors/${armor.name}`}
+        });
       })
 
     const creatureResults = creatureTable
@@ -231,12 +252,12 @@ client.connect((err) => {
         })
       })
 
-    const magicItemResults = itemTable
-      .find({'label': {$regex: regex}})
+    const itemResults = itemTable
+      .find({'name': {$regex: regex}})
       .toArray()
       .then(items => {
         return (items || []).map(item => {
-          return {'display': `${item.label} - Item`, 'value': `/magic-items/${item.label}`}
+          return {'display': `${item.name} - ${item.category}`, 'value': `/items/${item.name}`}
         })
       })
 
@@ -287,9 +308,10 @@ client.connect((err) => {
 
     Promise.all([
       actionResults,
+      armorResults,
       conditionResults,
       creatureResults,
-      magicItemResults,
+      itemResults,
       featResults,
       hazardResults,
       spellResults,
