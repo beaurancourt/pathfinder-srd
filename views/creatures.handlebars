@@ -6,7 +6,7 @@
   <thead>
     <tr>
       <th scope="col">Name</th>
-      <th scope="col">Category</th>
+      <th scope="col">Traits</th>
       <th scope="col">Level</th>
     </tr>
   </thead>
@@ -14,7 +14,11 @@
     {{#each creatures}}
       <tr onclick='window.location="/creatures/{{name}}";'>
         <td>{{name}}</td>
-        <td>{{category}}</td>
+        <td>
+          {{#each tags}}
+            <span class="badge badge-secondary">{{this}}</span>
+          {{/each}}
+        </td>
         <td>{{level}}</td>
       </tr>
     {{/each}}
