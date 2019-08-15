@@ -145,7 +145,7 @@ var app = new Vue({
 function suggestFunction(userInput, callback) {
   const regex = new RegExp('.*' + userInput + '.*', 'i')
   let creatures = Object.values(app.allCreatures).filter(creature => {
-    const typeMatch = creature.name.match(regex) || creature.tags.join(",").match(regex)
+    const typeMatch = creature.name.match(regex) || (creature.tags || []).join(",").match(regex)
 
     return typeMatch && creature.level <= app.partyLevel + 4 && creature.level >= app.partyLevel - 4;
   });
