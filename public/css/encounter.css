@@ -1,3 +1,8 @@
 .creatureCard:hover {
   background-color: #E9ECEF;
 }
+
+#appropriate-creatures-list {
+  height: 300px;
+  overflow: scroll;
+}

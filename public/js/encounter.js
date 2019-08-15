@@ -93,6 +93,19 @@ var app = new Vue({
         }
       })
       return lines.join("\n");
+    },
+    appropriateCreatures: function() {
+      return this.allCreatures.filter(creature => {
+        return creature.level <= app.partyLevel + 1 && creature.level >= app.partyLevel - 1;
+      }).sort(function(a, b) {
+        if (a.level < b.level) {
+          return -1;
+        } else if (a.level > b.level) {
+          return 1;
+        } else {
+          return a.name > b.name;
+        }
+      });
     }
   },
   methods: {
@@ -107,8 +120,13 @@ var app = new Vue({
       }
     },
     addCreature: function(creature) {
-      creature.quantity = creature.quantity + 1;
-      Vue.set(this.selectedCreatures, this.selectedCreatures.indexOf(creature), creature);
+      if (creature.quantity) {
+        creature.quantity = creature.quantity + 1;
+        Vue.set(this.selectedCreatures, this.selectedCreatures.indexOf(creature), creature);
+      } else {
+        creature.quantity = 1;
+        this.selectedCreatures.push(creature);
+      }
       window.history.pushState("", "", this.encounterUrl);
     }
   },
@@ -144,7 +162,7 @@ var app = new Vue({
 
 function suggestFunction(userInput, callback) {
   const regex = new RegExp('.*' + userInput + '.*', 'i')
-  let creatures = Object.values(app.allCreatures).filter(creature => {
+  let creatures = app.allCreatures.filter(creature => {
     const typeMatch = creature.name.match(regex) || (creature.tags || []).join(",").match(regex)
 
     return typeMatch && creature.level <= app.partyLevel + 4 && creature.level >= app.partyLevel - 4;
@@ -159,9 +177,7 @@ function afterSelectFunction(suggestionObject) {
   if (suggestionObject && lastSelectedId !== suggestionObject.value && !app.selectedIds[suggestionObject.value]) {
     lastSelectedId = suggestionObject.value
     let creature = app.keyedCreatures[lastSelectedId];
-    creature.quantity = 1;
-    app.selectedCreatures.push(creature);
-    window.history.pushState("", "", app.encounterUrl);
+    app.addCreature(creature);
   }
   $("#creature-name-typeahead").val('')
 }

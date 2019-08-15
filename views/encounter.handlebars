@@ -3,108 +3,123 @@
 
 {{{{vue-js}}}}
 <div id="app">
-  <div class="row mb-3 mt-3">
-    <div class="col input-group">
-      <div class="input-group-prepend">
-        <label class="input-group-text" for="creature-name-typeahead">Add Creature</label>
-      </div>
-      <input class="form-control" type="text" id="creature-name-typeahead">
-      <input type="hidden" id="creature-id">
-    </div>
-  </div>
-  <div class="row mb-3 mt-3">
-    <div class="col input-group">
-      <div class="input-group-prepend">
-        <label class="input-group-text" for="party-level">Party's Level</label>
-      </div>
-      <input v-model="partyLevelText" type="number" min="0" max="20" class="form-control" id="party-level" attributeName="value" name="party-level" required>
-    </div>
-    <div class="col input-group">
-      <div class="input-group-prepend">
-        <label class="input-group-text" for="number-of-members">Number Of Members</label>
-      </div>
-      <input v-model="numberOfMembersText"
-             type="number"
-             min="0"
-             max="10"
-             class="form-control"
-             id="number-of-members"
-             attributeName="value"
-             name="party-level" required>
-    </div>
-  </div>
-
-  <div class="card-columns">
-    <div v-for="creature in selectedCreatures" :key="creature._id" class="card w-33 creatureCard modal-target" data-toggle="modal" v-bind:data-target="'#' + creature._id">
-      <div class="card-body">
-        <h5 class="card-title">{{creature.name}}</h5>
-        <h6 class="card-subtitle mb-2 text-muted">Level {{creature.level}}</h6>
-      </div>
-      <div class="card-body">
-        <span>Quantity: {{creature.quantity}}</span>
-        <div class="float-right">
-          <button class="add-or-delete btn btn-primary btn-small" @click="addCreature(creature)">+</button>
-          <button class="add-or-delete btn btn-danger btn-small" @click="removeCreature(creature)">-</button>
+  <div class="row">
+    <div class="col-9">
+      <div class="row mb-3 mt-3">
+        <div class="col input-group">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="creature-name-typeahead">Add Creature</label>
+          </div>
+          <input class="form-control" type="text" id="creature-name-typeahead">
+          <input type="hidden" id="creature-id">
         </div>
       </div>
-    </div>
-  </div>
-  <div v-for="creature in selectedCreatures" class="modal fade" v-bind:id="creature._id" tabindex="-1" role="dialog" aria-labelledby="longScrollModalTitle" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="longScrollModalTitle">Creature Stats</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-            </button>
+      <div class="row mb-3 mt-3">
+        <div class="col input-group">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="party-level">Party's Level</label>
+          </div>
+          <input v-model="partyLevelText" type="number" min="0" max="20" class="form-control" id="party-level" attributeName="value" name="party-level" required>
         </div>
-        <div class="modal-body">
-          <ul class="list-group">
-            <li class="list-group-item d-flex justify-content-around align-items-center list-group-item-primary">
-              <h1>{{creature.name}} - Creature {{creature.level}}</h1>
-            </li>
-            <li class="list-group-item d-flex justify-content-around align-items-center list-group-item">
-              <span v-for="tag in creature.tags "class="badge badge-secondary">{{tag}}</span>
-            </li>
-            <li class="list-group-item">
-              <span v-for="(value, key) in creature.stats">
-                <span class="font-weight-bold">{{key}}: </span> {{value}}
-              </span>
-            </li>
-            <li v-for="item in creature.information" class="list-group-item">
-              <span class="font-weight-bold">{{item.label}}: </span>{{item.description}}
-            </li>
-            <li class="list-group-item list-group-item-secondary">
-              <span class="font-weight-bold">HP: </span>{{creature.HP}}
-              <span class="font-weight-bold">AC: </span>{{creature.AC}}
-              <span v-for="(value, key) in creature.saves">
-                <span class="font-weight-bold">{{key}}: </span>{{value}}
-              </span>
-            </li>
-            <li v-for="defense in creature.defenses" class="list-group-item list-group-item-secondary">
-              <img v-if="defense.actionCost" v-bind:src="'/img/' + defense.actionCost + '.png'" style="height: 20px;">
-              <span class="font-weight-bold">{{defense.label}}: </span>{{defense.description}}
-            </li>
+        <div class="col input-group">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="number-of-members">Number Of Members</label>
+          </div>
+          <input v-model="numberOfMembersText"
+                 type="number"
+                 min="0"
+                 max="10"
+                 class="form-control"
+                 id="number-of-members"
+                 attributeName="value"
+                 name="party-level" required>
+        </div>
+      </div>
 
-            <li v-for="item in creature.combat" class="list-group-item list-group-item-warning">
-              <img v-if="item.actionCost" v-bind:src="'/img/' + item.actionCost + '.png'" style="height: 20px;">
-              <span class="font-weight-bold">{{item.label}}: </span>
-              {{item.description}}
-            </li>
-
-            <li v-if="creature.creatureDescription" class="list-group-item">
-              <span class="font-weight-bold">Description: </span>
-              {{creature.creatureDescription}}
-            </li>
-            <li v-if="creature.familyDescription" class="list-group-item">
-              <span class="font-weight-bold">Family Description: </span>
-              {{creature.familyDescription}}
-            </li>
-          </ul>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      <div class="card-columns">
+        <div v-for="creature in selectedCreatures" :key="creature._id" class="card w-33 creatureCard modal-target" data-toggle="modal" v-bind:data-target="'#' + creature._id">
+          <div class="card-body">
+            <h5 class="card-title">{{creature.name}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Level {{creature.level}}</h6>
+          </div>
+          <div class="card-body">
+            <span>Quantity: {{creature.quantity}}</span>
+            <div class="float-right">
+              <button class="add-or-delete btn btn-primary btn-small" @click="addCreature(creature)">+</button>
+              <button class="add-or-delete btn btn-danger btn-small" @click="removeCreature(creature)">-</button>
+            </div>
           </div>
         </div>
+      </div>
+      <div v-for="creature in selectedCreatures" class="modal fade" v-bind:id="creature._id" tabindex="-1" role="dialog" aria-labelledby="longScrollModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="longScrollModalTitle">Creature Stats</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+              <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-around align-items-center list-group-item-primary">
+                  <h1>{{creature.name}} - Creature {{creature.level}}</h1>
+                </li>
+                <li class="list-group-item d-flex justify-content-around align-items-center list-group-item">
+                  <span v-for="tag in creature.tags "class="badge badge-secondary">{{tag}}</span>
+                </li>
+                <li class="list-group-item">
+                  <span v-for="(value, key) in creature.stats">
+                    <span class="font-weight-bold">{{key}}: </span> {{value}}
+                  </span>
+                </li>
+                <li v-for="item in creature.information" class="list-group-item">
+                  <span class="font-weight-bold">{{item.label}}: </span>{{item.description}}
+                </li>
+                <li class="list-group-item list-group-item-secondary">
+                  <span class="font-weight-bold">HP: </span>{{creature.HP}}
+                  <span class="font-weight-bold">AC: </span>{{creature.AC}}
+                  <span v-for="(value, key) in creature.saves">
+                    <span class="font-weight-bold">{{key}}: </span>{{value}}
+                  </span>
+                </li>
+                <li v-for="defense in creature.defenses" class="list-group-item list-group-item-secondary">
+                  <img v-if="defense.actionCost" v-bind:src="'/img/' + defense.actionCost + '.png'" style="height: 20px;">
+                  <span class="font-weight-bold">{{defense.label}}: </span>{{defense.description}}
+                </li>
+
+                <li v-for="item in creature.combat" class="list-group-item list-group-item-warning">
+                  <img v-if="item.actionCost" v-bind:src="'/img/' + item.actionCost + '.png'" style="height: 20px;">
+                  <span class="font-weight-bold">{{item.label}}: </span>
+                  {{item.description}}
+                </li>
+
+                <li v-if="creature.creatureDescription" class="list-group-item">
+                  <span class="font-weight-bold">Description: </span>
+                  {{creature.creatureDescription}}
+                </li>
+                <li v-if="creature.familyDescription" class="list-group-item">
+                  <span class="font-weight-bold">Family Description: </span>
+                  {{creature.familyDescription}}
+                </li>
+              </ul>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div id="appropriate-creatures-list" >
+        <table class="table table-sm">
+          <tbody>
+            <tr v-for="creature in appropriateCreatures">
+              <td @click="addCreature(creature)">{{creature.name}} - {{creature.level}}</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
