@@ -12,8 +12,8 @@ xpForAdjustedLevel.set(4, 160);
 var app = new Vue({
   el: '#app',
   data: {
-    partyLevelText: '5',
-    numberOfMembersText: '5',
+    partyLevelText: localStorage.getItem('partyLevel') || '5',
+    numberOfMembersText: localStorage.getItem('numberOfMembers') || '5',
     allCreatures: [],
     selectedCreatures: []
   },
@@ -77,16 +77,31 @@ var app = new Vue({
     },
     encounterUrl: function() {
       const creaturesString = this.selectedCreatures
-        .map(creature => Array(creature.quantity).fill(creature.name))
+        .map(creature => {
+          if (creature.adjustment) {
+            return Array(creature.quantity).fill(creature.adjustment + " " + creature.name)
+          } else {
+            return Array(creature.quantity).fill(creature.name)
+          }
+        })
         .flat()
         .join(",");
+      console.log(creaturesString)
       const rawString = `/encounter/?list=${creaturesString}&totalPlayers=${this.numberOfMembers}&partyLevel=${this.partyLevel}`;
       return encodeURI(rawString);
     },
     encounterCodeExport: function() {
       let lines = [];
       this.selectedCreatures.forEach(creature => {
-        const perception = parseInt((creature.perception || "0").match(/[-+]?\d+/)[0]);
+        let perception = 0;
+        if (creature.perception) {
+          perception = parseInt((creature.perception || "0").match(/[-+]?\d+/)[0]);
+        } else {
+          const perceptionLine = creature.information
+            .map(info => info.description)
+            .filter(description => description.includes("Perception"))[0];
+          perception = parseInt((perceptionLine || "0").match(/[-+]?\d+/)[0]);
+        }
         const creatureInit = Math.floor(Math.random() * 20) + 1 + perception;
         for (let i = 1; i <= creature.quantity; i++) {
           lines.push(`${creatureInit} ${creature.name}#${i} - ${creature.HP}`);
@@ -128,6 +143,84 @@ var app = new Vue({
         this.selectedCreatures.push(creature);
       }
       window.history.pushState("", "", this.encounterUrl);
+    },
+    strengthenCreature: function(creature) {
+      const newCreature = strengthenCreature(creature);
+      this.removeCreature(creature);
+      this.addCreature(newCreature);
+    },
+    weakenCreature: function(creature) {
+      const newCreature = weakenCreature(creature);
+      this.removeCreature(creature);
+      this.addCreature(newCreature);
+    },
+    strengthenCreature: function(creature) {
+      creature.name = "Elite " + creature.name;
+      let hpIncrease = 0;
+      if (creature.level <= 1) {
+        hpIncrease = 10;
+      } else if (creature.level <= 4) {
+        hpIncrease = 15;
+      } else if (creature.level <= 19) {
+        hpIncrease = 20;
+      } else {
+        hpIncrease = 30;
+      }
+      creature.level = parseInt(creature.level) + 1
+      creature.HP = extractAndModify(creature.HP, "", hpIncrease);
+      creature.AC = extractAndModify(creature.AC, "", 2);
+      creature.saves.Fort = extractAndModify(creature.saves.Fort, "", 2);
+      creature.saves.Ref = extractAndModify(creature.saves.Ref, "", 2);
+      creature.saves.Will = extractAndModify(creature.saves.Will, "", 2);
+      if (creature.perception) {
+        creature.perception = extractAndModify(creature.perception, "Perception ", 2);
+      } else {
+        let perceptionLine = creature.information.filter(info => info.description.includes("Perception"))[0];
+        if (perceptionLine) {
+          perceptionLine.description = extractAndModify(perceptionLine.description, "Perception ", 2);
+        }
+      }
+      creature.combat.forEach(line => {
+        if (line.label == "Melee" || line.label == "Ranged" || line.label == "Damage") {
+          line.description = line.description + " +2 (elite bonus)"
+        }
+      })
+      return creature;
+    },
+    weakenCreature: function(creature) {
+      creature.name = "Weak " + creature.name;
+      let hpDecrease = 0;
+      if (creature.level <= 2) {
+        hpDecrease = -10;
+      } else if (creature.level <= 5) {
+        hpDecrease = -15;
+      } else if (creature.level <= 20) {
+        hpDecrease = -20;
+      } else {
+        hpDecrease = -30;
+      }
+      creature.level = parseInt(creature.level) - 1
+      creature.HP = extractAndModify(creature.HP, "", hpDecrease);
+      creature.AC = extractAndModify(creature.AC, "", -2);
+      creature.saves.Fort = extractAndModify(creature.saves.Fort, "", -2);
+      creature.saves.Ref = extractAndModify(creature.saves.Ref, "", -2);
+      creature.saves.Will = extractAndModify(creature.saves.Will, "", -2);
+      let perceptionLine = creature.information.filter(info => info.description.includes("Perception"))[0];
+      if (perceptionLine) {
+        perceptionLine.description = extractAndModify(perceptionLine.description, "Perception ", -2);
+      }
+      creature.combat.forEach(line => {
+        if (line.label == "Melee" || line.label == "Ranged" || line.label == "Damage") {
+          line.description = line.description + " -2 (weak penalty)"
+        }
+      });
+      return creature;
+    },
+    partyLevelHandler: function(event) {
+      localStorage.setItem("partyLevel", event.target.value)
+    },
+    numberOfMembersHandler: function(event) {
+      localStorage.setItem("numberOfMembers", event.target.value)
     }
   },
   mounted() {
@@ -149,16 +242,99 @@ var app = new Vue({
           let creatureCounts = {};
           list.split(",").forEach(name => {
             creatureCounts[name] = (creatureCounts[name] || 0) + 1;
-            this.selectedCreatures = Object.keys(creatureCounts).map(name => {
-              let creature = this.allCreatures.find(creature => creature.name === name);
-              creature.quantity = creatureCounts[name];
-              return creature;
-            });
           })
+          this.selectedCreatures = Object.keys(creatureCounts).map(name => {
+            let creature = null;
+            if (name.startsWith("Elite")) {
+              const baseCreature = this.allCreatures.find(creature => creature.name === name.slice(6));
+              creature = strengthenCreature(baseCreature);
+            } else if (name.startsWith("Weak")) {
+              const baseCreature = this.allCreatures.find(creature => creature.name === name.slice(5));
+              creature = weakenCreature(baseCreature);
+            } else {
+              creature = this.allCreatures.find(creature => creature.name === name);
+            }
+            creature.quantity = creatureCounts[name];
+            return creature;
+          });
         }
       })
   }
 })
+
+function extractAndModify(string, preamble, modifier) {
+  const match = string.match(preamble + "([+-]?\\d+)");
+  if (match && match[1]) {
+    const number = parseInt(match[1]) + modifier;
+    const replacement = preamble + number.toString();
+    return string.replace(match[0], replacement);
+  } else {
+    return string;
+  }
+}
+function strengthenCreature(creature) {
+  creature.name = "Elite " + creature.name;
+  let hpIncrease = 0;
+  if (creature.level <= 1) {
+    hpIncrease = 10;
+  } else if (creature.level <= 4) {
+    hpIncrease = 15;
+  } else if (creature.level <= 19) {
+    hpIncrease = 20;
+  } else {
+    hpIncrease = 30;
+  }
+  creature.level += 1;
+  creature.HP = extractAndModify(creature.HP, "", hpIncrease);
+  creature.AC = extractAndModify(creature.AC, "", 2);
+  creature.saves.Fort = extractAndModify(creature.saves.Fort, "", 2);
+  creature.saves.Ref = extractAndModify(creature.saves.Ref, "", 2);
+  creature.saves.Will = extractAndModify(creature.saves.Will, "", 2);
+  if (creature.perception) {
+    creature.perception = extractAndModify(creature.perception, "Perception ", 2);
+  } else {
+    let perceptionLine = creature.information.filter(info => info.description.includes("Perception"))[0];
+    if (perceptionLine) {
+      perceptionLine.description = extractAndModify(perceptionLine.description, "Perception ", 2);
+    }
+  }
+  creature.combat.forEach(line => {
+    if (line.label == "Melee" || line.label == "Ranged" || line.label == "Damage") {
+      line.description = line.description + " +2 (elite bonus)"
+    }
+  })
+  return creature;
+}
+
+function weakenCreature(creature) {
+  creature.name = "Weak " + creature.name;
+  let hpDecrease = 0;
+  if (creature.level <= 2) {
+    hpDecrease = -10;
+  } else if (creature.level <= 5) {
+    hpDecrease = -15;
+  } else if (creature.level <= 20) {
+    hpDecrease = -20;
+  } else {
+    hpDecrease = -30;
+  }
+  creature.level -= 1;
+  creature.HP = extractAndModify(creature.HP, "", hpDecrease);
+  creature.AC = extractAndModify(creature.AC, "", -2);
+  creature.saves.Fort = extractAndModify(creature.saves.Fort, "", -2);
+  creature.saves.Ref = extractAndModify(creature.saves.Ref, "", -2);
+  creature.saves.Will = extractAndModify(creature.saves.Will, "", -2);
+  let perceptionLine = creature.information.filter(info => info.description.includes("Perception"))[0];
+  if (perceptionLine) {
+    perceptionLine.description = extractAndModify(perceptionLine.description, "Perception ", -2);
+  }
+  creature.combat.forEach(line => {
+    if (line.label == "Melee" || line.label == "Ranged" || line.label == "Damage") {
+      line.description = line.description + " -2 (elite bonus)"
+    }
+  })
+  return creature;
+}
 
 function suggestFunction(userInput, callback) {
   const regex = new RegExp('.*' + userInput + '.*', 'i')

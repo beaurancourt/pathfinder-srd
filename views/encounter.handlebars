@@ -19,13 +19,14 @@
           <div class="input-group-prepend">
             <label class="input-group-text" for="party-level">Party's Level</label>
           </div>
-          <input v-model="partyLevelText" type="number" min="0" max="20" class="form-control" id="party-level" attributeName="value" name="party-level" required>
+          <input v-model="partyLevelText" @change="partyLevelHandler" type="number" min="0" max="20" class="form-control" id="party-level" attributeName="value" name="party-level" required>
         </div>
         <div class="col input-group">
           <div class="input-group-prepend">
             <label class="input-group-text" for="number-of-members">Number Of Members</label>
           </div>
           <input v-model="numberOfMembersText"
+                 @change="numberOfMembersHandler"
                  type="number"
                  min="0"
                  max="10"
@@ -44,7 +45,9 @@
           </div>
           <div class="card-body">
             <span>Quantity: {{creature.quantity}}</span>
-            <div class="float-right">
+            <div>
+              <button class="add-or-delete btn btn-secondary btn-small" @click="strengthenCreature(creature)">Elite</button>
+              <button class="add-or-delete btn btn-secondary btn-small" @click="weakenCreature(creature)">Weak</button>
               <button class="add-or-delete btn btn-primary btn-small" @click="addCreature(creature)">+</button>
               <button class="add-or-delete btn btn-danger btn-small" @click="removeCreature(creature)">-</button>
             </div>
