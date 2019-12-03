@@ -1,7 +1,6 @@
 const express = require('express');
 const exphbs = require('express-handlebars');
 
-const generateEncounter = require('./generateEncounter.js');
 const bodyParser = require("body-parser");
 
 const mongo = require('mongodb')
