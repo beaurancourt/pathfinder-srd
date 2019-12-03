@@ -284,7 +284,7 @@ function strengthenCreature(creature) {
   } else {
     hpIncrease = 30;
   }
-  creature.level += 1;
+  creature.level = parseInt(creature.level) + 1;
   creature.HP = extractAndModify(creature.HP, "", hpIncrease);
   creature.AC = extractAndModify(creature.AC, "", 2);
   creature.saves.Fort = extractAndModify(creature.saves.Fort, "", 2);
