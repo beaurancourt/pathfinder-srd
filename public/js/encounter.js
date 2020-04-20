@@ -59,22 +59,6 @@ var app = new Vue({
         return 'TPK';
       }
     },
-    awardedXP: function() {
-      switch(this.difficulty) {
-        case 'Trivial':
-          return '40 or less';
-        case 'Low':
-          return '60';
-        case 'Moderate':
-          return '80';
-        case 'Severe':
-          return '120';
-        case 'Extreme':
-          return '160';
-        case 'TPK':
-          return '200';
-      }
-    },
     encounterUrl: function() {
       const creaturesString = this.selectedCreatures
         .map(creature => {
