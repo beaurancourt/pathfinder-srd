@@ -86,8 +86,8 @@ var app = new Vue({
           const perceptionInfo = creature.information.filter(info => info.label === "Perception")[0] || {};
           perception = parseInt((perceptionInfo.description || "0").match(/[-+]?\d+/)[0]);
         }
-        const creatureInit = Math.floor(Math.random() * 20) + 1 + perception;
         for (let i = 1; i <= creature.quantity; i++) {
+          const creatureInit = Math.floor(Math.random() * 20) + 1 + perception;
           lines.push(`${creatureInit} ${creature.name}#${i} - ${creature.HP}`);
         }
       })
