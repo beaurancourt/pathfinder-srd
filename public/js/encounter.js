@@ -44,7 +44,7 @@ var app = new Vue({
       }, 0);
     },
     displayedXp: function() {
-      return this.encounterXp * 4 / this.numberOfMembers;
+      return Math.round(this.encounterXp * 4 / this.numberOfMembers / 10) * 10;
     },
     difficulty: function() {
       const adjustmentSize = this.numberOfMembers - 4;
