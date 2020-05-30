@@ -73,7 +73,6 @@ var app = new Vue({
         })
         .flat()
         .join(",");
-      console.log(creaturesString)
       const rawString = `/encounter/?list=${creaturesString}&totalPlayers=${this.numberOfMembers}&partyLevel=${this.partyLevel}`;
       return encodeURI(rawString);
     },
@@ -84,10 +83,8 @@ var app = new Vue({
         if (creature.perception) {
           perception = parseInt((creature.perception || "0").match(/[-+]?\d+/)[0]);
         } else {
-          const perceptionLine = creature.information
-            .map(info => info.description)
-            .filter(description => description.includes("Perception"))[0];
-          perception = parseInt((perceptionLine || "0").match(/[-+]?\d+/)[0]);
+          const perceptionInfo = creature.information.filter(info => info.label === "Perception")[0] || {};
+          perception = parseInt((perceptionInfo.description || "0").match(/[-+]?\d+/)[0]);
         }
         const creatureInit = Math.floor(Math.random() * 20) + 1 + perception;
         for (let i = 1; i <= creature.quantity; i++) {
