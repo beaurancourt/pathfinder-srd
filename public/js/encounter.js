@@ -43,6 +43,9 @@ var app = new Vue({
         return soFar + creature.quantity * xpForAdjustedLevel.get(creature.level - this.partyLevel);
       }, 0);
     },
+    displayedXp: function() {
+      return this.encounterXp * 4 / this.numberOfMembers;
+    },
     difficulty: function() {
       const adjustmentSize = this.numberOfMembers - 4;
       if (this.encounterXp <= 40 + adjustmentSize * 10) {
