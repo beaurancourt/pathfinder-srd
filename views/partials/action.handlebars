@@ -7,6 +7,9 @@
     {{#if category}}
       - {{category}}
     {{/if}}
+    {{#each traits}}
+      <span class="badge badge-secondary">{{this}}</span>
+    {{/each}}
     {{#if proficiency}}
       <span class="badge badge-secondary float-right">{{proficiency}}</span>
     {{/if}}
