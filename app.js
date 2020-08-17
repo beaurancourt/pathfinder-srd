@@ -240,7 +240,7 @@ pgClient.connect((err) => {
         })
 
       const creatureResults = pgClient
-        .query("select info ->> 'name' as name from creatures where info ->> 'name' like $1", [postgresRegex])
+        .query("select info ->> 'name' as name from creatures where info ->> 'name' ilike $1", [postgresRegex])
         .then(result => {
           return result.rows.map(creature => {
             return {'display': `${creature.name} - Creature`, 'value': `/creatures/${creature.name}`}
