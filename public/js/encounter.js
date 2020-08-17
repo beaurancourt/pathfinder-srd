@@ -115,8 +115,8 @@ var app = new Vue({
       } else {
         creature.quantity = creature.quantity - 1;
         Vue.set(this.selectedCreatures, creatureIndex, creature);
-        window.history.pushState("", "", this.encounterUrl);
       }
+      window.history.pushState("", "", this.encounterUrl);
     },
     addCreature: function(creature) {
       if (creature.quantity) {
