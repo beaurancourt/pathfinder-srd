@@ -25,7 +25,6 @@ pgClient.connect((err) => {
     const actionTable = db.collection('actions');
     const armorTable = db.collection('armor');
     const conditionTable = db.collection('conditions');
-    const creatureTable = db.collection('creatures');
     const featTable = db.collection('feats');
     const hazardTable = db.collection('hazards');
     const itemTable = db.collection('items');
@@ -216,6 +215,12 @@ pgClient.connect((err) => {
         res.render('weapon', weapon);
       });
     });
+
+    app.get('/api/creatures', (req, res) => {
+      pgClient.query("select info from creatures order by info ->> 'name'", (err, result) => {
+        res.json(result.rows.map(row => row.info));
+      });
+    })
 
     app.get('/api/search/:query', (req, res) => {
       const regex = new RegExp(req.params.query, 'i');
