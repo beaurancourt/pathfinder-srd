@@ -3,354 +3,293 @@ const exphbs = require('express-handlebars');
 
 const bodyParser = require("body-parser");
 
-const mongo = require('mongodb')
-const MongoClient = mongo.MongoClient;
-const ObjectId = mongo.ObjectId;
-const client = new MongoClient(process.env.MONGODB_URI, { useNewUrlParser: true });
+const actionsByName = require('./data/actions');
+const sortedActions = Object.values(actionsByName).sort((a, b) => a.name < b.name);
 
-const pg = require('pg');
-const pgClient = new pg.Client({ connectionString: process.env.DATABASE_URL });
+const armorsByName = require('./data/armor');
+const sortedArmors = Object.values(armorsByName).sort((a, b) => a.name < b.name);
 
-pgClient.connect((err) => {
-  if (err) throw err;
+const conditionsByName = require('./data/conditions');
+const sortedConditions = Object.values(conditionsByName).sort((a, b) => a.name < b.name);
 
-  client.connect((err) => {
-    if (err) {
-      console.log(err)
-    } else {
-      console.log("Connected successfully to server");
+const creaturesByName = require('./data/creatures');
+const sortedCreatures = Object.values(creaturesByName).sort((a, b) => a.name < b.name);
+
+const featsByName = require('./data/feats')
+const sortedFeats = Object.values(featsByName).sort((a, b) => a.name < b.name);
+
+const hazardsByName = require('./data/hazards')
+const sortedHazards = Object.values(hazardsByName).sort((a, b) => a.name < b.name);
+
+const itemsByName = require('./data/items')
+const sortedItems = Object.values(itemsByName).sort((a, b) => a.name < b.name);
+
+const spellsByName = require('./data/spells')
+const sortedSpells = Object.values(spellsByName).sort((a, b) => a.name < b.name);
+
+const tablesByName = require('./data/tables')
+const sortedTables = Object.values(tablesByName).sort((a, b) => a.name < b.name);
+
+const traitsByName = require('./data/traits')
+const sortedTraits = Object.values(traitsByName).sort((a, b) => a.name < b.name);
+
+const weaponsByName = require('./data/weapons')
+const sortedWeapons = Object.values(weaponsByName).sort((a, b) => a.name < b.name);
+
+let app = express();
+
+app.engine('handlebars', exphbs({
+  defaultLayout: 'main',
+  helpers: {
+    select: function(selected, options) {
+      return options.fn(this).replace(
+        new RegExp(' value=\"' + selected + '\"'),
+        '$& selected="selected"'
+      );
+    },
+    'vue-js': function(options) {
+      return options.fn();
     }
+  }
+}));
 
-    const db = client.db("heroku_d8hk9vs8");
-    const actionTable = db.collection('actions');
-    const armorTable = db.collection('armor');
-    const conditionTable = db.collection('conditions');
-    const featTable = db.collection('feats');
-    const hazardTable = db.collection('hazards');
-    const itemTable = db.collection('items');
-    const spellTable = db.collection('spells');
-    const tableTable = db.collection('tables');
-    const traitTable = db.collection('traits');
-    const weaponTable = db.collection('weapons');
+app.set('view engine', 'handlebars');
 
-    let app = express();
+app.use(express.static('public'))
+app.use(bodyParser.urlencoded({ extended: true}));
+app.use(require('cookie-parser')());
+app.use(bodyParser.json());
+app.use(require('express-session')({ secret: 'keyboard cat', resave: false, saveUninitialized: false }));
 
-    app.engine('handlebars', exphbs({
-      defaultLayout: 'main',
-      helpers: {
-        select: function(selected, options) {
-          return options.fn(this).replace(
-            new RegExp(' value=\"' + selected + '\"'),
-            '$& selected="selected"'
-          );
-        },
-        'vue-js': function(options) {
-          return options.fn();
-        }
-      }
-    }));
+const renderCreatures = (req, res) => {
+  res.render('creatures', {'creatures': sortedCreatures});
+};
 
-    app.set('view engine', 'handlebars');
+app.get('/', renderCreatures);
 
-    app.use(express.static('public'))
-    app.use(bodyParser.urlencoded({ extended: true}));
-    app.use(require('cookie-parser')());
-    app.use(bodyParser.json());
-    app.use(require('express-session')({ secret: 'keyboard cat', resave: false, saveUninitialized: false }));
-
-    const renderCreatures = (req, res) => {
-      pgClient.query("select info from creatures order by info ->> 'name'", (err, result) => {
-        res.render('creatures', {'creatures': result.rows.map(row => row.info)});
-      });
-    };
-
-    app.get('/', renderCreatures);
-
-    app.get('/actions', (req, res) => {
-      actionTable.find().sort({"name": 1}).toArray((err, actions) => {
-        res.render('actions', {'actions': actions});
-      });
-    });
-    app.get('/actions/:actionName', (req, res) => {
-      actionTable.findOne({'name': req.params.actionName}, (err, action) => {
-        res.render('action', action)
-      })
-    })
-
-    app.get('/armors', (req, res) => {
-      armorTable.find().sort({"name": 1}).toArray((err, armors) => {
-        res.render('armors', {'armors': armors});
-      });
-    });
-    app.get('/armors/:armorName', (req, res) => {
-      armorTable.findOne({'name': req.params.armorName}, (err, armor) => {
-        res.render('armor', armor);
-      });
-    });
-
-    app.get('/conditions', (req, res) => {
-      conditionTable.find().sort({"name": 1}).toArray((err, conditions) => {
-        res.render('conditions', {'conditions': conditions});
-      })
-    });
-    app.get('/conditions/:conditionName', (req, res) => {
-      conditionTable.findOne({'name': req.params.conditionName}, (err, condition) => {
-        res.render('condition', condition)
-      })
-    })
-
-    app.get('/creatures', renderCreatures);
-    app.get('/creatures/:creatureName', (req, res) => {
-      pgClient.query({
-        text: "select info from creatures where info ->> 'name' = $1",
-        values: [req.params.creatureName]
-      }, (err, result) => {
-        res.render('creature', result.rows[0].info);
-      })
-    });
-
-    app.get('/encounter', (req, res) => {
-      res.render('encounter')
-    })
-
-    app.get('/feats', (req, res) => {
-      featTable.find().sort({"name": 1}).toArray((err, feats) => {
-        feats.forEach(feat => {
-          if (feat.traits.includes('Skill')) {
-            feat.type = 'Skill'
-          } else {
-            feat.type = 'General'
-          }
-        })
-        res.render('feats', {feats: feats})
-      })
-    })
-    app.get('/feats/:featName', (req, res) => {
-      featTable.findOne({'name': req.params.featName}, (err, feat) => {
-        res.render('feat', feat)
-      })
-    })
-
-    app.get('/hazards', (req, res) => {
-      hazardTable.find().sort({"name": 1}).toArray((err, hazards) => {
-        res.render('hazards', {'hazards': hazards})
-      });
-    })
-    app.get('/hazards/:hazardName', (req, res) => {
-      hazardTable.findOne({'name': req.params.hazardName}, (err, hazard) => {
-        res.render('hazard', hazard);
-      });
-    })
-
-    app.get('/items', (req, res) => {
-      itemTable.find().sort({"name": 1}).toArray((err, items) => {
-        res.render('items', {'items': items});
-      })
-    });
-
-    app.get('/items/:itemName', (req, res) => {
-      itemTable.findOne({'name': req.params.itemName}, (err, item) => {
-        res.render('item', item)
-      })
-    });
-
-    app.get('/spells', (req, res) => {
-      spellTable.find().sort({"name": 1}).toArray((err, spells) => {
-        res.render('spells', {'spells': spells})
-      })
-    })
-
-    app.get('/spells/:spellName', (req, res) => {
-      spellTable.findOne({'name': req.params.spellName}, (err, spell) => {
-        res.render('spell', spell)
-      })
-    });
-
-    app.get('/tasks', (req, res) => {
-      const mediums = [14, 15, 16, 18, 19, 20, 22, 23, 24, 26, 27, 28, 30, 31, 32, 34, 35, 36, 38, 39, 40, 42, 44, 46, 48, 50];
-      res.render('tasks', {'levels': [...Array(24).keys()].map(index => {
-        const medium = mediums[index];
-        return {
-          'level': index,
-          'ie': medium - 10,
-          've': medium - 5,
-          'easy': medium -2,
-          'medium': medium,
-          'hard': medium + 2,
-          'vh': medium + 5,
-          'ih': medium + 10
-        }
-      })});
-    })
-
-    app.get('/traits', (req, res) => {
-      traitTable.find().sort({"name": 1}).toArray((err, traits) => {
-        res.render('traits', {traits: traits});
-      });
-    });
-    app.get('/traits/:traitName', (req, res) => {
-      traitTable.findOne({name: req.params.traitName}, (err, trait) => {
-        res.render('trait', trait)
-      });
-    });
-
-    app.get('/tables', (req, res) => {
-      tableTable.find().sort({"name": 1}).toArray((err, tables) => {
-        res.render('tables', {tables: tables});
-      });
-    });
-    app.get('/tables/:tableName', (req, res) => {
-      tableTable.findOne({name: req.params.tableName}, (err, table) => {
-        res.render('table', table)
-      });
-    });
-
-    app.get('/weapons', (req, res) => {
-      weaponTable.find().sort({"name": 1}).toArray((err, weapons) => {
-        res.render('weapons', {weapons: weapons});
-      });
-    });
-    app.get('/weapons/:weaponName', (req, res) => {
-      weaponTable.findOne({name: req.params.weaponName}, (err, weapon) => {
-        res.render('weapon', weapon);
-      });
-    });
-
-    app.get('/api/creatures', (req, res) => {
-      pgClient.query("select info from creatures order by info ->> 'name'", (err, result) => {
-        res.json(result.rows.map(row => row.info));
-      });
-    })
-
-    app.get('/api/search/:query', (req, res) => {
-      const regex = new RegExp(req.params.query, 'i');
-      const postgresRegex = "%" + req.params.query + "%";
-
-      const actionResults = actionTable
-        .find({'name': {$regex: regex}})
-        .toArray()
-        .then(actions => {
-          return (actions || []).map(action => {
-            return {'display': `${action.name} - Action`, 'value': `/actions/${action.name}`}
-          });
-        })
-
-      const armorResults = armorTable
-        .find({'name': {$regex: regex}})
-        .toArray()
-        .then(armors => {
-          return (armors || []).map(armor => {
-            return {'display': `${armor.name} - Armor`, 'value': `/armors/${armor.name}`}
-          });
-        })
-
-      const creatureResults = pgClient
-        .query("select info ->> 'name' as name from creatures where info ->> 'name' ilike $1", [postgresRegex])
-        .then(result => {
-          return result.rows.map(creature => {
-            return {'display': `${creature.name} - Creature`, 'value': `/creatures/${creature.name}`}
-          })
-        })
-
-      const itemResults = itemTable
-        .find({'name': {$regex: regex}})
-        .toArray()
-        .then(items => {
-          return (items || []).map(item => {
-            return {'display': `${item.name} - ${item.category}`, 'value': `/items/${item.name}`}
-          })
-        })
-
-      const featResults = featTable
-        .find({'name': {$regex: regex}})
-        .toArray()
-        .then(feats => {
-          return (feats || []).map(feat => {
-            return {'display': `${feat.name} - Feat`, 'value': `/feats/${feat.name}`}
-          })
-        })
-
-      const hazardResults = hazardTable
-        .find({'name': {$regex: regex}})
-        .toArray()
-        .then(hazards => {
-          return (hazards || []).map(hazard => {
-            return {'display': `${hazard.name} - Hazard`, 'value': `/hazards/${hazard.name}`}
-          })
-        })
-
-      const conditionResults = conditionTable
-        .find({'name': {$regex: regex}})
-        .toArray()
-        .then(conditions => {
-          return (conditions || []).map(condition => {
-            return {'display': `${condition.name} - Condition`, 'value': `/conditions/${condition.name}`}
-          })
-        })
-
-      const spellResults = spellTable
-        .find({'name': {$regex: regex}})
-        .toArray()
-        .then(spells => {
-          return (spells || []).map(spell => {
-            return {'display': `${spell.name} - ${spell.type}`, 'value': `/spells/${spell.name}`}
-          })
-        })
-
-      const traitResults = traitTable
-        .find({'name': {$regex: regex}})
-        .toArray()
-        .then(traits => {
-          return (traits || []).map(trait => {
-            return {'display': `${trait.name} - Trait`, 'value': `/traits/${trait.name}`}
-          })
-        })
-
-      const tableResults = tableTable
-        .find({'name': {$regex: regex}})
-        .toArray()
-        .then(tables => {
-          return (tables || []).map(table => {
-            return {'display': `${table.name} - Table`, 'value': `/tables/${table.name}`}
-          })
-        })
-
-      const weaponResults = weaponTable
-        .find({'name': {$regex: regex}})
-        .toArray()
-        .then(weapons => {
-          return (weapons || []).map(weapon => {
-            return {'display': `${weapon.name} - Weapons`, 'value': `/weapons/${weapon.name}`}
-          })
-        })
-
-      Promise.all([
-        actionResults,
-        armorResults,
-        conditionResults,
-        creatureResults,
-        itemResults,
-        featResults,
-        hazardResults,
-        spellResults,
-        traitResults,
-        tableResults,
-        weaponResults
-      ]).then(results => {
-        let flatResults = results.reduce((soFar, result) => soFar.concat(result), []);
-        flatResults.sort((a, b) => {
-          if (a.display < b.display) {
-            return -1
-          }
-          return 1
-        });
-
-        res.json(flatResults)
-      })
-    })
-
-    app.listen(process.env.PORT || 3000);
-  });
-
+app.get('/actions', (req, res) => {
+  res.render('actions', {'actions': sortedActions});
+});
+app.get('/actions/:actionName', (req, res) => {
+  res.render('action', actionsByName[req.params.actionName]);
 })
 
+app.get('/armors', (req, res) => {
+  res.render('armors', {'armors': sortedArmors});
+});
+app.get('/armors/:armorName', (req, res) => {
+  res.render('armor', armorsByName[req.params.armorName]);
+});
+
+app.get('/conditions', (req, res) => {
+  res.render('conditions', {'conditions': sortedConditions});
+});
+app.get('/conditions/:conditionName', (req, res) => {
+  res.render('condition', conditionsByName[req.params.conditionName]);
+})
+
+app.get('/creatures', renderCreatures);
+app.get('/creatures/:creatureName', (req, res) => {
+  res.render('creature', creaturesByName[req.params.creatureName])
+});
+
+app.get('/encounter', (req, res) => {
+  res.render('encounter')
+})
+
+app.get('/feats', (req, res) => {
+  sortedFeats.forEach(feat => {
+    if (feat.traits.includes('Skill')) {
+      feat.type = 'Skill'
+    } else {
+      feat.type = 'General'
+    }
+  })
+  res.render('feats', {feats: sortedFeats});
+})
+app.get('/feats/:featName', (req, res) => {
+  res.render('feat', featsByName[req.params.featName]);
+})
+
+app.get('/hazards', (req, res) => {
+  res.render('hazards', {'hazards': sortedHazards});
+})
+app.get('/hazards/:hazardName', (req, res) => {
+  res.render('hazard', hazardsByName[req.params.hazardName]);
+})
+
+app.get('/items', (req, res) => {
+  res.render('items', {'items': sortedItems});
+});
+app.get('/items/:itemName', (req, res) => {
+  res.render('item', itemsByName[req.params.itemName]);
+});
+
+app.get('/spells', (req, res) => {
+  res.render('spells', {'spells': sortedSpells});
+})
+app.get('/spells/:spellName', (req, res) => {
+  res.render('spell', spellsByName[req.params.spellName]);
+});
+
+app.get('/tasks', (req, res) => {
+  const mediums = [14, 15, 16, 18, 19, 20, 22, 23, 24, 26, 27, 28, 30, 31, 32, 34, 35, 36, 38, 39, 40, 42, 44, 46, 48, 50];
+  res.render('tasks', {'levels': [...Array(24).keys()].map(index => {
+    const medium = mediums[index];
+    return {
+      'level': index,
+      'ie': medium - 10,
+      've': medium - 5,
+      'easy': medium -2,
+      'medium': medium,
+      'hard': medium + 2,
+      'vh': medium + 5,
+      'ih': medium + 10
+    }
+  })});
+})
+
+app.get('/tables', (req, res) => {
+  res.render('tables', {tables: sortedTables});
+});
+app.get('/tables/:tableName', (req, res) => {
+  res.render('table', tablesByName[req.params.tableName]);
+});
+
+app.get('/traits', (req, res) => {
+  res.render('traits', {traits: sortedTraits});
+});
+app.get('/traits/:traitName', (req, res) => {
+  res.render('trait', traitsByName[req.params.traitName]);
+});
+
+app.get('/weapons', (req, res) => {
+  res.render('weapons', {weapons: sortedWeapons});
+});
+app.get('/weapons/:weaponName', (req, res) => {
+  res.render('weapon', weaponsByName[req.params.weaponName]);
+});
+
+app.get('/api/creatures', (req, res) => {
+  res.json(sortedCreatures);
+})
+
+app.get('/api/search/:query', (req, res) => {
+  const regex = new RegExp(req.params.query, 'i');
+  const r = RegExp(".*" + req.params.query + ".*", 'i');
+  const postgresRegex = "%" + req.params.query + "%";
+
+  const actionResults = new Promise((resolve, reject) => {
+    resolve(
+      sortedActions
+        .filter(action => regex.test(action.name))
+        .map(action => { return {'display': `${action.name} - Action`, 'value': `/actions/${action.name}`} })
+    );
+  });
+
+  const armorResults = new Promise((resolve, reject) => {
+    resolve(
+      sortedArmors
+        .filter(armor => regex.test(armor.name))
+        .map(armor => { return {'display': `${armor.name} - Armor`, 'value': `/armors/${armor.name}`} })
+    );
+  });
+
+  const conditionResults = new Promise((resolve, reject) => {
+    resolve(
+      sortedConditions
+        .filter(condition => regex.test(condition.name))
+        .map(condition => { return {'display': `${condition.name} - Condition`, 'value': `/conditions/${condition.name}`} })
+    );
+  });
+
+  const creatureResults = new Promise((resolve, reject) => {
+    resolve(
+      sortedCreatures
+        .filter(creature => regex.test(creature.name))
+        .map(creature => { return {'display': `${creature.name} - Creature`, 'value': `/creatures/${creature.name}`} })
+    );
+  });
+
+  const featResults = new Promise((resolve, reject) => {
+    resolve(
+      sortedFeats
+        .filter(feat => regex.test(feat.name))
+        .map(feat => { return {'display': `${feat.name} - Feat`, 'value': `/feats/${feat.name}`} })
+    );
+  });
+
+  const hazardResults = new Promise((resolve, reject) => {
+    resolve(
+      sortedHazards
+        .filter(hazard => regex.test(hazard.name))
+        .map(hazard => { return {'display': `${hazard.name} - Hazard`, 'value': `/hazards/${hazard.name}`} })
+    );
+  });
+
+  const itemResults = new Promise((resolve, reject) => {
+    resolve(
+      sortedItems
+        .filter(item => regex.test(item.name))
+        .map(item => { return {'display': `${item.name} - ${item.category}`, 'value': `/items/${item.name}`} })
+    );
+  });
+
+  const spellResults = new Promise((resolve, reject) => {
+    resolve(
+      sortedSpells
+        .filter(spell => regex.test(spell.name))
+        .map(spell => { return {'display': `${spell.name} - ${spell.type}`, 'value': `/spells/${spell.name}`} })
+    );
+  });
+
+  const tableResults = new Promise((resolve, reject) => {
+    resolve(
+      sortedTables
+        .filter(table => regex.test(table.name))
+        .map(table => { return {'display': `${table.name} - Table`, 'value': `/tables/${table.name}`} })
+    );
+  });
+
+  const traitResults = new Promise((resolve, reject) => {
+    resolve(
+      sortedTraits
+        .filter(trait => regex.test(trait.name))
+        .map(trait => { return {'display': `${trait.name} - Trait`, 'value': `/traits/${trait.name}`} })
+    );
+  });
+
+  const weaponResults = new Promise((resolve, reject) => {
+    resolve(
+      sortedWeapons
+        .filter(weapon => regex.test(weapon.name))
+        .map(weapon => { return {'display': `${weapon.name} - Weapon`, 'value': `/weapons/${weapon.name}`} })
+    );
+  });
+
+  Promise.all([
+    actionResults,
+    armorResults,
+    conditionResults,
+    creatureResults,
+    itemResults,
+    featResults,
+    hazardResults,
+    spellResults,
+    traitResults,
+    tableResults,
+    weaponResults
+  ]).then(results => {
+    let flatResults = results.reduce((soFar, result) => soFar.concat(result), []);
+    flatResults.sort((a, b) => {
+      if (a.display < b.display) {
+        return -1
+      }
+      return 1
+    });
+
+    res.json(flatResults)
+  })
+})
+
+app.listen(process.env.PORT || 3000);

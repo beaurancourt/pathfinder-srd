@@ -1,0 +1,6727 @@
+{
+  "Table 1-1: Ability Modifiers": {
+    "name": "Table 1-1: Ability Modifiers",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Ability Score",
+            "Modifier"
+          ],
+          [
+            "1",
+            "-5"
+          ],
+          [
+            "2-3",
+            "-4"
+          ],
+          [
+            "4-5",
+            "-3"
+          ],
+          [
+            "6-7",
+            "-2"
+          ],
+          [
+            "8-9",
+            "-1"
+          ],
+          [
+            "10-11",
+            "+0"
+          ],
+          [
+            "12-13",
+            "+1"
+          ],
+          [
+            "14-15",
+            "+2"
+          ],
+          [
+            "16-17",
+            "+3"
+          ],
+          [
+            "18-19",
+            "+4"
+          ],
+          [
+            "20-21",
+            "+5"
+          ],
+          [
+            "22-23",
+            "+6"
+          ],
+          [
+            "24-25",
+            "+7"
+          ],
+          [
+            "etc.",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  "Table 1-2: The Nine Alignments": {
+    "name": "Table 1-2: The Nine Alignments",
+    "tables": [
+      {
+        "rows": [
+          [
+            "",
+            "Good",
+            "Neutral",
+            "Evil"
+          ],
+          [
+            "Lawful",
+            "Lawful Good (LG)",
+            "Lawful Neutral (LN)",
+            "Lawful Evil (LE)"
+          ],
+          [
+            "Neutral",
+            "Neutral Good (NG)",
+            "True Neutral (N)",
+            "Neutral Evil (NE)"
+          ],
+          [
+            "Chaotic",
+            "Chaotic Good (CG)",
+            "Chaotic Neutral (CN)",
+            "Chaotic Evil (CE)"
+          ]
+        ]
+      }
+    ]
+  },
+  "Table 2-1: Common Languages": {
+    "name": "Table 2-1: Common Languages",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Language",
+            "Speakers"
+          ],
+          [
+            "Common",
+            "Humans, dwarves, elves, halflings, and other common ancestries"
+          ],
+          [
+            "Draconic",
+            "Dragons, reptilian humanoids"
+          ],
+          [
+            "Dwarven",
+            "Dwarves"
+          ],
+          [
+            "Elven",
+            "Elves, half-elves"
+          ],
+          [
+            "Gnomish",
+            "Gnomes"
+          ],
+          [
+            "Goblin",
+            "Goblins, hobgoblins, bugbears"
+          ],
+          [
+            "Halfling",
+            "Halflings"
+          ],
+          [
+            "Jotun",
+            "Giants, ogres, trolls, ettins, cyclopes"
+          ],
+          [
+            "Orcish",
+            "Orcs, half-orcs"
+          ],
+          [
+            "Sylvan",
+            "Fey, centaurs, plant creatures"
+          ],
+          [
+            "Undercommon",
+            "Drow, duergars, xulgaths"
+          ]
+        ]
+      }
+    ]
+  },
+  "Table 2-2: Uncommon Languages": {
+    "name": "Table 2-2: Uncommon Languages",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Language",
+            "Speakers"
+          ],
+          [
+            "Abyssal",
+            "Demons"
+          ],
+          [
+            "Aklo",
+            "Deros, evil fey, otherworldly monsters"
+          ],
+          [
+            "Aquan",
+            "Aquatic creatures, water elemental creatures"
+          ],
+          [
+            "Auran",
+            "Air elemental creatures, flying creatures"
+          ],
+          [
+            "Celestial",
+            "Angels"
+          ],
+          [
+            "Gnoll",
+            "Gnolls"
+          ],
+          [
+            "Ignan",
+            "Fire elemental creatures"
+          ],
+          [
+            "Infernal",
+            "Devils"
+          ],
+          [
+            "Necril",
+            "Ghouls, intelligent undead"
+          ],
+          [
+            "Shadowtongue",
+            "Nidalese, Shadow Plane creatures"
+          ],
+          [
+            "Terran",
+            "Earth elemental creatures"
+          ]
+        ]
+      }
+    ]
+  },
+  "Table 2-3: Secret Languages": {
+    "name": "Table 2-3: Secret Languages",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Language",
+            "Speakers"
+          ],
+          [
+            "Druidic",
+            "Druids"
+          ]
+        ]
+      }
+    ]
+  },
+  "Table 6-1: Coin Values": {
+    "name": "Table 6-1: Coin Values",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Coins",
+            "CP",
+            "SP",
+            "GP",
+            "PP"
+          ],
+          [
+            "Copper piece (cp)",
+            "1",
+            "1/10",
+            "1/100",
+            "1/1,000"
+          ],
+          [
+            "Silver piece (sp)",
+            "10",
+            "1",
+            "1/10",
+            "1/100"
+          ],
+          [
+            "Gold Piece (gp",
+            "100",
+            "10",
+            "1",
+            "1/10"
+          ],
+          [
+            "Platinum piece (pp)",
+            "1,000",
+            "100",
+            "10",
+            "1"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "Size of Creature",
+            "Bulk"
+          ],
+          [
+            "Tiny",
+            "1"
+          ],
+          [
+            "Small",
+            "3"
+          ],
+          [
+            "Medium",
+            "6"
+          ],
+          [
+            "Large",
+            "12"
+          ],
+          [
+            "Huge",
+            "24"
+          ],
+          [
+            "Gargantuan",
+            "36"
+          ]
+        ]
+      }
+    ]
+  },
+  "Table 6-2: Changing Equipment": {
+    "name": "Table 6-2: Changing Equipment",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Change",
+            "Hands",
+            "Action"
+          ],
+          [
+            "Draw, stow, or pick up an item 1",
+            "1 or 2",
+            "Interact"
+          ],
+          [
+            "Pass an item to or take an item from a willing creature 2",
+            "1 or 2",
+            "Interact"
+          ],
+          [
+            "Drop an item to the ground",
+            "1 or 2",
+            "Release"
+          ],
+          [
+            "Detach a shield or item strapped to you",
+            "1",
+            "Interact"
+          ],
+          [
+            "Change your grip by removing a hand from an item",
+            "2",
+            "Release"
+          ],
+          [
+            "Change your grip by adding a hand to an item",
+            "2",
+            "Interact"
+          ],
+          [
+            "Retrieve an item from a backpack 3 or satchel",
+            "2",
+            "Interact"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "Material",
+            "Hardness",
+            "HP",
+            "BT"
+          ],
+          [
+            "Cloth (explorer’s clothing, padded armor)",
+            "1",
+            "4",
+            "2"
+          ],
+          [
+            "Leather (hide, leather, studded leather)",
+            "4",
+            "16",
+            "8"
+          ],
+          [
+            "Metal (breastplate, chain mail, chain shirt, full plate, half plate, scale mail, splint mail)",
+            "9",
+            "36",
+            "18"
+          ]
+        ]
+      }
+    ]
+  },
+  "Table 6-13: Formulas": {
+    "name": "Table 6-13: Formulas",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Item Level",
+            "Formula Price"
+          ],
+          [
+            "0*",
+            "5 sp"
+          ],
+          [
+            "1",
+            "1 gp"
+          ],
+          [
+            "2",
+            "2 gp"
+          ],
+          [
+            "3",
+            "3"
+          ],
+          [
+            "4",
+            "5"
+          ],
+          [
+            "5",
+            "8"
+          ],
+          [
+            "6",
+            "13"
+          ],
+          [
+            "7",
+            "18"
+          ],
+          [
+            "8",
+            "25"
+          ],
+          [
+            "9",
+            "35"
+          ],
+          [
+            "10",
+            "50"
+          ],
+          [
+            "11",
+            "70"
+          ],
+          [
+            "12",
+            "100"
+          ],
+          [
+            "13",
+            "150"
+          ],
+          [
+            "14",
+            "225"
+          ],
+          [
+            "15",
+            "325"
+          ],
+          [
+            "16",
+            "500"
+          ],
+          [
+            "17",
+            "750"
+          ],
+          [
+            "18",
+            "1,200"
+          ],
+          [
+            "19",
+            "2,000"
+          ],
+          [
+            "20",
+            "3,500"
+          ]
+        ]
+      }
+    ]
+  },
+  "Table 6-16: Cost of Living": {
+    "name": "Table 6-16: Cost of Living",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Standard of Living",
+            "Week",
+            "Month",
+            "Year"
+          ],
+          [
+            "Subsistence*",
+            "4 sp",
+            "2 gp",
+            "24 gp"
+          ],
+          [
+            "Comfortable",
+            "1 gp",
+            "4 gp",
+            "52 gp"
+          ],
+          [
+            "Fine",
+            "30 gp",
+            "130 gp",
+            "1,600 gp"
+          ],
+          [
+            "Extravagant",
+            "100 gp",
+            "430 gp",
+            "5,200 gp"
+          ]
+        ]
+      }
+    ]
+  },
+  "Table 6-18: Barding": {
+    "name": "Table 6-18: Barding",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Size",
+            "Barding",
+            "Price",
+            "AC Bonus",
+            "Dex Cap",
+            "Check Penalty",
+            "Speed Penalty",
+            "Bulk",
+            "Strength"
+          ],
+          [
+            "Light",
+            "Small or Medium",
+            "10 gp",
+            "+1",
+            "+5",
+            "-1",
+            "-5 ft.",
+            "2",
+            "+3"
+          ],
+          [
+            "Large",
+            "20 gp",
+            "+1",
+            "+5",
+            "-1",
+            "-5 ft.",
+            "4",
+            "+3"
+          ],
+          [
+            "Heavy",
+            "Small or Medium",
+            "25 gp",
+            "+3",
+            "+3",
+            "-3",
+            "-10 ft.",
+            "4",
+            "+5"
+          ],
+          [
+            "Large",
+            "50 gp",
+            "+3",
+            "+3",
+            "-3",
+            "-10 ft.",
+            "8",
+            "+5"
+          ]
+        ]
+      }
+    ]
+  },
+  "Table 6-19: Bulk Conversions": {
+    "name": "Table 6-19: Bulk Conversions",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Barding",
+            "Type",
+            "Price",
+            "AC Bonus",
+            "Dex Cap",
+            "Check Penalty",
+            "Speed Penalty",
+            "Bulk",
+            "Strength"
+          ],
+          [
+            "Small or Medium",
+            "Light",
+            "10 gp",
+            "+1",
+            "+5",
+            "-1",
+            "-5 ft.",
+            "2",
+            "+3"
+          ],
+          [
+            "Large",
+            "",
+            "20 gp",
+            "+1",
+            "+5",
+            "-1",
+            "-5 ft.",
+            "4",
+            "+3"
+          ],
+          [
+            "Small or Medium",
+            "Heavy",
+            "25 gp",
+            "+3",
+            "+3",
+            "-3",
+            "-10 ft.",
+            "4",
+            "+5"
+          ],
+          [
+            "Large",
+            "",
+            "50 gp",
+            "+3",
+            "+3",
+            "-3",
+            "-10 ft.",
+            "8",
+            "+5"
+          ]
+        ]
+      }
+    ]
+  },
+  "Table 6-20: Differently Sized Objects": {
+    "name": "Table 6-20: Differently Sized Objects",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Creature Size",
+            "Price",
+            "Bulk",
+            "Light Becomes",
+            "Negligible Becomes"
+          ],
+          [
+            "Tiny",
+            "Standard",
+            "Half*",
+            "—",
+            "—"
+          ],
+          [
+            "Small or Med.",
+            "Standard",
+            "Standard",
+            "L",
+            "—"
+          ],
+          [
+            "Large",
+            "x2",
+            "x2",
+            "1 Bulk",
+            "L"
+          ],
+          [
+            "Huge",
+            "x4",
+            "x4",
+            "2 Bulk",
+            "1 Bulk"
+          ],
+          [
+            "Gargantuan",
+            "x8",
+            "x8",
+            "4 Bulk",
+            "2 Bulk"
+          ]
+        ]
+      }
+    ]
+  },
+  "Table 7-1: Creatures Creation Rituals": {
+    "name": "Table 7-1: Creatures Creation Rituals",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Creature Level",
+            "Spell Level Required",
+            "Cost"
+          ],
+          [
+            "-1 or 0",
+            "2",
+            "15 gp"
+          ],
+          [
+            "1",
+            "2",
+            "60 gp"
+          ],
+          [
+            "2",
+            "3",
+            "105 gp"
+          ],
+          [
+            "3",
+            "3",
+            "180 gp"
+          ],
+          [
+            "4",
+            "4",
+            "300 gp"
+          ],
+          [
+            "5",
+            "4",
+            "480 gp"
+          ],
+          [
+            "6",
+            "5",
+            "750 gp"
+          ],
+          [
+            "7",
+            "5",
+            "1,080 gp"
+          ],
+          [
+            "8",
+            "6",
+            "1,500 gp"
+          ],
+          [
+            "9",
+            "6",
+            "2,100 gp"
+          ],
+          [
+            "10",
+            "7",
+            "3,000 gp"
+          ],
+          [
+            "11",
+            "7",
+            "4,200 gp"
+          ],
+          [
+            "12",
+            "8",
+            "6,000 gp"
+          ],
+          [
+            "13",
+            "8",
+            "9,000 gp"
+          ],
+          [
+            "14",
+            "9",
+            "13,500 gp"
+          ],
+          [
+            "15",
+            "9",
+            "19,500 gp"
+          ],
+          [
+            "16",
+            "10",
+            "30,000 gp"
+          ],
+          [
+            "17",
+            "10",
+            "45,000 gp"
+          ]
+        ]
+      }
+    ]
+  },
+  "Proficiency Bonuses": {
+    "name": "Proficiency Bonuses",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Proficiency Rank",
+            "Proficiency Bonus"
+          ],
+          [
+            "Untrained",
+            "0"
+          ],
+          [
+            "Trained",
+            "Your level + 2"
+          ],
+          [
+            "Expert",
+            "Your level + 4"
+          ],
+          [
+            "Master",
+            "Your level + 6"
+          ],
+          [
+            "Legendary",
+            "Your level + 8"
+          ]
+        ]
+      }
+    ]
+  },
+  "Table 9-1: Size and Reach": {
+    "name": "Table 9-1: Size and Reach",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Size",
+            "Space",
+            "Reach (Tall)",
+            "Reach (Long)"
+          ],
+          [
+            "Tiny",
+            "Less than 5 feet",
+            "0 feet",
+            "0 feet"
+          ],
+          [
+            "Small",
+            "5 feet",
+            "5 feet",
+            "5 feet"
+          ],
+          [
+            "Medium",
+            "5 feet",
+            "5 feet",
+            "5 feet"
+          ],
+          [
+            "Large",
+            "10 feet",
+            "10 feet",
+            "5 feet"
+          ],
+          [
+            "Huge",
+            "15 feet",
+            "15 feet",
+            "10 feet"
+          ],
+          [
+            "Gargantuan",
+            "20 feet or more",
+            "20 feet",
+            "15 feet"
+          ]
+        ]
+      }
+    ]
+  },
+  "Table 9-2: Travel Speed": {
+    "name": "Table 9-2: Travel Speed",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Speed",
+            "Feet per Minute",
+            "Miles per Hour",
+            "Miles per Day"
+          ],
+          [
+            "10",
+            "100",
+            "1",
+            "8"
+          ],
+          [
+            "15",
+            "150",
+            "1-1/2",
+            "12"
+          ],
+          [
+            "20",
+            "200",
+            "2",
+            "16"
+          ],
+          [
+            "25",
+            "250",
+            "2-1/2",
+            "20"
+          ],
+          [
+            "30",
+            "300",
+            "3",
+            "24"
+          ],
+          [
+            "35",
+            "350",
+            "3-1/2",
+            "28"
+          ],
+          [
+            "40",
+            "400",
+            "4",
+            "32"
+          ],
+          [
+            "50",
+            "500",
+            "5",
+            "40"
+          ],
+          [
+            "60",
+            "600",
+            "6",
+            "48"
+          ]
+        ]
+      }
+    ]
+  },
+  "Table 10-1: Encounter Budget": {
+    "name": "Table 10-1: Encounter Budget",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Threat",
+            "XP Budget",
+            "Character Adjustment"
+          ],
+          [
+            "Trivial",
+            "40 or less",
+            "10 or less"
+          ],
+          [
+            "Low",
+            "60",
+            "15"
+          ],
+          [
+            "Moderate",
+            "80",
+            "20"
+          ],
+          [
+            "Severe",
+            "120",
+            "30"
+          ],
+          [
+            "Extreme",
+            "160",
+            "40"
+          ]
+        ]
+      }
+    ]
+  },
+  "Table 10-2: Creature XP and Role": {
+    "name": "Table 10-2: Creature XP and Role",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Creature Level",
+            "XP",
+            "Suggested Role"
+          ],
+          [
+            "Party Level -4",
+            "10",
+            "Low-threat lackey"
+          ],
+          [
+            "Party Level -3",
+            "15",
+            "Low- or moderate-threat lackey"
+          ],
+          [
+            "Party Level -2",
+            "20",
+            "Any lackey or standard creature"
+          ],
+          [
+            "Party Level -1",
+            "30",
+            "Any standard creature"
+          ],
+          [
+            "Party Level",
+            "40",
+            "Any standard creature or low-threat boss"
+          ],
+          [
+            "Party Level +1",
+            "60",
+            "Low- or moderate-threat boss"
+          ],
+          [
+            "Party Level +2",
+            "80",
+            "Moderate- or severe-threat boss"
+          ],
+          [
+            "Party Level +3",
+            "120",
+            "Severe- or extreme-threat boss"
+          ],
+          [
+            "Party Level +4",
+            "160",
+            "Extreme-threat solo boss"
+          ]
+        ]
+      }
+    ]
+  },
+  "Table 10-3: Watches and Rest": {
+    "name": "Table 10-3: Watches and Rest",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Party Size",
+            "Total Time",
+            "Duration of Each Watch"
+          ],
+          [
+            "2",
+            "16 hours",
+            "8 hours"
+          ],
+          [
+            "3",
+            "12 hours",
+            "4 hours"
+          ],
+          [
+            "4",
+            "10 hours, 40 minutes",
+            "2 hours, 40 minutes"
+          ],
+          [
+            "5",
+            "10 hours",
+            "2 hours"
+          ],
+          [
+            "6",
+            "9 hours, 36 minutes",
+            "1 hour, 36 minutes"
+          ]
+        ]
+      }
+    ]
+  },
+  "Table 10-4: Simple DCs": {
+    "name": "Table 10-4: Simple DCs",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Proficiency Rank",
+            "DC"
+          ],
+          [
+            "Untrained",
+            "10"
+          ],
+          [
+            "Trained",
+            "15"
+          ],
+          [
+            "Expert",
+            "20"
+          ],
+          [
+            "Master",
+            "30"
+          ],
+          [
+            "Legendary",
+            "40"
+          ]
+        ]
+      }
+    ]
+  },
+  "Table 10-5: DCs by Level": {
+    "name": "Table 10-5: DCs by Level",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Level",
+            "DC"
+          ],
+          [
+            "0",
+            "14"
+          ],
+          [
+            "1",
+            "15"
+          ],
+          [
+            "2",
+            "16"
+          ],
+          [
+            "3",
+            "18"
+          ],
+          [
+            "4",
+            "19"
+          ],
+          [
+            "5",
+            "20"
+          ],
+          [
+            "6",
+            "22"
+          ],
+          [
+            "7",
+            "23"
+          ],
+          [
+            "8",
+            "24"
+          ],
+          [
+            "9",
+            "26"
+          ],
+          [
+            "10",
+            "27"
+          ],
+          [
+            "11",
+            "28"
+          ],
+          [
+            "12",
+            "30"
+          ],
+          [
+            "13",
+            "31"
+          ],
+          [
+            "14",
+            "32"
+          ],
+          [
+            "15",
+            "34"
+          ],
+          [
+            "16",
+            "35"
+          ],
+          [
+            "17",
+            "36"
+          ],
+          [
+            "18",
+            "38"
+          ],
+          [
+            "19",
+            "39"
+          ],
+          [
+            "20",
+            "40"
+          ],
+          [
+            "21",
+            "42"
+          ],
+          [
+            "22",
+            "44"
+          ],
+          [
+            "23",
+            "46"
+          ],
+          [
+            "24",
+            "48"
+          ],
+          [
+            "25",
+            "50"
+          ],
+          [
+            "Spell Level*",
+            "DC"
+          ],
+          [
+            "1st",
+            "15"
+          ],
+          [
+            "2nd",
+            "18"
+          ],
+          [
+            "3rd",
+            "20"
+          ],
+          [
+            "4th",
+            "23"
+          ],
+          [
+            "5th",
+            "26"
+          ],
+          [
+            "6th",
+            "28"
+          ],
+          [
+            "7th",
+            "31"
+          ],
+          [
+            "8th",
+            "34"
+          ],
+          [
+            "9th",
+            "36"
+          ],
+          [
+            "10th",
+            "39"
+          ]
+        ]
+      }
+    ]
+  },
+  "Table 10-6: DC Adjustments": {
+    "name": "Table 10-6: DC Adjustments",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Difficulty",
+            "Adjustment",
+            "Rarity"
+          ],
+          [
+            "Incredibly easy",
+            "-10",
+            ""
+          ],
+          [
+            "Very easy",
+            "-5",
+            ""
+          ],
+          [
+            "Easy",
+            "-2",
+            ""
+          ],
+          [
+            "Hard",
+            "+2",
+            "Uncommon"
+          ],
+          [
+            "Very hard",
+            "+5",
+            "Rare"
+          ],
+          [
+            "Incredibly hard",
+            "+10",
+            "Unique"
+          ]
+        ]
+      }
+    ]
+  },
+  "Table 10-7: Creature Identification Skills": {
+    "name": "Table 10-7: Creature Identification Skills",
+    "tables": [
+      {
+        "rows": [
+          [
+            "",
+            ""
+          ],
+          [
+            "Aberration",
+            "Occultism"
+          ],
+          [
+            "Animal",
+            "Nature"
+          ],
+          [
+            "Astral",
+            "Occultism"
+          ],
+          [
+            "Beast",
+            "Arcana, Nature"
+          ],
+          [
+            "Celestial",
+            "Religion"
+          ],
+          [
+            "Construct",
+            "Arcana, Crafting"
+          ],
+          [
+            "Dragon",
+            "Arcana"
+          ],
+          [
+            "Elemental",
+            "Arcana, Nature"
+          ],
+          [
+            "Ethereal",
+            "Occultism"
+          ],
+          [
+            "Fey",
+            "Nature"
+          ],
+          [
+            "Fiend",
+            "Religion"
+          ],
+          [
+            "Fungus",
+            "Nature",
+            ""
+          ],
+          [
+            "Giant",
+            "Society"
+          ],
+          [
+            "Humanoid",
+            "Society"
+          ],
+          [
+            "Monitor",
+            "Religion"
+          ],
+          [
+            "Ooze",
+            "Occultism"
+          ],
+          [
+            "Plant",
+            "Nature"
+          ],
+          [
+            "Spirit",
+            "Occultism"
+          ],
+          [
+            "Undead",
+            "Religion"
+          ]
+        ]
+      }
+    ]
+  },
+  "Table 10-8: XP Awards": {
+    "name": "Table 10-8: XP Awards",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Accomplishment",
+            "XP Award"
+          ],
+          [
+            "Minor",
+            "10 XP"
+          ],
+          [
+            "Moderate*",
+            "30 XP"
+          ],
+          [
+            "Major*",
+            "80 XP"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "Adversary Level",
+            "XP Award"
+          ],
+          [
+            "Party level -4",
+            "10 XP"
+          ],
+          [
+            "Party level -3",
+            "15 XP"
+          ],
+          [
+            "Party level -2",
+            "20 XP"
+          ],
+          [
+            "Party level -1",
+            "30 XP"
+          ],
+          [
+            "Party level",
+            "40 XP"
+          ],
+          [
+            "Party level +1",
+            "60 XP"
+          ],
+          [
+            "Party level +2",
+            "80 XP"
+          ],
+          [
+            "Party level +3",
+            "120 XP"
+          ],
+          [
+            "Party level +4",
+            "160 XP"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "",
+            "XP Award"
+          ],
+          [
+            "Level",
+            "Simple Hazard",
+            "Complex Hazard"
+          ],
+          [
+            "Party level -4",
+            "2 XP",
+            "10 XP"
+          ],
+          [
+            "Party level -3",
+            "3 XP",
+            "15 XP"
+          ],
+          [
+            "Party level -2",
+            "4 XP",
+            "20 XP"
+          ],
+          [
+            "Party level -1",
+            "6 XP",
+            "30 XP"
+          ],
+          [
+            "Party level",
+            "8 XP",
+            "40 XP"
+          ],
+          [
+            "Party level +1",
+            "12 XP",
+            "60 XP"
+          ],
+          [
+            "Party level +2",
+            "16 XP",
+            "80 XP"
+          ],
+          [
+            "Party level +3",
+            "24 XP",
+            "120 XP"
+          ],
+          [
+            "Party level +4",
+            "3 XP",
+            "160 XP"
+          ]
+        ]
+      }
+    ]
+  },
+  "Table 10-9: Party Treasure by Level": {
+    "name": "Table 10-9: Party Treasure by Level",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Level",
+            "Total Value",
+            "Permanent Items (By Item Level)",
+            "Consumables (By Item Level)",
+            "Party Currency",
+            "Currency per Additional PC"
+          ],
+          [
+            "1",
+            "175 gp",
+            "2nd: 2, 1st: 2",
+            "2nd: 2, 1st: 3",
+            "40 gp",
+            "10 gp"
+          ],
+          [
+            "2",
+            "300 gp",
+            "3rd: 2, 2nd: 2",
+            "3rd: 2, 2nd: 2, 1st: 2",
+            "70 gp",
+            "18 gp"
+          ],
+          [
+            "3",
+            "500 gp",
+            "4th: 2, 3rd: 2",
+            "4th: 2, 3rd: 2, 2nd: 2",
+            "120 gp",
+            "30 gp"
+          ],
+          [
+            "4",
+            "860 gp",
+            "5th: 2, 4th: 2",
+            "5th: 2, 4th: 2, 3rd: 2",
+            "200 gp",
+            "50 gp"
+          ],
+          [
+            "5",
+            "1,350 gp",
+            "6th: 2, 5th: 2",
+            "6th: 2, 5th: 2, 4th: 2",
+            "320 gp",
+            "80 gp"
+          ],
+          [
+            "6",
+            "2,000 gp",
+            "7th: 2, 6th: 2",
+            "7th: 2, 6th: 2, 5th: 2",
+            "500 gp",
+            "125 gp"
+          ],
+          [
+            "7",
+            "2,900 gp",
+            "8th: 2, 7th: 2",
+            "8th: 2, 7th: 2, 6th: 2",
+            "720 gp",
+            "180 gp"
+          ],
+          [
+            "8",
+            "4,000 gp",
+            "9th: 2, 8th: 2",
+            "9th: 2, 8th: 2, 7th: 2",
+            "1,000 gp",
+            "250 gp"
+          ],
+          [
+            "9",
+            "5,700 gp",
+            "10th: 2, 9th: 2",
+            "10th: 2, 9th: 2, 8th: 2",
+            "1,400 gp",
+            "350 gp"
+          ],
+          [
+            "10",
+            "8,000 gp",
+            "11th: 2, 10th: 2",
+            "11th: 2, 10th: 2, 9th: 2",
+            "2,000 gp",
+            "500 gp"
+          ],
+          [
+            "11",
+            "11,500 gp",
+            "12th: 2, 11th: 2",
+            "12th: 2, 11th: 2, 10th: 2",
+            "2,800 gp",
+            "700 gp"
+          ],
+          [
+            "12",
+            "16,500 gp",
+            "13th: 2, 12th: 2",
+            "13th: 2, 12th: 2, 11th: 2",
+            "4,000 gp",
+            "1,000 gp"
+          ],
+          [
+            "13",
+            "25,000 gp",
+            "14th: 2, 13th: 2",
+            "14th: 2, 13th: 2, 12th: 2",
+            "6,000 gp",
+            "1,500 gp"
+          ],
+          [
+            "14",
+            "36,500 gp",
+            "15th: 2, 14th: 2",
+            "15th: 2, 14th: 2, 13th: 2",
+            "9,000 gp",
+            "2,250 gp"
+          ],
+          [
+            "15",
+            "54,500 gp",
+            "16th: 2, 15th: 2",
+            "16th: 2, 15th: 2, 14th: 2",
+            "13,000 gp",
+            "3,250 gp"
+          ],
+          [
+            "16",
+            "82,500 gp",
+            "17th: 2, 16th: 2",
+            "17th: 2, 16th: 2, 15th: 2",
+            "20,000 gp",
+            "5,000 gp"
+          ],
+          [
+            "17",
+            "128,000 gp",
+            "18th: 2, 17th: 2",
+            "18th: 2, 17th: 2, 16th: 2",
+            "30,000 gp",
+            "7,500 gp"
+          ],
+          [
+            "18",
+            "208,000 gp",
+            "19th: 2, 18th: 2",
+            "19th: 2, 18th: 2, 17th: 2",
+            "48,000 gp",
+            "12,000 gp"
+          ],
+          [
+            "19",
+            "355,000 gp",
+            "20th: 2, 19th: 2",
+            "20th: 2, 19th: 2, 18th: 2",
+            "80,000 gp",
+            "20,000 gp"
+          ],
+          [
+            "20",
+            "490,000 gp",
+            "20th: 4",
+            "20th: 4, 19th: 2",
+            "140,000 gp",
+            "35,000 gp"
+          ]
+        ]
+      }
+    ]
+  },
+  "Table 10-10: Character Wealth": {
+    "name": "Table 10-10: Character Wealth",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Level",
+            "Permanent Items",
+            "Currency",
+            "Lump Sum"
+          ],
+          [
+            "1",
+            "-",
+            "15 gp",
+            "15 gp"
+          ],
+          [
+            "2",
+            "1st: 1",
+            "20 gp",
+            "30 gp"
+          ],
+          [
+            "3",
+            "2nd: 1, 1st: 2",
+            "25 gp",
+            "75 gp"
+          ],
+          [
+            "4",
+            "3rd: 1, 2nd: 2, 1st: 1",
+            "30 gp",
+            "140 gp"
+          ],
+          [
+            "5",
+            "4th: 1, 3rd: 2, 2nd: 1, 1st: 2",
+            "50 gp",
+            "270 gp"
+          ],
+          [
+            "6",
+            "5th: 1, 4th: 2, 3rd: 1, 2nd: 2",
+            "80 gp",
+            "450 gp"
+          ],
+          [
+            "7",
+            "6th: 1, 5th: 2, 4th: 1, 3rd: 2",
+            "125 gp",
+            "720 gp"
+          ],
+          [
+            "8",
+            "7th: 1, 6th: 2, 5th: 1, 4th: 2",
+            "180 gp",
+            "1,100 gp"
+          ],
+          [
+            "9",
+            "8th: 1, 7th: 2, 6th: 1, 5th: 2",
+            "250 gp",
+            "1,600 gp"
+          ],
+          [
+            "10",
+            "9th: 1, 8th: 2, 7th: 1, 6th: 2",
+            "350 gp",
+            "2,300 gp"
+          ],
+          [
+            "11",
+            "10th: 1, 9th: 2, 8th: 1, 7th: 2",
+            "500 gp",
+            "3,200 gp"
+          ],
+          [
+            "12",
+            "11th: 1, 10th: 2, 9th: 1, 8th: 2",
+            "700 gp",
+            "4,500 gp"
+          ],
+          [
+            "13",
+            "12th: 1, 11th: 2, 10th: 1, 9th: 2",
+            "1,000 gp",
+            "6,400 gp"
+          ],
+          [
+            "14",
+            "13th: 1, 12th: 2, 11th: 1, 10th: 2",
+            "1,500 gp",
+            "9,300 gp"
+          ],
+          [
+            "15",
+            "14th: 1, 13th: 2, 12th: 1, 11th: 2",
+            "2,250 gp",
+            "13,500 gp"
+          ],
+          [
+            "16",
+            "15th: 1, 14th: 2, 13th: 1, 12th: 2",
+            "3,250 gp",
+            "20,000 gp"
+          ],
+          [
+            "17",
+            "16th: 1, 15th: 2, 14th: 1, 13th: 2",
+            "5,000 gp",
+            "30,000 gp"
+          ],
+          [
+            "18",
+            "17th: 1, 16th: 2, 15th: 1, 14th: 2",
+            "7,500 gp",
+            "45,000 gp"
+          ],
+          [
+            "19",
+            "18th: 1, 17th: 2, 16th: 1, 15th: 2",
+            "12,000 gp",
+            "69,000 gp"
+          ],
+          [
+            "20",
+            "19th: 1, 18th: 2, 17th: 1, 16th: 2",
+            "20,000 gp",
+            "112,000 gp"
+          ]
+        ]
+      }
+    ]
+  },
+  "Table 10-12: Environmental Hazard Difficulty": {
+    "name": "Table 10-12: Environmental Hazard Difficulty",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Feature",
+            "Proficiency DC Band"
+          ],
+          [
+            "Avalanche",
+            "Expert–legendary"
+          ],
+          [
+            "Blizzard",
+            "—"
+          ],
+          [
+            "Bog",
+            "Untrained-trained"
+          ],
+          [
+            "Canopy",
+            "Trained-master"
+          ],
+          [
+            "Chasm",
+            "—"
+          ],
+          [
+            "Cliff",
+            "Trained-master"
+          ],
+          [
+            "Collapse",
+            "—"
+          ],
+          [
+            "Crowd",
+            "Trained-master"
+          ],
+          [
+            "Current",
+            "Trained-master"
+          ],
+          [
+            "Door",
+            "See entry"
+          ],
+          [
+            "Earthquake",
+            "Trained-legendary"
+          ],
+          [
+            "Flood",
+            "Expert-legendary"
+          ],
+          [
+            "Floor",
+            "Untrained-expert"
+          ],
+          [
+            "Fog",
+            "—"
+          ],
+          [
+            "Gate",
+            "—"
+          ],
+          [
+            "Guard",
+            "—"
+          ],
+          [
+            "Hedge",
+            "Untrained-trained"
+          ],
+          [
+            "Ice",
+            "Trained-master"
+          ],
+          [
+            "Lava",
+            "Expert-legendary"
+          ],
+          [
+            "Ledge",
+            "Untrained-master"
+          ],
+          [
+            "Portcullis",
+            "See entry"
+          ],
+          [
+            "Precipitation",
+            "—"
+          ],
+          [
+            "Rooftop",
+            "Trained-master"
+          ],
+          [
+            "Rubble",
+            "Untrained-expert"
+          ],
+          [
+            "Sand",
+            "Untrained-expert"
+          ],
+          [
+            "Sandstorm",
+            "Trained-master"
+          ],
+          [
+            "Sewer",
+            "—"
+          ],
+          [
+            "Slope",
+            "Untrained-trained"
+          ],
+          [
+            "Snow",
+            "Untrained-expert"
+          ],
+          [
+            "Stairs",
+            "Untrained-trained"
+          ],
+          [
+            "Stalagmite",
+            "Trained-expert"
+          ],
+          [
+            "Street",
+            "Untrained-trained"
+          ],
+          [
+            "Temperature",
+            "—"
+          ],
+          [
+            "Tornado",
+            "Master-legendary"
+          ],
+          [
+            "Tree",
+            "Untrained-master"
+          ],
+          [
+            "Tsunami",
+            "Master-legendary"
+          ],
+          [
+            "Undergrowth",
+            "Untrained-expert"
+          ],
+          [
+            "Underwater Visibility",
+            "—"
+          ],
+          [
+            "Volcanic Eruption",
+            "Trained-legenddray"
+          ],
+          [
+            "Wall",
+            "See entry"
+          ],
+          [
+            "Wildfire",
+            "Expert-legendary"
+          ],
+          [
+            "Wind",
+            "Untrained-legendary"
+          ]
+        ]
+      }
+    ]
+  },
+  "Table 10-11: Environmental Hazard Damage": {
+    "name": "Table 10-11: Environmental Hazard Damage",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Category",
+            "Damage"
+          ],
+          [
+            "Minor",
+            "1d6-2d6"
+          ],
+          [
+            "Moderate",
+            "4d6-6d6"
+          ],
+          [
+            "Major",
+            "8d6-12d6"
+          ],
+          [
+            "Massive",
+            "16d6-24d6"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "Door",
+            "Climb DC",
+            "Hardness, HP (BT)"
+          ],
+          [
+            "Wood",
+            "20",
+            "10, 40 (20)"
+          ],
+          [
+            "Stone",
+            "30",
+            "14, 56 (28)"
+          ],
+          [
+            "Reinforced wood",
+            "15",
+            "15, 60 (30)"
+          ],
+          [
+            "Iron",
+            "30",
+            "18, 72 (36)"
+          ],
+          [
+            "Wall",
+            "Climb DC",
+            "Hardness, HP (BT)"
+          ],
+          [
+            "Crumbling masonry",
+            "15",
+            "10, 40 (20)"
+          ],
+          [
+            "Wooden slats",
+            "15",
+            "10, 40 (20)"
+          ],
+          [
+            "Masonry",
+            "20",
+            "14, 56 (28)"
+          ],
+          [
+            "Hewn stone",
+            "30",
+            "14, 56 (28)"
+          ],
+          [
+            "Iron",
+            "40",
+            "18, 72 (36)"
+          ],
+          [
+            "Portcullis",
+            "Climb DC",
+            "Hardness, HP (BT)"
+          ],
+          [
+            "Wood",
+            "10",
+            "10, 40 (20)"
+          ],
+          [
+            "Iron",
+            "10",
+            "18, 72 (36)"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "Structure",
+            "Force Open DC"
+          ],
+          [
+            "Stuck door or window",
+            "15"
+          ],
+          [
+            "Exceptionally stuck",
+            "20"
+          ],
+          [
+            "Lift wooden portcullis",
+            "20"
+          ],
+          [
+            "Lift iron portcullis",
+            "30"
+          ],
+          [
+            "Bend metal bars",
+            "30"
+          ]
+        ]
+      }
+    ]
+  },
+  "Table 11-3: Scroll Statistics": {
+    "name": "Table 11-3: Scroll Statistics",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Spell Level",
+            "Item Level",
+            "Scroll Price"
+          ],
+          [
+            "1",
+            "1",
+            "4 gp"
+          ],
+          [
+            "2",
+            "3",
+            "12 gp"
+          ],
+          [
+            "3",
+            "5",
+            "30 gp"
+          ],
+          [
+            "4",
+            "7",
+            "70 gp"
+          ],
+          [
+            "5",
+            "9",
+            "150 gp"
+          ],
+          [
+            "6",
+            "11",
+            "300 gp"
+          ],
+          [
+            "7",
+            "13",
+            "600 gp"
+          ],
+          [
+            "8",
+            "15",
+            "1,300 gp"
+          ],
+          [
+            "9",
+            "17",
+            "3,000 gp"
+          ],
+          [
+            "10",
+            "19",
+            "8,000 gp"
+          ]
+        ]
+      }
+    ]
+  },
+  "Table 11-4: Material Hardness, Hit Points, and Broken Threshold": {
+    "name": "Table 11-4: Material Hardness, Hit Points, and Broken Threshold",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Material",
+            "Hardness",
+            "HP",
+            "BT",
+            "Example Items"
+          ],
+          [
+            "Paper",
+            "0",
+            "1",
+            "—",
+            "Book pages, paper fan, scroll"
+          ],
+          [
+            "Thin cloth",
+            "0",
+            "1",
+            "—",
+            "Kite, silk dress, undershirt"
+          ],
+          [
+            "Thin glass",
+            "0",
+            "1",
+            "—",
+            "Bottle, spectacles, window pane"
+          ],
+          [
+            "Cloth",
+            "1",
+            "4",
+            "2",
+            "Cloth armor, heavy jacket, sack, tent"
+          ],
+          [
+            "Glass",
+            "1",
+            "4",
+            "2",
+            "Glass block, glass table, heavy vase"
+          ],
+          [
+            "Glass structure",
+            "2",
+            "8",
+            "4",
+            "Glass block wall"
+          ],
+          [
+            "Thin leather",
+            "2",
+            "8",
+            "4",
+            "Backpack, jacket, pouch, strap, whip"
+          ],
+          [
+            "Thin rope",
+            "2",
+            "8",
+            "4",
+            "Standard adventuring rope"
+          ],
+          [
+            "Thin wood",
+            "3",
+            "12",
+            "6",
+            "Chair, club, sapling, wooden shield"
+          ],
+          [
+            "Leather",
+            "4",
+            "16",
+            "8",
+            "Leather armor, saddle"
+          ],
+          [
+            "Rope",
+            "4",
+            "16",
+            "8",
+            "Industrial rope, ship rigging"
+          ],
+          [
+            "Thin stone",
+            "5",
+            "16",
+            "8",
+            "Chalkboard, slate tiles, stone cladding"
+          ],
+          [
+            "Thin iron or steel",
+            "5",
+            "20",
+            "10",
+            "Chain, steel shield, sword"
+          ],
+          [
+            "Wood",
+            "5",
+            "20",
+            "10",
+            "Chest, simple door, table, tree trunk"
+          ],
+          [
+            "Stone",
+            "7",
+            "28",
+            "14",
+            "Paving stone, statue"
+          ],
+          [
+            "Iron or steel",
+            "9",
+            "36",
+            "18",
+            "Anvil, iron or steel armor, stove"
+          ],
+          [
+            "Wooden structure",
+            "10",
+            "40",
+            "20",
+            "Reinforced door, wooden wall"
+          ],
+          [
+            "Stone structure",
+            "14",
+            "56",
+            "28",
+            "Stone wall"
+          ],
+          [
+            "Iron or steel structure",
+            "18",
+            "72",
+            "36",
+            "Iron plate wall"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "Fundamental Rune",
+            "Etched Onto",
+            "Benefit"
+          ],
+          [
+            "Armor Potency",
+            "Armor",
+            "Increase item bonus to AC and determine maximum number of property runes"
+          ],
+          [
+            "Resilient",
+            "Armor",
+            "Grant item bonus to saves"
+          ],
+          [
+            "Striking",
+            "Weapon",
+            "Grant an item bonus to attack rolls and determine maximum number of  property runes"
+          ],
+          [
+            "Weapon Potency",
+            "Weapon",
+            "Increase weapon damage dice"
+          ]
+        ]
+      }
+    ]
+  },
+  "Table 11-6: Armor Upgrade Prices": {
+    "name": "Table 11-6: Armor Upgrade Prices",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Starting Armor",
+            "Improved Armor",
+            "Price and Process"
+          ],
+          [
+            "+1 armor",
+            "+1 resilient armor",
+            "340 gp to etch resilient (8th level)"
+          ],
+          [
+            "+1 resilient armor",
+            "+2 resilient armor",
+            "900 gp to etch +2 armor potency (11th level)"
+          ],
+          [
+            "+2 resilient armor",
+            "+2 greater resilient armor",
+            "3,100 gp to etch greater resilient (14th level)"
+          ],
+          [
+            "+2 greater resilient armor",
+            "+3 greater resilient armor",
+            "19,500 gp to etch +3 armor potency (18th level)"
+          ],
+          [
+            "+3 greater resilient armor",
+            "+3 major resilient armor",
+            "46,000 gp to etch major resilient (20th level)"
+          ]
+        ]
+      }
+    ]
+  },
+  "Table 11-7: Weapon Upgrade Prices": {
+    "name": "Table 11-7: Weapon Upgrade Prices",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Starting Weapon",
+            "Improved Weapon",
+            "Price and Process"
+          ],
+          [
+            "+1 weapon",
+            "+1 striking weapon",
+            "65 gp to etch striking (4th level)"
+          ],
+          [
+            "+1 striking weapon",
+            "+2 striking weapon",
+            "900 gp to etch +2 weapon potency (10th level)"
+          ],
+          [
+            "+2 striking weapon",
+            "+2 greater striking weapon",
+            "1,000 gp to etch greater striking (12th level)"
+          ],
+          [
+            "+2 greater striking weapon",
+            "+3 greater striking weapon",
+            "8,000 gp to etch +3 weapon potency (16th level)"
+          ],
+          [
+            "+3 greater striking weapon",
+            "+3 major striking weapon",
+            "30,000 gp to etch major striking (19th level)"
+          ]
+        ]
+      }
+    ]
+  },
+  "Elite Adjustment HP Adjustment": {
+    "name": "Elite Adjustment HP Adjustment",
+    "tables": [
+      {
+        "rows": [
+          [
+            "Starting Level",
+            "HP Increase"
+          ],
+          [
+            "1 or lower",
+            "10"
+          ],
+          [
+            "2-4",
+            "15"
+          ],
+          [
+            "5-19",
+            "20"
+          ],
+          [
+            "20+",
+            "30"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "Starting Level",
+            "HP Decrease"
+          ],
+          [
+            "1-2",
+            "-10"
+          ],
+          [
+            "3-5",
+            "-15"
+          ],
+          [
+            "6-20",
+            "-20"
+          ],
+          [
+            "21+",
+            "-30"
+          ]
+        ]
+      }
+    ]
+  },
+  "Table 11-1: Treasure By Level": {
+    "name": "Table 11-1: Treasure By Level",
+    "tables": [
+      {
+        "rows": [
+          [
+            "1st-Level Consumables",
+            "Category",
+            "Price"
+          ],
+          [
+            "Acid Flask (Lesser)",
+            "Alchemical Item",
+            "3 gp"
+          ],
+          [
+            "Alarm Snare",
+            "Snare",
+            "3 gp"
+          ],
+          [
+            "Alchemist's Fire (Lesser)",
+            "Alchemical Item",
+            "3 gp"
+          ],
+          [
+            "Antidote (Lesser)",
+            "Alchemical Item",
+            "3 gp"
+          ],
+          [
+            "Antiplague (Lesser)",
+            "Alchemical Item",
+            "3 gp"
+          ],
+          [
+            "Arsenic",
+            "Alchemical Item",
+            "3 gp"
+          ],
+          [
+            "Bestial Mutagen (Lesser)",
+            "Alchemical Item",
+            "4 gp"
+          ],
+          [
+            "Bottled Lightning (Lesser)",
+            "Alchemical Item",
+            "3 gp"
+          ],
+          [
+            "Caltrop Snare",
+            "Snare",
+            "3 gp"
+          ],
+          [
+            "Cheetah's Elixir (Lesser)",
+            "Alchemical Item",
+            "3 gp"
+          ],
+          [
+            "Cognative Mutagen (Lesser)",
+            "Alchemical Item",
+            "4 gp"
+          ],
+          [
+            "Eagle Eye Elixir (Lesser)",
+            "Alchemical Item",
+            "4 gp"
+          ],
+          [
+            "Elixir of Life (Minor)",
+            "Alchemical Item",
+            "3 gp"
+          ],
+          [
+            "Energy Mutagen (Lesser)",
+            "Alchemical Item",
+            "4 gp"
+          ],
+          [
+            "Feather Token (Ladder)",
+            "Consumable",
+            "3 gp"
+          ],
+          [
+            "Frost Vial (Lesser)",
+            "Alchemical Item",
+            "3 gp"
+          ],
+          [
+            "Giant Centipede Venom",
+            "Alchemical Item",
+            "4 gp"
+          ],
+          [
+            "Hampering Snare",
+            "Snare",
+            "3 gp"
+          ],
+          [
+            "Healing Potion (Minor)",
+            "Consumable",
+            "4 gp"
+          ],
+          [
+            "Holy Water",
+            "Consumable",
+            "3 gp"
+          ],
+          [
+            "Juggernaut Mutagen (Lesser)",
+            "Alchemical Item",
+            "4 gp"
+          ],
+          [
+            "Leaper's Elixir (Lesser)",
+            "Alchemical Item",
+            "3 gp"
+          ],
+          [
+            "Marking Snare",
+            "Snare",
+            "3 gp"
+          ],
+          [
+            "Nectar of Purification",
+            "Consumable",
+            "3 gp"
+          ],
+          [
+            "Owlbear Claw",
+            "Consumable",
+            "3 gp"
+          ],
+          [
+            "Potency Crystal",
+            "Consumable",
+            "4 gp"
+          ],
+          [
+            "Quicksilver Mutagen (Lesser)",
+            "Alchemical Item",
+            "4 gp"
+          ],
+          [
+            "Runestone",
+            "Consumable",
+            "3 gp"
+          ],
+          [
+            "Serene Mutagen (Lesser)",
+            "Alchemical Item",
+            "4 gp"
+          ],
+          [
+            "Shining Ammunition",
+            "Consumable",
+            "3 gp"
+          ],
+          [
+            "Signaling Snare",
+            "Snare",
+            "3 gp"
+          ],
+          [
+            "Silvertongue Mutagen (Lesser)",
+            "Alchemical Item",
+            "4 gp"
+          ],
+          [
+            "Smokestick (Lesser)",
+            "Alchemical Item",
+            "3 gp"
+          ],
+          [
+            "Snake Oil",
+            "Alchemical Item",
+            "2 gp"
+          ],
+          [
+            "Spike Snare",
+            "Snare",
+            "3 gp"
+          ],
+          [
+            "Sunrod",
+            "Alchemical Item",
+            "3 gp"
+          ],
+          [
+            "Tanglefoot Bag (Lesser)",
+            "Alchemical Item",
+            "3 gp"
+          ],
+          [
+            "Thunderstone (Lesser)",
+            "Alchemical Item",
+            "3 gp"
+          ],
+          [
+            "Tindertwig",
+            "Alchemical Item",
+            "2 sp"
+          ],
+          [
+            "Unholy Water",
+            "Consumable",
+            "3 gp"
+          ],
+          [
+            "Wolf Fang",
+            "Consumable",
+            "4 gp"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "1st-Level Permament Items",
+            "Category",
+            "Price"
+          ],
+          [
+            "Adamantine Weapon (Standard-Grade)",
+            "Weapon",
+            "1,400 gp"
+          ],
+          [
+            "Aeon Stone (Dull Gray)",
+            "Worn Item",
+            "9 gp"
+          ],
+          [
+            "Everburning Torch",
+            "Held Item",
+            "15 gp"
+          ],
+          [
+            "Lock (Simple)",
+            "Adventuring Gear",
+            "2 gp"
+          ],
+          [
+            "Manacles (Simple)",
+            "Adventuring Gear",
+            "3 gp"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "2nd-Level Consumables",
+            "Category",
+            "Price"
+          ],
+          [
+            "Belladonna",
+            "Alchemical Item",
+            "5 gp"
+          ],
+          [
+            "Black Adder Venom",
+            "Alchemical Item",
+            "6 gp"
+          ],
+          [
+            "Black Smear Poison",
+            "Alchemical Item",
+            "5 gp"
+          ],
+          [
+            "Bravo's Brew (Lesser)",
+            "Alchemical Item",
+            "7 gp"
+          ],
+          [
+            "Bronze Bull Pendant",
+            "Consumable",
+            "7 gp"
+          ],
+          [
+            "Cat's Eye Elixir",
+            "Alchemical Item",
+            "7 gp"
+          ],
+          [
+            "Comprehension Elixir (Lesser)",
+            "Alchemical Item",
+            "7 gp"
+          ],
+          [
+            "Crying Angel Pendant",
+            "Consumable",
+            "7 gp"
+          ],
+          [
+            "Darkvision Elixir (Lesser)",
+            "Alchemical Item",
+            "6 gp"
+          ],
+          [
+            "Effervescent Ampoule",
+            "Consumable",
+            "7 gp"
+          ],
+          [
+            "Feather Token (Holly Bush)",
+            "Consumable",
+            "6 gp"
+          ],
+          [
+            "Hunter's Bane",
+            "Consumable",
+            "6 gp"
+          ],
+          [
+            "Infiltrator's Elixir",
+            "Alchemical Item",
+            "6 gp"
+          ],
+          [
+            "Jade Cat",
+            "Consumable",
+            "6 gp"
+          ],
+          [
+            "Lethargy Poison",
+            "Alchemical Item",
+            "7 gp"
+          ],
+          [
+            "Mezmerizing Opal",
+            "Consumable",
+            "7 gp"
+          ],
+          [
+            "Monkey Pin",
+            "Consumable",
+            "6 gp"
+          ],
+          [
+            "Oil of Potency",
+            "Consumable",
+            "7 gp"
+          ],
+          [
+            "Oil of Weightlessness",
+            "Consumable",
+            "6 gp"
+          ],
+          [
+            "Onyx Panther",
+            "Consumable",
+            "7 gp"
+          ],
+          [
+            "Savior Spike",
+            "Consumable",
+            "7 gp"
+          ],
+          [
+            "Silversheen",
+            "Alchemical Item",
+            "6 gp"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "2nd-Level Permament Items",
+            "Category",
+            "Price"
+          ],
+          [
+            "Brooch of Shielding",
+            "Worn Item",
+            "30 gp"
+          ],
+          [
+            "Cold Iron Object (Low-Grade)",
+            "Material",
+            "20 gp"
+          ],
+          [
+            "Cold Iron Buckler (Low-Grade)",
+            "Shield",
+            "30 gp"
+          ],
+          [
+            "Cold Iron Shield (Low-Grade)",
+            "Shield",
+            "34 gp"
+          ],
+          [
+            "Cold Iron Weapon (Low-Grade)",
+            "Weapon",
+            "40 gp"
+          ],
+          [
+            "Hand of the Mage",
+            "Worn Item",
+            "30 gp"
+          ],
+          [
+            "Handwraps of Mighty Blows (+1)",
+            "Worn Item",
+            "35 gp"
+          ],
+          [
+            "Hat of Disguise",
+            "Worn Item",
+            "30 gp"
+          ],
+          [
+            "Magic Weapon (+1)",
+            "Weapon",
+            "35 gp"
+          ],
+          [
+            "Silver Object (Low-Grade)",
+            "Material",
+            "20 gp"
+          ],
+          [
+            "Silver Buckler (Low-Grade)",
+            "Shield",
+            "30 gp"
+          ],
+          [
+            "Silver Shield (Low-Grade)",
+            "Shield",
+            "34 gp"
+          ],
+          [
+            "Silver Weapon (Low-Grade)",
+            "Weapon",
+            "40 gp"
+          ],
+          [
+            "Tent (Pavilion)",
+            "Adventuring Gear",
+            "40 gp"
+          ],
+          [
+            "Wayfinder",
+            "Worn Item",
+            "28 gp"
+          ],
+          [
+            "Weapon Potency (+1)",
+            "Rune",
+            "35 gp"
+          ],
+          [
+            "Wondrous Figurine (Onyx Dog)",
+            "Held Item",
+            "34 gp"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "3rd-Level Consumables",
+            "Category",
+            "Price"
+          ],
+          [
+            "Acid Flask (Moderate)",
+            "Alchemical Item",
+            "10 gp"
+          ],
+          [
+            "Alchemist's Fire (Moderate)",
+            "Alchemical Item",
+            "10 gp"
+          ],
+          [
+            "Beacon Shot",
+            "Consumable",
+            "10 gp"
+          ],
+          [
+            "Bestial Mutagen (Moderate)",
+            "Alchemical Item",
+            "12 gp"
+          ],
+          [
+            "Blue Dragonfly Poison",
+            "Alchemical Item",
+            "7 gp"
+          ],
+          [
+            "Bottled Lightning (Moderate)",
+            "Alchemical Item",
+            "10 gp"
+          ],
+          [
+            "Cognative Mutagen (Moderate)",
+            "Alchemical Item",
+            "12 gp"
+          ],
+          [
+            "Cytillesh Oil",
+            "Alchemical Item",
+            "10 gp"
+          ],
+          [
+            "Energy Mutagen (Moderate)",
+            "Alchemical Item",
+            "12 gp"
+          ],
+          [
+            "Feather Step Stone",
+            "Consumable",
+            "8 gp"
+          ],
+          [
+            "Feather Token (Bird)",
+            "Consumable",
+            "8 gp"
+          ],
+          [
+            "Feather Token (Chest)",
+            "Consumable",
+            "10 gp"
+          ],
+          [
+            "Frost Vial (Moderate)",
+            "Alchemical Item",
+            "10 gp"
+          ],
+          [
+            "Graveroot",
+            "Alchemical Item",
+            "10 gp"
+          ],
+          [
+            "Healing Potion (Lesser)",
+            "Consumable",
+            "12 gp"
+          ],
+          [
+            "Juggernaut Mutagen (Moderate)",
+            "Alchemical Item",
+            "12 gp"
+          ],
+          [
+            "Oil of Mending",
+            "Consumable",
+            "9 gp"
+          ],
+          [
+            "Potion of Water Breathing",
+            "Consumable",
+            "11 gp"
+          ],
+          [
+            "Quicksilver Mutagen (Moderate)",
+            "Alchemical Item",
+            "12 gp"
+          ],
+          [
+            "Serene Mutagen (Moderate)",
+            "Alchemical Item",
+            "12 gp"
+          ],
+          [
+            "Silvertongue Mutagen (Moderate)",
+            "Alchemical Item",
+            "12 gp"
+          ],
+          [
+            "Sleep Arrow",
+            "Consumable",
+            "11 gp"
+          ],
+          [
+            "Spellstrike Ammunition (Type I)",
+            "Consumable",
+            "12 gp"
+          ],
+          [
+            "Tanglefoot Bag (Moderate)",
+            "Alchemical Item",
+            "10 gp"
+          ],
+          [
+            "Thunderstone (Moderate)",
+            "Alchemical Item",
+            "10 gp"
+          ],
+          [
+            "Vine Arrow",
+            "Consumable",
+            "10 gp"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "3rd-Level Permament Items",
+            "Category",
+            "Price"
+          ],
+          [
+            "Alchemist's Tools (Expanded)",
+            "Adventuring Gear",
+            "55 gp"
+          ],
+          [
+            "Artisan's Tools (Sterling)",
+            "Adventuring Gear",
+            "50 gp"
+          ],
+          [
+            "Bracelets of Dashing",
+            "Worn Item",
+            "58 gp"
+          ],
+          [
+            "Bracers of Missile Deflection",
+            "Worn Item",
+            "52 gp"
+          ],
+          [
+            "Channel Protection Amulet",
+            "Worn Item",
+            "56 gp"
+          ],
+          [
+            "Climbing Kit (Extreme)",
+            "Adventuring Gear",
+            "40 gp"
+          ],
+          [
+            "Clothing (High-Fashion Fine)",
+            "Adventuring Gear",
+            "55 gp"
+          ],
+          [
+            "Compass (Lensatic)",
+            "Adventuring Gear",
+            "20 gp"
+          ],
+          [
+            "Coyote Cloak",
+            "Worn Item",
+            "60 gp"
+          ],
+          [
+            "Crafter's Eyepiece",
+            "Worn Item",
+            "60 gp"
+          ],
+          [
+            "Crowbar (Levered)",
+            "Adventuring Gear",
+            "20 gp"
+          ],
+          [
+            "Dancing Scarf",
+            "Worn Item",
+            "60 gp"
+          ],
+          [
+            "Disguise Kit (Elite)",
+            "Adventuring Gear",
+            "40 gp"
+          ],
+          [
+            "Disguise Kit (Elite Cosmetics)",
+            "Adventuring Gear",
+            "5 sp"
+          ],
+          [
+            "Doubling Rings",
+            "Worn Item",
+            "50 gp"
+          ],
+          [
+            "Fighter's Fork",
+            "Weapon",
+            "50 gp"
+          ],
+          [
+            "Fishing Tackle (Professional)",
+            "Adventuring Gear",
+            "20 gp"
+          ],
+          [
+            "Hat of the Magi",
+            "Worn Item",
+            "50 gp"
+          ],
+          [
+            "Healer's Tools (Expanded)",
+            "Adventuring Gear",
+            "50 gp"
+          ],
+          [
+            "Lock (Average)",
+            "Adventuring Gear",
+            "15 gp"
+          ],
+          [
+            "Maestro's Instrument (Lesser)",
+            "Held Item",
+            "60 gp"
+          ],
+          [
+            "Magic Wand (1st-Level Spell)",
+            "Wand",
+            "60 gp"
+          ],
+          [
+            "Manacles (Average)",
+            "Adventuring Gear",
+            "20 gp"
+          ],
+          [
+            "Musical Instrument (Virtuoso Handheld)",
+            "Adventuring Gear",
+            "50 gp"
+          ],
+          [
+            "Musical Instrument (Virtuoso Heavy)",
+            "Adventuring Gear",
+            "100 gp"
+          ],
+          [
+            "Pendant of the Occult",
+            "Worn Item",
+            "60 gp"
+          ],
+          [
+            "Persona Mask",
+            "Worn Item",
+            "50 gp"
+          ],
+          [
+            "Repair Kit (Superb)",
+            "Adventuring Gear",
+            "25 gp"
+          ],
+          [
+            "Retribution Axe",
+            "Weapon",
+            "60 gp"
+          ],
+          [
+            "Returning",
+            "Rune",
+            "55 gp"
+          ],
+          [
+            "Scholarly Journal",
+            "Adventuring Gear",
+            "6 gp"
+          ],
+          [
+            "Scholarly Journal (Compendium)",
+            "Adventuring Gear",
+            "30 gp"
+          ],
+          [
+            "Shadow",
+            "Rune",
+            "55 gp"
+          ],
+          [
+            "Slick",
+            "Rune",
+            "45 gp"
+          ],
+          [
+            "Snare Kit (Specialist)",
+            "Adventuring Gear",
+            "55 gp"
+          ],
+          [
+            "Staff of Fire",
+            "Stave",
+            "60 gp"
+          ],
+          [
+            "Survey Map",
+            "Adventuring Gear",
+            "10 gp"
+          ],
+          [
+            "Survey Map (Atlas)",
+            "Adventuring Gear",
+            "50 gp"
+          ],
+          [
+            "Thieve's Tools (Infiltrator)",
+            "Adventuring Gear",
+            "50 gp"
+          ],
+          [
+            "Thieve's Tools (Infiltrator Picks)",
+            "Adventuring Gear",
+            "3 gp"
+          ],
+          [
+            "Thurible of Revelation (Lesser)",
+            "Held Item",
+            "55 gp"
+          ],
+          [
+            "Tracker's Goggles",
+            "Worn Item",
+            "60 gp"
+          ],
+          [
+            "Ventriloquist's Ring",
+            "Worn Item",
+            "60 gp"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "4th-Level Consumables",
+            "Category",
+            "Price"
+          ],
+          [
+            "Barkskin Potion",
+            "Consumable",
+            "15 gp"
+          ],
+          [
+            "Biting Snare",
+            "Snare",
+            "15 gp"
+          ],
+          [
+            "Bloodseeker Beak",
+            "Consumable",
+            "20 gp"
+          ],
+          [
+            "Bomber's Eye Elixir (Lesser)",
+            "Alchemical Item",
+            "14 gp"
+          ],
+          [
+            "Climbing Bolt",
+            "Consumable",
+            "15 gp"
+          ],
+          [
+            "Darkvision Elixir (Moderate)",
+            "Alchemical Item",
+            "11 gp"
+          ],
+          [
+            "Dragon Turtle Scale",
+            "Consumable",
+            "13 gp"
+          ],
+          [
+            "Feather Token (Fan)",
+            "Consumable",
+            "15 gp"
+          ],
+          [
+            "Hobbling Snare",
+            "Snare",
+            "15 gp"
+          ],
+          [
+            "Invisibility Potion",
+            "Consumable",
+            "450 gp"
+          ],
+          [
+            "Mistform Elixir (Lesser)",
+            "Alchemical Item",
+            "18 gp"
+          ],
+          [
+            "Salamander Elixir (Lesser)",
+            "Alchemical Item",
+            "15 gp"
+          ],
+          [
+            "Shrinking Potion",
+            "Consumable",
+            "15 gp"
+          ],
+          [
+            "Stalker Bane Snare",
+            "Snare",
+            "15 gp"
+          ],
+          [
+            "Stone Fist Elixir",
+            "Alchemical Item",
+            "13 gp"
+          ],
+          [
+            "Trip Snare",
+            "Snare",
+            "15 gp"
+          ],
+          [
+            "Viper Arrow",
+            "Consumable",
+            "17 gp"
+          ],
+          [
+            "Warning Snare",
+            "Snare",
+            "15 gp"
+          ],
+          [
+            "Winter Wolf Elixir (Lesser)",
+            "Alchemical Item",
+            "15 gp"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "4th-Level Permament Items",
+            "Category",
+            "Price"
+          ],
+          [
+            "Alchemist Goggles",
+            "Worn Item",
+            "100 gp"
+          ],
+          [
+            "Animal Staff",
+            "Stave",
+            "90 gp"
+          ],
+          [
+            "Bag of Holding (Type I)",
+            "Held Item",
+            "75 gp"
+          ],
+          [
+            "Demon Mask",
+            "Worn Item",
+            "85 gp"
+          ],
+          [
+            "Fear Gem",
+            "Consumable",
+            "20 gp"
+          ],
+          [
+            "Ghost Touch",
+            "Rune",
+            "75 gp"
+          ],
+          [
+            "Handwraps of Mighty Blows (+1 Striking)",
+            "Worn Item",
+            "100 gp"
+          ],
+          [
+            "Healer's Gloves",
+            "Worn Item",
+            "80 gp"
+          ],
+          [
+            "Hunter's Arrowhead",
+            "Worn Item",
+            "80 gp"
+          ],
+          [
+            "Lifting Belt",
+            "Worn Item",
+            "80 gp"
+          ],
+          [
+            "Magic Weapon (+1 Striking)",
+            "Weapon",
+            "100 gp"
+          ],
+          [
+            "Mentalist's Staff",
+            "Stave",
+            "230 gp"
+          ],
+          [
+            "Spyglass (Fine)",
+            "Adventuring Gear",
+            "80 gp"
+          ],
+          [
+            "Staff of Healing",
+            "Stave",
+            "90 gp"
+          ],
+          [
+            "Striking",
+            "Rune",
+            "65 gp"
+          ],
+          [
+            "Sturdy Shield (Minor)",
+            "Shield",
+            "100 gp"
+          ],
+          [
+            "Wand of Widening (1st-Level Spell)",
+            "Wand",
+            "100 gp"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "5th-Level Consumables",
+            "Category",
+            "Price"
+          ],
+          [
+            "Cheetah's Elixir (Moderate)",
+            "Alchemical Item",
+            "25 gp"
+          ],
+          [
+            "Eagle Eye Elixir (Moderate)",
+            "Alchemical Item",
+            "27 gp"
+          ],
+          [
+            "Elixir of Life (Lesser)",
+            "Alchemical Item",
+            "30 gp"
+          ],
+          [
+            "Emerald Grasshopper",
+            "Consumable",
+            "30 gp"
+          ],
+          [
+            "Hunting Spider Venom",
+            "Alchemical Item",
+            "25 gp"
+          ],
+          [
+            "Potion of Leaping",
+            "Consumable",
+            "21 gp"
+          ],
+          [
+            "Salve of Slipperiness",
+            "Consumable",
+            "25 gp"
+          ],
+          [
+            "Sea Touch Elixir (Lesser)",
+            "Alchemical Item",
+            "22 gp"
+          ],
+          [
+            "Shark Tooth Charm",
+            "Consumable",
+            "23 gp"
+          ],
+          [
+            "Sneaky Key",
+            "Consumable",
+            "22 gp"
+          ],
+          [
+            "Spellstrike Ammunition (Type II)",
+            "Consumable",
+            "30 gp"
+          ],
+          [
+            "Stone Body Mutagen (Lesser)",
+            "Alchemical Item",
+            "22 gp"
+          ],
+          [
+            "Tiger Menuki",
+            "Consumable",
+            "30 gp"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "5th-Level Permament Items",
+            "Category",
+            "Price"
+          ],
+          [
+            "Armor Potency (+1)",
+            "Rune",
+            "160 gp"
+          ],
+          [
+            "Boots of Elvenkind",
+            "Worn Item",
+            "145 gp"
+          ],
+          [
+            "Bort's Blessing",
+            "Worn Item",
+            "160 gp"
+          ],
+          [
+            "Caterwaul Sling",
+            "Weapon",
+            "155 gp"
+          ],
+          [
+            "Cinderclaw Gauntlet",
+            "Worn Item",
+            "150 gp"
+          ],
+          [
+            "Cold Iron Armor (Low-Grade)",
+            "Armor",
+            "140 gp"
+          ],
+          [
+            "Dagger of Venom",
+            "Weapon",
+            "150 gp"
+          ],
+          [
+            "Diplomat's Badge",
+            "Worn Item",
+            "125 gp"
+          ],
+          [
+            "Disrupting",
+            "Rune",
+            "150 gp"
+          ],
+          [
+            "Glamered",
+            "Rune",
+            "140 gp"
+          ],
+          [
+            "Goggles of Night",
+            "Worn Item",
+            "150 gp"
+          ],
+          [
+            "Magic Armor (+1)",
+            "Armor",
+            "160 gp"
+          ],
+          [
+            "Magic Wand (2nd-Level Spell)",
+            "Wand",
+            "160 gp"
+          ],
+          [
+            "Merchant's Guile",
+            "Worn Item",
+            "160 gp"
+          ],
+          [
+            "Necklace of Fireballs I",
+            "Worn Item",
+            "44 gp"
+          ],
+          [
+            "Pocket Stage",
+            "Structure",
+            "138 gp"
+          ],
+          [
+            "Ring of Minor Arcana",
+            "Worn Item",
+            "160 gp"
+          ],
+          [
+            "Ring of the Weary Traveler",
+            "Worn Item",
+            "160 gp"
+          ],
+          [
+            "Silver Armor (Low-Grade)",
+            "Armor",
+            "140 gp"
+          ],
+          [
+            "Skeleton Key",
+            "Held Item",
+            "125 gp"
+          ],
+          [
+            "Stalwart's Ring",
+            "Worn Item",
+            "160 gp"
+          ],
+          [
+            "Wand of Continuation (1st-Level Spell)",
+            "Wand",
+            "160 gp"
+          ],
+          [
+            "Wand of Manifold Missiles (1st-Level Spell)",
+            "Wand",
+            "160 gp"
+          ],
+          [
+            "Warrior's Training Ring",
+            "Worn Item",
+            "160 gp"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "6th-Level Consumables",
+            "Category",
+            "Price"
+          ],
+          [
+            "Antidote (Moderate)",
+            "Alchemical Item",
+            "35 gp"
+          ],
+          [
+            "Antiplague (Moderate)",
+            "Alchemical Item",
+            "35 gp"
+          ],
+          [
+            "Dust of Appearance",
+            "Consumable",
+            "50 gp"
+          ],
+          [
+            "Feather Token (Tree)",
+            "Consumable",
+            "38 gp"
+          ],
+          [
+            "Giant Scorpion Venom",
+            "Alchemical Item",
+            "40 gp"
+          ],
+          [
+            "Healing Potion (Moderate)",
+            "Consumable",
+            "50 gp"
+          ],
+          [
+            "Iron Cube",
+            "Consumable",
+            "50 gp"
+          ],
+          [
+            "Mistform Elixir (Moderate)",
+            "Alchemical Item",
+            "56 gp"
+          ],
+          [
+            "Oil of Weightlessness (Greater)",
+            "Consumable",
+            "36 gp"
+          ],
+          [
+            "Potion of Resistance (Lesser)",
+            "Consumable",
+            "45 gp"
+          ],
+          [
+            "Potion of Swimming (Moderate)",
+            "Consumable",
+            "50 gp"
+          ],
+          [
+            "Salve of Antiparalysis",
+            "Consumable",
+            "40 gp"
+          ],
+          [
+            "Truth Potion",
+            "Consumable",
+            "46 gp"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "6th-Level Permament Items",
+            "Category",
+            "Price"
+          ],
+          [
+            "Aeon Stone (Gold Nodule)",
+            "Worn Item",
+            "230 gp"
+          ],
+          [
+            "Bloodletting Kukri",
+            "Weapon",
+            "240 gp"
+          ],
+          [
+            "Chime of Opening",
+            "Held Item",
+            "235 gp"
+          ],
+          [
+            "Choker of Elocution",
+            "Worn Item",
+            "200 gp"
+          ],
+          [
+            "Clandestine Cloak",
+            "Worn Item",
+            "230 gp"
+          ],
+          [
+            "Ghoul Hide",
+            "Armor",
+            "220 gp"
+          ],
+          [
+            "Horn of Fog",
+            "Held Item",
+            "230 gp"
+          ],
+          [
+            "Lion's Shield",
+            "Shield",
+            "245 gp"
+          ],
+          [
+            "Primeval Mistletoe",
+            "Held Item",
+            "230 gp"
+          ],
+          [
+            "Ring of Energy Resistance",
+            "Worn Item",
+            "245 gp"
+          ],
+          [
+            "Ring of Energy Resistance (Major)",
+            "Worn Item",
+            "245 gp"
+          ],
+          [
+            "Ring of the Ram",
+            "Worn Item",
+            "220 gp"
+          ],
+          [
+            "Shifting",
+            "Rune",
+            "225 gp"
+          ],
+          [
+            "Spellguard Shield",
+            "Shield",
+            "250 gp"
+          ],
+          [
+            "Staff of Abjuration",
+            "Stave",
+            "230 gp"
+          ],
+          [
+            "Staff of Conjuration",
+            "Stave",
+            "230 gp"
+          ],
+          [
+            "Staff of Divination",
+            "Stave",
+            "230 gp"
+          ],
+          [
+            "Staff of Enchantment",
+            "Stave",
+            "230 gp"
+          ],
+          [
+            "Staff of Evocation",
+            "Stave",
+            "230 gp"
+          ],
+          [
+            "Staff of Illusion",
+            "Stave",
+            "230 gp"
+          ],
+          [
+            "Staff of Necromancy",
+            "Stave",
+            "230 gp"
+          ],
+          [
+            "Staff of Transmutation",
+            "Stave",
+            "230 gp"
+          ],
+          [
+            "Traveler's Any-Tool",
+            "Held Item",
+            "200 gp"
+          ],
+          [
+            "Twining Staff",
+            "Weapon",
+            "250 gp"
+          ],
+          [
+            "Verdant Staff",
+            "Stave",
+            "225 gp"
+          ],
+          [
+            "Wand of Widening (2nd-Level Spell)",
+            "Wand",
+            "250 gp"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "7th-Level Consumables",
+            "Category",
+            "Price"
+          ],
+          [
+            "Comprehension Elixir (Greater)",
+            "Alchemical Item",
+            "54 gp"
+          ],
+          [
+            "Dragon's Breath Potion (Young)",
+            "Consumable",
+            "70 gp"
+          ],
+          [
+            "Feather Token (Anchor)",
+            "Consumable",
+            "55 gp"
+          ],
+          [
+            "Giant Wasp Venom",
+            "Alchemical Item",
+            "55 gp"
+          ],
+          [
+            "Grim Trophy",
+            "Consumable",
+            "55 gp"
+          ],
+          [
+            "Leaper's Elixir (Greater)",
+            "Alchemical Item",
+            "55 gp"
+          ],
+          [
+            "Malyass Root Paste",
+            "Alchemical Item",
+            "55 gp"
+          ],
+          [
+            "Murderer's Knot",
+            "Consumable",
+            "66 gp"
+          ],
+          [
+            "Serum of Sex Shift",
+            "Consumable",
+            "60 gp"
+          ],
+          [
+            "Smokestick (Greater)",
+            "Alchemical Item",
+            "53 gp"
+          ],
+          [
+            "Spellstrike Ammunition (Type III)",
+            "Consumable",
+            "70 gp"
+          ],
+          [
+            "Swift Block Cabochon",
+            "Consumable",
+            "70 gp"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "7th-Level Permament Items",
+            "Category",
+            "Price"
+          ],
+          [
+            "Aeon Stone (Clear Spindle)",
+            "Worn Item",
+            "325 gp"
+          ],
+          [
+            "Aeon Stone (Tourmaline Sphere)",
+            "Worn Item",
+            "350 gp"
+          ],
+          [
+            "Bag of Holding (Type II)",
+            "Held Item",
+            "300 gp"
+          ],
+          [
+            "Boots of Bounding",
+            "Worn Item",
+            "340 gp"
+          ],
+          [
+            "Bottled Air",
+            "Held Item",
+            "320 gp"
+          ],
+          [
+            "Cloak of Elvenkind",
+            "Worn Item",
+            "360 gp"
+          ],
+          [
+            "Cold Iron Object (Standard-Grade)",
+            "Material",
+            "250 gp"
+          ],
+          [
+            "Cold Iron Buckler (Standard-Grade)",
+            "Shield",
+            "300 gp"
+          ],
+          [
+            "Cold Iron Shield (Standard-Grade)",
+            "Shield",
+            "340 gp"
+          ],
+          [
+            "Decanter of Endless Water",
+            "Held Item",
+            "320 gp"
+          ],
+          [
+            "Gloves of Storing",
+            "Worn Item",
+            "340 gp"
+          ],
+          [
+            "Hat of Disguise (Greater)",
+            "Worn Item",
+            "340 gp"
+          ],
+          [
+            "Horseshoes of Speed",
+            "Worn Item",
+            "340 gp"
+          ],
+          [
+            "Magic Wand (3rd-Level Spell)",
+            "Wand",
+            "360 gp"
+          ],
+          [
+            "Moonlit Chain",
+            "Armor",
+            "360 gp"
+          ],
+          [
+            "Nicklace of Fireballs II",
+            "Worn Item",
+            "115 gp"
+          ],
+          [
+            "Ring of Sustenance",
+            "Worn Item",
+            "325 gp"
+          ],
+          [
+            "Ring of Wizardry (Type I)",
+            "Worn Item",
+            "360 gp"
+          ],
+          [
+            "Silver Object (Standard-Grade)",
+            "Material",
+            "250 gp"
+          ],
+          [
+            "Silver Buckler (Standard-Grade)",
+            "Shield",
+            "300 gp"
+          ],
+          [
+            "Silver Shield (Standard-Grade)",
+            "Shield",
+            "340 gp"
+          ],
+          [
+            "Slippers of Spider Climbing",
+            "Worn Item",
+            "325 gp"
+          ],
+          [
+            "Spined Shield",
+            "Shield",
+            "360 gp"
+          ],
+          [
+            "Sturdy Shield (Lesser)",
+            "Shield",
+            "360 gp"
+          ],
+          [
+            "Wand of Continuation (2nd-Level Spell)",
+            "Wand",
+            "360 gp"
+          ],
+          [
+            "Wondrous Figurine (Jade Serpent)",
+            "Held Item",
+            "340 gp"
+          ],
+          [
+            "Wounding",
+            "Rune",
+            "340 gp"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "8th-Level Consumables",
+            "Category",
+            "Price"
+          ],
+          [
+            "Bomb Snare",
+            "Snare",
+            "75 gp"
+          ],
+          [
+            "Candle of Truth",
+            "Consumable",
+            "75 gp"
+          ],
+          [
+            "Darkvision Elixir (Greater)",
+            "Alchemical Item",
+            "90 gp"
+          ],
+          [
+            "Feather Token (Swan Boat)",
+            "Consumable",
+            "76 gp"
+          ],
+          [
+            "Gallows Tooth",
+            "Consumable",
+            "100 gp"
+          ],
+          [
+            "Grasping Snare",
+            "Snare",
+            "75 gp"
+          ],
+          [
+            "Jade Bauble",
+            "Consumable",
+            "100 gp"
+          ],
+          [
+            "Nettleweed Residue",
+            "Alchemical Item",
+            "75 gp"
+          ],
+          [
+            "Potion of Flying",
+            "Consumable",
+            "100 gp"
+          ],
+          [
+            "Potion of Quickness",
+            "Consumable",
+            "90 gp"
+          ],
+          [
+            "Shrinking Potion (Greater)",
+            "Consumable",
+            "90 gp"
+          ],
+          [
+            "Striking Snare",
+            "Snare",
+            "75 gp"
+          ],
+          [
+            "Wyvern Poison",
+            "Alchemical Item",
+            "80 gp"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "8th-Level Permament Items",
+            "Category",
+            "Price"
+          ],
+          [
+            "Adamantine Object (Standard-Grade)",
+            "Material",
+            "350 gp"
+          ],
+          [
+            "Adamantine Buckler (Standard-Grade)",
+            "Shield",
+            "400 gp"
+          ],
+          [
+            "Adamantine Shield (Standard-Grade)",
+            "Shield",
+            "440 gp"
+          ],
+          [
+            "Animal Staff (Greater)",
+            "Stave",
+            "460 gp"
+          ],
+          [
+            "Bracers of Armor I",
+            "Worn Item",
+            "450 gp"
+          ],
+          [
+            "Collar of Inconspicuousness",
+            "Worn Item",
+            "475 gp"
+          ],
+          [
+            "Corrosive",
+            "Rune",
+            "500 gp"
+          ],
+          [
+            "Darkwood Object (Standard-Grade)",
+            "Material",
+            "350 gp"
+          ],
+          [
+            "Darkwood Buckler (Standard-Grade)",
+            "Shield",
+            "400 gp"
+          ],
+          [
+            "Darkwood Shield (Standard-Grade)",
+            "Shield",
+            "440 gp"
+          ],
+          [
+            "Darkwood Tower Shield (Standard-Grade)",
+            "Shield",
+            "560 gp"
+          ],
+          [
+            "Dragonhide Object (Standard-Grade)",
+            "Material",
+            "350 gp"
+          ],
+          [
+            "Dragonhide Buckler (Standard-Grade)",
+            "Shield",
+            "400 gp"
+          ],
+          [
+            "Dragonhide Shield (Standard-Grade)",
+            "Shield",
+            "440 gp"
+          ],
+          [
+            "Energy-Resistant",
+            "Rune",
+            "420 gp"
+          ],
+          [
+            "Flaming",
+            "Rune",
+            "500 gp"
+          ],
+          [
+            "Frost",
+            "Rune",
+            "500 gp"
+          ],
+          [
+            "Invisibility",
+            "Rune",
+            "500 gp"
+          ],
+          [
+            "Magic Armor (+1 Resilient)",
+            "Armor",
+            "500 gp"
+          ],
+          [
+            "Mentalist's Staff (Greater)",
+            "Stave",
+            "900 gp"
+          ],
+          [
+            "Mithral Object (Low-Grade)",
+            "Material",
+            "350 gp"
+          ],
+          [
+            "Mithral Buckler (Standard-Grade)",
+            "Shield",
+            "400 gp"
+          ],
+          [
+            "Mithral Shield (Standard-Grade)",
+            "Shield",
+            "440 gp"
+          ],
+          [
+            "Resilient",
+            "Rune",
+            "340 gp"
+          ],
+          [
+            "Rod of Wonder",
+            "Held Item",
+            "465 gp"
+          ],
+          [
+            "Shock",
+            "Rune",
+            "500 gp"
+          ],
+          [
+            "Slick (Greater)",
+            "Rune",
+            "450 gp"
+          ],
+          [
+            "Staff of Fire (Greater)",
+            "Stave",
+            "450 gp"
+          ],
+          [
+            "Staff of Healing (Greater)",
+            "Stave",
+            "470 gp"
+          ],
+          [
+            "Staff of Illumination",
+            "Stave",
+            "425 gp"
+          ],
+          [
+            "Thundering",
+            "Rune",
+            "500 gp"
+          ],
+          [
+            "Wand of Widening (3rd-Level Spell)",
+            "Wand",
+            "500 gp"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "9th-Level Consumables",
+            "Category",
+            "Price"
+          ],
+          [
+            "Aligned Oil",
+            "Consumable",
+            "140 gp"
+          ],
+          [
+            "Cheetah's Elixir (Greater)",
+            "Alchemical Item",
+            "110 gp"
+          ],
+          [
+            "Dust of Disappearance",
+            "Consumable",
+            "135 gp"
+          ],
+          [
+            "Elixir of Life (Moderate)",
+            "Alchemical Item",
+            "150 gp"
+          ],
+          [
+            "Explosive Ammunition",
+            "Consumable",
+            "130 gp"
+          ],
+          [
+            "Feather Token (Whip)",
+            "Consumable",
+            "130 gp"
+          ],
+          [
+            "Javelin of Lightning",
+            "Consumable",
+            "110 gp"
+          ],
+          [
+            "Lich Dust",
+            "Alchemical Item",
+            "110 gp"
+          ],
+          [
+            "Spellstrike Ammunition (Type IV)",
+            "Consumable",
+            "150 gp"
+          ],
+          [
+            "Spider Root",
+            "Alchemical Item",
+            "110 gp"
+          ],
+          [
+            "Storm Arrow",
+            "Consumable",
+            "130 gp"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "9th-Level Permament Items",
+            "Category",
+            "Price"
+          ],
+          [
+            "Armbands of Athleticism",
+            "Worn Item",
+            "645 gp"
+          ],
+          [
+            "Belt of the Five Kings",
+            "Worn Item",
+            "650 gp"
+          ],
+          [
+            "Bracers of Missile Deflection (Greater)",
+            "Worn Item",
+            "650 gp"
+          ],
+          [
+            "Collar of Empathy",
+            "Worn Item",
+            "600 gp"
+          ],
+          [
+            "Coyote Cloak (Greater)",
+            "Worn Item",
+            "650 gp"
+          ],
+          [
+            "Dancing Scarf (Greater)",
+            "Worn Item",
+            "650 gp"
+          ],
+          [
+            "Dragonslayer's Shield",
+            "Shield",
+            "670 gp"
+          ],
+          [
+            "Eyes of the Eagle",
+            "Worn Item",
+            "700 gp"
+          ],
+          [
+            "Force Shield",
+            "Shield",
+            "650 gp"
+          ],
+          [
+            "Gloom Blade",
+            "Weapon",
+            "700 gp"
+          ],
+          [
+            "Grevious",
+            "Rune",
+            "700 gp"
+          ],
+          [
+            "Hat of the Magi (Greater)",
+            "Worn Item",
+            "650 gp"
+          ],
+          [
+            "Healer's Gloves (Greater)",
+            "Worn Item",
+            "700 gp"
+          ],
+          [
+            "Heartstone",
+            "Worn Item",
+            "600 gp"
+          ],
+          [
+            "Horn of Blasting",
+            "Held Item",
+            "700 gp"
+          ],
+          [
+            "Immovable Rod",
+            "Held Item",
+            "600 gp"
+          ],
+          [
+            "Knapsack of Halflingkind",
+            "Worn Item",
+            "675 gp"
+          ],
+          [
+            "Lock (Good)",
+            "Adventuring Gear",
+            "200 gp"
+          ],
+          [
+            "Magic Wand (4th-Level Spell)",
+            "Wand",
+            "700 gp"
+          ],
+          [
+            "Manacles (Good)",
+            "Adventuring Gear",
+            "250 gp"
+          ],
+          [
+            "Messenger's Ring",
+            "Worn Item",
+            "700 gp"
+          ],
+          [
+            "Nicklace of Fireballs III",
+            "Worn Item",
+            "300 gp"
+          ],
+          [
+            "Pendant of the Occult (Greater)",
+            "Worn Item",
+            "650 gp"
+          ],
+          [
+            "Persona Mask (Greater)",
+            "Worn Item",
+            "650 gp"
+          ],
+          [
+            "Phylactery of Faithfulness",
+            "Worn Item",
+            "680 gp"
+          ],
+          [
+            "Rhino Hide",
+            "Armor",
+            "700 gp"
+          ],
+          [
+            "Shadow (Greater)",
+            "Rune",
+            "650 gp"
+          ],
+          [
+            "Tracker's Goggles (Greater)",
+            "Worn Item",
+            "660 gp"
+          ],
+          [
+            "Triton's Conch",
+            "Held Item",
+            "640 gp"
+          ],
+          [
+            "Ventriloquist's Ring (Greater)",
+            "Worn Item",
+            "670 gp"
+          ],
+          [
+            "Wand of Continuation (3rd-Level Spell)",
+            "Wand",
+            "700 gp"
+          ],
+          [
+            "Wand of Manifold Missiles (3rd-Level Spell)",
+            "Wand",
+            "700 gp"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "10th-Level Consumables",
+            "Category",
+            "Price"
+          ],
+          [
+            "Antidote (Greater)",
+            "Alchemical Item",
+            "160 gp"
+          ],
+          [
+            "Antiplague (Greater)",
+            "Alchemical Item",
+            "160 gp"
+          ],
+          [
+            "Bravo's Brew (Moderate)",
+            "Alchemical Item",
+            "150 gp"
+          ],
+          [
+            "Eagle Eye Elixir (Greater)",
+            "Alchemical Item",
+            "200 gp"
+          ],
+          [
+            "Elemental Gem",
+            "Consumable",
+            "200 gp"
+          ],
+          [
+            "Iron Medallion",
+            "Consumable",
+            "175 gp"
+          ],
+          [
+            "Mistform Elixir (Greater)",
+            "Alchemical Item",
+            "180 gp"
+          ],
+          [
+            "Mummified Bat",
+            "Consumable",
+            "175 gp"
+          ],
+          [
+            "Potion of Resistance (Moderate)",
+            "Consumable",
+            "180 gp"
+          ],
+          [
+            "Shadow Essence",
+            "Alchemical Item",
+            "160 gp"
+          ],
+          [
+            "Wolfsbane",
+            "Alchemical Item",
+            "155 gp"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "10th-Level Permament Items",
+            "Category",
+            "Price"
+          ],
+          [
+            "Barding of the Zephyr",
+            "Worn Item",
+            "900 gp"
+          ],
+          [
+            "Breastplate of Command",
+            "Armor",
+            "1,000 gp"
+          ],
+          [
+            "Cape of the Mountebank",
+            "Worn Item",
+            "980 gp"
+          ],
+          [
+            "Choker of Elocution (Greater)",
+            "Worn Item",
+            "850 gp"
+          ],
+          [
+            "Clandestine Cloak (Greater)",
+            "Worn Item",
+            "900 gp"
+          ],
+          [
+            "Cloak of the Bat",
+            "Worn Item",
+            "950 gp"
+          ],
+          [
+            "Cold Iron Weapon (Standard-Grade)",
+            "Weapon",
+            "880 gp"
+          ],
+          [
+            "Daredevil Boots",
+            "Worn Item",
+            "900 gp"
+          ],
+          [
+            "Demon Mask (Greater)",
+            "Worn Item",
+            "900 gp"
+          ],
+          [
+            "Druid's Vestments",
+            "Worn Item",
+            "1,000 gp"
+          ],
+          [
+            "Electric Eelskin",
+            "Armor",
+            "950 gp"
+          ],
+          [
+            "Explorer's Yurt",
+            "Structure",
+            "880 gp"
+          ],
+          [
+            "Forge Warden",
+            "Shield",
+            "975 gp"
+          ],
+          [
+            "Handwraps of Mighty Blows (+2 Striking)",
+            "Worn Item",
+            "1,000 gp"
+          ],
+          [
+            "Invisibility (Greater)",
+            "Rune",
+            "1,000 gp"
+          ],
+          [
+            "Maestro's Instrument (Moderate)",
+            "Held Item",
+            "900 gp"
+          ],
+          [
+            "Magic Weapon (+2 Striking)",
+            "Weapon",
+            "1,000 gp"
+          ],
+          [
+            "Ring of Counterspells",
+            "Worn Item",
+            "925 gp"
+          ],
+          [
+            "Ring of Energy Resistance (Greater)",
+            "Worn Item",
+            "975 gp"
+          ],
+          [
+            "Ring of Lies",
+            "Worn Item",
+            "850 gp"
+          ],
+          [
+            "Ring of Wizardry (Type II)",
+            "Worn Item",
+            "1,000 gp"
+          ],
+          [
+            "Silver Weapon (Standard-Grade)",
+            "Weapon",
+            "880 gp"
+          ],
+          [
+            "Staff of Abjuration (Greater)",
+            "Stave",
+            "900 gp"
+          ],
+          [
+            "Staff of Conjuration (Greater)",
+            "Stave",
+            "900 gp"
+          ],
+          [
+            "Staff of Divination (Greater)",
+            "Stave",
+            "900 gp"
+          ],
+          [
+            "Staff of Enchantment (Greater)",
+            "Stave",
+            "900 gp"
+          ],
+          [
+            "Staff of Evocation (Greater)",
+            "Stave",
+            "900 gp"
+          ],
+          [
+            "Staff of Illusion (Greater)",
+            "Stave",
+            "900 gp"
+          ],
+          [
+            "Staff of Necromancy (Greater)",
+            "Stave",
+            "900 gp"
+          ],
+          [
+            "Staff of Transmutation (Greater)",
+            "Stave",
+            "900 gp"
+          ],
+          [
+            "Sturdy Shield (Moderate)",
+            "Shield",
+            "1,000 gp"
+          ],
+          [
+            "Thurible of Revelation (Moderate)",
+            "Held Item",
+            "900 gp"
+          ],
+          [
+            "Vanishing Coin",
+            "Consumable",
+            "160 gp"
+          ],
+          [
+            "Wand of Widening (4th-Level Spell)",
+            "Wand",
+            "1,000 gp"
+          ],
+          [
+            "Weapon Potency (+2)",
+            "Rune",
+            "935 gp"
+          ],
+          [
+            "Winged Boots",
+            "Worn Item",
+            "850 gp"
+          ],
+          [
+            "Wondrous Figurine (Golden Lions)",
+            "Held Item",
+            "900 gp"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "11th-Level Consumables",
+            "Category",
+            "Price"
+          ],
+          [
+            "Acid Flask (Greater)",
+            "Alchemical Item",
+            "250 gp"
+          ],
+          [
+            "Alchemist's Fire (Greater)",
+            "Alchemical Item",
+            "250 gp"
+          ],
+          [
+            "Bestial Mutagen (Greater)",
+            "Alchemical Item",
+            "300 gp"
+          ],
+          [
+            "Blightburn Resin",
+            "Alchemical Item",
+            "225 gp"
+          ],
+          [
+            "Bottled Lightning (Greater)",
+            "Alchemical Item",
+            "250 gp"
+          ],
+          [
+            "Cognative Mutagen (Greater)",
+            "Alchemical Item",
+            "300 gp"
+          ],
+          [
+            "Energy Mutagen (Greater)",
+            "Alchemical Item",
+            "300 gp"
+          ],
+          [
+            "Frost Vial (Greater)",
+            "Alchemical Item",
+            "250 gp"
+          ],
+          [
+            "Juggernaut Mutagen (Greater)",
+            "Alchemical Item",
+            "300 gp"
+          ],
+          [
+            "Oil of Keen Edges",
+            "Consumable",
+            "250 gp"
+          ],
+          [
+            "Oil of Repulsion",
+            "Consumable",
+            "175 gp"
+          ],
+          [
+            "Potion of Swimming (Greater)",
+            "Consumable",
+            "250 gp"
+          ],
+          [
+            "Quicksilver Mutagen (Greater)",
+            "Alchemical Item",
+            "300 gp"
+          ],
+          [
+            "Serene Mutagen (Greater)",
+            "Alchemical Item",
+            "300 gp"
+          ],
+          [
+            "Silvertongue Mutagen (Greater)",
+            "Alchemical Item",
+            "300 gp"
+          ],
+          [
+            "Spellstrike Ammunition (Type V)",
+            "Consumable",
+            "300 gp"
+          ],
+          [
+            "Tanglefoot Bag (Greater)",
+            "Alchemical Item",
+            "250 gp"
+          ],
+          [
+            "Thunderstone (Greater)",
+            "Alchemical Item",
+            "250 gp"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "11th-Level Permament Items",
+            "Category",
+            "Price"
+          ],
+          [
+            "Alchemist Goggles (Greater)",
+            "Worn Item",
+            "1,400 gp"
+          ],
+          [
+            "Anarchic",
+            "Rune",
+            "1,400 gp"
+          ],
+          [
+            "Armor Potency (+2)",
+            "Rune",
+            "1,060 gp"
+          ],
+          [
+            "Arrow-Catching Shield",
+            "Shield",
+            "1,350 gp"
+          ],
+          [
+            "Axiomatic",
+            "Rune",
+            "1,400 gp"
+          ],
+          [
+            "Bag of Holding (Type III)",
+            "Held Item",
+            "1,200 gp"
+          ],
+          [
+            "Boots of Elvenkind (Greater)",
+            "Worn Item",
+            "1,250 gp"
+          ],
+          [
+            "Cassock of Devotion",
+            "Worn Item",
+            "1,150 gp"
+          ],
+          [
+            "Cold Iron Armor (Standard-Grade)",
+            "Armor",
+            "1,200 gp"
+          ],
+          [
+            "Crafter's Eyepiece (Greater)",
+            "Worn Item",
+            "1,200 gp"
+          ],
+          [
+            "Darkwood Weapon (Standard-Grade)",
+            "Weapon",
+            "1,400 gp"
+          ],
+          [
+            "Doubling Rings (Greater)",
+            "Worn Item",
+            "1,300 gp"
+          ],
+          [
+            "Floating Shield",
+            "Shield",
+            "1,250 gp"
+          ],
+          [
+            "Goggles of Night (Greater)",
+            "Worn Item",
+            "1,250 gp"
+          ],
+          [
+            "Gorget of the Primal Roar",
+            "Worn Item",
+            "1,250 gp"
+          ],
+          [
+            "Holy",
+            "Rune",
+            "1,400 gp"
+          ],
+          [
+            "Magic Armor (+2 Resilient)",
+            "Armor",
+            "1,400 gp"
+          ],
+          [
+            "Magic Wand (5th-Level Spell)",
+            "Wand",
+            "1,500 gp"
+          ],
+          [
+            "Mithral Weapon (Standard-Grade)",
+            "Weapon",
+            "1,400 gp"
+          ],
+          [
+            "Nicklace of Fireballs IV",
+            "Worn Item",
+            "700 gp"
+          ],
+          [
+            "Oathbow",
+            "Weapon",
+            "1,300 gp"
+          ],
+          [
+            "Holy Prayer Beads (Greater)",
+            "Held Item",
+            "1,400 gp"
+          ],
+          [
+            "Ring of Manical Devices",
+            "Worn Item",
+            "1,175 gp"
+          ],
+          [
+            "Silver Armor (Standard-Grade)",
+            "Armor",
+            "1,200 gp"
+          ],
+          [
+            "Skeleton Key (Greater)",
+            "Held Item",
+            "1,250 gp"
+          ],
+          [
+            "Unholy",
+            "Rune",
+            "1,400 gp"
+          ],
+          [
+            "Wand of Continuation (4th-Level Spell)",
+            "Wand",
+            "1,500 gp"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "12th-Level Consumables",
+            "Category",
+            "Price"
+          ],
+          [
+            "Bleeding Spines Snare",
+            "Snare",
+            "320 gp"
+          ],
+          [
+            "Dragon's Breath Potion (Adult)",
+            "Consumable",
+            "400 gp"
+          ],
+          [
+            "Eye of Apprehension",
+            "Consumable",
+            "400 gp"
+          ],
+          [
+            "Fade Band",
+            "Consumable",
+            "320 gp"
+          ],
+          [
+            "Healing Potion (Greater)",
+            "Consumable",
+            "400 gp"
+          ],
+          [
+            "Iron Equalizer",
+            "Consumable",
+            "400 gp"
+          ],
+          [
+            "Oil of Animation",
+            "Consumable",
+            "330 gp"
+          ],
+          [
+            "Penetrating Ammunition",
+            "Consumable",
+            "400 gp"
+          ],
+          [
+            "Potion of Tongues",
+            "Consumable",
+            "320 gp"
+          ],
+          [
+            "Salamander Elixir (Moderate)",
+            "Alchemical Item",
+            "320 gp"
+          ],
+          [
+            "Salve of Antiparalysis (Greater)",
+            "Consumable",
+            "325 gp"
+          ],
+          [
+            "Scything Blade Snare",
+            "Snare",
+            "320 gp"
+          ],
+          [
+            "Sea Touch Elixir (Moderate)",
+            "Alchemical Item",
+            "300 gp"
+          ],
+          [
+            "Slumber Wine",
+            "Alchemical Item",
+            "325 gp"
+          ],
+          [
+            "Stone Body Mutagen (Moderate)",
+            "Alchemical Item",
+            "300 gp"
+          ],
+          [
+            "Stunning Snare",
+            "Snare",
+            "320 gp"
+          ],
+          [
+            "Winter Wolf Elixir (Moderate)",
+            "Alchemical Item",
+            "320 gp"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "12th-Level Permament Items",
+            "Category",
+            "Price"
+          ],
+          [
+            "Adamantine Armor (Standard-Grade)",
+            "Armor",
+            "1,600 gp"
+          ],
+          [
+            "Aeon Stone (Pink Rhomboid)",
+            "Worn Item",
+            "1,900 gp"
+          ],
+          [
+            "Animal Staff (Major)",
+            "Stave",
+            "1,900 gp"
+          ],
+          [
+            "Berserker's Cloak",
+            "Worn Item",
+            "2,000 gp"
+          ],
+          [
+            "Broom of Flying",
+            "Held Item",
+            "1,900 gp"
+          ],
+          [
+            "Cloak of Elvenkind (Greater)",
+            "Worn Item",
+            "1,750 gp"
+          ],
+          [
+            "Darkwood Armor (Standard-Grade)",
+            "Armor",
+            "1,600 gp"
+          ],
+          [
+            "Energy-Resistant (Greater)",
+            "Rune",
+            "1,650 gp"
+          ],
+          [
+            "Fortification",
+            "Rune",
+            "2,000 gp"
+          ],
+          [
+            "Handwraps of Mighty Blows (+2 Greater Striking)",
+            "Worn Item",
+            "2,000 gp"
+          ],
+          [
+            "Lich Phylactery",
+            "Held Item",
+            "1,600 gp"
+          ],
+          [
+            "Magic Weapon (+2 Greater Striking)",
+            "Weapon",
+            "2,000 gp"
+          ],
+          [
+            "Marvelous Medicines",
+            "Held Item",
+            "1,800 gp"
+          ],
+          [
+            "Mentalist's Staff (Major)",
+            "Stave",
+            "4,000 gp"
+          ],
+          [
+            "Mithral Armor (Standard-Grade)",
+            "Armor",
+            "1,600 gp"
+          ],
+          [
+            "Ring of Climbing",
+            "Worn Item",
+            "1,750 gp"
+          ],
+          [
+            "Ring of Swimming",
+            "Worn Item",
+            "1,750 gp"
+          ],
+          [
+            "Ring of Wizardry (Type III)",
+            "Worn Item",
+            "2,000 gp"
+          ],
+          [
+            "Staff of Fire (Major)",
+            "Stave",
+            "1,800 gp"
+          ],
+          [
+            "Staff of Healing (Major)",
+            "Stave",
+            "1,800 gp"
+          ],
+          [
+            "Striking (Greater)",
+            "Rune",
+            "1,065 gp"
+          ],
+          [
+            "Wand of Widening (5th-Level Spell)",
+            "Wand",
+            "2,000 gp"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "13th-Level Consumables",
+            "Category",
+            "Price"
+          ],
+          [
+            "Deathcap Powder",
+            "Alchemical Item",
+            "450 gp"
+          ],
+          [
+            "Elixir of Life (Greater)",
+            "Alchemical Item",
+            "600 gp"
+          ],
+          [
+            "Explosive Ammunition (Greater)",
+            "Consumable",
+            "520 gp"
+          ],
+          [
+            "Mending Lattice",
+            "Consumable",
+            "525 gp"
+          ],
+          [
+            "Panacea",
+            "Consumable",
+            "450 gp"
+          ],
+          [
+            "Purple Worm Venom",
+            "Alchemical Item",
+            "500 gp"
+          ],
+          [
+            "Spellstrike Ammunition (Type VI)",
+            "Consumable",
+            "600 gp"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "13th-Level Permament Items",
+            "Category",
+            "Price"
+          ],
+          [
+            "Aeon Stone (Pale Lavender Ellipsoid)",
+            "Worn Item",
+            "2,200 gp"
+          ],
+          [
+            "Bag of Holding (Type IV)",
+            "Held Item",
+            "2,400 gp"
+          ],
+          [
+            "Boots of Speed",
+            "Worn Item",
+            "3,000 gp"
+          ],
+          [
+            "Celestial Armor",
+            "Armor",
+            "2,500 gp"
+          ],
+          [
+            "Dancing",
+            "Rune",
+            "2,700 gp"
+          ],
+          [
+            "Demon Armor",
+            "Armor",
+            "2,500 gp"
+          ],
+          [
+            "Dwarven Thrower",
+            "Weapon",
+            "2,750 gp"
+          ],
+          [
+            "Elven Chain (Standard-Grade)",
+            "Armor",
+            "2,500 gp"
+          ],
+          [
+            "Eye of Fortune",
+            "Worn Item",
+            "2,700 gp"
+          ],
+          [
+            "Flame Tongue",
+            "Weapon",
+            "2,800 gp"
+          ],
+          [
+            "Keen",
+            "Rune",
+            "3,000 gp"
+          ],
+          [
+            "Knapsack of Halflingkind (Greater)",
+            "Worn Item",
+            "2,850 gp"
+          ],
+          [
+            "Magic Wand (6th-Level Spell)",
+            "Wand",
+            "3,000 gp"
+          ],
+          [
+            "Mail of Luck",
+            "Armor",
+            "2,600 gp"
+          ],
+          [
+            "Nicklace of Fireballs V",
+            "Worn Item",
+            "1,600 gp"
+          ],
+          [
+            "Ring of the Ram (Greater)",
+            "Worn Item",
+            "2,700 gp"
+          ],
+          [
+            "Spell-Storing",
+            "Rune",
+            "2,700 gp"
+          ],
+          [
+            "Sturdy Shield (Greater)",
+            "Shield",
+            "3,000 gp"
+          ],
+          [
+            "Wand of Continuation (5th-Level Spell)",
+            "Wand",
+            "3,000 gp"
+          ],
+          [
+            "Wand of Manifold Missiles (5th-Level Spell)",
+            "Wand",
+            "3,000 gp"
+          ],
+          [
+            "Wondrous Figurine (Marble Elephant)",
+            "Held Item",
+            "2,700 gp"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "14th-Level Consumables",
+            "Category",
+            "Price"
+          ],
+          [
+            "Antidote (Major)",
+            "Alchemical Item",
+            "675 gp"
+          ],
+          [
+            "Antiplague (Major)",
+            "Alchemical Item",
+            "675 gp"
+          ],
+          [
+            "Bomber's Eye Elixir (Greater)",
+            "Alchemical Item",
+            "700 gp"
+          ],
+          [
+            "Dazing Coil",
+            "Consumable",
+            "900 gp"
+          ],
+          [
+            "Iron Cudgel",
+            "Consumable",
+            "900 gp"
+          ],
+          [
+            "Potion of Resistance (Greater)",
+            "Consumable",
+            "850 gp"
+          ],
+          [
+            "Viper's Fang",
+            "Consumable",
+            "850 gp"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "14th-Level Permament Items",
+            "Category",
+            "Price"
+          ],
+          [
+            "Boots of Bounding (Greater)",
+            "Worn Item",
+            "4,250 gp"
+          ],
+          [
+            "Bracers of Armor II",
+            "Worn Item",
+            "4,000 gp"
+          ],
+          [
+            "Crystal Ball (Clear Quartz)",
+            "Held Item",
+            "3,800 gp"
+          ],
+          [
+            "Disrupting (Greater)",
+            "Rune",
+            "4,300 gp"
+          ],
+          [
+            "Ghost Ammunition",
+            "Consumable",
+            "900 gp"
+          ],
+          [
+            "Holy Avenger",
+            "Weapon",
+            "4,500 gp"
+          ],
+          [
+            "Horseshoes of Speed (Greater)",
+            "Worn Item",
+            "4,250 gp"
+          ],
+          [
+            "Magic Armor (+2 Greater Resilient)",
+            "Armor",
+            "4,500 gp"
+          ],
+          [
+            "Primeval Mistletoe (Greater)",
+            "Held Item",
+            "3,900 gp"
+          ],
+          [
+            "Resilient (Greater)",
+            "Rune",
+            "3,440 gp"
+          ],
+          [
+            "Ring of Wizardry (Type IV)",
+            "Worn Item",
+            "4,500 gp"
+          ],
+          [
+            "Rod of Negation",
+            "Held Item",
+            "4,300 gp"
+          ],
+          [
+            "Staff of Abjuration (Major)",
+            "Stave",
+            "4,000 gp"
+          ],
+          [
+            "Staff of Conjuration (Major)",
+            "Stave",
+            "4,000 gp"
+          ],
+          [
+            "Staff of Divination (Major)",
+            "Stave",
+            "4,000 gp"
+          ],
+          [
+            "Staff of Enchantment (Major)",
+            "Stave",
+            "4,000 gp"
+          ],
+          [
+            "Staff of Evocation (Major)",
+            "Stave",
+            "4,000 gp"
+          ],
+          [
+            "Staff of Illusion (Major)",
+            "Stave",
+            "4,000 gp"
+          ],
+          [
+            "Staff of Necromancy (Major)",
+            "Stave",
+            "4,000 gp"
+          ],
+          [
+            "Staff of Transmutation (Major)",
+            "Stave",
+            "4,000 gp"
+          ],
+          [
+            "Storm Flash",
+            "Weapon",
+            "4,000 gp"
+          ],
+          [
+            "Wand of Widening (6th-Level Spell)",
+            "Wand",
+            "4,500 gp"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "15th-Level Consumables",
+            "Category",
+            "Price"
+          ],
+          [
+            "Bravo's Brew (Greater)",
+            "Alchemical Item",
+            "700 gp"
+          ],
+          [
+            "Disintegration Bolt",
+            "Consumable",
+            "1,300 gp"
+          ],
+          [
+            "Dragon Bile",
+            "Alchemical Item",
+            "925 gp"
+          ],
+          [
+            "Elixir of Life (Major)",
+            "Alchemical Item",
+            "1,300 gp"
+          ],
+          [
+            "Mindfog Mist",
+            "Alchemical Item",
+            "1,000 gp"
+          ],
+          [
+            "Obfuscation Oil",
+            "Consumable",
+            "1,200 gp"
+          ],
+          [
+            "Potion of Flying (Greater)",
+            "Consumable",
+            "1,000 gp"
+          ],
+          [
+            "Sea Touch Elixir (Greater)",
+            "Alchemical Item",
+            "920 gp"
+          ],
+          [
+            "Spellstrike Ammunition (Type VII)",
+            "Consumable",
+            "1,300 gp"
+          ],
+          [
+            "Stone Body Mutagen (Greater)",
+            "Alchemical Item",
+            "920 gp"
+          ],
+          [
+            "Stone Bullet",
+            "Consumable",
+            "1,300 gp"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "15th-Level Permament Items",
+            "Category",
+            "Price"
+          ],
+          [
+            "Antimagic",
+            "Rune",
+            "6,500 gp"
+          ],
+          [
+            "Cold Iron Object (High-Grade)",
+            "Material",
+            "4,500 gp"
+          ],
+          [
+            "Cold Iron Buckler (High-Grade)",
+            "Shield",
+            "5,000 gp"
+          ],
+          [
+            "Cold Iron Shield (High-Grade)",
+            "Shield",
+            "5,500 gp"
+          ],
+          [
+            "Corrosive (Greater)",
+            "Rune",
+            "6,500 gp"
+          ],
+          [
+            "Crystal Ball (Selenite)",
+            "Held Item",
+            "7,000 gp"
+          ],
+          [
+            "Demilich Eye Gem",
+            "Held Item",
+            "3,000 gp"
+          ],
+          [
+            "Flaming (Greater)",
+            "Rune",
+            "6,500 gp"
+          ],
+          [
+            "Frost (Greater)",
+            "Rune",
+            "6,500 gp"
+          ],
+          [
+            "Magic Wand (7th-Level Spell)",
+            "Wand",
+            "6,500 gp"
+          ],
+          [
+            "Nicklace of Fireballs VI",
+            "Worn Item",
+            "4,200 gp"
+          ],
+          [
+            "Plate Armor of the Deep",
+            "Armor",
+            "6,500 gp"
+          ],
+          [
+            "Robe of the Archmagi",
+            "Worn Item",
+            "6,500 gp"
+          ],
+          [
+            "Shock (Greater)",
+            "Rune",
+            "6,500 gp"
+          ],
+          [
+            "Silver Object (High-Grade)",
+            "Material",
+            "4,500 gp"
+          ],
+          [
+            "Silver Buckler (High-Grade)",
+            "Shield",
+            "5,000 gp"
+          ],
+          [
+            "Silver Shield (High-Grade)",
+            "Shield",
+            "5,500 gp"
+          ],
+          [
+            "Thundering (Greater)",
+            "Rune",
+            "6,500 gp"
+          ],
+          [
+            "Wand of Continuation (6th-Level Spell)",
+            "Wand",
+            "6,500 gp"
+          ],
+          [
+            "Wondrous Figurine (Obsidian Steed)",
+            "Held Item",
+            "6,000 gp"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "16th-Level Consumables",
+            "Category",
+            "Price"
+          ],
+          [
+            "Brimstone Fumes",
+            "Alchemical Item",
+            "1,500 gp"
+          ],
+          [
+            "Eagle Eye Elixir (Major)",
+            "Alchemical Item",
+            "2,000 gp"
+          ],
+          [
+            "Flame Navette",
+            "Consumable",
+            "1,800 gp"
+          ],
+          [
+            "Ghost Dust",
+            "Consumable",
+            "1,800 gp"
+          ],
+          [
+            "Hail of Arrows Snare",
+            "Snare",
+            "1,500 gp"
+          ],
+          [
+            "Nightmare Vapor",
+            "Alchemical Item",
+            "1,400 gp"
+          ],
+          [
+            "Omnidirectional Spear Snare",
+            "Snare",
+            "1,500 gp"
+          ],
+          [
+            "Salamander Elixir (Greater)",
+            "Alchemical Item",
+            "1,400 gp"
+          ],
+          [
+            "Truesight Potion",
+            "Consumable",
+            "1,500 gp"
+          ],
+          [
+            "Winter Wolf Elixir (Greater)",
+            "Alchemical Item",
+            "1,400 gp"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "16th-Level Permament Items",
+            "Category",
+            "Price"
+          ],
+          [
+            "Adamantine Object (High-Grade)",
+            "Material",
+            "6,000 gp"
+          ],
+          [
+            "Adamantine Buckler (High-Grade)",
+            "Shield",
+            "8,000 gp"
+          ],
+          [
+            "Adamantine Shield (High-Grade)",
+            "Shield",
+            "8,800 gp"
+          ],
+          [
+            "Aeon Stone (Orange Prism)",
+            "Worn Item",
+            "9,750 gp"
+          ],
+          [
+            "Cold Iron Weapon (High-Grade)",
+            "Weapon",
+            "9,000 gp"
+          ],
+          [
+            "Crystal Ball (Moonstone)",
+            "Held Item",
+            "7,500 gp"
+          ],
+          [
+            "Darkwood Object (High-Grade)",
+            "Material",
+            "6,000 gp"
+          ],
+          [
+            "Darkwood Buckler (High-Grade)",
+            "Shield",
+            "8,000 gp"
+          ],
+          [
+            "Darkwood Shield (High-Grade)",
+            "Shield",
+            "8,800 gp"
+          ],
+          [
+            "Darkwood Tower Shield (High-Grade)",
+            "Shield",
+            "11,200 gp"
+          ],
+          [
+            "Dragonhide Object (High-Grade)",
+            "Material",
+            "6,000 gp"
+          ],
+          [
+            "Dragonhide Buckler (High-Grade)",
+            "Shield",
+            "8,000 gp"
+          ],
+          [
+            "Dragonhide Shield (High-Grade)",
+            "Shield",
+            "8,800 gp"
+          ],
+          [
+            "Dragonplate",
+            "Armor",
+            "1,000 gp"
+          ],
+          [
+            "Floating Shield (Greater)",
+            "Shield",
+            "9,000 gp"
+          ],
+          [
+            "Frost Brand",
+            "Weapon",
+            "10,000 gp"
+          ],
+          [
+            "Handwraps of Mighty Blows (+3 Greater Striking)",
+            "Worn Item",
+            "10,000 gp"
+          ],
+          [
+            "Instant Fortress",
+            "Structure",
+            "9,300 gp"
+          ],
+          [
+            "Magic Weapon (+3 Greater Striking)",
+            "Weapon",
+            "10,000 gp"
+          ],
+          [
+            "Mithral Object (High-Grade)",
+            "Material",
+            "6,000 gp"
+          ],
+          [
+            "Mithral Buckler (High-Grade)",
+            "Shield",
+            "8,000 gp"
+          ],
+          [
+            "Mithral Shield (High-Grade)",
+            "Shield",
+            "8,800 gp"
+          ],
+          [
+            "Silver Weapon (High-Grade)",
+            "Weapon",
+            "9,000 gp"
+          ],
+          [
+            "Slick (Major)",
+            "Rune",
+            "9,000 gp"
+          ],
+          [
+            "Speed",
+            "Rune",
+            "10,000 gp"
+          ],
+          [
+            "Staff of Healing (True)",
+            "Stave",
+            "9,200 gp"
+          ],
+          [
+            "Staff of Power",
+            "Stave",
+            "10,000 gp"
+          ],
+          [
+            "Sturdy Shield (Major)",
+            "Shield",
+            "10,000 gp"
+          ],
+          [
+            "Wand of Slaying (7th-Level Spell)",
+            "Wand",
+            "10,000 gp"
+          ],
+          [
+            "Wand of Widening (7th-Level Spell)",
+            "Wand",
+            "10,000 gp"
+          ],
+          [
+            "Weapon Potency (+3)",
+            "Rune",
+            "8,935 gp"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "17th-Level Consumables",
+            "Category",
+            "Price"
+          ],
+          [
+            "Acid Flask (Major)",
+            "Alchemical Item",
+            "2,500 gp"
+          ],
+          [
+            "Alchemist's Fire (Major)",
+            "Alchemical Item",
+            "2,500 gp"
+          ],
+          [
+            "Bestial Mutagen (Major)",
+            "Alchemical Item",
+            "3,000 gp"
+          ],
+          [
+            "Bottled Lightning (Major)",
+            "Alchemical Item",
+            "2,500 gp"
+          ],
+          [
+            "Cognative Mutagen (Major)",
+            "Alchemical Item",
+            "3,000 gp"
+          ],
+          [
+            "Dispelling Sliver",
+            "Consumable",
+            "2,400 gp"
+          ],
+          [
+            "Dragon's Breath Potion (Wyrm)",
+            "Consumable",
+            "3,000 gp"
+          ],
+          [
+            "Energy Mutagen (Major)",
+            "Alchemical Item",
+            "3,000 gp"
+          ],
+          [
+            "Frost Vial (Major)",
+            "Alchemical Item",
+            "2,500 gp"
+          ],
+          [
+            "Hemlock",
+            "Alchemical Item",
+            "2,250 gp"
+          ],
+          [
+            "Juggernaut Mutagen (Major)",
+            "Alchemical Item",
+            "3,000 gp"
+          ],
+          [
+            "Quicksilver Mutagen (Major)",
+            "Alchemical Item",
+            "3,000 gp"
+          ],
+          [
+            "Serene Mutagen (Major)",
+            "Alchemical Item",
+            "3,000 gp"
+          ],
+          [
+            "Silvertongue Mutagen (Major)",
+            "Alchemical Item",
+            "3,000 gp"
+          ],
+          [
+            "Spellstrike Ammunition (Type VIII)",
+            "Consumable",
+            "3,000 gp"
+          ],
+          [
+            "Tanglefoot Bag (Major)",
+            "Alchemical Item",
+            "2,500 gp"
+          ],
+          [
+            "Thunderstone (Major)",
+            "Alchemical Item",
+            "2,500 gp"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "17th-Level Permament Items",
+            "Category",
+            "Price"
+          ],
+          [
+            "Adamantine Weapon (High-Grade)",
+            "Weapon",
+            "13,500 gp"
+          ],
+          [
+            "Alchemist Goggles (Major)",
+            "Worn Item",
+            "15,000 gp"
+          ],
+          [
+            "Anklets of Alacrity",
+            "Worn Item",
+            "15,000 gp"
+          ],
+          [
+            "Armbands of Athleticism (Greater)",
+            "Worn Item",
+            "13,000 gp"
+          ],
+          [
+            "Belt of Giant Strength",
+            "Worn Item",
+            "15,000 gp"
+          ],
+          [
+            "Belt of Regeneration",
+            "Worn Item",
+            "15,000 gp"
+          ],
+          [
+            "Circlet of Persuasion",
+            "Worn Item",
+            "15,000 gp"
+          ],
+          [
+            "Cloak of the Bat (Greater)",
+            "Worn Item",
+            "13,000 gp"
+          ],
+          [
+            "Crystal Ball (Peridot)",
+            "Held Item",
+            "12,500 gp"
+          ],
+          [
+            "Daredevil Boots (Greater)",
+            "Worn Item",
+            "14,000 gp"
+          ],
+          [
+            "Darkwood Weapon (High-Grade)",
+            "Weapon",
+            "13,500 gp"
+          ],
+          [
+            "Diadem of Intellect",
+            "Worn Item",
+            "15,000 gp"
+          ],
+          [
+            "Dread Blindfold",
+            "Worn Item",
+            "15,000 gp"
+          ],
+          [
+            "Ethereal",
+            "Rune",
+            "13,500 gp"
+          ],
+          [
+            "Flame Tongue (Greater)",
+            "Weapon",
+            "13,800 gp"
+          ],
+          [
+            "Headband of Inspired Wisdom",
+            "Worn Item",
+            "15,000 gp"
+          ],
+          [
+            "Impenetrable Scale",
+            "Armor",
+            "12,800 gp"
+          ],
+          [
+            "Lock (Superior)",
+            "Adventuring Gear",
+            "4,500 gp"
+          ],
+          [
+            "Luck Blade",
+            "Weapon",
+            "15,000 gp"
+          ],
+          [
+            "Magic Wand (8th-Level Spell)",
+            "Wand",
+            "15,000 gp"
+          ],
+          [
+            "Manacles (Superior)",
+            "Adventuring Gear",
+            "5,000 gp"
+          ],
+          [
+            "Messenger's Ring (Greater)",
+            "Worn Item",
+            "13,500 gp"
+          ],
+          [
+            "Mithral Weapon (High-Grade)",
+            "Weapon",
+            "13,500 gp"
+          ],
+          [
+            "Nicklace of Fireballs VII",
+            "Worn Item",
+            "9,600 gp"
+          ],
+          [
+            "Orichalcum Object (High-Grade)",
+            "Material",
+            "1,000 gp"
+          ],
+          [
+            "Orichalcum Buckler (High-Grade)",
+            "Shield",
+            "12,000 gp"
+          ],
+          [
+            "Orichalcum Shield (High-Grade)",
+            "Shield",
+            "13,200 gp"
+          ],
+          [
+            "Phylactery of Faithfulness (Greater)",
+            "Worn Item",
+            "13,000 gp"
+          ],
+          [
+            "Robe of Eyes",
+            "Worn Item",
+            "13,000 gp"
+          ],
+          [
+            "Shadow (Major)",
+            "Rune",
+            "14,000 gp"
+          ],
+          [
+            "Vorpal",
+            "Rune",
+            "15,000 gp"
+          ],
+          [
+            "Voyager's Pack",
+            "Worn Item",
+            "14,800 gp"
+          ],
+          [
+            "Wand of Continuation (7th-Level Spell)",
+            "Wand",
+            "15,000 gp"
+          ],
+          [
+            "Wand of Manifold Missiles (7th-Level Spell)",
+            "Wand",
+            "15,000 gp"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "18th-Level Consumables",
+            "Category",
+            "Price"
+          ],
+          [
+            "Healing Potion (Major)",
+            "Consumable",
+            "5,000 gp"
+          ],
+          [
+            "King's Sleep",
+            "Alchemical Item",
+            "4,000 gp"
+          ],
+          [
+            "Potion of Undetectability",
+            "Consumable",
+            "4,400 gp"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "18th-Level Permament Items",
+            "Category",
+            "Price"
+          ],
+          [
+            "Armor Potency (+3)",
+            "Rune",
+            "20,560 gp"
+          ],
+          [
+            "Breastplate of Command (Greater)",
+            "Armor",
+            "22,000 gp"
+          ],
+          [
+            "Cold Iron Armor (High-Grade)",
+            "Armor",
+            "20,000 gp"
+          ],
+          [
+            "Fortification (Greater)",
+            "Rune",
+            "24,000 gp"
+          ],
+          [
+            "Goggles of Night (Major)",
+            "Worn Item",
+            "20,000 gp"
+          ],
+          [
+            "Indestructible Shield",
+            "Shield",
+            "24,000 gp"
+          ],
+          [
+            "Inexplicable Apparatus",
+            "Worn Item",
+            "19,000 gp"
+          ],
+          [
+            "Maestro's Instrument (Greater",
+            "Held Item",
+            "19,000 gp"
+          ],
+          [
+            "Magic Armor (+3 Greater Resilient)",
+            "Armor",
+            "24,000 gp"
+          ],
+          [
+            "Marvelous Medicines (Greater)",
+            "Held Item",
+            "19,000 gp"
+          ],
+          [
+            "Orichalcum Weapon (High-Grade)",
+            "Weapon",
+            "22,500 gp"
+          ],
+          [
+            "Possibility Tome",
+            "Held Item",
+            "22,000 gp"
+          ],
+          [
+            "Reflecting Shield",
+            "Shield",
+            "18,000 gp"
+          ],
+          [
+            "Ring of Manical Devices (Greater)",
+            "Worn Item",
+            "4,250 gp"
+          ],
+          [
+            "Silver Armor (High-Grade)",
+            "Armor",
+            "20,000 gp"
+          ],
+          [
+            "Storm Flash (Greater)",
+            "Weapon",
+            "21,000 gp"
+          ],
+          [
+            "Thurible of Revelation (Greater)",
+            "Held Item",
+            "19,000 gp"
+          ],
+          [
+            "Wand of Slaying (8th-Level Spell)",
+            "Wand",
+            "24,000 gp"
+          ],
+          [
+            "Wand of Widening (8th-Level Spell)",
+            "Wand",
+            "24,000 gp"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "19th-Level Consumables",
+            "Category",
+            "Price"
+          ],
+          [
+            "Black Lotus Extract",
+            "Alchemical Item",
+            "6,500 gp"
+          ],
+          [
+            "Elixir of Life (True)",
+            "Alchemical Item",
+            "3,000 gp"
+          ],
+          [
+            "Spellstrike Ammunition (Type IX)",
+            "Consumable",
+            "8,000 gp"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "19th-Level Permament Items",
+            "Category",
+            "Price"
+          ],
+          [
+            "Adamantine Armor (High-Grade)",
+            "Armor",
+            "32,000 gp"
+          ],
+          [
+            "Aeon Stone (Lavender and Green Ellipsoid)",
+            "Worn Item",
+            "30,000 gp"
+          ],
+          [
+            "Berserker's Cloak (Greater)",
+            "Worn Item",
+            "40,000 gp"
+          ],
+          [
+            "Crystal Ball (Obsidian)",
+            "Held Item",
+            "32,000 gp"
+          ],
+          [
+            "Darkwood Armor (High-Grade)",
+            "Armor",
+            "32,000 gp"
+          ],
+          [
+            "Handwraps of Mighty Blows (+3 Major Striking)",
+            "Worn Item",
+            "40,000 gp"
+          ],
+          [
+            "Luck Blade (Wishing)",
+            "Weapon",
+            "30,000 gp"
+          ],
+          [
+            "Magic Wand (9th-Level Spell)",
+            "Wand",
+            "40,000 gp"
+          ],
+          [
+            "Magic Weapon (+3 Major Striking)",
+            "Weapon",
+            "40,000 gp"
+          ],
+          [
+            "Mattock of the Titans",
+            "Weapon",
+            "36,000 gp"
+          ],
+          [
+            "Mithral Armor (High-Grade)",
+            "Armor",
+            "32,000 gp"
+          ],
+          [
+            "Robe of the Archmagi (Greater)",
+            "Worn Item",
+            "32,000 gp"
+          ],
+          [
+            "Striking (Major)",
+            "Rune",
+            "31,065 gp"
+          ],
+          [
+            "Sturdy Shield (Supreme)",
+            "Shield",
+            "40,000 gp"
+          ],
+          [
+            "Third Eye",
+            "Worn Item",
+            "40,000 gp"
+          ],
+          [
+            "Wand of Continuation (8th-Level Spell)",
+            "Wand",
+            "40,000 gp"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "20th-Level Consumables",
+            "Category",
+            "Price"
+          ],
+          [
+            "Antimagic Oil",
+            "Consumable",
+            "13,000 gp"
+          ],
+          [
+            "Elixir of Rejuvenation",
+            "Alchemical Item",
+            ""
+          ],
+          [
+            "Flying Blade Wheel Snare",
+            "Snare",
+            "10,000 gp"
+          ],
+          [
+            "Instant Evisceration Snare",
+            "Snare",
+            "10,000 gp"
+          ],
+          [
+            "Philosopher's Stone",
+            "Alchemical Item",
+            ""
+          ],
+          [
+            "Tears of Death",
+            "Alchemical Item",
+            "12,000 gp"
+          ]
+        ]
+      },
+      {
+        "rows": [
+          [
+            "20th-Level Permament Items",
+            "Category",
+            "Price"
+          ],
+          [
+            "Bracers of Armor III",
+            "Worn Item",
+            "60,000 gp"
+          ],
+          [
+            "Elven Chain (High-Grade)",
+            "Armor",
+            "52,000 gp"
+          ],
+          [
+            "Magic Armor (+3 Major Resilient)",
+            "Armor",
+            "70,000 gp"
+          ],
+          [
+            "Orichalcum Armor (High-Grade)",
+            "Armor",
+            "55,000 gp"
+          ],
+          [
+            "Resilient (Major)",
+            "Rune",
+            "49,440 gp"
+          ],
+          [
+            "Ring of Spell Turning",
+            "Worn Item",
+            "67,000 gp"
+          ],
+          [
+            "Sky Hammer",
+            "Weapon",
+            "70,000 gp"
+          ],
+          [
+            "Staff of the Magi",
+            "Stave",
+            "90,000 gp"
+          ],
+          [
+            "Wand of Slaying (9th-Level Spell)",
+            "Wand",
+            "70,000 gp"
+          ],
+          [
+            "Wand of Widening (9th-Level Spell)",
+            "Wand",
+            "70,000 gp"
+          ],
+          [
+            "Whisper of the First Lie",
+            "Worn Item",
+            "60,000 gp"
+          ]
+        ]
+      }
+    ]
+  }
+}

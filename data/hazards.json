@@ -1,0 +1,2072 @@
+{
+  "Hidden Pit": {
+    "tags": [
+      "Mechanical",
+      "Trap"
+    ],
+    "information": [
+      {
+        "label": "Source",
+        "description": "Core Rulebook pg. 522"
+      },
+      {
+        "label": "Complexity",
+        "description": "Simple"
+      },
+      {
+        "label": "Stealth",
+        "description": "DC 18 (or 0 if the trapdoor is disabled or broken)"
+      },
+      {
+        "label": "Description",
+        "description": "A wooden trapdoor covers a pit that’s 10 feet square and 20 feet deep."
+      }
+    ],
+    "effects": [
+      {
+        "label": "Disable",
+        "description": "Thievery DC 12 to remove the trapdoor"
+      },
+      {
+        "label": "AC",
+        "description": "10,"
+      },
+      {
+        "label": "Fort",
+        "description": "+1,"
+      },
+      {
+        "label": "Ref",
+        "description": "+1"
+      },
+      {
+        "label": "Trapdoor Hardness",
+        "description": "3,"
+      },
+      {
+        "label": "Trapdoor HP",
+        "description": "12 (BT 6);"
+      },
+      {
+        "label": "Immunities",
+        "description": "critical hits, object immunities, precision damage"
+      },
+      {
+        "label": "Pitfall"
+      },
+      {
+        "label": "Trigger",
+        "description": "A creature walks onto the trapdoor."
+      },
+      {
+        "label": "Effect",
+        "description": "The triggering creature falls in and takes falling damage (typically 10 bludgeoning damage). That creature can use the Grab an Edge reaction to avoid falling."
+      },
+      {
+        "label": "Reset",
+        "description": "Creatures can still fall into the trap, but the trapdoor must be reset manually for the trap to become hidden again."
+      }
+    ],
+    "name": "Hidden Pit",
+    "level": "0"
+  },
+  "Poisoned Lock": {
+    "tags": [
+      "Mechanical",
+      "Trap"
+    ],
+    "information": [
+      {
+        "label": "Source",
+        "description": "Core Rulebook pg. 523"
+      },
+      {
+        "label": "Complexity",
+        "description": "Simple"
+      },
+      {
+        "label": "Stealth",
+        "description": "DC 17 (trained)"
+      },
+      {
+        "label": "Description",
+        "description": "A spring-loaded, poisoned spine is hidden near the keyhole of a lock. Disabling or breaking the trap does not disable or break the lock."
+      }
+    ],
+    "effects": [
+      {
+        "label": "Disable",
+        "description": "Thievery DC 17 (trained) on the spring mechanism"
+      },
+      {
+        "label": "AC",
+        "description": "15,"
+      },
+      {
+        "label": "Fort",
+        "description": "+8,"
+      },
+      {
+        "label": "Ref",
+        "description": "+4"
+      },
+      {
+        "label": "Hardness",
+        "description": "6,"
+      },
+      {
+        "label": "HP",
+        "description": "24 (BT 12);"
+      },
+      {
+        "label": "Immunities",
+        "description": "critical hits, object immunities, precision damage"
+      },
+      {
+        "label": "Spring",
+        "description": "(attack);"
+      },
+      {
+        "label": "Trigger",
+        "description": "A creature tries to unlock or Pick the Lock."
+      },
+      {
+        "label": "Effect",
+        "description": "A spine extends to attack the triggering creature."
+      },
+      {
+        "label": "Melee",
+        "description": "spine +13,"
+      },
+      {
+        "label": "Damage",
+        "description": "1 piercing plus cladis poison"
+      },
+      {
+        "label": "Cladis Poison",
+        "description": "(poison);"
+      },
+      {
+        "label": "Saving Throw",
+        "description": "DC 19 Fortitude;"
+      },
+      {
+        "label": "Maximum Duration",
+        "description": "4 hours;"
+      },
+      {
+        "label": "Stage 1",
+        "description": "1d6 poison damage and drained 1 (1 hour);"
+      },
+      {
+        "label": "Stage 2",
+        "description": "2d6 poison damage and drained 2 (1 hour);"
+      },
+      {
+        "label": "Stage 3",
+        "description": "3d6 poison damage and drained 2 (1 hour)"
+      }
+    ],
+    "name": "Poisoned Lock",
+    "level": "1"
+  },
+  "Slamming Door": {
+    "tags": [
+      "Mechanical",
+      "Trap"
+    ],
+    "information": [
+      {
+        "label": "Source",
+        "description": "Core Rulebook pg. 523"
+      },
+      {
+        "label": "Complexity",
+        "description": "Simple"
+      },
+      {
+        "label": "Stealth",
+        "description": "DC 17 (trained)"
+      },
+      {
+        "label": "Description",
+        "description": "Pressure-sensitive panels in the floor connect to a stone slab hidden in a hallway’s ceiling."
+      }
+    ],
+    "effects": [
+      {
+        "label": "Disable",
+        "description": "Thievery DC 18 (trained) on the floor tile or wall socket"
+      },
+      {
+        "label": "AC",
+        "description": "16,"
+      },
+      {
+        "label": "Fort",
+        "description": "+10,"
+      },
+      {
+        "label": "Ref",
+        "description": "+2"
+      },
+      {
+        "label": "Hardness",
+        "description": "5,"
+      },
+      {
+        "label": "HP",
+        "description": "20 (BT 10);"
+      },
+      {
+        "label": "Immunities",
+        "description": "critical hits, object immunities, precision damage"
+      },
+      {
+        "label": "Slam Shut"
+      },
+      {
+        "label": "Trigger",
+        "description": "Pressure is placed on any floor tile."
+      },
+      {
+        "label": "Effect",
+        "description": "The door falls, closing off the hallway. The stone slab deals 3d8 bludgeoning damage to anyone beneath or adjacent to the slab when it drops and pushes them out of its space in a random direction. A creature that succeeds at a DC 17 Reflex save takes no damage and rolls out of the way in a random direction. On a critical success, they can choose the direction. Lifting the fallen slab requires a successful DC 25 Athletics check. Hitting the floor panels triggers the trap. The slab uses the same AC and saves as the trap, but it has Hardness 12, HP 48 (BT 24)."
+      }
+    ],
+    "name": "Slamming Door",
+    "level": "1"
+  },
+  "Spear Launcher": {
+    "tags": [
+      "Mechanical",
+      "Trap"
+    ],
+    "information": [
+      {
+        "label": "Source",
+        "description": "Core Rulebook pg. 523"
+      },
+      {
+        "label": "Complexity",
+        "description": "Simple"
+      },
+      {
+        "label": "Stealth",
+        "description": "DC 20 (trained)"
+      },
+      {
+        "label": "Description",
+        "description": "A wall socket loaded with a spear connects to a floor tile in one 5-foot square."
+      }
+    ],
+    "effects": [
+      {
+        "label": "Disable",
+        "description": "Thievery DC 18 (trained) on the floor tile or wall socket"
+      },
+      {
+        "label": "AC",
+        "description": "18,"
+      },
+      {
+        "label": "Fort",
+        "description": "+11,"
+      },
+      {
+        "label": "Ref",
+        "description": "+3"
+      },
+      {
+        "label": "Hardness",
+        "description": "8,"
+      },
+      {
+        "label": "HP",
+        "description": "32 (BT 16);"
+      },
+      {
+        "label": "Immunities",
+        "description": "critical hits, object immunities, precision damage"
+      },
+      {
+        "label": "Spear",
+        "description": "(attack);"
+      },
+      {
+        "label": "Trigger",
+        "description": "Pressure is applied to the floor tile."
+      },
+      {
+        "label": "Effect",
+        "description": "The trap shoots a spear, making an attack against the creature or object on the floor tile."
+      },
+      {
+        "label": "Ranged",
+        "description": "spear +14,"
+      },
+      {
+        "label": "Damage",
+        "description": "2d6+6 piercing"
+      }
+    ],
+    "name": "Spear Launcher",
+    "level": "2"
+  },
+  "Web Lurker Noose": {
+    "tags": [
+      "Mechanical",
+      "Trap"
+    ],
+    "information": [
+      {
+        "label": "Source",
+        "description": "Bestiary pg. 325"
+      },
+      {
+        "label": "Complexity",
+        "description": "Simple"
+      },
+      {
+        "label": "Stealth",
+        "description": "DC 22"
+      },
+      {
+        "label": "Description",
+        "description": "Discreet webbing at throat level snags a creature that walks into it."
+      }
+    ],
+    "effects": [
+      {
+        "label": "Disable",
+        "description": "Survival (trained) or Thievery (expert) DC 18 to rearrange the webbing"
+      },
+      {
+        "label": "AC",
+        "description": "18,"
+      },
+      {
+        "label": "Fort",
+        "description": "+11,"
+      },
+      {
+        "label": "Ref",
+        "description": "+5"
+      },
+      {
+        "label": "Web Noose",
+        "description": "( attack ); Trigger A creature steps into the square with the web tripwire. Effect The web lurker noose makes a noose Strike against the triggering creature."
+      },
+      {
+        "label": "Melee",
+        "description": "noose +13 ( deadly d10 ),"
+      },
+      {
+        "label": "Damage",
+        "description": "3d6 bludgeoning and the target is grabbed and pulled off the ground (Escape DC 22). The target takes 1d6 bludgeoning damage at the end of each of its turns as long as it’s caught in the noose."
+      }
+    ],
+    "name": "Web Lurker Noose",
+    "level": "2"
+  },
+  "Electric Latch Rune": {
+    "tags": [
+      "Electricity",
+      "Evocation",
+      "Magical",
+      "Trap"
+    ],
+    "information": [
+      {
+        "label": "Source",
+        "description": "Core Rulebook pg. 523"
+      },
+      {
+        "label": "Complexity",
+        "description": "Simple"
+      },
+      {
+        "label": "Stealth",
+        "description": "DC 20 (trained)"
+      },
+      {
+        "label": "Description",
+        "description": "A wall socket loaded with a spear connects to a floor tile in one 5-foot square."
+      }
+    ],
+    "effects": [
+      {
+        "label": "Disable",
+        "description": "Thievery DC 20 (expert) to scratch out the rune without allowing electricity to flow, or dispel magic (2nd level; counteract DC 18) to counteract the rune"
+      },
+      {
+        "label": "Electrocution"
+      },
+      {
+        "label": "Trigger",
+        "description": "A creature grasps the door latch directly or with a tool."
+      },
+      {
+        "label": "Effect",
+        "description": "The trap deals 3d12 electricity damage to the triggering creature (DC 22 basic Reflex save)."
+      }
+    ],
+    "name": "Electric Latch Rune",
+    "level": "3"
+  },
+  "Web Lurker Deadfall": {
+    "tags": [
+      "Mechanical",
+      "Trap"
+    ],
+    "information": [
+      {
+        "label": "Source",
+        "description": "Bestiary pg. 325"
+      },
+      {
+        "label": "Complexity",
+        "description": "Simple"
+      },
+      {
+        "label": "Stealth",
+        "description": "DC 23"
+      },
+      {
+        "label": "Description",
+        "description": "A web tripwire lets loose a bundle of boulders that fall on all targets within a 10-foot square."
+      }
+    ],
+    "effects": [
+      {
+        "label": "Disable",
+        "description": "Survival (trained) or Thievery (expert) DC 20 to rearrange the webbing"
+      },
+      {
+        "label": "AC",
+        "description": "19,"
+      },
+      {
+        "label": "Fort",
+        "description": "+9,"
+      },
+      {
+        "label": "Ref",
+        "description": "+9"
+      },
+      {
+        "label": "Deadfall"
+      },
+      {
+        "label": "Trigger",
+        "description": "A creature steps into the square with the web tripwire."
+      },
+      {
+        "label": "Effect",
+        "description": "All creatures in the trap’s 10-foot square take 2d6 bludgeoning damage (DC 20 basic Reflex save)."
+      }
+    ],
+    "name": "Web Lurker Deadfall",
+    "level": "3"
+  },
+  "Scythe Blades": {
+    "tags": [
+      "Mechanical",
+      "Trap"
+    ],
+    "information": [
+      {
+        "label": "Source",
+        "description": "Core Rulebook pg. 523"
+      },
+      {
+        "label": "Complexity",
+        "description": "Simple"
+      },
+      {
+        "label": "Stealth",
+        "description": "DC 23 (trained)"
+      },
+      {
+        "label": "Description",
+        "description": "Two blades, each hidden in a 15-foot-long ceiling groove, are both connected to a trip wire."
+      }
+    ],
+    "effects": [
+      {
+        "label": "Disable",
+        "description": "Thievery DC 21 (trained) to disable each blade"
+      },
+      {
+        "label": "AC",
+        "description": "21,"
+      },
+      {
+        "label": "Fort",
+        "description": "+12,"
+      },
+      {
+        "label": "Ref",
+        "description": "+8"
+      },
+      {
+        "label": "Hardness",
+        "description": "11,"
+      },
+      {
+        "label": "HP",
+        "description": "44 (BT 22);"
+      },
+      {
+        "label": "Immunities",
+        "description": "critical hits, object immunities, precision damage"
+      },
+      {
+        "label": "Falling Scythes",
+        "description": "(attack);"
+      },
+      {
+        "label": "Trigger",
+        "description": "The trip wire is pulled or severed."
+      },
+      {
+        "label": "Effect",
+        "description": "Both blades swing down, each one attacking all creatures under the ceiling grooves."
+      },
+      {
+        "label": "Melee",
+        "description": "scythe +17 (deadly 1d12),"
+      },
+      {
+        "label": "Damage",
+        "description": "2d12+4 slashing; no multiple attack penalty"
+      },
+      {
+        "label": "Reset",
+        "description": "The trap resets after 15 minutes."
+      }
+    ],
+    "name": "Scythe Blades",
+    "level": "4"
+  },
+  "Fireball Rune": {
+    "tags": [
+      "Evocation",
+      "Fire",
+      "Magical",
+      "Trap"
+    ],
+    "information": [
+      {
+        "label": "Source",
+        "description": "Core Rulebook pg. 524"
+      },
+      {
+        "label": "Complexity",
+        "description": "Simple"
+      },
+      {
+        "label": "Stealth",
+        "description": "DC 24 (expert)"
+      },
+      {
+        "label": "Description",
+        "description": "An invisible rune creates an invisible, spherical magical sensor with a 20-foot radius."
+      }
+    ],
+    "effects": [
+      {
+        "label": "Disable",
+        "description": "Thievery DC 22 (expert) to erase the rune without triggering the sensor, or dispel magic (3rd level; counteract DC 20) to counteract the rune"
+      },
+      {
+        "label": "Fireball",
+        "description": "(arcane, evocation, fire);"
+      },
+      {
+        "label": "Trigger",
+        "description": "A living creature enters the sensor area."
+      },
+      {
+        "label": "Effect",
+        "description": "The rune detonates a fireball centered on the triggering creature’s square. This is a 3rd-level fireball spell that deals 6d6 fire damage (DC 22 basic Reflex save)."
+      }
+    ],
+    "name": "Fireball Rune",
+    "level": "5"
+  },
+  "Hallucination Powder Trap": {
+    "tags": [
+      "Mechanical",
+      "Trap"
+    ],
+    "information": [
+      {
+        "label": "Source",
+        "description": "Core Rulebook pg. 524"
+      },
+      {
+        "label": "Complexity",
+        "description": "Simple"
+      },
+      {
+        "label": "Stealth",
+        "description": "DC 24 (expert)"
+      },
+      {
+        "label": "Description",
+        "description": "A tube of hallucinogenic powder armed with a miniature explosive is connected to a doorknob or similar latch."
+      }
+    ],
+    "effects": [
+      {
+        "label": "Disable",
+        "description": "Thievery DC 26 (expert) to disable the hammer that strikes the percussion cap"
+      },
+      {
+        "label": "AC",
+        "description": "24,"
+      },
+      {
+        "label": "Fort",
+        "description": "0,"
+      },
+      {
+        "label": "Ref",
+        "description": "0"
+      },
+      {
+        "label": "Hardness",
+        "description": "0,"
+      },
+      {
+        "label": "HP",
+        "description": "1;"
+      },
+      {
+        "label": "Immunities",
+        "description": "critical hits, object immunities, precision damage"
+      },
+      {
+        "label": "Powder Burst",
+        "description": "(mental, poison);"
+      },
+      {
+        "label": "Trigger",
+        "description": "The latch is opened or the tube is broken."
+      },
+      {
+        "label": "Effect",
+        "description": "The tube explodes, spraying hallucinogenic powder in a 30-foot cone. Any creature in the cone must succeed at a DC 24 Will save or be confused for 1 round and take a –2 status penalty to Perception checks and saves against mental effects for 1d4 hours. On a critical failure, the penalty is instead –4."
+      }
+    ],
+    "name": "Hallucination Powder Trap",
+    "level": "6"
+  },
+  "Pharaoh's Ward": {
+    "tags": [
+      "Magical",
+      "Trap"
+    ],
+    "information": [
+      {
+        "label": "Source",
+        "description": "Core Rulebook pg. 524"
+      },
+      {
+        "label": "Complexity",
+        "description": "Simple"
+      },
+      {
+        "label": "Stealth",
+        "description": "DC 25 (expert)"
+      },
+      {
+        "label": "Description",
+        "description": "A curse is imbued on an entryway’s threshold."
+      }
+    ],
+    "effects": [
+      {
+        "label": "Disable",
+        "description": "Thievery DC 27 (master) to painstakingly remove the lintel without triggering the magic, or dispel magic (4th level; counteract DC 25) to counteract the rune"
+      },
+      {
+        "label": "Curse the Intruders",
+        "description": "(curse, divine, necromancy);"
+      },
+      {
+        "label": "Trigger",
+        "description": "The seal on the tomb is broken from the outside."
+      },
+      {
+        "label": "Effect",
+        "description": "Each living creature within 60 feet must succeed at a DC 23 Will save or be subjected to the pharaoh’s curse. A cursed creature takes a –2 status penalty to Fortitude saves, and any natural or magical healing it receives is halved. The curse remains until removed by remove curse or similar magic."
+      },
+      {
+        "label": "Reset",
+        "description": "The trap resets when the door is shut"
+      }
+    ],
+    "name": "Pharaoh's Ward",
+    "level": "7"
+  },
+  "Yellow Mold": {
+    "tags": [
+      "Environmental",
+      "Fungus"
+    ],
+    "information": [
+      {
+        "label": "Source",
+        "description": "Core Rulebook pg. 524"
+      },
+      {
+        "label": "Complexity",
+        "description": "Simple"
+      },
+      {
+        "label": "Stealth",
+        "description": "DC 28 (trained)"
+      },
+      {
+        "label": "Description",
+        "description": "Poisonous mold spores assault nearby creatures."
+      }
+    ],
+    "effects": [
+      {
+        "label": "Disable",
+        "description": "Survival DC 26 (expert) to remove the mold without triggering the spores"
+      },
+      {
+        "label": "HP",
+        "description": "70;"
+      },
+      {
+        "label": "Immunities",
+        "description": "critical hits, object immunities, precision damage"
+      },
+      {
+        "label": "Spore Explosion"
+      },
+      {
+        "label": "Trigger",
+        "description": "A creature moves into the mold’s space or damages the mold. The mold can’t use this reaction if it’s in direct sunlight or if the damage was fire damage."
+      },
+      {
+        "label": "Effect",
+        "description": "The triggering creature and all creatures within 10 feet are exposed to yellow mold spores."
+      },
+      {
+        "label": "Yellow Mold Spores",
+        "description": "(inhaled, poison) Any drained condition from the spores persists after the poison’s duration ends;"
+      },
+      {
+        "label": "Saving Throw",
+        "description": "DC 26 Fortitude;"
+      },
+      {
+        "label": "Maximum Duration",
+        "description": "6 rounds;"
+      },
+      {
+        "label": "Stage 1",
+        "description": "1d8 poison damage and drained 1 (1 round);"
+      },
+      {
+        "label": "Stage 2",
+        "description": "2d8 poison damage and drained 2 (1 round);"
+      },
+      {
+        "label": "Stage 3",
+        "description": "3d8 poison damage and drained 3 (1 round)"
+      }
+    ],
+    "name": "Yellow Mold",
+    "level": "8"
+  },
+  "Bottomless Pit": {
+    "tags": [
+      "Magical",
+      "Mechanical",
+      "Trap"
+    ],
+    "information": [
+      {
+        "label": "Source",
+        "description": "Core Rulebook pg. 524"
+      },
+      {
+        "label": "Complexity",
+        "description": "Simple"
+      },
+      {
+        "label": "Stealth",
+        "description": "DC 30 (or 0 if the trapdoor is disabled or broken) or detect magic"
+      },
+      {
+        "label": "Description",
+        "description": "An iron trapdoor covers an infinitely deep 10-foot-square pit."
+      }
+    ],
+    "effects": [
+      {
+        "label": "Disable",
+        "description": "Thievery DC 28 (trained) to remove the trapdoor"
+      },
+      {
+        "label": "AC",
+        "description": "28,"
+      },
+      {
+        "label": "Fort",
+        "description": "+12,"
+      },
+      {
+        "label": "Ref",
+        "description": "+12"
+      },
+      {
+        "label": "Trapdoor Hardness",
+        "description": "9,"
+      },
+      {
+        "label": "Trapdoor HP",
+        "description": "36 (BT 18);"
+      },
+      {
+        "label": "Immunities",
+        "description": "critical hits, object immunities, precision damage"
+      },
+      {
+        "label": "Infinite Pitfall"
+      },
+      {
+        "label": "Trigger",
+        "description": "A creature walks onto the trapdoor."
+      },
+      {
+        "label": "Effect",
+        "description": "The triggering creature falls in and continues to fall, potentially forever. That creature can try to Grab an Edge to avoid falling (page 472). The DC to Climb the walls or Grab an Edge is 26. The pit contains many handholds, so the falling creature can try to Grab an Edge again every 6 seconds. If the creature succeeds, it can start to Climb out from that point (though it might be a very long climb, depending on how far the creature fell). Since the creature falls endlessly, it can rest and even prepare spells while falling, though items dropped while falling are usually lost forever."
+      },
+      {
+        "label": "Reset",
+        "description": "The trap still causes creatures to fall forever if they fall in, but the trapdoor must be reset manually for the trap to become hidden again."
+      }
+    ],
+    "name": "Bottomless Pit",
+    "level": "9"
+  },
+  "Bloodthirsty Urge": {
+    "tags": [
+      "Haunt"
+    ],
+    "information": [
+      {
+        "label": "Source",
+        "description": "Core Rulebook pg. 524"
+      },
+      {
+        "label": "Complexity",
+        "description": "Simple"
+      },
+      {
+        "label": "Stealth",
+        "description": "Stealth DC 31 (trained)"
+      },
+      {
+        "label": "Description",
+        "description": "An object haunted by the echoes of a vicious mind attempts to kill someone who comes near."
+      }
+    ],
+    "effects": [
+      {
+        "label": "Disable",
+        "description": "Religion DC 29 (master) to exorcise the spirit or Diplomacy DC 31 (expert) to talk it down"
+      },
+      {
+        "label": "Quietus",
+        "description": "(death, emotion, fear, illusion, mental, occult);"
+      },
+      {
+        "label": "Trigger",
+        "description": "A creature moves within 10 feet of the haunted object."
+      },
+      {
+        "label": "Effect",
+        "description": "The haunt takes control of the triggering creature, forcing it to attack itself. The creature must attempt a DC 29 Will save."
+      }
+    ],
+    "name": "Bloodthirsty Urge",
+    "level": "10"
+  },
+  "Hammer of Forbiddance": {
+    "tags": [
+      "Magical",
+      "Mechanical",
+      "Trap"
+    ],
+    "information": [
+      {
+        "label": "Source",
+        "description": "Core Rulebook pg. 525"
+      },
+      {
+        "label": "Complexity",
+        "description": "Simple"
+      },
+      {
+        "label": "Stealth",
+        "description": "DC 30 (expert)"
+      },
+      {
+        "label": "Description",
+        "description": "An enormous hammer at an edifice’s entrance swings down in an attempt to damage a creature entering an area, push it back, and prevent it from going any further."
+      }
+    ],
+    "effects": [
+      {
+        "label": "Disable",
+        "description": "Thievery DC 28 (expert) once on the hammer itself and once on its joint to prevent the hammer from swinging"
+      },
+      {
+        "label": "AC",
+        "description": "32,"
+      },
+      {
+        "label": "Fort",
+        "description": "+24,"
+      },
+      {
+        "label": "Ref",
+        "description": "+15"
+      },
+      {
+        "label": "Hammer Hardness",
+        "description": "22,"
+      },
+      {
+        "label": "Hammer HP",
+        "description": "88 (44);"
+      },
+      {
+        "label": "Joint Hardness",
+        "description": "16,"
+      },
+      {
+        "label": "Joint HP",
+        "description": "64 (BT 32);"
+      },
+      {
+        "label": "Immunities",
+        "description": "critical hits, object immunities, precision damage"
+      },
+      {
+        "label": "Forbid Entry",
+        "description": "(abjuration, attack, divine);"
+      },
+      {
+        "label": "Trigger",
+        "description": "A creature attempts to enter through the entrance."
+      },
+      {
+        "label": "Effect",
+        "description": "The hammer swings down, making an attack against the triggering creature."
+      },
+      {
+        "label": "Melee",
+        "description": "hammer +28,"
+      },
+      {
+        "label": "Damage",
+        "description": "6d8+20 bludgeoning plus the target is knocked back 10 feet and must succeed at a DC 30 Will save or be unable to enter the edifice through any entrance for 24 hours (on a critical hit, the target automatically fails the Will save); no multiple attack penalty"
+      },
+      {
+        "label": "Reset",
+        "description": "The trap resets over the course of the round, and is ready to swing again 1 round later."
+      }
+    ],
+    "name": "Hammer of Forbiddance",
+    "level": "11"
+  },
+  "Polymorph Trap": {
+    "tags": [
+      "Magical",
+      "Trap"
+    ],
+    "information": [
+      {
+        "label": "Source",
+        "description": "Core Rulebook pg. 525"
+      },
+      {
+        "label": "Complexity",
+        "description": "Simple"
+      },
+      {
+        "label": "Stealth",
+        "description": "DC 34 (trained)"
+      },
+      {
+        "label": "Description",
+        "description": "A Druidic glyph tries to transforms a trespasser into an animal."
+      }
+    ],
+    "effects": [
+      {
+        "label": "Disable",
+        "description": "Thievery DC 32 (master) to drain the glyph’s power harmlessly, or dispel magic (6th level; counteract DC 30) to counteract the glyph"
+      },
+      {
+        "label": "Baleful Polymorph",
+        "description": "(primal, transmutation);"
+      },
+      {
+        "label": "Trigger",
+        "description": "A creature moves within 30 feet of the glyph without speaking the passphrase in Druidic."
+      },
+      {
+        "label": "Effect",
+        "description": "The creature is targeted by baleful polymorph (DC 32 Will save)."
+      }
+    ],
+    "name": "Polymorph Trap",
+    "level": "12"
+  },
+  "Planar Rift": {
+    "tags": [
+      "Magical",
+      "Trap"
+    ],
+    "information": [
+      {
+        "label": "Source",
+        "description": "Core Rulebook pg. 525"
+      },
+      {
+        "label": "Complexity",
+        "description": "Simple"
+      },
+      {
+        "label": "Stealth",
+        "description": "DC 35 (trained)"
+      },
+      {
+        "label": "Description",
+        "description": "A rift attempts to draw creatures into another plane (the GM chooses the specific plane)."
+      }
+    ],
+    "effects": [
+      {
+        "label": "Disable",
+        "description": "Thievery DC 33 (master) to assemble a rift seal using objects strongly grounded to your plane, or dispel magic (7th level; counteract DC 31) to counteract the rift"
+      },
+      {
+        "label": "Into the Great Beyond",
+        "description": "(conjuration, occult, teleportation);"
+      },
+      {
+        "label": "Trigger",
+        "description": "A creature moves within 10 feet of the rift."
+      },
+      {
+        "label": "Effect",
+        "description": "The triggering creature and all creatures within 30 feet of the rift are drawn into another plane. Each creature can attempt a DC 33 Reflex save to avoid this fate."
+      }
+    ],
+    "name": "Planar Rift",
+    "level": "13"
+  },
+  "Frozen Moment": {
+    "tags": [
+      "Magical",
+      "Trap"
+    ],
+    "information": [
+      {
+        "label": "Source",
+        "description": "Core Rulebook pg. 525"
+      },
+      {
+        "label": "Complexity",
+        "description": "Simple"
+      },
+      {
+        "label": "Stealth",
+        "description": "DC 40 (master)"
+      },
+      {
+        "label": "Description",
+        "description": "Warding magic attempts to trap intruders or would-be thieves in a disrupted time flow."
+      }
+    ],
+    "effects": [
+      {
+        "label": "Disable",
+        "description": "Thievery DC 38 (legendary) to rapidly disassemble the spell’s myriad components in a single blink of an eye; or dispel magic (9th level; counteract DC 36) to counteract the trap before it triggers or to counteract the effect on one creature after the trap is triggered"
+      },
+      {
+        "label": "Adrift in Time",
+        "description": "(occult, transmutation);"
+      },
+      {
+        "label": "Trigger",
+        "description": "A creature touches the warded object or area."
+      },
+      {
+        "label": "Effect",
+        "description": "The triggering creature and all creatures within 30 feet are trapped in a disrupted time flow (DC 38 Fortitude negates). The creatures’ minds move so quickly that each round seems to last a century, but their bodies and magical energies move so slowly that they can’t use any actions except Recall Knowledge. An affected creature must attempt a DC 36 Will saving throw against a warp mind spell immediately and again for every minute of real time that passes while the creature is trapped in the frozen moment. This effect has an unlimited duration but can be counteracted."
+      }
+    ],
+    "name": "Frozen Moment",
+    "level": "17"
+  },
+  "Vorpal Executioner": {
+    "tags": [
+      "Mechanical",
+      "Trap"
+    ],
+    "information": [
+      {
+        "label": "Source",
+        "description": "Core Rulebook pg. 525"
+      },
+      {
+        "label": "Complexity",
+        "description": "Simple"
+      },
+      {
+        "label": "Stealth",
+        "description": "DC 43 (expert)"
+      },
+      {
+        "label": "Description",
+        "description": "A wickedly sharp saw blade descends and travels along grooves in a complex path throughout the room, attempting to decapitate everyone within."
+      }
+    ],
+    "effects": [
+      {
+        "label": "Disable",
+        "description": "Thievery DC 41 (expert) at four different junctions to jam all the saw blade’s possible paths, preventing it from traveling through the room"
+      },
+      {
+        "label": "AC",
+        "description": "43,"
+      },
+      {
+        "label": "Fort",
+        "description": "+32,"
+      },
+      {
+        "label": "Ref",
+        "description": "+32"
+      },
+      {
+        "label": "Hardness",
+        "description": "30,"
+      },
+      {
+        "label": "HP",
+        "description": "120 (60) per junction;"
+      },
+      {
+        "label": "Immunities",
+        "description": "critical hits, object immunities, precision damage"
+      },
+      {
+        "label": "Decapitate",
+        "description": "(attack, death);"
+      },
+      {
+        "label": "Trigger",
+        "description": "A creature attempts to exit the room."
+      },
+      {
+        "label": "Effect",
+        "description": "The saw blade travels along its path, making one Strike against each creature in the room, twisting and varying its height for a maximum chance of beheading its targets."
+      },
+      {
+        "label": "Melee",
+        "description": "saw blade +40 (deadly d12),"
+      },
+      {
+        "label": "Damage",
+        "description": "6d12+25 slashing plus decapitation; no multiple attack penalty"
+      },
+      {
+        "label": "Decapitation",
+        "description": "On a critical hit, a target must succeed at a DC 39 Fortitude save or be decapitated, dying instantly unless it can survive without a head."
+      },
+      {
+        "label": "Reset",
+        "description": "The trap resets over the course of the round and can be triggered again 1 round later."
+      }
+    ],
+    "name": "Vorpal Executioner",
+    "level": "19"
+  },
+  "Second Chance": {
+    "tags": [
+      "Magical",
+      "Trap"
+    ],
+    "information": [
+      {
+        "label": "Source",
+        "description": "Core Rulebook pg. 525"
+      },
+      {
+        "label": "Complexity",
+        "description": "Simple"
+      },
+      {
+        "label": "Stealth",
+        "description": "DC 44 (legendary)"
+      },
+      {
+        "label": "Description",
+        "description": "Powerful warding magic tied to an object or location tries to regress the ages of a creature and its allies."
+      }
+    ],
+    "effects": [
+      {
+        "label": "Disable",
+        "description": "Thievery DC 46 (legendary) to take apart the spell one tiny piece at a time, with eyes closed, while recalling every vivid life memory in order, starting from the earliest memory"
+      },
+      {
+        "label": "In the Beginning",
+        "description": "(divine, transmutation);"
+      },
+      {
+        "label": "Trigger",
+        "description": "A creature tries to steal the object or intrude upon the location. If someone uses a proxy or dupe for the theft or intrusion, the trap unerringly targets the true perpetrator or perpetrators at any distance—even across planes."
+      },
+      {
+        "label": "Effect",
+        "description": "The triggering creature and up to five coconspirators instantly revert to infants, losing all memories, class abilities, and other skills acquired during their lives (DC 44 Fortitude negates). Reversing this effect is nearly impossible, requiring powerful magic such as wish ."
+      }
+    ],
+    "name": "Second Chance",
+    "level": "21"
+  },
+  "Armageddon Orb": {
+    "tags": [
+      "Rare",
+      "Magical",
+      "Trap"
+    ],
+    "information": [
+      {
+        "label": "Source",
+        "description": "Core Rulebook pg. 526"
+      },
+      {
+        "label": "Complexity",
+        "description": "Simple"
+      },
+      {
+        "label": "Stealth",
+        "description": "DC 10 or detect magic"
+      },
+      {
+        "label": "Description",
+        "description": "A roiling red orb, forged from a drop of the god Rovagug’s blood, rains fire from the sky when a specified condition is met."
+      }
+    ],
+    "effects": [
+      {
+        "label": "Disable",
+        "description": "Thievery DC 48 (legendary) to imbue thieves’ tools with aspects representing Asmodeus and Sarenrae and use them to drain away the orb’s power over 10 minutes; the character attempting this check takes 5 fire damage each round until the orb is depleted"
+      },
+      {
+        "label": "Burn It All",
+        "description": "(death, divine, evocation, fire);"
+      },
+      {
+        "label": "Trigger",
+        "description": "A special condition set by the trap’s creator occurs; this is typically the event of their death."
+      },
+      {
+        "label": "Effect",
+        "description": "Fire rains from the sky in a 100-mile radius, dealing 10d6 fire damage to creatures and objects in the area. Each creature or object can attempt a DC 46 basic Reflex save. Any creature reduced to 0 Hit Points by this damage dies instantly. This is not enough damage to completely burn away a forest or level an entire mountain or city, but it typically kills most creatures in the area."
+      }
+    ],
+    "name": "Armageddon Orb",
+    "level": "23"
+  },
+  "Summoning Rune": {
+    "tags": [
+      "Complex",
+      "Magical",
+      "Trap"
+    ],
+    "information": [
+      {
+        "label": "Source",
+        "description": "Core Rulebook pg. 526"
+      },
+      {
+        "label": "Complexity",
+        "description": "Complex"
+      },
+      {
+        "label": "Stealth",
+        "description": "+7 (trained)"
+      },
+      {
+        "label": "Description",
+        "description": "A cloud of invisible magical sensors in a 10-foot radius surrounds an invisible wall or floor rune the size of the creature to be summoned."
+      }
+    ],
+    "effects": [
+      {
+        "label": "Disable",
+        "description": "Acrobatics DC 15 to approach without triggering the trap followed by Thievery DC 17 (trained) to erase the rune, or dispel magic (1st level; counteract DC 15) to counteract the rune"
+      },
+      {
+        "label": "Summon Monster",
+        "description": "(arcane, conjuration, summon;"
+      },
+      {
+        "label": "Trigger",
+        "description": "A creature enters the cloud of magical sensors."
+      },
+      {
+        "label": "Effect",
+        "description": "This trap summons a specific level 1 creature, determined when the trap is created. The creature rolls initiative and remains for 2d6 rounds, after which the spell ends and the creature disappears. The creature also disappears if someone disables the trap before the duration expires. The summoned creature can use 3 actions each round and can use reactions, unlike most summoned creatures."
+      },
+      {
+        "label": "Reset",
+        "description": "The trap resets each day at dawn"
+      }
+    ],
+    "name": "Summoning Rune",
+    "level": "1"
+  },
+  "Drowning Pit": {
+    "tags": [
+      "Complex",
+      "Mechanical",
+      "Trap"
+    ],
+    "information": [
+      {
+        "label": "Source",
+        "description": "Core Rulebook pg. 526"
+      },
+      {
+        "label": "Complexity",
+        "description": "Complex"
+      },
+      {
+        "label": "Stealth",
+        "description": "+10 (trained); DC 22 (expert) to notice the water spouts once the pit opens"
+      },
+      {
+        "label": "Description",
+        "description": "A trapdoor covers a 10-foot-square pit that’s 30 feet deep and has 5 feet of water at the bottom. Four water spouts in the walls connect to hidden water tanks. Each water spout extends out of a different wall, 6 inches from the top of the pit."
+      }
+    ],
+    "effects": [
+      {
+        "label": "Disable",
+        "description": "Thievery DC 18 (trained) to seal each water spout, Thievery DC 22 (trained) to open the trapdoor, or <%SKILLS#3%%>Athletics<%END< DC 22 to Force Open the trapdoor"
+      },
+      {
+        "label": "AC",
+        "description": "19,"
+      },
+      {
+        "label": "Fort",
+        "description": "+8,"
+      },
+      {
+        "label": "Ref",
+        "description": "+5"
+      },
+      {
+        "label": "Trapdoor Hardness",
+        "description": "15,"
+      },
+      {
+        "label": "Trapdoor HP",
+        "description": "60 (BT 30);"
+      },
+      {
+        "label": "Spout Hardness",
+        "description": "8,"
+      },
+      {
+        "label": "Spout HP",
+        "description": "32 (BT 16);"
+      },
+      {
+        "label": "Immunities",
+        "description": "critical hits, object immunities, precision damage"
+      },
+      {
+        "label": "Pitfall"
+      },
+      {
+        "label": "Trigger",
+        "description": "A creature walks onto the trapdoor."
+      },
+      {
+        "label": "Effect",
+        "description": "The triggering creature falls in and takes damage from the fall, reduced by 5 feet for falling into the water (typically 12 bludgeoning damage). A creature can Grab an Edge to avoid falling (page 472). The trapdoor then slams shut, and the hazard rolls initiative."
+      },
+      {
+        "label": "Routine",
+        "description": "(4 actions) The trap loses 1 action each turn for each disabled water spout. On each of the trap’s actions, a spout pours water, increasing the depth of the water by 5 feet. Once the pit is full of water, the pit stops using actions, but creatures in the pit begin drowning (page 478)."
+      },
+      {
+        "label": "Reset",
+        "description": "The trap can be reset if the door is manually reengaged and the water tanks refilled; it can be reset without draining the pit, but doing so renders it less effective."
+      }
+    ],
+    "name": "Drowning Pit",
+    "level": "3"
+  },
+  "Quicksand": {
+    "tags": [
+      "Complex",
+      "Environmental"
+    ],
+    "information": [
+      {
+        "label": "Source",
+        "description": "Core Rulebook pg. 526"
+      },
+      {
+        "label": "Complexity",
+        "description": "Complex"
+      },
+      {
+        "label": "Stealth",
+        "description": "+12 (trained) (or –10 and no minimum proficiency if the surface is disturbed)"
+      },
+      {
+        "label": "Description",
+        "description": "A 15-foot-wide patch of water and sand attempts to submerge creatures that step onto it."
+      }
+    ],
+    "effects": [
+      {
+        "label": "Disable",
+        "description": "Survival DC 18 (trained) to disturb the surface"
+      },
+      {
+        "label": "Submerge"
+      },
+      {
+        "label": "Trigger",
+        "description": "A Huge or smaller creature walks onto the quicksand."
+      },
+      {
+        "label": "Effect",
+        "description": "The triggering creature sinks into the quicksand up to its waist. The quicksand rolls initiative if it hasn’t already."
+      },
+      {
+        "label": "Routine",
+        "description": "(1 action) On its initiative, the quicksand pulls down each creature within it. A creature that was submerged up to its waist becomes submerged up to its neck, and a creature that was submerged up to its neck is pulled under and has to hold its breath to avoid suffocation (page 478). A creature in the quicksand can attempt a DC 20 Athletics check to Swim to either raise itself by one step if it’s submerged to its neck or worse, or to move 5 feet if it’s submerged only up to its waist. On a critical failure, the creature is pulled down one step. A creature that Swims out of the quicksand escapes the hazard and is prone in a space adjacent to the quicksand patch. Other creatures can Aid the creature, typically by using a rope or similar aid, or attempt to pull the creature out with their own DC 20 Athletics check, with the same results as if the creature attempted the check."
+      },
+      {
+        "label": "Reset",
+        "description": "The hazard still submerges anyone who walks in, but the surface doesn’t become hidden again until it settles over the course of 24 hours."
+      }
+    ],
+    "name": "Quicksand",
+    "level": "3"
+  },
+  "Spinning Blade Pillar": {
+    "tags": [
+      "Complex",
+      "Mechanical",
+      "Trap"
+    ],
+    "information": [
+      {
+        "label": "Source",
+        "description": "Core Rulebook pg. 527"
+      },
+      {
+        "label": "Complexity",
+        "description": "Complex"
+      },
+      {
+        "label": "Stealth",
+        "description": "+11 (trained) or DC 26 (expert) to notice the control panel"
+      },
+      {
+        "label": "Description",
+        "description": "A metal pole with three razor-sharp spinning blades is hidden in the floor, connected to trigger plates in up to eight floor tiles and a hidden control panel within 30 feet."
+      }
+    ],
+    "effects": [
+      {
+        "label": "Disable",
+        "description": "Thievery DC 21 (trained) twice on the pillar, or Thievery DC 19 (expert) once on the control panel deactivates the whole trap. Breaking the control panel prevents anyone from disabling the trap using the control panel and prevents the trap from deactivating automatically (see Reset below)."
+      },
+      {
+        "label": "AC",
+        "description": "21,"
+      },
+      {
+        "label": "Fort",
+        "description": "+10,"
+      },
+      {
+        "label": "Ref",
+        "description": "+12"
+      },
+      {
+        "label": "Pillar Hardness",
+        "description": "12,"
+      },
+      {
+        "label": "Pillar HP",
+        "description": "48 (BT 24);"
+      },
+      {
+        "label": "Panel Hardness",
+        "description": "5,"
+      },
+      {
+        "label": "Panel HP",
+        "description": "20 (BT 10);"
+      },
+      {
+        "label": "Immunities",
+        "description": "critical hits, object immunities, precision damage"
+      },
+      {
+        "label": "Rising Pillar",
+        "description": "(attack);"
+      },
+      {
+        "label": "Trigger",
+        "description": "A creature steps on one of the trapped floor tiles."
+      },
+      {
+        "label": "Effect",
+        "description": "The trap pops up in a grid intersection and makes a spinning blade attack against one adjacent creature (if any), then rolls initiative."
+      },
+      {
+        "label": "Routine",
+        "description": "(3 actions) The trap uses its first action to make a spinning blade Strike against each adjacent creature, its second action to move straight in a random direction (roll 1d4 to determine the direction), and its third action to make a spinning blade Strike against each adjacent creature. This trap doesn’t take a multiple attack penalty."
+      },
+      {
+        "label": "Speed",
+        "description": "10 feet"
+      },
+      {
+        "label": "Melee",
+        "description": "[one-action] spinning blade +12,"
+      },
+      {
+        "label": "Damage",
+        "description": "2d10+5 slashing"
+      },
+      {
+        "label": "Reset",
+        "description": "The trap deactivates and resets after 1 minute."
+      }
+    ],
+    "name": "Spinning Blade Pillar",
+    "level": "4"
+  },
+  "Wheel of Misery": {
+    "tags": [
+      "Complex",
+      "Magical",
+      "Mechanical",
+      "Trap"
+    ],
+    "information": [
+      {
+        "label": "Source",
+        "description": "Core Rulebook pg. 527"
+      },
+      {
+        "label": "Complexity",
+        "description": "Complex"
+      },
+      {
+        "label": "Stealth",
+        "description": "+16 (expert) to detect the magical sensor; noticing the wheel has a DC of 0"
+      },
+      {
+        "label": "Description",
+        "description": "An ornate wheel set into a wall—divided into six segments with colored runes on each—is controlled by a magical sensor that detects any creature within 100 feet in front of it."
+      }
+    ],
+    "effects": [
+      {
+        "label": "Disable",
+        "description": "Thievery DC 26 (expert) on the wheel to stop it from spinning, Thievery DC 22 (master) to erase each rune, or dispel magic (4th level; counteract DC 22) to counteract each rune"
+      },
+      {
+        "label": "AC",
+        "description": "24,"
+      },
+      {
+        "label": "Fort",
+        "description": "+15,"
+      },
+      {
+        "label": "Ref",
+        "description": "+13"
+      },
+      {
+        "label": "Hardness",
+        "description": "14,"
+      },
+      {
+        "label": "HP",
+        "description": "56 (BT 28);"
+      },
+      {
+        "label": "Immunities",
+        "description": "critical hits, object immunities, precision damage"
+      },
+      {
+        "label": "Wheel Spin"
+      },
+      {
+        "label": "Trigger",
+        "description": "A creature enters the sensor’s detection area."
+      },
+      {
+        "label": "Effect",
+        "description": "The wheel begins to spin and rolls initiative."
+      },
+      {
+        "label": "Routine",
+        "description": "(2 actions) On its initiative, the trap uses its first action to spin, then stops. Roll 1d6 to determine which segment is topmost when the wheel stops spinning. The wheel uses its second action to replicate the spell listed for that segment (3rd level, DC 24, spell attack roll +14). This spell’s target is centered on or otherwise includes the nearest creature in the area. This increases the spell’s range to 100 feet if necessary. Any spell cast by this trap is arcane. sleep paralyze lightning bolt (100-foot line) blindness acid arrow ray of enfeeblement"
+      },
+      {
+        "label": "Reset",
+        "description": "The trap deactivates and resets if 1 minute passes without any creature moving within range of its sensor."
+      }
+    ],
+    "name": "Wheel of Misery",
+    "level": "6"
+  },
+  "Poisoned Dart Gallery": {
+    "tags": [
+      "Complex",
+      "Mechanical",
+      "Trap"
+    ],
+    "information": [
+      {
+        "label": "Source",
+        "description": "Core Rulebook pg. 528"
+      },
+      {
+        "label": "Complexity",
+        "description": "Complex"
+      },
+      {
+        "label": "Stealth",
+        "description": "+16 (expert) or DC 31 (master) to notice the control panel"
+      },
+      {
+        "label": "Description",
+        "description": "Countless holes to launch poison darts from line a long hallway with a hidden control panel on the far end."
+      }
+    ],
+    "effects": [
+      {
+        "label": "Disable",
+        "description": "Thievery DC 21 (expert) on the control panel deactivates the trap."
+      },
+      {
+        "label": "AC",
+        "description": "27,"
+      },
+      {
+        "label": "Fort",
+        "description": "+13,"
+      },
+      {
+        "label": "Ref",
+        "description": "+17"
+      },
+      {
+        "label": "Hardness",
+        "description": "14,"
+      },
+      {
+        "label": "HP",
+        "description": "56 (BT 28) to destroy the control panel and disable the trap;"
+      },
+      {
+        "label": "Immunities",
+        "description": "critical hits, object immunities, precision damage"
+      },
+      {
+        "label": "Dart Volley",
+        "description": "(attack);"
+      },
+      {
+        "label": "Trigger",
+        "description": "A creature enters the hallway or ends its turn in the hallway."
+      },
+      {
+        "label": "Effect",
+        "description": "The trap makes a poisoned dart Strike against the triggering creature, then rolls initiative."
+      },
+      {
+        "label": "Routine",
+        "description": "(1 action) The trap launches one dart against every creature in the gallery as 1 action. Because it launches darts continuously, the trap can also use the Continuous Barrage free action (see below) to launch darts at each creature during that creature’s turn."
+      },
+      {
+        "label": "Ranged",
+        "description": "poisoned dart +21,"
+      },
+      {
+        "label": "Damage",
+        "description": "3d4 piercing plus flesset poison; no multiple attack penalty"
+      },
+      {
+        "label": "Continuous Barrage"
+      },
+      {
+        "label": "Trigger",
+        "description": "A creature within the active gallery finishes an action."
+      },
+      {
+        "label": "Effect",
+        "description": "The trap makes a poisoned dart Strike against the triggering creature."
+      },
+      {
+        "label": "Flesset Poison",
+        "description": "(poison);"
+      },
+      {
+        "label": "Saving Throw",
+        "description": "DC 22 Fortitude;"
+      },
+      {
+        "label": "Maximum Duration",
+        "description": "6 rounds;"
+      },
+      {
+        "label": "Stage 1",
+        "description": "1d6 poison damage and clumsy 1 (1 round);"
+      },
+      {
+        "label": "Stage 2",
+        "description": "2d6 poison damage and clumsy 2 (1 round);"
+      },
+      {
+        "label": "Stage 3",
+        "description": "3d6 poison damage and clumsy 3 (1 round)"
+      },
+      {
+        "label": "Reset",
+        "description": "The trap deactivates and resets after 1 minute."
+      }
+    ],
+    "name": "Poisoned Dart Gallery",
+    "level": "8"
+  },
+  "Lava Flume Tubes": {
+    "tags": [
+      "Complex",
+      "Mechanical",
+      "Trap"
+    ],
+    "information": [
+      {
+        "label": "Source",
+        "description": "Core Rulebook pg. 528"
+      },
+      {
+        "label": "Complexity",
+        "description": "Complex"
+      },
+      {
+        "label": "Stealth",
+        "description": "+19 (trained)"
+      },
+      {
+        "label": "Description",
+        "description": "Four gated channels carved into stone allow lava to flow into a 15-foot-tall room; the floor can withdraw to allow the hardened lava to fall into a chamber beneath."
+      }
+    ],
+    "effects": [
+      {
+        "label": "Disable",
+        "description": "Thievery DC 29 (expert) to block a channel, or Thievery DC 31 (master) to release the floor latch and escape to the chamber below"
+      },
+      {
+        "label": "AC",
+        "description": "30,"
+      },
+      {
+        "label": "Fort",
+        "description": "+20,"
+      },
+      {
+        "label": "Ref",
+        "description": "+16"
+      },
+      {
+        "label": "Channel Hardness",
+        "description": "12,"
+      },
+      {
+        "label": "Channel HP",
+        "description": "48 (BT 24) to destroy a channel gate (this prevents that channel from being disabled and stops the trap from resetting);"
+      },
+      {
+        "label": "Floor Hardness",
+        "description": "18;"
+      },
+      {
+        "label": "Floor HP",
+        "description": "72 (BT 36); Immunities critical hits, object immunities, precision damage;"
+      },
+      {
+        "label": "Immunities",
+        "description": "critical hits, object immunities, precision damage"
+      },
+      {
+        "label": "Flume Activation"
+      },
+      {
+        "label": "Trigger",
+        "description": "A creature tries to leave the room."
+      },
+      {
+        "label": "Effect",
+        "description": "The exits seal instantly and the trap rolls initiative."
+      },
+      {
+        "label": "Routine",
+        "description": "(4 actions) The trap loses 1 action per disabled channel each turn. On each action, a different channel spews lava, dealing 4d6 fire damage to each creature within 10 feet of the channel (DC 27 basic Reflex save), and increasing the depth of the lava in the room by 1 foot (4 feet per round if all the channels are active). A creature that starts its turn in lava takes 8d6 fire damage and is immobilized until it Escapes the hardening lava (DC 27). The creature might suffocate if covered in lava (page 478). Lava from the previous round hardens fully at the start of the trap’s turn, effectively raising the floor of the room. Once the room is full of lava, the trap stops taking actions, but creatures in the room remain stuck until the floor opens and the trap resets."
+      },
+      {
+        "label": "Reset",
+        "description": "The trap deactivates and resets after 1 hour by withdrawing the floor, cracking and dumping the hardened lava (and any creatures trapped inside) into the chamber. Creatures fall 40 feet, taking falling damage (typically 17 bludgeoning damage)."
+      }
+    ],
+    "name": "Lava Flume Tubes",
+    "level": "10"
+  },
+  "Telekinetic Swarm Trap": {
+    "tags": [
+      "Complex",
+      "Magical",
+      "Mechanical",
+      "Trap"
+    ],
+    "information": [
+      {
+        "label": "Source",
+        "description": "Core Rulebook pg. 528"
+      },
+      {
+        "label": "Complexity",
+        "description": "Complex"
+      },
+      {
+        "label": "Stealth",
+        "description": "+24 (expert)"
+      },
+      {
+        "label": "Description",
+        "description": "Three innocuous decorations instilled with telekinetic magic pull objects and pieces of the room itself into spinning clouds of debris that attack all creatures in the room."
+      }
+    ],
+    "effects": [
+      {
+        "label": "Disable",
+        "description": "Thievery DC 27 (expert) to take apart a telekinetic cloud, Thievery DC 32 (master) to disable each telekinetic decoration, or dispel magic (6th level; counteract DC 30) to counteract each telekinetic decoration"
+      },
+      {
+        "label": "AC",
+        "description": "33,"
+      },
+      {
+        "label": "Fort",
+        "description": "+24,"
+      },
+      {
+        "label": "Ref",
+        "description": "+19"
+      },
+      {
+        "label": "Hardness",
+        "description": "22,"
+      },
+      {
+        "label": "HP",
+        "description": "88 (BT 44) per telekinetic cloud"
+      },
+      {
+        "label": "Agitate",
+        "description": "(arcane, evocation);"
+      },
+      {
+        "label": "Trigger",
+        "description": "A creature stays in the room for at least 6 seconds."
+      },
+      {
+        "label": "Effect",
+        "description": "Each telekinetic decoration constructs a cloud of objects in the room (three clouds total) and the trap rolls initiative. The creatures in the room when the trap is triggered become the trap’s targets, regardless of whether they leave the room or other creatures later enter the room. Each decoration targets a different creature if possible. A target creature that moves at least 1 mile from the trap ceases being a target, at which point the decoration designates a new target."
+      },
+      {
+        "label": "Routine",
+        "description": "(9 actions) Each decoration uses 3 of the trap’s actions each turn, and the trap loses 3 actions each turn for every decoration that is disabled. A decoration uses its first action to move its cloud of objects up to 200 feet, its second action to make the objects Strike, and its third action to add more objects to the cloud, increasing its damage by 1d12 (to a maximum of 4d12+10). If a decoration’s cloud is already at maximum damage, it does nothing with its third action. If a decoration’s cloud has been destroyed, the decoration instead spends its first action to create a new cloud of objects inside the room (using the starting damage value) and then its second and third actions to have the cloud move and attack."
+      },
+      {
+        "label": "Melee",
+        "description": "[one-action] objects +24,"
+      },
+      {
+        "label": "Damage",
+        "description": "2d12+10 bludgeoning"
+      },
+      {
+        "label": "Reset",
+        "description": "The trap deactivates and resets 10 minutes after it has no target creatures (because the creatures either moved too far away or died)."
+      }
+    ],
+    "name": "Telekinetic Swarm Trap",
+    "level": "12"
+  },
+  "Darkside Mirror": {
+    "tags": [
+      "Complex",
+      "Magical",
+      "Mechanical",
+      "Trap"
+    ],
+    "information": [
+      {
+        "label": "Source",
+        "description": "Core Rulebook pg. 528"
+      },
+      {
+        "label": "Complexity",
+        "description": "Complex"
+      },
+      {
+        "label": "Stealth",
+        "description": "+24 (master) to notice it isn’t a regular mirror"
+      },
+      {
+        "label": "Description",
+        "description": "A magic mirror replaces characters with evil mirror duplicates from another dimension."
+      }
+    ],
+    "effects": [
+      {
+        "label": "Disable",
+        "description": "Thievery DC 34 (legendary) to retrieve a creature from the other dimension within 10 minutes of the switch (possible only if their mirror duplicate is dead), Thievery DC 39 (master) to permanently disable the mirror once all mirror duplicates are dead, or dispel magic (7th level; counteract DC 32) to counteract the mirror for 1 minute and prevent additional replacements during that time"
+      },
+      {
+        "label": "AC",
+        "description": "34,"
+      },
+      {
+        "label": "Fort",
+        "description": "+25,"
+      },
+      {
+        "label": "Ref",
+        "description": "+20"
+      },
+      {
+        "label": "Hardness",
+        "description": "1,"
+      },
+      {
+        "label": "HP",
+        "description": "4 (BT 2), the mirror can’t be damaged while any mirror duplicate is alive"
+      },
+      {
+        "label": "Reflection of Evil",
+        "description": "(arcane, conjuration, teleportation);"
+      },
+      {
+        "label": "Trigger",
+        "description": "A non-evil creature is reflected in the mirror."
+      },
+      {
+        "label": "Effect",
+        "description": "The mirror absorbs the creature into the mirror, replacing it with an evil mirror duplicate (DC 34 Reflex to avoid being absorbed into the mirror), and rolls initiative."
+      },
+      {
+        "label": "Routine",
+        "description": "(1 action) The mirror absorbs another reflected creature into the mirror and replaces it with a mirror duplicate. Mirror duplicates attack on their own initiative, using the same statistics as the original creature, but with an evil alignment (changing only abilities that shift with the alignment change). A mirror duplicate can spend 3 actions in contact with the mirror to return to its original dimension and release the creature it duplicated, but most mirror duplicates prefer not to."
+      },
+      {
+        "label": "Reset",
+        "description": "The mirror is always ready to absorb creatures into the other dimension. Ten minutes after a creature is sucked into the mirror, if an ally doesn’t rescue the creature with Thievery, it reaches the other dimension, where it might be captured or killed. In the mirror dimension, it counts as a mirror duplicate, so the denizens of the other dimension can’t destroy the mirror on their side while the absorbed creature is there. These dimensions are alternate realities, not planes, so even rituals like plane shift can’t reach them."
+      }
+    ],
+    "name": "Darkside Mirror",
+    "level": "14"
+  },
+  "Banshee's Symphony": {
+    "tags": [
+      "Complex",
+      "Magical",
+      "Trap"
+    ],
+    "information": [
+      {
+        "label": "Source",
+        "description": "Core Rulebook pg. 529"
+      },
+      {
+        "label": "Complexity",
+        "description": "Complex"
+      },
+      {
+        "label": "Stealth",
+        "description": "+30 (legendary)"
+      },
+      {
+        "label": "Description",
+        "description": "A magically contagious wail of the banshee spell is trapped in the larynx of an invisible, mummified elf."
+      }
+    ],
+    "effects": [
+      {
+        "label": "Disable",
+        "description": "Thievery DC 42 (master) to pierce the invisible larynx so precisely that the magic releases in a trickle before the trap activates, Thievery DC 44 (legendary) three times to deconstruct the larynx while the trap is active in such a way that it tears the spell apart, or spell DC 38 (9th level) to counteract the wail of the banshee before the trap activates"
+      },
+      {
+        "label": "Immunities",
+        "description": "critical hits, object immunities, precision damage"
+      },
+      {
+        "label": "Scream"
+      },
+      {
+        "label": "Trigger",
+        "description": "Three or more living creatures remain within 100 feet of the trap for 6 seconds or longer."
+      },
+      {
+        "label": "Effect",
+        "description": "The trap releases an arcane wail of the banshee (DC 40) with a 100-foot-radius emanation instead of 40 feet, targeting all living creatures in the area, and rolls initiative."
+      },
+      {
+        "label": "Routine",
+        "description": "(1 action) The trap uses its action to force one random creature that failed its save against wail of the banshee last turn to emit a wail of the banshee with the same statistics as the initial one. The creature wails even if it is dead or unable to speak, no matter how far away from the trap it is. Unlike a casting of the spell, the drained condition from this trap’s wail of the banshee spells increases the targets’ drained condition values. A creature that critically succeeds at any of its saves can still be affected by the trap on future rounds, but can’t be forced to wail by the trap."
+      },
+      {
+        "label": "Reset",
+        "description": "The trap ends when the trap is unable to make a creature scream (usually because no creature failed its save on the previous turn or because all creatures have critically succeeded in the past). It then resets over 24 hours, as a new scream builds up in the mummified larynx."
+      }
+    ],
+    "name": "Banshee's Symphony",
+    "level": "18"
+  }
+}
