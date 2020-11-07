@@ -63,14 +63,9 @@ var app = new Vue({
       }
     },
     encounterUrl: function() {
+      console.log(this.selectedCreatures.map(x=>x.name));
       const creaturesString = this.selectedCreatures
-        .map(creature => {
-          if (creature.adjustment) {
-            return Array(creature.quantity).fill(creature.adjustment + " " + creature.name)
-          } else {
-            return Array(creature.quantity).fill(creature.name)
-          }
-        })
+        .map(creature => Array(creature.quantity).fill(creature.name))
         .flat()
         .join(",");
       const rawString = `/encounter/?list=${creaturesString}&totalPlayers=${this.numberOfMembers}&partyLevel=${this.partyLevel}`;
@@ -120,6 +115,7 @@ var app = new Vue({
     },
     addCreature: function(creature) {
       if (creature.quantity) {
+        console.log("are we here someo")
         creature.quantity = creature.quantity + 1;
         Vue.set(this.selectedCreatures, this.selectedCreatures.indexOf(creature), creature);
       } else {
@@ -129,82 +125,47 @@ var app = new Vue({
       window.history.pushState("", "", this.encounterUrl);
     },
     strengthenCreature: function(creature) {
+      this.removeCreature(creature);
       const newCreature = strengthenCreature(creature);
-      this.removeCreature(creature);
       this.addCreature(newCreature);
     },
     weakenCreature: function(creature) {
+      this.removeCreature(creature);
       const newCreature = weakenCreature(creature);
-      this.removeCreature(creature);
       this.addCreature(newCreature);
-    },
-    strengthenCreature: function(creature) {
-      creature.name = "Elite " + creature.name;
-      let hpIncrease = 0;
-      if (creature.level <= 1) {
-        hpIncrease = 10;
-      } else if (creature.level <= 4) {
-        hpIncrease = 15;
-      } else if (creature.level <= 19) {
-        hpIncrease = 20;
-      } else {
-        hpIncrease = 30;
-      }
-      creature.level = parseInt(creature.level) + 1
-      creature.HP = extractAndModify(creature.HP, "", hpIncrease);
-      creature.AC = extractAndModify(creature.AC, "", 2);
-      creature.saves.Fort = extractAndModify(creature.saves.Fort, "", 2);
-      creature.saves.Ref = extractAndModify(creature.saves.Ref, "", 2);
-      creature.saves.Will = extractAndModify(creature.saves.Will, "", 2);
-      if (creature.perception) {
-        creature.perception = extractAndModify(creature.perception, "Perception ", 2);
-      } else {
-        let perceptionLine = creature.information.filter(info => info.description.includes("Perception"))[0];
-        if (perceptionLine) {
-          perceptionLine.description = extractAndModify(perceptionLine.description, "Perception ", 2);
-        }
-      }
-      creature.combat.forEach(line => {
-        if (line.label == "Melee" || line.label == "Ranged" || line.label == "Damage") {
-          line.description = line.description + " +2 (elite bonus)"
-        }
-      })
-      return creature;
-    },
-    weakenCreature: function(creature) {
-      creature.name = "Weak " + creature.name;
-      let hpDecrease = 0;
-      if (creature.level <= 2) {
-        hpDecrease = -10;
-      } else if (creature.level <= 5) {
-        hpDecrease = -15;
-      } else if (creature.level <= 20) {
-        hpDecrease = -20;
-      } else {
-        hpDecrease = -30;
-      }
-      creature.level = parseInt(creature.level) - 1
-      creature.HP = extractAndModify(creature.HP, "", hpDecrease);
-      creature.AC = extractAndModify(creature.AC, "", -2);
-      creature.saves.Fort = extractAndModify(creature.saves.Fort, "", -2);
-      creature.saves.Ref = extractAndModify(creature.saves.Ref, "", -2);
-      creature.saves.Will = extractAndModify(creature.saves.Will, "", -2);
-      let perceptionLine = creature.information.filter(info => info.description.includes("Perception"))[0];
-      if (perceptionLine) {
-        perceptionLine.description = extractAndModify(perceptionLine.description, "Perception ", -2);
-      }
-      creature.combat.forEach(line => {
-        if (line.label == "Melee" || line.label == "Ranged" || line.label == "Damage") {
-          line.description = line.description + " -2 (weak penalty)"
-        }
-      });
-      return creature;
     },
     partyLevelHandler: function(event) {
       localStorage.setItem("partyLevel", event.target.value)
     },
     numberOfMembersHandler: function(event) {
       localStorage.setItem("numberOfMembers", event.target.value)
+    },
+    resolveCreature: function(name) {
+      if (name.startsWith("Elite")) {
+        let eliteCount = 0;
+        while (name.startsWith("Elite")) {
+          name = name.slice(6);
+          eliteCount++;
+        }
+        let creature = this.allCreatures.find(creature => creature.name === name);
+        for (let i = 0; i < eliteCount; i++) {
+          creature = strengthenCreature(creature);
+        }
+        return creature;
+      } else if (name.startsWith("Weak")) {
+        let weakCount = 0;
+        while (name.startsWith("Weak")) {
+          name = name.slice(5);
+          weakCount++;
+        }
+        let creature = this.allCreatures.find(creature => creature.name === name);
+        for (let i = 0; i < weakCount; i++) {
+          creature = weakenCreature(creature);
+        }
+        return creature;
+      } else {
+        return this.allCreatures.find(creature => creature.name === name);
+      }
     }
   },
   mounted() {
@@ -228,16 +189,7 @@ var app = new Vue({
             creatureCounts[name] = (creatureCounts[name] || 0) + 1;
           })
           this.selectedCreatures = Object.keys(creatureCounts).map(name => {
-            let creature = null;
-            if (name.startsWith("Elite")) {
-              const baseCreature = this.allCreatures.find(creature => creature.name === name.slice(6));
-              creature = strengthenCreature(baseCreature);
-            } else if (name.startsWith("Weak")) {
-              const baseCreature = this.allCreatures.find(creature => creature.name === name.slice(5));
-              creature = weakenCreature(baseCreature);
-            } else {
-              creature = this.allCreatures.find(creature => creature.name === name);
-            }
+            let creature = this.resolveCreature(name);
             creature.quantity = creatureCounts[name];
             return creature;
           });
@@ -274,6 +226,7 @@ function strengthenCreature(creature) {
   creature.saves.Fort = extractAndModify(creature.saves.Fort, "", 2);
   creature.saves.Ref = extractAndModify(creature.saves.Ref, "", 2);
   creature.saves.Will = extractAndModify(creature.saves.Will, "", 2);
+  delete creature.quantity;
   if (creature.perception) {
     creature.perception = extractAndModify(creature.perception, "Perception ", 2);
   } else {
@@ -308,6 +261,7 @@ function weakenCreature(creature) {
   creature.saves.Fort = extractAndModify(creature.saves.Fort, "", -2);
   creature.saves.Ref = extractAndModify(creature.saves.Ref, "", -2);
   creature.saves.Will = extractAndModify(creature.saves.Will, "", -2);
+  delete creature.quantity;
   let perceptionLine = creature.information.filter(info => info.description.includes("Perception"))[0];
   if (perceptionLine) {
     perceptionLine.description = extractAndModify(perceptionLine.description, "Perception ", -2);
