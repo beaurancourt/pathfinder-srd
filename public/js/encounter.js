@@ -90,11 +90,13 @@ var app = new Vue({
     },
     appropriateCreatures: function() {
       return this.allCreatures.filter(creature => {
-        return creature.level <= app.partyLevel + 1 && creature.level >= app.partyLevel - 1;
+        return creature.level <= app.partyLevel + 3 && creature.level >= app.partyLevel - 3;
       }).sort(function(a, b) {
-        if (a.level < b.level) {
+        const aLevel = parseInt(a.level);
+        const bLevel = parseInt(b.level);
+        if (aLevel < bLevel) {
           return -1;
-        } else if (a.level > b.level) {
+        } else if (aLevel > bLevel) {
           return 1;
         } else {
           return a.name > b.name;
