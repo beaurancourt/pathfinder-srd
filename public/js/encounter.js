@@ -21,14 +21,14 @@ var app = new Vue({
     keyedCreatures: function() {
       let result = {};
       this.allCreatures.forEach(creature => {
-        result[creature._id] = creature;
+        result[creature.name] = creature;
       });
       return result;
     },
     selectedIds: function() {
       let result = {};
       this.selectedCreatures.forEach(creature => {
-        result[creature._id] = creature;
+        result[creature.name] = creature;
       });
       return result;
     },
@@ -117,10 +117,10 @@ var app = new Vue({
     },
     addCreature: function(creature) {
       if (creature.quantity) {
-        console.log("are we here someo")
         creature.quantity = creature.quantity + 1;
         Vue.set(this.selectedCreatures, this.selectedCreatures.indexOf(creature), creature);
       } else {
+				console.log(creature)
         creature.quantity = 1;
         this.selectedCreatures.push(creature);
       }
@@ -284,13 +284,14 @@ function suggestFunction(userInput, callback) {
     return typeMatch && creature.level <= app.partyLevel + 4 && creature.level >= app.partyLevel - 4;
   });
   callback(creatures.map(creature => {
-    return {'display': `${creature.name} - ${creature.level}`, 'value': creature._id}
+    return {'display': `${creature.name} - ${creature.level}`, 'value': creature.name}
   }));
 }
 
 let lastSelectedId = null;
 function afterSelectFunction(suggestionObject) {
   if (suggestionObject && lastSelectedId !== suggestionObject.value && !app.selectedIds[suggestionObject.value]) {
+		console.log(suggestionObject)
     lastSelectedId = suggestionObject.value
     let creature = app.keyedCreatures[lastSelectedId];
     app.addCreature(creature);

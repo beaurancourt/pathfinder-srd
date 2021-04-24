@@ -38,7 +38,7 @@
       </div>
 
       <div class="card-columns">
-        <div v-for="creature in selectedCreatures" :key="creature._id" class="card w-33 creatureCard modal-target" data-toggle="modal" v-bind:data-target="'#' + creature._id">
+        <div v-for="creature in selectedCreatures" :key="creature.name" class="card w-33 creatureCard modal-target" data-toggle="modal" v-bind:data-target="'#' + creature.name">
           <div class="card-body">
             <h5 class="card-title">{{creature.name}}</h5>
             <h6 class="card-subtitle mb-2 text-muted">Level {{creature.level}}</h6>
@@ -54,7 +54,7 @@
           </div>
         </div>
       </div>
-      <div v-for="creature in selectedCreatures" class="modal fade" v-bind:id="creature._id" tabindex="-1" role="dialog" aria-labelledby="longScrollModalTitle" aria-hidden="true">
+      <div v-for="creature in selectedCreatures" class="modal fade" v-bind:id="creature.name" tabindex="-1" role="dialog" aria-labelledby="longScrollModalTitle" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
